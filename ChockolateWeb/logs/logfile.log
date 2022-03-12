@@ -1,0 +1,12 @@
+2022-03-13 00:05:53,876 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-13 00:05:53,881 [INFO ] LoggableAspect.java:beforeMethodExecuting:37 - TECHGEEKNEXT - Spring Boot Logging AOP EXAMPLE - Execution time of 
+2022-03-13 00:05:53,904 [INFO ] LoggableAspect.java:afterMethodExecuting:43 - After method welcomePage,with result l1
+2022-03-13 00:05:55,493 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method handleError,with args=[org.apache.catalina.core.ApplicationHttpRequest@4a5217ca,java.lang.Exception,{exception=java.lang.Exception, org.springframework.validation.BindingResult.exception=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2022-03-13 00:05:55,494 [INFO ] LoggableAspect.java:beforeMethodExecuting:37 - TECHGEEKNEXT - Spring Boot Logging AOP EXAMPLE - Execution time of 
+2022-03-13 00:05:55,504 [INFO ] LoggableAspect.java:afterMethodExecuting:43 - After method handleError,with result error404
+2022-03-13 00:05:56,595 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-13 00:05:56,595 [INFO ] LoggableAspect.java:beforeMethodExecuting:37 - TECHGEEKNEXT - Spring Boot Logging AOP EXAMPLE - Execution time of 
+2022-03-13 00:05:56,596 [INFO ] LoggableAspect.java:afterMethodExecuting:43 - After method welcomePage,with result l1
+2022-03-13 00:05:58,890 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-13 00:05:58,890 [INFO ] LoggableAspect.java:beforeMethodExecuting:37 - TECHGEEKNEXT - Spring Boot Logging AOP EXAMPLE - Execution time of 
+2022-03-13 00:05:58,891 [INFO ] LoggableAspect.java:afterMethodExecuting:43 - After method welcomePage,with result l1
