@@ -1,0 +1,481 @@
+﻿*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: auto;
+
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+}
+
+.wrapper {
+    display: flex;
+    min-height: 100%;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+
+.container {
+    max-width: 1200px;
+    height: 100%;
+    margin: 0px auto;
+    padding: 0px 10px;
+
+}
+
+@media (max-width:1200px) {
+    .container {
+        max-width: 970px;
+    }
+}
+
+@media (max-width:992px) {
+    .container {
+        max-width: 750px;
+    }
+}
+
+@media (max-width:767px) {
+    .container {
+        max-width: none;
+    }
+}
+
+
+.header {
+    /*  это все,чтобы header был всегда сверху страницы*/
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+}
+
+/*плашка,нужна для*/
+.header:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #592A1E;
+
+    z-index: 2;
+}
+
+.header_row {
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.header_logo {
+    /* размер блока логотипа*/
+    flex: 0 0 60px;
+    border-radius: 50%;
+    overflow: hidden;
+
+    /* чтобы контентная часть(лого,ссылки) была поверх плашки*/
+    z-index: 3;
+}
+
+.header_logo img {
+    /*если картинка будет большого размера,чтобы она подстроилась по размеру под блок ,в который ее вставили*/
+    max-width: 100%;
+
+    display: block;
+}
+
+
+
+.menu_burger {
+    /* наше меню-бургер сразу скрываем для всех размеров*/
+    display: none;
+}
+
+.menu_body {}
+
+.menu_list {
+    display: flex;
+    position: relative;
+    /* чтобы контентная часть(лого,ссылки) была поверх плашки*/
+    z-index: 2;
+}
+
+.menu_list li {
+    list-style: none;
+    margin: 0px 0px 0px 15px;
+}
+
+.menu_link {
+    color: burlywood;
+    text-transform: uppercase;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+@media (max-width:767px) {
+
+    /*чтобы не скролилось содержимое под меню-бургером,когда меню-бургер открыто*/
+    body.lock {
+        overflow: hidden;
+    }
+
+    /* уменьшим размер шапки*/
+    .header_row {
+        height: 50px;
+    }
+
+    .header_logo {
+        flex: 0 0 40px;
+    }
+
+    /*но для размеров ниже 767px наше меню-бургер будем показывать*/
+    .menu_burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        /* чтобы контентная часть(лого,ссылки) была поверх плашки*/
+        position: relative;
+        z-index: 3;
+    }
+
+    /* рисование самого меню-бургера(линий) с помощью псевдо-элементов*/
+    .menu_burger:before,
+    .menu_burger:after {
+        content: '';
+        background-color: #ece89d;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        /*для плавности изменения при превращении в три полоски или крестик*/
+        transition: all 0.3s ease 0s;
+    }
+
+    /* верхняя полоска бургера*/
+    .menu_burger:before {
+        top: 0;
+    }
+
+    /* средняя полоска бургера*/
+    .menu_burger span {
+        background-color: #ece89d;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        top: 9px;
+        /*для плавности изменения при превращении в три полоски или крестик*/
+        transition: all 0.3s ease 0s;
+    }
+
+    /* нижняя полоска бургера*/
+    .menu_burger:after {
+        bottom: 0;
+    }
+
+    /* при раскрытии меню-бургера превратим три полоски в крестик*/
+    .menu_burger.active:before {
+        /* поворачиваем верхнюю полоску*/
+        transform: rotate(45deg);
+        top: 9px;
+    }
+
+    .menu_burger.active:after {
+        /* поворачиваем нижнюю полоску*/
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+
+    /* убираем среднюю полоску*/
+    .menu_burger.active span {
+        transform: scale(0);
+    }
+
+    .menu_body {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+
+        /* когда повернут телефон,то добавляем в меню скрол(прокрутку) для удобства*/
+        overflow: auto;
+
+        left: 0;
+        /*  изначально текстовое меню со ссылками прячем,пока не нажмут меню-бургер*/
+        top: -100%;
+        background-color: chocolate;
+        padding: 70px 10px 20px 10px;
+        /*для плавности появления текстового меню при нажатии на меню-бургер*/
+        transition: all 0.3s ease 0s;
+    }
+
+    .menu_body.active {
+        top: 0;
+    }
+
+    .menu_list {
+        display: block;
+        /* при открытом меню бургере ссылки будут по центру*/
+        text-align: center;
+    }
+
+    .menu_list li {
+        margin: 0px 0px 20px 0px;
+    }
+
+    .menu_link {
+        font-size: 24px;
+    }
+
+}
+
+
+
+
+
+main {
+    /*высота header_row(нашей шапки)=80pxбпоэтому для main сделаем отступ побольше,чтобы heder не закрывал содержимое main*/
+    padding: 100px 20px;
+
+    /*    чтобы footer был всегда прибит к низу страницы*/
+    flex: 1 1 auto;
+
+    background-image: url("images/chok1.jpg");
+    background-color: #c5bdaacc;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+.main_title {
+    font-size: 50px;
+    margin: 0px 0px 40px 0px;
+    background: linear-gradient(chocolate, burlywood);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #3b3b3b;
+}
+
+/*медиа запросы ставить после того блока,для которого что-то изменяется в медиа запросе(группировка),иначе плохо отрабатывают изменения*/
+@media (max-width:992px) {
+    .main_title {
+        font-size: 40px;
+        margin: 0px 0px 30px 0px;
+    }
+}
+
+@media (max-width:767px) {
+    .main_title {
+        font-size: 30px;
+        margin: 0px 0px 15px 0px;
+    }
+}
+
+
+.page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: inherit;
+}
+
+.gallery {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    object-position: center;
+    text-align: center;
+}
+
+.gallery_images {
+    max-width: 100%;
+    max-height: 100%;
+    /*для адаптации картинок в галерее под размер  */
+    object-fit: cover;
+    object-position: center;
+}
+.sign_gallery_picture {
+    margin-top: 20px;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+.description_gallery_picture{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    color: white;
+    font-size: 20px;
+}
+.personal_page_img1 {
+    float:left; /* Выравнивание по левому краю */
+    margin: 7px 7px 7px 0; /* Отступы вокруг картинки */
+     max-width: 40%;
+    max-height: 40%;
+    /* для адаптации картинок в галерее под размер */
+    object-fit: cover;
+    object-position: center;
+   }
+.personal_page_img2  {
+    float: right; /* Выравнивание по правому краю  */ 
+    margin: 7px 0 7px 7px; /* Отступы вокруг картинки */
+       max-width: 40%;
+    max-height: 40%;
+    /* для адаптации картинок в галерее под размер */
+    object-fit: cover;
+    object-position: center;
+   }
+.page_text_about_me{
+    padding: 5px;
+     color: black;
+    font-size: 18px;
+    background-image:url(images/fon_personal_page.jpg);
+}
+@media (max-width:992px) {
+
+/*
+   .gallery_images {
+        width: 500px;
+        height: 300px;
+    }
+*/
+}
+@media(max-width:767px) {
+    .page {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0px 0px 0px 0px;
+    }
+
+    .gallery {
+        padding: 0px 0px 40px 0px;
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .personal_page_img1,
+    .personal_page_img2{
+    padding: 0px 0px 40px 0px;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    object-position: center;
+   }
+/*
+    .gallery_images {
+        width: 300px;
+        height: 200px;
+        padding-top: 10%;
+    }
+*/
+}
+
+
+
+footer {
+    height: 200px;
+    background-color: #592A1E;
+}
+.footer_container{
+    max-height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer_block_menu {
+    margin: 10px 0px 0px 0px;
+    /* добавляем прокрутку */
+   /*  overflow: auto; */
+}
+
+.footer_block_spoiler {
+    margin: 0px 0px 20px 0px;
+}
+
+.footer_block_spoiler_menu_title {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    position: relative;
+    /* отступаем слева,чтобы туда переместить галочки*/
+    padding: 0px 0px 0px 30px;
+    /* при наведении мыши будет меняться курсор*/
+    cursor: pointer;
+
+    color: chocolate;
+}
+
+.footer_block_spoiler_menu_text {
+    padding: 10px 0px 0px 30px;
+    color: burlywood;
+}
+
+
+
+@media (max-width:767px) {
+
+    /*сделаем галочки для меню*/
+    .footer_block_spoiler_menu_title:before,
+    .footer_block_spoiler_menu_title:after {
+        content: '';
+        width: 10px;
+        height: 1px;
+        background-color: black;
+
+        /* Координаты top/bottom/left/right для нового местоположения отсчитываются от ближайшего позиционированного родителя, т.е. родителя с позиционированием, отличным от static. Если такого родителя нет – то относительно документа.Т.к. мы указали в родителе footer_block_spoiler_menu_title -> position: relative,то top: 5px сдвинет наши галочки относительно родителя,а не документа*/
+        position: absolute;
+        top: 8px;
+        /*для анимации изменения галочки*/
+        transition: all 0.3s ease 0s;
+    }
+
+    .footer_block_spoiler_menu_title:before {
+        transform: rotate(40deg);
+        left: 0;
+    }
+
+    .footer_block_spoiler_menu_title:after {
+        transform: rotate(-40deg);
+        left: 8px;
+    }
+
+    .footer_block_spoiler_menu_title.active:before,
+    .footer_block_spoiler_menu_title.active:after {
+        background-color: crimson;
+    }
+
+    .footer_block_spoiler_menu_title.active:before {
+        transform: rotate(-40deg);
+    }
+
+    .footer_block_spoiler_menu_title.active:after {
+        transform: rotate(40deg);
+    }
+
+    .footer_block_spoiler_menu_text {
+        /* изначально текст в меню скрыт*/
+        display: none;
+        padding: 10px 0px 0px 0px;
+    }
+
+}
