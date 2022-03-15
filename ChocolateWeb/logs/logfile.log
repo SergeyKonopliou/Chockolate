@@ -256,3 +256,515 @@
 2022-03-14 22:14:21,878 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLink,with result redirect:/
 2022-03-14 22:14:21,911 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
 2022-03-14 22:14:21,913 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-14 22:44:56,745 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method handleError,with args=[org.apache.catalina.core.ApplicationHttpRequest@7117333d,java.lang.Exception,{exception=java.lang.Exception, org.springframework.validation.BindingResult.exception=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2022-03-14 22:44:56,780 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method handleError,with result error404
+2022-03-14 22:47:13,758 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method handleError,with args=[org.apache.catalina.core.ApplicationHttpRequest@7ed47025,java.lang.Exception,{exception=java.lang.Exception, org.springframework.validation.BindingResult.exception=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2022-03-14 22:47:13,758 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method handleError,with result error404
+2022-03-14 22:52:27,380 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-14 22:52:27,404 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-14 22:52:30,657 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method showCatalog,with args=[]
+2022-03-14 22:52:30,658 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method showCatalog,with result catalogPage
+2022-03-14 22:52:31,831 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method showContactInfo,with args=[]
+2022-03-14 22:52:31,832 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method showContactInfo,with result contactsPage
+2022-03-14 22:52:32,970 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method aboutMe,with args=[]
+2022-03-14 22:52:32,971 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method aboutMe,with result personalPage
+2022-03-14 22:52:34,237 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLink,with args=[]
+2022-03-14 22:52:34,238 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLink,with result redirect:/
+2022-03-14 22:52:34,272 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-14 22:52:34,272 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:05:57,880 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:05:58,093 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:07:03,230 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:07:03,246 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:07:08,042 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:07:08,044 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:08:25,206 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:08:25,221 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:08:29,114 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method handleError,with args=[org.apache.catalina.core.ApplicationHttpRequest@7e71afe8,java.lang.Exception,{exception=java.lang.Exception, org.springframework.validation.BindingResult.exception=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2022-03-15 18:08:29,122 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method handleError,with result error404
+2022-03-15 18:08:40,630 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method handleError,with args=[org.apache.catalina.core.ApplicationHttpRequest@6c2c8802,java.lang.Exception,{exception=java.lang.Exception, org.springframework.validation.BindingResult.exception=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2022-03-15 18:08:40,631 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method handleError,with result error404
+2022-03-15 18:08:43,177 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:08:43,177 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:09:36,584 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:09:36,600 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:09:39,676 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:09:39,676 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:09:45,842 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:09:45,843 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:09:48,259 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method showCatalog,with args=[]
+2022-03-15 18:09:48,260 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method showCatalog,with result catalogPage
+2022-03-15 18:09:53,343 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLink,with args=[]
+2022-03-15 18:09:53,343 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLink,with result redirect:/
+2022-03-15 18:09:53,381 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:09:53,381 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:09:59,231 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:09:59,232 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:10:00,801 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method showCatalog,with args=[]
+2022-03-15 18:10:00,801 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method showCatalog,with result catalogPage
+2022-03-15 18:10:01,957 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method showContactInfo,with args=[]
+2022-03-15 18:10:01,957 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method showContactInfo,with result contactsPage
+2022-03-15 18:10:03,115 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method aboutMe,with args=[]
+2022-03-15 18:10:03,115 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method aboutMe,with result personalPage
+2022-03-15 18:10:10,648 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLink,with args=[]
+2022-03-15 18:10:10,649 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLink,with result redirect:/
+2022-03-15 18:10:10,670 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:10:10,671 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:17:12,039 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:17:12,052 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:17:14,884 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:17:14,885 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:17:20,305 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:17:20,306 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:17:27,630 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method showCatalog,with args=[]
+2022-03-15 18:17:27,631 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method showCatalog,with result catalogPage
+2022-03-15 18:17:31,895 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLink,with args=[]
+2022-03-15 18:17:31,895 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLink,with result redirect:/
+2022-03-15 18:17:31,928 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:17:31,929 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:17:33,281 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:17:33,281 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:17:34,857 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:17:34,857 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:17:41,929 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:17:41,929 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:17:48,515 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:17:48,515 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:17:50,631 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:17:50,632 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:20:45,912 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:20:45,929 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:20:46,644 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method handleError,with args=[org.apache.catalina.core.ApplicationHttpRequest@22248f05,java.lang.Exception,{exception=java.lang.Exception, org.springframework.validation.BindingResult.exception=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2022-03-15 18:20:46,654 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method handleError,with result error
+2022-03-15 18:24:04,894 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:24:04,919 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:24:05,720 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method handleError,with args=[org.apache.catalina.core.ApplicationHttpRequest@4e84f8b9,java.lang.Exception,{exception=java.lang.Exception, org.springframework.validation.BindingResult.exception=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2022-03-15 18:24:05,728 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method handleError,with result error
+2022-03-15 18:24:08,079 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:24:08,079 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:24:08,109 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method handleError,with args=[org.apache.catalina.core.ApplicationHttpRequest@659fd421,java.lang.Exception,{exception=java.lang.Exception, org.springframework.validation.BindingResult.exception=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2022-03-15 18:24:08,109 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method handleError,with result error
+2022-03-15 18:24:13,186 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:24:13,187 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:24:13,220 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method handleError,with args=[org.apache.catalina.core.ApplicationHttpRequest@25dfd164,java.lang.Exception,{exception=java.lang.Exception, org.springframework.validation.BindingResult.exception=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2022-03-15 18:24:13,221 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method handleError,with result error
+2022-03-15 18:24:33,828 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:24:33,842 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:24:34,545 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method handleError,with args=[org.apache.catalina.core.ApplicationHttpRequest@418540bb,java.lang.Exception,{exception=java.lang.Exception, org.springframework.validation.BindingResult.exception=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2022-03-15 18:24:34,555 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method handleError,with result error
+2022-03-15 18:25:38,233 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:25:38,250 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:25:41,466 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:25:41,467 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:26:37,419 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:26:37,432 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:26:40,075 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:26:40,077 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:27:17,683 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:27:17,699 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:27:20,429 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:27:20,429 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:27:23,013 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:27:23,014 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:27:24,747 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:27:24,748 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:30:05,807 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:30:05,821 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:30:07,987 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method handleError,with args=[org.apache.catalina.core.ApplicationHttpRequest@56b6a8d2,java.lang.Exception,{exception=java.lang.Exception, org.springframework.validation.BindingResult.exception=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2022-03-15 18:30:07,995 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method handleError,with result error404
+2022-03-15 18:30:48,784 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:30:48,799 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:30:51,046 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 18:30:51,047 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result redirect:/main
+2022-03-15 18:30:51,117 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:30:51,118 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:31:33,264 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:31:33,281 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:31:36,635 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 18:31:36,636 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result redirect:/
+2022-03-15 18:31:36,667 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:31:36,667 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:31:40,255 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 18:31:40,255 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result redirect:/
+2022-03-15 18:31:40,270 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:31:40,270 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:31:41,578 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 18:31:41,579 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result redirect:/
+2022-03-15 18:31:41,594 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:31:41,594 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:31:45,576 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 18:31:45,576 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result redirect:/
+2022-03-15 18:31:45,601 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:31:45,602 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:32:08,628 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:32:08,629 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:33:53,146 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:33:53,146 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:33:56,564 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 18:33:56,564 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result redirect:/
+2022-03-15 18:33:56,635 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method handleError,with args=[org.apache.catalina.core.ApplicationHttpRequest@551589e0,java.lang.Exception,{exception=java.lang.Exception, org.springframework.validation.BindingResult.exception=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2022-03-15 18:33:56,645 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method handleError,with result error404
+2022-03-15 18:34:03,838 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:34:03,840 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:34:05,833 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 18:34:05,834 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result redirect:/
+2022-03-15 18:34:05,853 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:34:05,854 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:34:14,208 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:34:14,209 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:34:16,987 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 18:34:16,987 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result redirect:/
+2022-03-15 18:34:17,018 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method handleError,with args=[org.apache.catalina.core.ApplicationHttpRequest@53609f67,java.lang.Exception,{exception=java.lang.Exception, org.springframework.validation.BindingResult.exception=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2022-03-15 18:34:17,019 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method handleError,with result error404
+2022-03-15 18:34:22,872 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLink,with args=[]
+2022-03-15 18:34:22,874 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLink,with result redirect:/
+2022-03-15 18:34:22,892 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:34:22,893 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:34:23,820 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method showCatalog,with args=[]
+2022-03-15 18:34:23,820 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method showCatalog,with result catalogPage
+2022-03-15 18:34:25,435 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method showContactInfo,with args=[]
+2022-03-15 18:34:25,435 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method showContactInfo,with result contactsPage
+2022-03-15 18:34:27,727 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLink,with args=[]
+2022-03-15 18:34:27,728 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLink,with result redirect:/
+2022-03-15 18:34:27,749 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:34:27,750 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:34:29,073 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 18:34:29,074 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result redirect:/
+2022-03-15 18:34:29,093 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:34:29,094 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:34:38,250 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 18:34:38,250 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result redirect:/
+2022-03-15 18:34:38,270 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:34:38,271 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:34:39,555 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 18:34:39,555 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result redirect:/
+2022-03-15 18:34:39,570 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:34:39,570 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:37:02,644 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:37:02,658 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:37:04,677 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 18:37:04,678 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result redirect:/
+2022-03-15 18:37:04,708 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:37:04,709 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:37:07,250 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 18:37:07,250 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result redirect:/
+2022-03-15 18:37:07,265 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:37:07,266 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:37:08,946 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 18:37:08,947 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result redirect:/
+2022-03-15 18:37:08,964 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:37:08,964 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:37:11,046 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 18:37:11,047 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result redirect:/
+2022-03-15 18:37:11,070 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:37:11,070 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:37:13,855 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 18:37:13,856 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result redirect:/
+2022-03-15 18:37:13,872 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:37:13,872 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:37:15,275 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 18:37:15,275 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result redirect:/
+2022-03-15 18:37:15,296 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:37:15,296 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:37:17,239 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 18:37:17,239 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result redirect:/
+2022-03-15 18:37:17,255 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:37:17,255 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:37:18,980 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 18:37:18,981 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result redirect:/
+2022-03-15 18:37:18,997 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:37:18,997 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:37:19,806 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 18:37:19,806 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result redirect:/
+2022-03-15 18:37:19,833 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:37:19,833 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:37:20,604 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 18:37:20,605 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result redirect:/
+2022-03-15 18:37:20,623 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:37:20,623 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:37:21,331 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 18:37:21,331 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result redirect:/
+2022-03-15 18:37:21,345 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:37:21,346 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:37:22,209 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 18:37:22,210 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result redirect:/
+2022-03-15 18:37:22,222 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:37:22,222 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:38:56,063 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:38:56,064 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:39:30,530 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 18:39:30,531 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result redirect:/
+2022-03-15 18:39:30,582 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method handleError,with args=[org.apache.catalina.core.ApplicationHttpRequest@21df91bf,java.lang.Exception,{exception=java.lang.Exception, org.springframework.validation.BindingResult.exception=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2022-03-15 18:39:30,591 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method handleError,with result error404
+2022-03-15 18:39:42,721 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLink,with args=[]
+2022-03-15 18:39:42,723 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLink,with result redirect:/
+2022-03-15 18:39:42,741 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:39:42,741 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:39:44,154 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 18:39:44,154 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result redirect:/
+2022-03-15 18:39:44,173 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:39:44,173 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:39:48,003 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 18:39:48,003 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result redirect:/
+2022-03-15 18:39:48,016 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:39:48,017 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:39:56,140 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:39:56,141 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:40:02,736 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 18:40:02,737 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result redirect:/
+2022-03-15 18:40:02,750 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:40:02,751 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:40:05,439 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 18:40:05,439 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result redirect:/
+2022-03-15 18:40:05,454 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:40:05,454 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:49:08,050 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:49:08,063 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:49:12,928 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:49:12,929 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:49:13,305 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method handleError,with args=[org.apache.catalina.core.ApplicationHttpRequest@50e85fcf,java.lang.Exception,{exception=java.lang.Exception, org.springframework.validation.BindingResult.exception=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2022-03-15 18:49:13,313 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method handleError,with result error404
+2022-03-15 18:49:13,326 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method handleError,with args=[org.apache.catalina.core.ApplicationHttpRequest@d28ab87,java.lang.Exception,{exception=java.lang.Exception, org.springframework.validation.BindingResult.exception=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2022-03-15 18:49:13,326 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method handleError,with result error404
+2022-03-15 18:49:13,329 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method handleError,with args=[org.apache.catalina.core.ApplicationHttpRequest@5337a30,java.lang.Exception,{exception=java.lang.Exception, org.springframework.validation.BindingResult.exception=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2022-03-15 18:49:13,330 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method handleError,with result error404
+2022-03-15 18:49:13,335 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method handleError,with args=[org.apache.catalina.core.ApplicationHttpRequest@1e0052e9,java.lang.Exception,{exception=java.lang.Exception, org.springframework.validation.BindingResult.exception=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2022-03-15 18:49:13,336 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method handleError,with result error404
+2022-03-15 18:49:13,420 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method handleError,with args=[org.apache.catalina.core.ApplicationHttpRequest@406f62ed,java.lang.Exception,{exception=java.lang.Exception, org.springframework.validation.BindingResult.exception=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2022-03-15 18:49:13,421 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method handleError,with result error404
+2022-03-15 18:49:13,440 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method handleError,with args=[org.apache.catalina.core.ApplicationHttpRequest@1956408a,java.lang.Exception,{exception=java.lang.Exception, org.springframework.validation.BindingResult.exception=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2022-03-15 18:49:13,441 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method handleError,with result error404
+2022-03-15 18:49:13,550 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method handleError,with args=[org.apache.catalina.core.ApplicationHttpRequest@6c552679,java.lang.Exception,{exception=java.lang.Exception, org.springframework.validation.BindingResult.exception=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2022-03-15 18:49:13,551 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method handleError,with result error404
+2022-03-15 18:49:27,874 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method handleError,with args=[org.apache.catalina.core.ApplicationHttpRequest@37dbb255,java.lang.Exception,{exception=java.lang.Exception, org.springframework.validation.BindingResult.exception=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2022-03-15 18:49:27,874 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method handleError,with result error404
+2022-03-15 18:49:28,130 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method handleError,with args=[org.apache.catalina.core.ApplicationHttpRequest@74d808b0,java.lang.Exception,{exception=java.lang.Exception, org.springframework.validation.BindingResult.exception=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2022-03-15 18:49:28,139 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method handleError,with result error404
+2022-03-15 18:49:28,141 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method handleError,with args=[org.apache.catalina.core.ApplicationHttpRequest@6468cb40,java.lang.Exception,{exception=java.lang.Exception, org.springframework.validation.BindingResult.exception=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2022-03-15 18:49:28,142 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method handleError,with result error404
+2022-03-15 18:49:28,139 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method handleError,with args=[org.apache.catalina.core.ApplicationHttpRequest@686abf2b,java.lang.Exception,{exception=java.lang.Exception, org.springframework.validation.BindingResult.exception=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2022-03-15 18:49:28,144 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method handleError,with result error404
+2022-03-15 18:49:28,231 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method handleError,with args=[org.apache.catalina.core.ApplicationHttpRequest@b07f163,java.lang.Exception,{exception=java.lang.Exception, org.springframework.validation.BindingResult.exception=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2022-03-15 18:49:28,231 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method handleError,with result error404
+2022-03-15 18:49:30,341 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:49:30,342 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:49:32,956 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:49:32,963 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:49:33,357 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method handleError,with args=[org.apache.catalina.core.ApplicationHttpRequest@681ca825,java.lang.Exception,{exception=java.lang.Exception, org.springframework.validation.BindingResult.exception=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2022-03-15 18:49:33,358 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method handleError,with result error404
+2022-03-15 18:49:33,541 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method handleError,with args=[org.apache.catalina.core.ApplicationHttpRequest@53188e9f,java.lang.Exception,{exception=java.lang.Exception, org.springframework.validation.BindingResult.exception=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2022-03-15 18:49:33,542 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method handleError,with result error404
+2022-03-15 18:49:33,567 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method handleError,with args=[org.apache.catalina.core.ApplicationHttpRequest@6a679cee,java.lang.Exception,{exception=java.lang.Exception, org.springframework.validation.BindingResult.exception=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2022-03-15 18:49:33,567 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method handleError,with result error404
+2022-03-15 18:49:33,581 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method handleError,with args=[org.apache.catalina.core.ApplicationHttpRequest@1b92549e,java.lang.Exception,{exception=java.lang.Exception, org.springframework.validation.BindingResult.exception=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2022-03-15 18:49:33,582 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method handleError,with result error404
+2022-03-15 18:49:33,592 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method handleError,with args=[org.apache.catalina.core.ApplicationHttpRequest@2d682c42,java.lang.Exception,{exception=java.lang.Exception, org.springframework.validation.BindingResult.exception=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2022-03-15 18:49:33,592 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method handleError,with result error404
+2022-03-15 18:49:33,600 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method handleError,with args=[org.apache.catalina.core.ApplicationHttpRequest@1f6b7be3,java.lang.Exception,{exception=java.lang.Exception, org.springframework.validation.BindingResult.exception=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2022-03-15 18:49:33,600 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method handleError,with result error404
+2022-03-15 18:49:33,818 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method handleError,with args=[org.apache.catalina.core.ApplicationHttpRequest@21f5d31d,java.lang.Exception,{exception=java.lang.Exception, org.springframework.validation.BindingResult.exception=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2022-03-15 18:49:33,820 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method handleError,with result error404
+2022-03-15 18:49:44,297 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:49:44,299 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:50:43,632 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:50:43,648 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:50:51,866 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:50:51,866 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:50:52,196 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method handleError,with args=[org.apache.catalina.core.ApplicationHttpRequest@7c3011e5,java.lang.Exception,{exception=java.lang.Exception, org.springframework.validation.BindingResult.exception=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2022-03-15 18:50:52,210 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method handleError,with args=[org.apache.catalina.core.ApplicationHttpRequest@1f7fde9b,java.lang.Exception,{exception=java.lang.Exception, org.springframework.validation.BindingResult.exception=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2022-03-15 18:50:52,215 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method handleError,with result error404
+2022-03-15 18:50:52,215 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method handleError,with result error404
+2022-03-15 18:50:52,231 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method handleError,with args=[org.apache.catalina.core.ApplicationHttpRequest@5d7ff9b7,java.lang.Exception,{exception=java.lang.Exception, org.springframework.validation.BindingResult.exception=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2022-03-15 18:50:52,232 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method handleError,with result error404
+2022-03-15 18:50:52,270 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method handleError,with args=[org.apache.catalina.core.ApplicationHttpRequest@31772274,java.lang.Exception,{exception=java.lang.Exception, org.springframework.validation.BindingResult.exception=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2022-03-15 18:50:52,270 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method handleError,with result error404
+2022-03-15 18:50:52,510 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method handleError,with args=[org.apache.catalina.core.ApplicationHttpRequest@1a51f6b3,java.lang.Exception,{exception=java.lang.Exception, org.springframework.validation.BindingResult.exception=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2022-03-15 18:50:52,512 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method handleError,with result error404
+2022-03-15 18:50:52,536 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method handleError,with args=[org.apache.catalina.core.ApplicationHttpRequest@bd2643c,java.lang.Exception,{exception=java.lang.Exception, org.springframework.validation.BindingResult.exception=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2022-03-15 18:50:52,537 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method handleError,with result error404
+2022-03-15 18:50:52,688 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method handleError,with args=[org.apache.catalina.core.ApplicationHttpRequest@23076807,java.lang.Exception,{exception=java.lang.Exception, org.springframework.validation.BindingResult.exception=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2022-03-15 18:50:52,688 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method handleError,with result error404
+2022-03-15 18:54:25,572 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:54:25,586 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:54:26,345 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method handleError,with args=[org.apache.catalina.core.ApplicationHttpRequest@2fd09458,java.lang.Exception,{exception=java.lang.Exception, org.springframework.validation.BindingResult.exception=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2022-03-15 18:54:26,364 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method handleError,with result error
+2022-03-15 18:54:30,200 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLink,with args=[]
+2022-03-15 18:54:30,201 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLink,with result redirect:/
+2022-03-15 18:54:30,240 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:54:30,241 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:54:30,261 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method handleError,with args=[org.apache.catalina.core.ApplicationHttpRequest@1da0926d,java.lang.Exception,{exception=java.lang.Exception, org.springframework.validation.BindingResult.exception=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2022-03-15 18:54:30,261 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method handleError,with result error
+2022-03-15 18:57:21,599 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 18:57:21,612 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 18:57:22,247 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method handleError,with args=[org.apache.catalina.core.ApplicationHttpRequest@4273a876,java.lang.Exception,{exception=java.lang.Exception, org.springframework.validation.BindingResult.exception=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2022-03-15 18:57:22,258 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method handleError,with result error
+2022-03-15 19:01:08,974 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 19:01:08,987 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 19:01:13,374 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 19:01:13,374 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result l1
+2022-03-15 19:01:17,646 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 19:01:17,646 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result l1
+2022-03-15 19:01:21,044 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 19:01:21,045 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result l1
+2022-03-15 19:01:24,425 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 19:01:24,425 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result l1
+2022-03-15 19:01:26,704 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 19:01:26,705 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result l1
+2022-03-15 19:01:30,590 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 19:01:30,590 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result l1
+2022-03-15 19:01:31,778 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 19:01:31,779 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result l1
+2022-03-15 19:01:33,543 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 19:01:33,544 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result l1
+2022-03-15 19:01:35,963 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 19:01:35,964 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result l1
+2022-03-15 19:01:39,482 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 19:01:39,483 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result l1
+2022-03-15 19:01:42,926 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method showCatalog,with args=[]
+2022-03-15 19:01:42,927 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method showCatalog,with result catalogPage
+2022-03-15 19:01:50,159 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLink,with args=[]
+2022-03-15 19:01:50,159 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLink,with result redirect:/
+2022-03-15 19:01:50,197 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 19:01:50,197 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 19:04:37,992 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 19:04:38,007 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 19:04:48,835 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 19:04:48,836 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 19:04:51,523 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 19:04:51,524 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result l1
+2022-03-15 19:04:53,655 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method showCatalog,with args=[]
+2022-03-15 19:04:53,656 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method showCatalog,with result catalogPage
+2022-03-15 19:04:56,067 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method aboutMe,with args=[]
+2022-03-15 19:04:56,068 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method aboutMe,with result personalPage
+2022-03-15 19:04:58,003 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method showContactInfo,with args=[]
+2022-03-15 19:04:58,004 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method showContactInfo,with result contactsPage
+2022-03-15 19:04:59,960 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method showCatalog,with args=[]
+2022-03-15 19:04:59,961 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method showCatalog,with result catalogPage
+2022-03-15 19:05:01,765 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLink,with args=[]
+2022-03-15 19:05:01,768 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLink,with result redirect:/
+2022-03-15 19:05:01,806 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 19:05:01,807 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 19:05:03,943 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 19:05:03,944 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result l1
+2022-03-15 19:05:05,285 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method showCatalog,with args=[]
+2022-03-15 19:05:05,286 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method showCatalog,with result catalogPage
+2022-03-15 19:05:07,722 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLink,with args=[]
+2022-03-15 19:05:07,722 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLink,with result redirect:/
+2022-03-15 19:05:07,761 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 19:05:07,762 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 19:05:09,226 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 19:05:09,227 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result l1
+2022-03-15 19:05:12,670 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method showContactInfo,with args=[]
+2022-03-15 19:05:12,671 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method showContactInfo,with result contactsPage
+2022-03-15 19:05:15,846 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLink,with args=[]
+2022-03-15 19:05:15,847 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLink,with result redirect:/
+2022-03-15 19:05:15,865 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 19:05:15,866 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 19:05:17,214 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 19:05:17,215 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result l1
+2022-03-15 19:05:33,460 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 19:05:33,460 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result l1
+2022-03-15 19:05:37,034 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 19:05:37,035 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result l1
+2022-03-15 19:05:38,436 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 19:05:38,437 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result l1
+2022-03-15 19:16:20,904 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 19:16:20,919 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 19:16:21,772 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method handleError,with args=[org.apache.catalina.core.ApplicationHttpRequest@d183d18,java.lang.Exception,{exception=java.lang.Exception, org.springframework.validation.BindingResult.exception=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2022-03-15 19:16:21,781 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method handleError,with result error404
+2022-03-15 19:16:21,800 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method handleError,with args=[org.apache.catalina.core.ApplicationHttpRequest@6d70a5d8,java.lang.Exception,{exception=java.lang.Exception, org.springframework.validation.BindingResult.exception=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2022-03-15 19:16:21,802 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method handleError,with result error404
+2022-03-15 19:16:22,023 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method handleError,with args=[org.apache.catalina.core.ApplicationHttpRequest@2dc093cf,java.lang.Exception,{exception=java.lang.Exception, org.springframework.validation.BindingResult.exception=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2022-03-15 19:16:22,023 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method handleError,with result error404
+2022-03-15 19:16:30,778 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 19:16:30,779 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result l1
+2022-03-15 19:16:31,085 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method handleError,with args=[org.apache.catalina.core.ApplicationHttpRequest@d88b5aa,java.lang.Exception,{exception=java.lang.Exception, org.springframework.validation.BindingResult.exception=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2022-03-15 19:16:31,086 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method handleError,with result error404
+2022-03-15 19:16:31,099 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method handleError,with args=[org.apache.catalina.core.ApplicationHttpRequest@da95103,java.lang.Exception,{exception=java.lang.Exception, org.springframework.validation.BindingResult.exception=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2022-03-15 19:16:31,099 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method handleError,with result error404
+2022-03-15 19:16:31,124 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method handleError,with args=[org.apache.catalina.core.ApplicationHttpRequest@3e950807,java.lang.Exception,{exception=java.lang.Exception, org.springframework.validation.BindingResult.exception=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2022-03-15 19:16:31,126 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method handleError,with result error404
+2022-03-15 19:16:32,973 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 19:16:32,973 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result l1
+2022-03-15 19:16:33,151 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method handleError,with args=[org.apache.catalina.core.ApplicationHttpRequest@5d7ff9b7,java.lang.Exception,{exception=java.lang.Exception, org.springframework.validation.BindingResult.exception=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2022-03-15 19:16:33,151 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method handleError,with result error404
+2022-03-15 19:16:33,255 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method handleError,with args=[org.apache.catalina.core.ApplicationHttpRequest@1f3a4f1,java.lang.Exception,{exception=java.lang.Exception, org.springframework.validation.BindingResult.exception=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2022-03-15 19:16:33,255 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method handleError,with result error404
+2022-03-15 19:16:33,267 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method handleError,with args=[org.apache.catalina.core.ApplicationHttpRequest@f344abf,java.lang.Exception,{exception=java.lang.Exception, org.springframework.validation.BindingResult.exception=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2022-03-15 19:16:33,268 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method handleError,with result error404
+2022-03-15 19:16:34,983 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 19:16:34,984 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result l1
+2022-03-15 19:16:35,162 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method handleError,with args=[org.apache.catalina.core.ApplicationHttpRequest@1a51f6b3,java.lang.Exception,{exception=java.lang.Exception, org.springframework.validation.BindingResult.exception=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2022-03-15 19:16:35,163 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method handleError,with result error404
+2022-03-15 19:16:35,171 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method handleError,with args=[org.apache.catalina.core.ApplicationHttpRequest@5cd29fa,java.lang.Exception,{exception=java.lang.Exception, org.springframework.validation.BindingResult.exception=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2022-03-15 19:16:35,176 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method handleError,with result error404
+2022-03-15 19:16:35,196 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method handleError,with args=[org.apache.catalina.core.ApplicationHttpRequest@3e65459c,java.lang.Exception,{exception=java.lang.Exception, org.springframework.validation.BindingResult.exception=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2022-03-15 19:16:35,199 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method handleError,with result error404
+2022-03-15 19:18:09,091 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 19:18:09,125 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 19:21:04,092 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 19:21:04,108 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 19:21:10,085 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 19:21:10,086 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result l1
+2022-03-15 19:21:12,244 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 19:21:12,244 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result l1
+2022-03-15 19:21:15,223 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 19:21:15,223 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result l1
+2022-03-15 19:21:17,141 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 19:21:17,141 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result l1
+2022-03-15 19:21:18,295 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 19:21:18,296 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result l1
+2022-03-15 19:21:19,424 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 19:21:19,425 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result l1
+2022-03-15 19:21:20,494 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 19:21:20,494 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result l1
+2022-03-15 19:21:21,421 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 19:21:21,421 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result l1
+2022-03-15 19:21:22,763 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 19:21:22,764 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result l1
+2022-03-15 19:21:24,026 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 19:21:24,027 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result l1
+2022-03-15 19:21:25,641 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 19:21:25,641 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result l1
+2022-03-15 19:21:31,615 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 19:21:31,615 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result l1
+2022-03-15 19:24:18,283 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 19:24:18,299 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 19:24:30,610 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 19:24:30,611 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result l1
+2022-03-15 19:24:39,455 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 19:24:39,456 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result l1
+2022-03-15 19:24:42,605 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 19:24:42,605 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result l1
+2022-03-15 19:24:52,008 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 19:24:52,009 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result l1
+2022-03-15 19:25:48,582 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 19:25:48,597 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 19:28:07,460 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 19:28:07,476 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 19:29:58,009 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 19:29:58,023 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 19:30:05,138 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 19:30:05,139 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 19:30:11,058 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 19:30:11,058 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 19:58:33,353 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 19:58:33,390 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 19:58:37,959 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 19:58:37,960 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 20:00:40,874 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 20:00:40,888 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 20:01:05,072 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 20:01:05,072 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-15 20:01:18,940 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 20:01:18,940 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result l1
+2022-03-15 20:01:22,903 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 20:01:22,903 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result l1
+2022-03-15 20:01:26,039 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 20:01:26,039 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result l1
+2022-03-15 20:01:27,493 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 20:01:27,494 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result l1
+2022-03-15 20:01:32,024 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePageLang,with args=[]
+2022-03-15 20:01:32,025 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePageLang,with result l1
+2022-03-15 20:02:24,944 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-15 20:02:24,945 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1

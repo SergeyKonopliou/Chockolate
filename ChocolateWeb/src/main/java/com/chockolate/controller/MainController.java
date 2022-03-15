@@ -13,6 +13,11 @@ public class MainController {
 		return "l1";
 	}
 	
+	@RequestMapping("/lang")
+	public String welcomePageLang() {
+		return "l1";
+	}
+	
 	@RequestMapping(value = "/mainPage")
 	public String welcomePageLink() {
 		return "redirect:/";

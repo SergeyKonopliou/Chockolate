@@ -120,6 +120,9 @@ body {
 }
 
 .menu_list li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     list-style: none;
     margin: 0px 0px 0px 15px;
 }
