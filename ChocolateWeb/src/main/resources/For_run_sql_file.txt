@@ -1,0 +1,4 @@
+In MySQL Command Line:
+ mysql> source [path_to_file]\[name_file].sql
+
+Example: source d:\folder\databasecreate.sql

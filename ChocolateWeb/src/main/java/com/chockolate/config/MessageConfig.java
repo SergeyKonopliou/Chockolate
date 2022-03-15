@@ -1,7 +1,5 @@
 package com.chockolate.config;
 
-import java.util.Locale;
-
 import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -22,6 +20,7 @@ public class MessageConfig implements WebMvcConfigurer {
 	public MessageSource messageSource() {
 		ResourceBundleMessageSource messageSource = new ResourceBundleMessageSource();
 		messageSource.setBasenames("i18n/rez");
+		messageSource.setCacheSeconds(3600);
 		messageSource.setDefaultEncoding("UTF-8");
 		return messageSource;
 	}
@@ -36,7 +35,6 @@ public class MessageConfig implements WebMvcConfigurer {
 	@Bean
 	public LocaleResolver localeResolver() {
 		SessionLocaleResolver slr = new SessionLocaleResolver();
-		slr.setDefaultLocale(Locale.US);
 		slr.setLocaleAttributeName("session.current.locale");
 		slr.setTimeZoneAttributeName("session.current.timezone");
 		return slr;
