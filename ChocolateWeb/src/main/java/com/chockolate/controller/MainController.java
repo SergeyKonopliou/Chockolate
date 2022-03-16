@@ -1,20 +1,27 @@
 package com.chockolate.controller;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import com.chockolate.exception.ServiceException;
 import com.chockolate.model.Product;
-import com.chockolate.repository.ProductRepository;
+import com.chockolate.service.impl.ProductServiceImpl;
 
 
 @Controller
 public class MainController {
 	
 	@Autowired
-	private ProductRepository productRepository;
+	@Qualifier("productServiceImpl")
+	private ProductServiceImpl service;
 
 	@RequestMapping(value = {"/","/main"})
 	public String welcomePage() {
@@ -43,18 +50,27 @@ public class MainController {
 	
 	@GetMapping("/catalog")
 	public String showCatalog(Model model) {
-		Product product = new Product();
-		product.setName("apple");
-		product.setDescription("sgsdlfgher r hgrel erul thelrh gelghelr ghkewr ge");
-		product.setPrice(12.12);
-		Product product2 = new Product();
-		product2.setName("ball");
-		product2.setDescription("rty rturtur yu t yurt uy tyi ty itryityuytuytuyu");
-		product2.setPrice(112.1232);
-		productRepository.save(product);
-		productRepository.save(product2);
-		model.addAttribute("prod",product);
+		List<Product> products = new ArrayList<>();
+		try {
+			products = service.loadAll();
+		} catch (ServiceException e) {
+			return "error";
+		}
+		model.addAttribute("prod",products);
 		return "catalogPage";
 	}
 	
+	
+	@GetMapping("/choc/{id}")
+	public String showPersonalProductPage(@PathVariable String id,Model model) {
+		Product product = new Product();
+		
+		try {
+			product = service.loadFindProductById(Long.parseLong(id));
+			model.addAttribute("product", product);
+		} catch (ServiceException e) {
+			return "error";
+		}
+		return "personalProductPage";
+	}
 }
