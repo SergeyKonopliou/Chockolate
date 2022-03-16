@@ -30,10 +30,12 @@ public class ProductServiceImpl implements ProductService {
 			product.setName("apple");
 			product.setDescription("sgsdlfgher r hgrel erul thelrh gelghelr ghkewr ge");
 			product.setPrice(12.12);
+			product.setImage("images/productImg/apple.jpg");
 			Product product2 = new Product();
 			product2.setName("ball");
 			product2.setDescription("rty rturtur yu t yurt uy tyi ty itryityuytuytuyu");
 			product2.setPrice(112.1232);
+			product2.setImage("images/productImg/ball.jpg");
 			repository.save(product);
 			repository.save(product2);
 			products = repository.findAll();

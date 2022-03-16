@@ -28,10 +28,10 @@
                     </div>
                     <nav class="menu_body">
                         <ul class="menu_list">
-                            <li><a href="mainPage" class="menu_link" th:utext="#{label.mainLink}"></a></li>
-							<li><a href="catalog" class="menu_link" th:utext="#{label.catalogLink}"></a></li>
-							<li><a href="contacts" class="menu_link" th:utext="#{label.contactsLink}"></a></li>
-							<li><a href="about-me" class="menu_link" th:utext="#{label.aboutmeLink}"></a></li>
+                            <li><a th:href="@{/}" class="menu_link" th:utext="#{label.mainLink}"></a></li>
+							<li><a th:href="@{/catalog}" class="menu_link" th:utext="#{label.catalogLink}"></a></li>
+							<li><a th:href="@{/contacts}" class="menu_link" th:utext="#{label.contactsLink}"></a></li>
+							<li><a th:href="@{/about-me}" class="menu_link" th:utext="#{label.aboutmeLink}"></a></li>
                         </ul>
                     </nav>
                 </div>
@@ -45,18 +45,17 @@
                 <div class="page">
                 
                  <div class="page_catalog">
-						
 						<div class="table-responsive">
 							<table class="table align-middle">
     					<tr>
+    						<th>Image</th>
        						<th>Name</th>
        						<th>Price</th>
     					</tr>
 						<th:block th:each="prod : ${prod}">
         					<tr>
-            					<!-- <td><a href="choc/{"${prod}"}?product="${prod}"" th:text="${prod.name}"></a></td> -->
-            					<!-- <td><a href="#" th:href="@{/choc/{${prod.id}?(id=${prod.id})}" th:text="${prod.name}"></a></td> -->
-            					<td><a href="#" th:href="@{/choc/{linkTitle}(linkTitle=${prod.id})}" th:text="${prod.name}"></a></td>
+            					<td><img src="#" th:src="@{{linkImg}(linkImg=${prod.image})}" style="width:100px; height:100px;"></td>
+            					<td><a href="#" th:href="@{/info/{linkTitle}(linkTitle=${prod.id})}" th:text="${prod.name}"></a></td>
             					<td th:text="${prod.price}"></td>
         					</tr>
     					</th:block>
