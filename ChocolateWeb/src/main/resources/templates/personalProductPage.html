@@ -16,34 +16,36 @@
             <div class="container">
                 <div class="header_row">
                     <a href="" class="header_logo">
-                        <img src="images/logo1.jpg" alt="">
+                    	<img src="#" th:src="@{/images/logo1.jpg}">           
                     </a>
                     <div class="menu_burger">
                         <span></span>
                     </div>
                     <nav class="menu_body">
                         <ul class="menu_list">
-                            <li><a href="mainPage" class="menu_link" th:utext="#{label.mainLink}"></a></li>
-							<li><a href="catalog" class="menu_link" th:utext="#{label.catalogLink}"></a></li>
-							<li><a href="contacts" class="menu_link" th:utext="#{label.contactsLink}"></a></li>
-							<li><a href="about-me" class="menu_link" th:utext="#{label.aboutmeLink}"></a></li>
+                            <li><a th:href="@{/}" class="menu_link" th:utext="#{label.mainLink}"></a></li>
+							<li><a th:href="@{/catalog}" class="menu_link" th:utext="#{label.catalogLink}"></a></li>
+							<li><a th:href="@{/contacts}" class="menu_link" th:utext="#{label.contactsLink}"></a></li>
+							<li><a th:href="@{/about-me}" class="menu_link" th:utext="#{label.aboutmeLink}"></a></li>
                         </ul>
                     </nav>
                 </div>
             </div>
         </header>
 
-        <main style="background-image: url(images/fon_personal_page.jpg);">
+        <main style="background-image: url(@{/}images/fon_personal_page.jpg);"> <!-- не работает!!! -->
             <div class="container">
 
                 <h1 class="main_title">Информация о продукте</h1>
                 <div class="page">
                 
                  <div class="page_catalog">
-						
-            		<div th:text="${product.name}"></div>
-            		<div th:text="${product.price}"></div>
-            		<div th:text="${product.description}"></div>
+				
+					<!-- адрес изображения тоже учитывается от стартового http://localhost:8080/main -->
+					<div><img src="#" th:src="@{/{linkImg}(linkImg=${product.image})}" style="width:400px; height:400px;"></div>	
+            		<div th:text="${product.name}">Название: </div>
+            		<div th:text="${product.price}">Цена: </div>
+            		<div th:text="${product.description}">Описание: </div>
         			
 						
 						
@@ -81,8 +83,8 @@
 					</div>
                     
                     <div class="footer_image">
-                        <img src="images/mms2.gif" alt="">
-                        <img src="images/mms1.gif" alt="">
+                    	<img src="#" th:src="@{/images/mms1.gif}">
+                    	<img src="#" th:src="@{/images/mms2.gif}">
                     </div>
                 </div>
             </div>

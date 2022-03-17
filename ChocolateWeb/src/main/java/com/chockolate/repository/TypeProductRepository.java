@@ -4,9 +4,10 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 import com.chockolate.model.Product;
+import com.chockolate.model.TypeProduct;
 
 @Repository
-public interface ProductRepository extends JpaRepository<Product, Long>{
+public interface TypeProductRepository extends JpaRepository<TypeProduct, Long>{
 
 	public Product findProductById(Long id);
 

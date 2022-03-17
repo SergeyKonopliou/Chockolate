@@ -24,15 +24,10 @@
 					</div>
 					<nav class="menu_body">
 						<ul class="menu_list">
-							<li><a href="mainPage" class="menu_link"
-								th:utext="#{label.mainLink}"></a></li>
-							<li><a href="catalog" class="menu_link"
-								th:utext="#{label.catalogLink}"></a></li>
-							<li><a href="contacts" class="menu_link"
-								th:utext="#{label.contactsLink}"></a></li>
-							<li><a href="about-me" class="menu_link"
-								th:utext="#{label.aboutmeLink}"></a></li>
-							<li>
+							<li><a th:href="@{/}" class="menu_link" th:utext="#{label.mainLink}"></a></li>
+							<li><a th:href="@{/catalog}" class="menu_link" th:utext="#{label.catalogLink}"></a></li>
+							<li><a th:href="@{/contacts}" class="menu_link" th:utext="#{label.contactsLink}"></a></li>
+							<li><a th:href="@{/about-me}" class="menu_link" th:utext="#{label.aboutmeLink}"></a></li>
 								<div>
 									<a th:href="@{lang(lang=en)}"><img src="images/united_kingdom.png"></a>
 									<a th:href="@{lang(lang=ru)}"><img src="images/russia.png"></a>

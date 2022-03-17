@@ -35,7 +35,7 @@ public class MainController {
 	
 	@RequestMapping(value = "/mainPage")
 	public String welcomePageLink() {
-		return "redirect:/";
+		return "redirect:/main";
 	}
 	
 	@GetMapping("/about-me")
@@ -61,7 +61,7 @@ public class MainController {
 	}
 	
 	
-	@GetMapping("/choc/{id}")
+	@GetMapping("/info/{id}")
 	public String showPersonalProductPage(@PathVariable String id,Model model) {
 		Product product = new Product();
 		
