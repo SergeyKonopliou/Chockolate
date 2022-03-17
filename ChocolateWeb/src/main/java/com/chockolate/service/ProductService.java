@@ -10,7 +10,7 @@ public interface ProductService {
 
 	public List<Product> loadAll() throws ServiceException;
 	
-	public List<Product> loadFindProductByName(String name) throws ServiceException;
+	public List<Product> loadProductByName(String name) throws ServiceException;
 	
 	public void add(Product object) throws ServiceException;
 	

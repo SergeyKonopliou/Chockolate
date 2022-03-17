@@ -133,6 +133,14 @@ body {
     font-size: 18px;
     text-decoration: none;
 }
+.lang_link{
+	margin-left: 50px;
+}
+.brend{
+	z-index: 3;
+	font-size: 28px;
+	color: orange;
+	}
 
 @media (max-width:767px) {
 
@@ -248,7 +256,9 @@ body {
     .menu_link {
         font-size: 24px;
     }
-
+	.lang_link{
+		margin-left:0px;
+	}
 }
 
 
@@ -256,7 +266,7 @@ body {
 
 
 main {
-    /*высота header_row(нашей шапки)=80pxбпоэтому для main сделаем отступ побольше,чтобы heder не закрывал содержимое main*/
+    /*высота header_row(нашей шапки)=80px поэтому для main сделаем отступ побольше,чтобы heder не закрывал содержимое main*/
     padding: 100px 20px;
 
     /*    чтобы footer был всегда прибит к низу страницы*/

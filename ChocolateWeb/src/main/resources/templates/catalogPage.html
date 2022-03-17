@@ -12,6 +12,7 @@
 	rel="stylesheet"
 	integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
 	crossorigin="anonymous">
+<link rel="icon" type="image/x-icon" th:href="@{/images/icon.jpg}">
 <title th:utext="#{label.catalogLink}"></title>
 </head>
 
@@ -73,26 +74,33 @@
 
 						<div class="page_catalog">
 							<div class="table-responsive">
-								<table class="table align-middle">
-									<tr>
-										<th>View</th>
-										<th>Name</th>
-										<th>Price</th>
-										<th>Type</th>
-									</tr>
-									<th:block th:each="prod : ${prod}">
+
+								<div th:if="${not findProductFlag}">
+									<table class="table align-middle">
 										<tr>
-											<td><img src="#"
-												th:src="@{{linkImg}(linkImg=${prod.image})}"
-												style="width: 100px; height: 100px;"></td>
-											<td><a href="#"
-												th:href="@{/info/{linkTitle}(linkTitle=${prod.id})}"
-												th:text="${prod.name}"></a></td>
-											<td th:text="${prod.price}"></td>
-											<td th:text="${prod.typeProduct.name}"></td>
+											<th>View</th>
+											<th>Name</th>
+											<th>Price</th>
+											<th>Type</th>
 										</tr>
-									</th:block>
-								</table>
+										<th:block th:each="prod : ${prod}">
+											<tr>
+												<td><img src="#"
+													th:src="@{{linkImg}(linkImg=${prod.image})}"
+													style="width: 100px; height: 100px;"></td>
+												<td><a href="#"
+													th:href="@{/info/{linkTitle}(linkTitle=${prod.id})}"
+													th:text="${prod.name}"></a></td>
+												<td th:text="${prod.price}"></td>
+												<td th:text="${prod.typeProduct.name}"></td>
+											</tr>
+										</th:block>
+									</table>
+								</div>
+
+								<div th:if="${findProductFlag}">
+									<p>Ничего не найдено</p>
+								</div>
 							</div>
 						</div>
 					</div>

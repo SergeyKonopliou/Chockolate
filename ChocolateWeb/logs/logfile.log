@@ -1761,3 +1761,71 @@
 2022-03-17 19:00:06,071 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
 2022-03-17 19:00:08,769 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method showCatalog,with args=[{}]
 2022-03-17 19:00:09,606 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method showCatalog,with result catalogPage
+2022-03-17 20:27:57,220 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-17 20:27:57,270 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-17 20:28:02,655 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method showCatalog,with args=[,{}]
+2022-03-17 20:28:06,861 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method showCatalog,with result catalogPage
+2022-03-17 20:34:26,544 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-17 20:34:26,626 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-17 20:34:29,300 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method showCatalog,with args=[,{}]
+2022-03-17 20:34:29,834 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method showCatalog,with result catalogPage
+2022-03-17 20:34:40,443 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method showCatalog,with args=[ball,{}]
+2022-03-17 20:34:40,676 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method showCatalog,with result catalogPage
+2022-03-17 20:36:12,883 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method showCatalog,with args=[ball,{}]
+2022-03-17 20:36:13,185 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method showCatalog,with result catalogPage
+2022-03-17 20:36:27,021 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-17 20:36:27,021 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-17 20:36:29,468 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method showCatalog,with args=[,{}]
+2022-03-17 20:36:29,724 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method showCatalog,with result catalogPage
+2022-03-17 20:39:01,831 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method showCatalog,with args=[,{}]
+2022-03-17 20:39:02,340 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method showCatalog,with result catalogPage
+2022-03-17 20:39:09,419 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method showCatalog,with args=[ball,{}]
+2022-03-17 20:39:09,483 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method showCatalog,with result catalogPage
+2022-03-17 20:39:16,293 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method showCatalog,with args=[apple,{}]
+2022-03-17 20:39:16,298 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method showCatalog,with result catalogPage
+2022-03-17 20:39:19,624 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method showCatalog,with args=[sdgsd,{}]
+2022-03-17 20:39:19,627 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method showCatalog,with result catalogPage
+2022-03-17 20:39:26,995 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method showCatalog,with args=[pen,{}]
+2022-03-17 20:39:26,999 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method showCatalog,with result catalogPage
+2022-03-17 20:39:33,454 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-17 20:39:33,455 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-17 21:19:35,457 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-17 21:19:35,503 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-17 21:19:36,246 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method handleError,with args=[org.apache.catalina.core.ApplicationHttpRequest@2a725732,java.lang.Exception,{exception=java.lang.Exception, org.springframework.validation.BindingResult.exception=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2022-03-17 21:19:36,267 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method handleError,with result error
+2022-03-17 21:23:03,784 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-17 21:23:03,833 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-17 21:23:04,426 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method handleError,with args=[org.apache.catalina.core.ApplicationHttpRequest@6fc1bda4,java.lang.Exception,{exception=java.lang.Exception, org.springframework.validation.BindingResult.exception=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2022-03-17 21:23:04,432 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method handleError,with result error
+2022-03-17 21:25:51,690 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-17 21:25:51,714 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-17 21:29:49,104 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-17 21:29:49,117 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-17 21:45:58,205 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-17 21:45:58,222 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-17 21:48:35,028 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-17 21:48:35,043 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-17 21:49:01,395 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-17 21:49:01,395 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-17 21:50:28,558 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-17 21:50:28,559 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-17 21:52:23,422 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-17 21:52:23,438 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-17 21:54:03,044 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-17 21:54:03,063 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-17 21:58:19,966 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-17 21:58:19,982 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-17 21:58:55,653 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-17 21:58:55,654 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-17 21:59:26,273 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-17 21:59:26,273 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-17 21:59:44,992 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-17 21:59:44,993 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-17 22:00:20,528 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-17 22:00:20,529 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-17 22:00:33,147 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-17 22:00:33,148 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-17 22:01:08,172 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-17 22:01:08,173 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1
+2022-03-17 22:34:32,122 [INFO ] LoggableAspect.java:beforeMethodExecuting:35 - Before method welcomePage,with args=[]
+2022-03-17 22:34:32,157 [INFO ] LoggableAspect.java:afterMethodExecuting:41 - After method welcomePage,with result l1

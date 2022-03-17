@@ -7,6 +7,7 @@
 <meta name="viewport"
 	content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scale=0">
 <link rel="stylesheet" type="text/css" th:href="@{/css/l1.css}" />
+<link rel="icon" type="image/x-icon" th:href="@{/images/icon.jpg}">
 <title th:utext="#{label.mainLink}"></title>
 </head>
 
@@ -22,13 +23,14 @@
 					<div class="menu_burger">
 						<span></span>
 					</div>
+					<div class="brend"><img alt="" src="images/logotip.png"></div>
 					<nav class="menu_body">
 						<ul class="menu_list">
 							<li><a th:href="@{/}" class="menu_link" th:utext="#{label.mainLink}"></a></li>
 							<li><a th:href="@{/catalog}" class="menu_link" th:utext="#{label.catalogLink}"></a></li>
 							<li><a th:href="@{/contacts}" class="menu_link" th:utext="#{label.contactsLink}"></a></li>
 							<li><a th:href="@{/about-me}" class="menu_link" th:utext="#{label.aboutmeLink}"></a></li>
-								<div>
+								<div class="lang_link">
 									<a th:href="@{lang(lang=en)}"><img src="images/united_kingdom.png"></a>
 									<a th:href="@{lang(lang=ru)}"><img src="images/russia.png"></a>
 									<a th:href="@{lang(lang=de)}"><img src="images/germany.png"></a> 
@@ -46,12 +48,6 @@
 
 				<h1 class="main_title">Gallery</h1>
 				<div class="page">
-					<!--
-                    <div class="gallery" id="gallery">
-                        <img src="images/images_gallery_1.jpg" alt="picture" class="gallery_images">
-                        <div class="sign_gallery_picture" id="sign">Picture example #1</div>
-                    </div>
--->
 					<div class="gallery" id="gallery">
 						<img src="images/images_gallery_1.jpg" alt="picture"
 							class="gallery_images">

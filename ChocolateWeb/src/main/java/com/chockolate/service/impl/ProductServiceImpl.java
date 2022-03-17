@@ -81,9 +81,14 @@ public class ProductServiceImpl implements ProductService {
 	}
 
 	@Override
-	public List<Product> loadFindProductByName(String name) throws ServiceException {
-		// TODO Auto-generated method stub
-		return null;
+	public List<Product> loadProductByName(String name) throws ServiceException {
+		List<Product> products = new ArrayList<Product>();
+		try {
+			products = repository.findProductByName(name);
+		} catch (Exception e) {
+			throw new ServiceException("Problems with loading searching product from DB service method " + e.getMessage(), e);
+		}
+		return products;
 	}
 
 	@Override
