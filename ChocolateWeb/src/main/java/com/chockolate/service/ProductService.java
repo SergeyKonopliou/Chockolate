@@ -1,7 +1,6 @@
 package com.chockolate.service;
 
 import java.util.List;
-import java.util.Optional;
 
 import com.chockolate.exception.ServiceException;
 import com.chockolate.model.Product;
@@ -20,4 +19,5 @@ public interface ProductService {
 	public void update(Product product) throws ServiceException;
 
 	public Product loadFindProductById(Long id) throws ServiceException;
+	
 }

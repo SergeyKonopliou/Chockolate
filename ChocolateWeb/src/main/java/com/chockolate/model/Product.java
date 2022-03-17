@@ -19,8 +19,6 @@ public class Product {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Long id;
-	@NotEmpty
-	@Size(min = 1,max = 15)
 	private String name;
 	@Lob
 	private String description;

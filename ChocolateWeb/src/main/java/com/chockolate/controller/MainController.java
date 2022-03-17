@@ -50,7 +50,7 @@ public class MainController {
 	
 	@GetMapping("/catalog")
 	public String showCatalog(Model model) {
-		List<Product> products = new ArrayList<>();
+		List<Product> products = new ArrayList<>();	
 		try {
 			products = service.loadAll();
 		} catch (ServiceException e) {

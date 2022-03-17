@@ -3,118 +3,153 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scale=0">
-     <link rel="stylesheet" type="text/css" th:href="@{/css/l1.css}"/>
-     <link
+<meta charset="UTF-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scale=0">
+<link rel="stylesheet" type="text/css" th:href="@{/css/l1.css}" />
+<link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
 	rel="stylesheet"
 	integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
 	crossorigin="anonymous">
-    <title th:utext="#{label.catalogLink}"> </title>
+<title th:utext="#{label.catalogLink}"></title>
 </head>
 
 <body>
 
-    <div class="wrapper">
-        <header class="header">
-            <div class="container">
-                <div class="header_row">
-                    <a href="" class="header_logo">
-                        <img src="images/logo1.jpg" alt="">
-                    </a>
-                    <div class="menu_burger">
-                        <span></span>
-                    </div>
-                    <nav class="menu_body">
-                        <ul class="menu_list">
-                            <li><a th:href="@{/}" class="menu_link" th:utext="#{label.mainLink}"></a></li>
-							<li><a th:href="@{/catalog}" class="menu_link" th:utext="#{label.catalogLink}"></a></li>
-							<li><a th:href="@{/contacts}" class="menu_link" th:utext="#{label.contactsLink}"></a></li>
-							<li><a th:href="@{/about-me}" class="menu_link" th:utext="#{label.aboutmeLink}"></a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </header>
-
-        <main style="background-image: url(images/fon_personal_page.jpg);">
-            <div class="container">
-
-                <h1 class="main_title">Каталог</h1>
-                <div class="page">
-                
-                 <div class="page_catalog">
-						<div class="table-responsive">
-							<table class="table align-middle">
-    					<tr>
-    						<th></th>
-       						<th>Name</th>
-       						<th>Price</th>
-       						<th>Type</th>
-    					</tr>
-						<th:block th:each="prod : ${prod}">
-        					<tr>
-            					<td><img src="#" th:src="@{{linkImg}(linkImg=${prod.image})}" style="width:100px; height:100px;"></td>
-            					<td><a href="#" th:href="@{/info/{linkTitle}(linkTitle=${prod.id})}" th:text="${prod.name}"></a></td>
-            					<td th:text="${prod.price}"></td>
-            					<td th:text="${prod.typeProduct.name}"></td>
-        					</tr>
-    					</th:block>
-					</table>
-						</div>
-						
-						
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="header_row">
+					<a href="" class="header_logo"> <img src="images/logo1.jpg"
+						alt="">
+					</a>
+					<div class="menu_burger">
+						<span></span>
 					</div>
-                </div>
+					<nav class="menu_body">
+						<ul class="menu_list">
+							<li><a th:href="@{/}" class="menu_link"
+								th:utext="#{label.mainLink}"></a></li>
+							<li><a th:href="@{/catalog}" class="menu_link"
+								th:utext="#{label.catalogLink}"></a></li>
+							<li><a th:href="@{/contacts}" class="menu_link"
+								th:utext="#{label.contactsLink}"></a></li>
+							<li><a th:href="@{/about-me}" class="menu_link"
+								th:utext="#{label.aboutmeLink}"></a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<main style="background-image: url(images/fon_personal_page.jpg);">
+			<div class="container">
+
+				<h1 class="main_title">Каталог</h1>
+				<div class="page">
+
+					<div class="page_content">
+						<div class="options_bar">
+							<div class="search">
+								<form action="#" th:action="@{/catalog}" method="get"
+									name="searchForm">
+									<input type="text" name="search_product"
+										placeholder="Name product">
+									<button type="submit">Search</button>
+								</form>
+							</div>
+
+							<div class="list">
+								<select name="select" size="1"
+									onchange="window.location.href=this.options[this.selectedIndex].value">
+									<option selected value="choice">Select type</option>
+									<option value="#" th:value="@{/catalog?select=all}">all</option>
+									<option value="#" th:value="@{/catalog?select=circle}">circle</option>
+									<option value="#" th:value="@{/catalog?select=ball}">ball</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="page_catalog">
+							<div class="table-responsive">
+								<table class="table align-middle">
+									<tr>
+										<th>View</th>
+										<th>Name</th>
+										<th>Price</th>
+										<th>Type</th>
+									</tr>
+									<th:block th:each="prod : ${prod}">
+										<tr>
+											<td><img src="#"
+												th:src="@{{linkImg}(linkImg=${prod.image})}"
+												style="width: 100px; height: 100px;"></td>
+											<td><a href="#"
+												th:href="@{/info/{linkTitle}(linkTitle=${prod.id})}"
+												th:text="${prod.name}"></a></td>
+											<td th:text="${prod.price}"></td>
+											<td th:text="${prod.typeProduct.name}"></td>
+										</tr>
+									</th:block>
+								</table>
+							</div>
+						</div>
+					</div>
+
+				</div>
 
 
-            </div>
-        </main>
+			</div>
+		</main>
 
-        <footer>
-            <div class="container">
-                <div class="footer_container">
+		<footer>
+			<div class="container">
+				<div class="footer_container">
 
-                    <div class="footer_block_menu one_spoiler_open">
+					<div class="footer_block_menu one_spoiler_open">
 						<div class="footer_block_spoiler ">
-							<div class="footer_block_spoiler_menu_title" th:utext="#{label.contactsLink}"></div>
+							<div class="footer_block_spoiler_menu_title"
+								th:utext="#{label.contactsLink}"></div>
 							<div class="footer_block_spoiler_menu_text">
 								Velcome +234234234234 <br> Mail sdfgsdfgd@djffkgbkd.dfg
 							</div>
 						</div>
 						<div class="footer_block_spoiler">
-							<div class="footer_block_spoiler_menu_title" th:utext="#{label.SocialLink}"></div>
+							<div class="footer_block_spoiler_menu_title"
+								th:utext="#{label.SocialLink}"></div>
 							<div class="footer_block_spoiler_menu_text">
 								ВКонтакте ваопдваповдапдва <br> Instagram
 								dgfdjfkghdkjfgkdfg
 							</div>
 						</div>
 						<div class="footer_block_spoiler">
-							<div class="footer_block_spoiler_menu_title" th:utext="#{label.UnitedInfoLink}"></div>
+							<div class="footer_block_spoiler_menu_title"
+								th:utext="#{label.UnitedInfoLink}"></div>
 							<div class="footer_block_spoiler_menu_text"
 								id="current_date_time_block2">Здесь будет находиться
 								какая-то общая информация</div>
 						</div>
 					</div>
-                    
-                    <div class="footer_image">
-                        <img src="images/mms2.gif" alt="">
-                        <img src="images/mms1.gif" alt="">
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+					<div class="footer_image">
+						<img src="images/mms2.gif" alt=""> <img
+							src="images/mms1.gif" alt="">
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
 		crossorigin="anonymous"></script>
 	<script
 		src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
 		crossorigin="anonymous"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    	<script th:src="@{/js/l1.js}"></script>
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script th:src="@{/js/l1.js}"></script>
 </body>
 </html>
