@@ -1,0 +1,16 @@
+@charset "UTF-8";
+form{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 480px;
+    width: 550px;
+  
+}
+form div{
+    width: 440px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 25px;
+}

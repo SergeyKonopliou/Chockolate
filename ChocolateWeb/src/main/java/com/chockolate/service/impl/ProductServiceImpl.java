@@ -1,4 +1,4 @@
-package com.chockolate.service.impl;
+﻿package com.chockolate.service.impl;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -81,14 +81,33 @@ public class ProductServiceImpl implements ProductService {
 	}
 
 	@Override
-	public List<Product> loadFindProductByName(String name) throws ServiceException {
-		// TODO Auto-generated method stub
-		return null;
+	public List<Product> loadProductByName(String name) throws ServiceException {
+		List<Product> products = new ArrayList<Product>();
+		try {
+			products = repository.findProductByName(name);
+		} catch (Exception e) {
+			throw new ServiceException("Problems with loading searching product from DB service method " + e.getMessage(), e);
+		}
+		return products;
 	}
 
 	@Override
-	public void add(Product object) throws ServiceException {
-		// TODO Auto-generated method stub
+	public void add(Product object,TypeProduct typeProduct) throws ServiceException {
+		try {
+			Product product = new Product();
+			product.setName(object.getName());
+			product.setDescription(object.getDescription());
+			product.setPrice(object.getPrice());
+			product.setImage(object.getImage());
+			TypeProduct type = typeProduct;
+			product.setTypeProduct(type);
+			type.getProducts().add(product);
+			typeRepository.save(type);
+			repository.save(product);
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+			throw new ServiceException("Problems with adding new products to DB service method  " + e.getMessage(), e);
+		}
 		
 	}
 

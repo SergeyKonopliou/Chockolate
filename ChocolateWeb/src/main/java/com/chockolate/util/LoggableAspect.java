@@ -31,8 +31,7 @@ public class LoggableAspect {
 
 	@Before("methodExecuting()")
 	public void beforeMethodExecuting(JoinPoint joinPoint) {
-		String args = Arrays.stream(joinPoint.getArgs()).map(a -> a.toString()).collect(Collectors.joining(","));
-		logger.info("Before method " + joinPoint.getSignature().getName() + ",with args=[" + args + "]");
+		logger.info("Before method " + joinPoint.getSignature().getName());
 	}
 
 	@AfterReturning(value = "methodExecuting()", returning = "returningValue")

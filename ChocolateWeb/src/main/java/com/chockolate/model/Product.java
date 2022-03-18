@@ -8,7 +8,6 @@ import javax.persistence.JoinColumn;
 import javax.persistence.Lob;
 import javax.persistence.ManyToOne;
 import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.Size;
 
 import org.hibernate.annotations.Synchronize;
 
@@ -19,11 +18,11 @@ public class Product {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Long id;
-	@NotEmpty
-	@Size(min = 1,max = 15)
+	
 	private String name;
 	@Lob
 	private String description;
+
 	private Double price;
     private String image;
     
@@ -35,7 +34,7 @@ public class Product {
 		
 	}
 
-	public Product(@NotEmpty @Size(min = 1, max = 15) String name, String description, Double price,
+	public Product(String name, String description, Double price,
 			String image, TypeProduct typeProduct) {
 		this.name = name;
 		this.description = description;
