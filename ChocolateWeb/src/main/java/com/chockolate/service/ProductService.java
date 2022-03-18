@@ -17,7 +17,7 @@ public interface ProductService {
 	
 	public void delete(Long id) throws ServiceException;
 	
-	public void update(Product product) throws ServiceException;
+	public void update(Product product,TypeProduct typeProduct) throws ServiceException;
 
 	public Product loadFindProductById(Long id) throws ServiceException;
 	

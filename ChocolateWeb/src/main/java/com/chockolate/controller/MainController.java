@@ -111,4 +111,48 @@ public class MainController {
 			} 
 		return "redirect:/catalog";
 	}
+	
+	@GetMapping("/deleteProduct/{id}")
+	public String deleteProductById(@PathVariable String id,Model model) {	
+		try {
+			service.delete(Long.parseLong(id));
+		} catch (ServiceException e) {
+			model.addAttribute("message", e.getMessage());
+			return "error";
+		}
+		return "redirect:/catalog";
+	}
+	
+	@GetMapping("/updateProduct/{id}")
+	public String updateProductById(@PathVariable String id,Model model) {	
+		try {
+			product = service.loadFindProductById(Long.parseLong(id));
+			model.addAttribute("product", product);
+		}catch (ServiceException e) {
+			model.addAttribute("message", e.getMessage());
+			return "error";
+		}
+		return "updateProductPage";
+	}
+	
+	@RequestMapping(value = "/update")
+	public String updateProduct(@PathParam(value = "id") String id,@PathParam(value = "name") String name,@PathParam(value = "price") String price,
+			@PathParam(value = "typeProduct") String typeProduct,@PathParam(value = "description") String description,
+			@PathParam(value = "image") String image,Model model) {
+			try {
+				product.setId(Long.parseLong(id));
+				product.setName(name);
+				product.setPrice(Double.parseDouble(price));
+				product.setDescription(description);
+				product.setImage(image);
+				TypeProduct type = new TypeProduct(typeProduct);
+				type.setId(product.getTypeProduct().getId());
+				product.setTypeProduct(type);
+				service.update(product,type);
+			} catch (ServiceException e) {
+				model.addAttribute("message", e.getMessage());
+				return "error";
+			} 
+		return "redirect:/catalog";
+	}
 }

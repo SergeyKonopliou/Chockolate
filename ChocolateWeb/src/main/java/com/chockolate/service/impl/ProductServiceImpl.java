@@ -113,13 +113,30 @@ public class ProductServiceImpl implements ProductService {
 
 	@Override
 	public void delete(Long id) throws ServiceException {
-		// TODO Auto-generated method stub
-		
+		try {
+			repository.deleteById(id);
+		} catch (Exception e) {
+			throw new ServiceException("Problems with deleting product to DB service method " + e.getMessage(), e);
+		}
 	}
 
 	@Override
-	public void update(Product product) throws ServiceException {
-		// TODO Auto-generated method stub
+	public void update(Product object,TypeProduct typeProduct) throws ServiceException {
+		try {
+			Product product = new Product();
+			product.setId(object.getId());
+			product.setName(object.getName());
+			product.setDescription(object.getDescription());
+			product.setPrice(object.getPrice());
+			product.setImage(object.getImage());
+			TypeProduct type = typeProduct;
+			product.setTypeProduct(type);
+			type.getProducts().add(product);
+			typeRepository.save(type);
+			repository.save(product);
+		} catch (Exception e) {
+			throw new ServiceException("Problems with updating product to DB service method  " + e.getMessage(), e);
+		}
 		
 	}
 
