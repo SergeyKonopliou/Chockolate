@@ -9,6 +9,6 @@ import com.chockolate.model.TypeProduct;
 @Repository
 public interface TypeProductRepository extends JpaRepository<TypeProduct, Long>{
 
-	public Product findProductById(Long id);
+	public TypeProduct findTypeProductByName(String name);
 
 }

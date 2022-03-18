@@ -2416,3 +2416,884 @@ Field error in object 'product' on field 'typeProduct': rejected value [sdf]; co
 2022-03-18 14:35:11,738 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProduct,with result redirect:/catalog
 2022-03-18 14:35:11,767 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showCatalog
 2022-03-18 14:35:11,797 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showCatalog,with result catalogPage
+2022-03-18 15:05:33,157 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method welcomePage
+2022-03-18 15:05:33,176 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method welcomePage,with result l1
+2022-03-18 15:05:35,830 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showCatalog
+2022-03-18 15:05:36,158 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showCatalog,with result catalogPage
+2022-03-18 15:05:37,950 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProductById
+2022-03-18 15:05:38,015 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProductById,with result updateProductPage
+2022-03-18 15:05:38,160 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 15:05:38,178 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 15:05:38,203 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 15:05:38,211 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 15:05:38,211 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 15:05:38,277 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 15:05:38,295 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 15:05:38,298 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 15:05:46,737 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProduct
+2022-03-18 15:05:46,796 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProduct,with result redirect:/catalog
+2022-03-18 15:05:46,827 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showCatalog
+2022-03-18 15:05:46,859 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showCatalog,with result catalogPage
+2022-03-18 15:05:55,180 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProductById
+2022-03-18 15:05:55,220 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProductById,with result updateProductPage
+2022-03-18 15:05:55,365 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 15:05:55,365 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 15:05:55,443 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 15:05:55,444 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 15:05:55,472 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 15:05:55,472 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 15:05:55,489 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 15:05:55,490 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 15:06:03,976 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProduct
+2022-03-18 15:06:04,019 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProduct,with result redirect:/catalog
+2022-03-18 15:06:04,055 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showCatalog
+2022-03-18 15:06:04,089 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showCatalog,with result catalogPage
+2022-03-18 20:29:09,041 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method welcomePage
+2022-03-18 20:29:09,090 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method welcomePage,with result l1
+2022-03-18 20:29:21,325 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showCatalog
+2022-03-18 20:29:28,890 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showCatalog,with result catalogPage
+2022-03-18 20:29:33,510 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showAddNewProductPage
+2022-03-18 20:29:33,510 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showAddNewProductPage,with result addNewProductPage
+2022-03-18 20:29:33,803 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 20:29:33,822 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 20:29:48,152 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method addProduct
+2022-03-18 20:29:48,269 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method addProduct,with result error
+2022-03-18 20:31:36,297 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method welcomePage
+2022-03-18 20:31:36,306 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method welcomePage,with result l1
+2022-03-18 20:31:38,319 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showCatalog
+2022-03-18 20:31:38,359 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showCatalog,with result catalogPage
+2022-03-18 20:31:40,316 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showAddNewProductPage
+2022-03-18 20:31:40,316 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showAddNewProductPage,with result addNewProductPage
+2022-03-18 20:31:40,547 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 20:31:40,588 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 20:31:47,117 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method addProduct
+2022-03-18 20:31:47,125 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method addProduct,with result error
+2022-03-18 20:31:49,045 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method welcomePage
+2022-03-18 20:31:49,045 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method welcomePage,with result l1
+2022-03-18 20:33:20,225 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showCatalog
+2022-03-18 20:33:20,769 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showCatalog,with result catalogPage
+2022-03-18 20:33:24,686 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showAddNewProductPage
+2022-03-18 20:33:24,687 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showAddNewProductPage,with result addNewProductPage
+2022-03-18 20:33:24,972 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 20:33:24,984 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 20:33:33,192 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method addProduct
+2022-03-18 20:37:08,206 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method welcomePage
+2022-03-18 20:37:08,233 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method welcomePage,with result l1
+2022-03-18 20:37:12,694 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showCatalog
+2022-03-18 20:37:13,100 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showCatalog,with result catalogPage
+2022-03-18 20:37:15,057 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showAddNewProductPage
+2022-03-18 20:37:15,057 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showAddNewProductPage,with result addNewProductPage
+2022-03-18 20:37:15,315 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 20:37:15,333 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 20:37:21,982 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method addProduct
+2022-03-18 20:37:22,038 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method addProduct,with result redirect:/catalog
+2022-03-18 20:37:22,080 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showCatalog
+2022-03-18 20:37:22,146 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showCatalog,with result catalogPage
+2022-03-18 20:38:48,840 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method welcomePage
+2022-03-18 20:38:48,841 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method welcomePage,with result l1
+2022-03-18 20:38:50,932 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showCatalog
+2022-03-18 20:38:50,969 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showCatalog,with result catalogPage
+2022-03-18 20:38:55,068 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method welcomePage
+2022-03-18 20:38:55,069 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method welcomePage,with result l1
+2022-03-18 20:39:25,775 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showCatalog
+2022-03-18 20:39:26,300 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showCatalog,with result catalogPage
+2022-03-18 20:39:28,535 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showAddNewProductPage
+2022-03-18 20:39:28,535 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showAddNewProductPage,with result addNewProductPage
+2022-03-18 20:39:28,837 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 20:39:28,851 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 20:39:38,351 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method addProduct
+2022-03-18 20:39:38,409 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method addProduct,with result redirect:/catalog
+2022-03-18 20:39:38,448 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showCatalog
+2022-03-18 20:39:38,515 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showCatalog,with result catalogPage
+2022-03-18 20:40:27,544 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method welcomePage
+2022-03-18 20:40:27,563 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method welcomePage,with result l1
+2022-03-18 20:40:30,011 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showCatalog
+2022-03-18 20:40:30,503 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showCatalog,with result catalogPage
+2022-03-18 20:40:32,684 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showAddNewProductPage
+2022-03-18 20:40:32,685 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showAddNewProductPage,with result addNewProductPage
+2022-03-18 20:40:32,951 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 20:40:32,969 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 20:40:44,262 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method addProduct
+2022-03-18 20:40:44,410 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method addProduct,with result redirect:/catalog
+2022-03-18 20:40:44,463 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showCatalog
+2022-03-18 20:40:44,515 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showCatalog,with result catalogPage
+2022-03-18 20:42:56,959 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method welcomePage
+2022-03-18 20:42:56,981 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method welcomePage,with result l1
+2022-03-18 20:42:59,378 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showCatalog
+2022-03-18 20:42:59,786 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showCatalog,with result catalogPage
+2022-03-18 20:43:06,901 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProductById
+2022-03-18 20:43:06,978 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProductById,with result updateProductPage
+2022-03-18 20:43:07,277 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 20:43:07,281 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 20:43:07,287 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 20:43:07,302 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 20:43:07,303 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 20:43:07,308 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 20:43:07,370 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 20:43:07,371 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 20:43:35,992 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProduct
+2022-03-18 20:43:36,035 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProduct,with result redirect:/catalog
+2022-03-18 20:43:36,080 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showCatalog
+2022-03-18 20:43:36,132 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showCatalog,with result catalogPage
+2022-03-18 20:46:26,756 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method welcomePage
+2022-03-18 20:46:26,776 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method welcomePage,with result l1
+2022-03-18 20:46:28,859 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showCatalog
+2022-03-18 20:46:29,279 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showCatalog,with result catalogPage
+2022-03-18 20:46:30,683 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProductById
+2022-03-18 20:46:30,756 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProductById,with result updateProductPage
+2022-03-18 20:46:30,958 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 20:46:30,969 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 20:46:30,993 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 20:46:30,994 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 20:46:30,958 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 20:46:31,022 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 20:46:31,126 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 20:46:31,127 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 20:46:36,060 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProduct
+2022-03-18 20:46:36,112 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProduct,with result redirect:/catalog
+2022-03-18 20:46:36,160 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showCatalog
+2022-03-18 20:46:36,205 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showCatalog,with result catalogPage
+2022-03-18 20:46:50,780 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showPersonalProductPage
+2022-03-18 20:46:50,790 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showPersonalProductPage,with result personalProductPage
+2022-03-18 20:46:51,032 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 20:46:51,033 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 20:47:02,278 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProductById
+2022-03-18 20:47:02,298 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProductById,with result updateProductPage
+2022-03-18 20:47:02,358 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProductById
+2022-03-18 20:47:02,362 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProductById,with result updateProductPage
+2022-03-18 20:47:02,540 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 20:47:02,540 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 20:47:02,544 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 20:47:02,544 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 20:47:02,578 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 20:47:02,579 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 20:47:02,635 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 20:47:02,635 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 20:53:18,626 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method welcomePage
+2022-03-18 20:53:18,644 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method welcomePage,with result l1
+2022-03-18 20:53:21,680 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showCatalog
+2022-03-18 20:53:30,261 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showCatalog,with result catalogPage
+2022-03-18 20:53:32,890 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showPersonalProductPage
+2022-03-18 20:53:33,059 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showPersonalProductPage,with result personalProductPage
+2022-03-18 20:53:33,372 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 20:53:33,393 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 20:53:38,286 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProductById
+2022-03-18 20:53:38,290 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProductById,with result updateProductPage
+2022-03-18 20:53:38,433 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 20:53:38,434 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 20:53:38,443 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 20:53:38,443 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 20:53:38,510 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 20:53:38,511 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 20:53:38,567 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 20:53:38,572 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:01:19,837 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method welcomePage
+2022-03-18 21:01:19,855 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method welcomePage,with result l1
+2022-03-18 21:01:22,764 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showCatalog
+2022-03-18 21:01:23,157 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showCatalog,with result catalogPage
+2022-03-18 21:01:25,390 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProductById
+2022-03-18 21:01:25,485 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProductById,with result updateProductPage
+2022-03-18 21:01:25,682 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:01:25,718 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:01:25,724 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:01:25,728 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:01:25,736 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:01:25,769 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:01:25,818 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:01:25,819 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:01:56,218 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProduct
+2022-03-18 21:01:56,351 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProduct,with result redirect:/catalog
+2022-03-18 21:01:56,389 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showCatalog
+2022-03-18 21:01:56,416 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showCatalog,with result catalogPage
+2022-03-18 21:01:59,404 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showPersonalProductPage
+2022-03-18 21:01:59,408 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showPersonalProductPage,with result personalProductPage
+2022-03-18 21:01:59,619 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:01:59,622 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:04:07,085 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method welcomePage
+2022-03-18 21:04:07,101 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method welcomePage,with result l1
+2022-03-18 21:04:09,660 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showCatalog
+2022-03-18 21:04:10,069 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showCatalog,with result catalogPage
+2022-03-18 21:04:12,954 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProductById
+2022-03-18 21:04:13,029 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProductById,with result updateProductPage
+2022-03-18 21:04:13,387 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:04:13,392 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:04:13,397 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:04:13,395 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:04:13,460 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:04:13,461 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:04:13,507 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:04:13,508 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:09:21,838 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method welcomePage
+2022-03-18 21:09:21,875 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method welcomePage,with result l1
+2022-03-18 21:09:24,864 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showCatalog
+2022-03-18 21:09:27,464 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showCatalog,with result catalogPage
+2022-03-18 21:09:29,570 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProductById
+2022-03-18 21:09:29,659 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProductById,with result updateProductPage
+2022-03-18 21:09:29,829 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:09:29,849 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:09:29,871 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:09:29,872 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:09:29,880 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:09:29,881 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:09:29,946 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:09:29,946 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:18:01,751 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method welcomePage
+2022-03-18 21:18:01,770 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method welcomePage,with result l1
+2022-03-18 21:18:04,468 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showCatalog
+2022-03-18 21:18:04,863 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showCatalog,with result catalogPage
+2022-03-18 21:18:06,435 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProductById
+2022-03-18 21:18:06,507 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProductById,with result updateProductPage
+2022-03-18 21:18:06,583 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:18:06,591 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error
+2022-03-18 21:18:06,788 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:18:06,789 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:18:06,810 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:18:06,811 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:18:06,819 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:18:06,820 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:18:06,902 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:18:06,902 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:18:08,833 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method welcomePage
+2022-03-18 21:18:08,834 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method welcomePage,with result l1
+2022-03-18 21:19:50,430 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showCatalog
+2022-03-18 21:19:50,878 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showCatalog,with result catalogPage
+2022-03-18 21:19:55,469 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProductById
+2022-03-18 21:19:55,538 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProductById,with result updateProductPage
+2022-03-18 21:19:55,786 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:19:55,787 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:19:55,797 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:19:55,800 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:19:55,803 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:19:55,814 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:19:55,936 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:19:55,936 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:25:13,902 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method welcomePage
+2022-03-18 21:25:13,923 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method welcomePage,with result l1
+2022-03-18 21:25:16,343 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showCatalog
+2022-03-18 21:25:16,735 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showCatalog,with result catalogPage
+2022-03-18 21:25:18,463 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProductById
+2022-03-18 21:25:18,536 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProductById,with result updateProductPage
+2022-03-18 21:25:19,112 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:25:19,121 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:25:19,137 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:25:19,137 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:25:19,152 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:25:19,152 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:25:19,243 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:25:19,246 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:26:18,815 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method welcomePage
+2022-03-18 21:26:18,836 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method welcomePage,with result l1
+2022-03-18 21:26:21,293 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showCatalog
+2022-03-18 21:26:21,712 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showCatalog,with result catalogPage
+2022-03-18 21:26:23,473 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProductById
+2022-03-18 21:26:23,572 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProductById,with result updateProductPage
+2022-03-18 21:26:23,746 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:26:23,750 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:26:23,755 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:26:23,768 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:26:23,792 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:26:23,796 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:26:23,892 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:26:23,893 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:26:56,574 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProductById
+2022-03-18 21:26:56,578 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProductById,with result updateProductPage
+2022-03-18 21:26:56,769 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:26:56,771 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:26:56,778 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:26:56,778 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:26:56,789 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:26:56,795 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:26:56,821 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:26:56,822 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:27:32,340 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProductById
+2022-03-18 21:27:32,636 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProductById,with result updateProductPage
+2022-03-18 21:27:33,389 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:27:33,399 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error
+2022-03-18 21:27:33,560 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:27:33,561 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:27:33,579 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:27:33,579 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:27:33,631 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:27:33,632 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:27:33,753 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:27:33,754 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:27:35,522 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method welcomePage
+2022-03-18 21:27:35,523 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method welcomePage,with result l1
+2022-03-18 21:27:46,530 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showCatalog
+2022-03-18 21:27:46,694 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showCatalog,with result catalogPage
+2022-03-18 21:27:48,183 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProductById
+2022-03-18 21:27:48,218 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProductById,with result updateProductPage
+2022-03-18 21:27:48,397 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:27:48,397 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:27:48,414 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:27:48,414 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:27:48,436 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:27:48,436 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:27:48,500 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:27:48,501 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:27:52,328 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method welcomePage
+2022-03-18 21:27:52,329 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method welcomePage,with result l1
+2022-03-18 21:29:04,864 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showCatalog
+2022-03-18 21:29:05,265 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showCatalog,with result catalogPage
+2022-03-18 21:29:07,573 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProductById
+2022-03-18 21:29:07,653 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProductById,with result updateProductPage
+2022-03-18 21:29:07,820 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:29:07,830 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:29:07,867 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:29:07,869 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:29:07,947 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:29:07,948 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:29:07,987 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:29:07,987 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:34:15,655 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method welcomePage
+2022-03-18 21:34:15,687 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method welcomePage,with result l1
+2022-03-18 21:34:18,477 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showCatalog
+2022-03-18 21:34:18,976 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showCatalog,with result catalogPage
+2022-03-18 21:34:20,589 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProductById
+2022-03-18 21:34:20,700 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProductById,with result updateProductPage
+2022-03-18 21:34:20,874 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:34:20,881 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:34:20,895 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:34:20,895 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:34:20,903 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:34:20,903 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:34:20,987 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:34:20,987 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:38:33,097 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method welcomePage
+2022-03-18 21:38:33,114 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method welcomePage,with result l1
+2022-03-18 21:38:37,262 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showCatalog
+2022-03-18 21:38:37,867 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showCatalog,with result catalogPage
+2022-03-18 21:38:39,770 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProductById
+2022-03-18 21:38:39,853 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProductById,with result updateProductPage
+2022-03-18 21:38:40,156 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:38:40,158 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:38:40,167 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:38:40,172 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:38:40,183 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:38:40,184 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:38:40,308 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:38:40,308 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:38:42,980 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method welcomePage
+2022-03-18 21:38:42,981 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method welcomePage,with result l1
+2022-03-18 21:42:08,499 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showCatalog
+2022-03-18 21:42:08,907 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showCatalog,with result catalogPage
+2022-03-18 21:42:12,140 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProductById
+2022-03-18 21:42:12,209 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProductById,with result updateProductPage
+2022-03-18 21:42:12,417 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:42:12,429 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:42:12,435 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:42:12,436 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:42:12,456 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:42:12,457 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:42:12,530 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:42:12,530 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:43:45,706 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method welcomePage
+2022-03-18 21:43:45,725 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method welcomePage,with result l1
+2022-03-18 21:43:47,960 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showCatalog
+2022-03-18 21:43:48,351 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showCatalog,with result catalogPage
+2022-03-18 21:43:49,855 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProductById
+2022-03-18 21:43:49,934 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProductById,with result updateProductPage
+2022-03-18 21:43:50,167 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:43:50,193 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:43:50,235 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:43:50,235 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:43:50,263 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:43:50,264 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:43:50,285 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:43:50,286 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:43:56,861 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProduct
+2022-03-18 21:43:56,962 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProduct,with result redirect:/catalog
+2022-03-18 21:43:57,000 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showCatalog
+2022-03-18 21:43:57,026 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showCatalog,with result catalogPage
+2022-03-18 21:44:00,111 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showPersonalProductPage
+2022-03-18 21:44:00,115 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showPersonalProductPage,with result personalProductPage
+2022-03-18 21:44:00,386 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:44:00,386 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:44:08,510 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProductById
+2022-03-18 21:44:08,513 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProductById,with result updateProductPage
+2022-03-18 21:44:08,677 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:44:08,678 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:44:08,682 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:44:08,683 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:44:08,719 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:44:08,719 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:44:08,743 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:44:08,744 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:44:10,375 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProduct
+2022-03-18 21:44:10,385 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProduct,with result error
+2022-03-18 21:44:32,505 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method welcomePage
+2022-03-18 21:44:32,505 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method welcomePage,with result l1
+2022-03-18 21:44:34,398 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showCatalog
+2022-03-18 21:44:34,423 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showCatalog,with result catalogPage
+2022-03-18 21:44:36,540 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProductById
+2022-03-18 21:44:36,546 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProductById,with result updateProductPage
+2022-03-18 21:44:36,741 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:44:36,741 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:44:36,752 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:44:36,752 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:44:36,762 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:44:36,763 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:44:36,823 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:44:36,826 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:44:38,444 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProduct
+2022-03-18 21:44:38,451 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProduct,with result error
+2022-03-18 21:44:40,092 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method welcomePage
+2022-03-18 21:44:40,092 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method welcomePage,with result l1
+2022-03-18 21:44:41,899 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showCatalog
+2022-03-18 21:44:41,925 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showCatalog,with result catalogPage
+2022-03-18 21:44:43,090 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProductById
+2022-03-18 21:44:43,098 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProductById,with result updateProductPage
+2022-03-18 21:44:43,284 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:44:43,287 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:44:43,333 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:44:43,334 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:44:43,370 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:44:43,370 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:44:43,381 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:44:43,382 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:44:46,456 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProduct
+2022-03-18 21:44:46,465 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProduct,with result error
+2022-03-18 21:44:48,228 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method welcomePage
+2022-03-18 21:44:48,229 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method welcomePage,with result l1
+2022-03-18 21:45:19,591 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showCatalog
+2022-03-18 21:45:19,982 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showCatalog,with result catalogPage
+2022-03-18 21:45:22,818 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProductById
+2022-03-18 21:45:22,891 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProductById,with result updateProductPage
+2022-03-18 21:45:23,086 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:45:23,087 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:45:23,088 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:45:23,105 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:45:23,121 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:45:23,131 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:45:23,223 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:45:23,223 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:45:24,714 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProduct
+2022-03-18 21:45:24,755 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProduct,with result redirect:/catalog
+2022-03-18 21:45:24,791 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showCatalog
+2022-03-18 21:45:24,834 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showCatalog,with result catalogPage
+2022-03-18 21:45:27,262 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showPersonalProductPage
+2022-03-18 21:45:27,266 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showPersonalProductPage,with result personalProductPage
+2022-03-18 21:45:27,599 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:45:27,600 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:46:54,103 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method welcomePage
+2022-03-18 21:46:54,118 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method welcomePage,with result l1
+2022-03-18 21:46:56,880 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showCatalog
+2022-03-18 21:46:57,257 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showCatalog,with result catalogPage
+2022-03-18 21:46:58,925 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProductById
+2022-03-18 21:46:58,997 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProductById,with result updateProductPage
+2022-03-18 21:46:59,249 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:46:59,271 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:46:59,306 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:46:59,306 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:46:59,310 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:46:59,311 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:46:59,361 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:46:59,368 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:47:05,441 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProduct
+2022-03-18 21:47:05,483 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProduct,with result redirect:/catalog
+2022-03-18 21:47:05,528 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showCatalog
+2022-03-18 21:47:05,564 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showCatalog,with result catalogPage
+2022-03-18 21:47:07,983 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProductById
+2022-03-18 21:47:07,989 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProductById,with result updateProductPage
+2022-03-18 21:47:08,185 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:47:08,187 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:47:08,191 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:47:08,191 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:47:08,205 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:47:08,206 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:47:08,278 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:47:08,278 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:47:11,510 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProduct
+2022-03-18 21:47:11,520 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProduct,with result error
+2022-03-18 21:47:42,533 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method welcomePage
+2022-03-18 21:47:42,535 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method welcomePage,with result l1
+2022-03-18 21:47:44,436 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showCatalog
+2022-03-18 21:47:44,464 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showCatalog,with result catalogPage
+2022-03-18 21:47:48,932 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProductById
+2022-03-18 21:47:48,939 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProductById,with result updateProductPage
+2022-03-18 21:47:49,122 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:47:49,122 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:47:49,135 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:47:49,135 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:47:49,146 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:47:49,146 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:47:49,214 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:47:49,219 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:47:56,749 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProductById
+2022-03-18 21:47:56,753 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProductById,with result updateProductPage
+2022-03-18 21:47:56,878 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:47:56,879 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:47:56,916 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:47:56,916 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:47:56,936 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:47:56,936 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:47:57,011 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:47:57,012 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:48:00,323 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProductById
+2022-03-18 21:48:00,327 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProductById,with result updateProductPage
+2022-03-18 21:48:00,489 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:48:00,490 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:48:00,500 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:48:00,500 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:48:00,500 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:48:00,501 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:48:00,565 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:48:00,565 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:48:04,807 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProductById
+2022-03-18 21:48:04,817 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProductById,with result updateProductPage
+2022-03-18 21:48:05,049 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:48:05,049 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:48:05,070 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:48:05,071 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:48:05,085 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:48:05,086 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:48:05,135 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:48:05,136 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:48:11,531 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProductById
+2022-03-18 21:48:11,536 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProductById,with result updateProductPage
+2022-03-18 21:48:11,651 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:48:11,652 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:48:11,683 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:48:11,684 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:48:11,690 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:48:11,690 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:48:11,731 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:48:11,732 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:48:15,405 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProductById
+2022-03-18 21:48:15,411 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProductById,with result updateProductPage
+2022-03-18 21:48:15,546 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:48:15,547 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:48:15,553 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:48:15,553 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:48:15,555 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:48:15,555 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:48:15,641 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:48:15,641 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:48:18,152 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProductById
+2022-03-18 21:48:18,155 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProductById,with result updateProductPage
+2022-03-18 21:48:18,283 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:48:18,283 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:48:18,300 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:48:18,300 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:48:18,333 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:48:18,335 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:48:18,373 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:48:18,374 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:48:22,293 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProduct
+2022-03-18 21:48:22,299 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProduct,with result error
+2022-03-18 21:48:24,900 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method welcomePage
+2022-03-18 21:48:24,900 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method welcomePage,with result l1
+2022-03-18 21:48:26,751 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showCatalog
+2022-03-18 21:48:26,781 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showCatalog,with result catalogPage
+2022-03-18 21:48:30,774 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProductById
+2022-03-18 21:48:30,780 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProductById,with result updateProductPage
+2022-03-18 21:48:30,903 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:48:30,904 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:48:30,912 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:48:30,913 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:48:30,972 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:48:30,972 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:48:31,015 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:48:31,016 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:48:33,759 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProduct
+2022-03-18 21:48:33,767 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProduct,with result error
+2022-03-18 21:48:35,868 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method welcomePage
+2022-03-18 21:48:35,869 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method welcomePage,with result l1
+2022-03-18 21:48:38,504 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showCatalog
+2022-03-18 21:48:38,534 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showCatalog,with result catalogPage
+2022-03-18 21:48:41,824 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method deleteProductById
+2022-03-18 21:48:41,848 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method deleteProductById,with result redirect:/catalog
+2022-03-18 21:48:41,869 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showCatalog
+2022-03-18 21:48:41,908 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showCatalog,with result catalogPage
+2022-03-18 21:48:46,468 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method deleteProductById
+2022-03-18 21:48:46,473 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method deleteProductById,with result redirect:/catalog
+2022-03-18 21:48:46,488 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showCatalog
+2022-03-18 21:48:46,524 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showCatalog,with result catalogPage
+2022-03-18 21:48:56,408 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProductById
+2022-03-18 21:48:56,412 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProductById,with result updateProductPage
+2022-03-18 21:48:56,555 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:48:56,555 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:48:56,555 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:48:56,564 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:48:56,564 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:48:56,569 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:48:56,639 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:48:56,639 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:48:57,841 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProduct
+2022-03-18 21:48:57,854 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProduct,with result error
+2022-03-18 21:48:59,902 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method welcomePage
+2022-03-18 21:48:59,902 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method welcomePage,with result l1
+2022-03-18 21:53:17,344 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showCatalog
+2022-03-18 21:53:17,764 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showCatalog,with result catalogPage
+2022-03-18 21:53:27,747 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProductById
+2022-03-18 21:53:27,838 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProductById,with result updateProductPage
+2022-03-18 21:53:28,008 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:53:28,017 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:53:28,008 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:53:28,020 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:53:28,021 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:53:28,021 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:53:28,116 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:53:28,116 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:53:35,449 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProduct
+2022-03-18 21:53:35,492 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProduct,with result redirect:/catalog
+2022-03-18 21:53:35,531 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showCatalog
+2022-03-18 21:53:35,567 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showCatalog,with result catalogPage
+2022-03-18 21:54:14,930 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProductById
+2022-03-18 21:54:14,937 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProductById,with result updateProductPage
+2022-03-18 21:54:15,211 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:54:15,211 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:54:15,235 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:54:15,236 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:54:15,237 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:54:15,241 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:54:15,344 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 21:54:15,345 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 21:54:22,251 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProduct
+2022-03-18 21:54:22,262 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProduct,with result error
+2022-03-18 21:55:42,959 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProduct
+2022-03-18 21:55:42,978 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProduct,with result error
+2022-03-18 22:00:19,521 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method welcomePage
+2022-03-18 22:00:19,550 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method welcomePage,with result l1
+2022-03-18 22:00:21,839 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showCatalog
+2022-03-18 22:00:22,365 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showCatalog,with result catalogPage
+2022-03-18 22:00:24,165 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProductById
+2022-03-18 22:00:24,263 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProductById,with result updateProductPage
+2022-03-18 22:00:24,449 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 22:00:24,454 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 22:00:24,461 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 22:00:24,472 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 22:00:24,473 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 22:00:24,491 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 22:00:24,566 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 22:00:24,567 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 22:00:37,590 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProduct
+2022-03-18 22:04:21,406 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProduct,with result redirect:/catalog
+2022-03-18 22:04:41,600 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProduct
+2022-03-18 22:04:59,102 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProduct
+2022-03-18 22:04:59,116 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProduct,with result redirect:/catalog
+2022-03-18 22:04:59,169 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showCatalog
+2022-03-18 22:04:59,200 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showCatalog,with result catalogPage
+2022-03-18 22:05:09,905 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProductById
+2022-03-18 22:05:09,914 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProductById,with result updateProductPage
+2022-03-18 22:05:10,116 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 22:05:10,116 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 22:05:10,124 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 22:05:10,124 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 22:05:10,116 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 22:05:10,134 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 22:05:10,273 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 22:05:10,273 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 22:05:20,619 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProduct
+2022-03-18 22:06:44,525 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method welcomePage
+2022-03-18 22:06:44,546 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method welcomePage,with result l1
+2022-03-18 22:06:49,313 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showCatalog
+2022-03-18 22:06:49,688 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showCatalog,with result catalogPage
+2022-03-18 22:06:52,422 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProductById
+2022-03-18 22:06:52,492 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProductById,with result updateProductPage
+2022-03-18 22:06:53,057 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 22:06:53,076 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 22:06:53,085 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 22:06:53,086 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 22:06:53,087 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 22:06:53,088 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 22:06:53,256 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 22:06:53,257 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 22:07:00,629 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProduct
+2022-03-18 22:07:00,678 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProduct,with result redirect:/catalog
+2022-03-18 22:07:00,719 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showCatalog
+2022-03-18 22:07:00,758 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showCatalog,with result catalogPage
+2022-03-18 22:07:40,152 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProductById
+2022-03-18 22:07:40,157 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProductById,with result updateProductPage
+2022-03-18 22:07:40,309 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 22:07:40,310 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 22:07:40,310 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 22:07:40,313 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 22:07:40,319 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 22:07:40,320 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 22:07:40,413 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 22:07:40,413 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 22:07:44,118 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProduct
+2022-03-18 22:07:44,132 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProduct,with result error
+2022-03-18 22:08:14,911 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method welcomePage
+2022-03-18 22:08:14,929 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method welcomePage,with result l1
+2022-03-18 22:08:17,418 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showCatalog
+2022-03-18 22:08:17,790 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showCatalog,with result catalogPage
+2022-03-18 22:08:19,314 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProductById
+2022-03-18 22:08:19,390 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProductById,with result updateProductPage
+2022-03-18 22:08:19,600 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 22:08:19,627 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 22:08:19,647 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 22:08:19,648 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 22:08:19,739 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 22:08:19,742 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 22:08:19,799 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 22:08:19,800 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 22:08:23,572 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProduct
+2022-03-18 22:08:23,616 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProduct,with result redirect:/catalog
+2022-03-18 22:08:23,669 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showCatalog
+2022-03-18 22:08:23,696 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showCatalog,with result catalogPage
+2022-03-18 22:08:35,579 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showCatalog
+2022-03-18 22:08:35,638 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showCatalog,with result catalogPage
+2022-03-18 22:09:37,291 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProductById
+2022-03-18 22:09:37,298 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProductById,with result updateProductPage
+2022-03-18 22:09:37,601 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 22:09:37,602 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 22:09:37,644 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 22:09:37,644 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 22:09:37,798 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 22:09:37,799 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 22:09:37,951 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 22:09:37,951 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 22:10:04,567 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProduct
+2022-03-18 22:10:04,591 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProduct,with result error
+2022-03-18 22:15:45,534 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method welcomePage
+2022-03-18 22:15:45,559 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method welcomePage,with result l1
+2022-03-18 22:15:52,861 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showCatalog
+2022-03-18 22:15:53,230 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showCatalog,with result catalogPage
+2022-03-18 22:16:20,447 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showCatalog
+2022-03-18 22:16:20,501 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showCatalog,with result catalogPage
+2022-03-18 22:16:27,139 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method aboutMe
+2022-03-18 22:16:27,140 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method aboutMe,with result personalPage
+2022-03-18 22:16:30,462 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showContactInfo
+2022-03-18 22:16:30,463 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showContactInfo,with result contactsPage
+2022-03-18 22:16:34,533 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method aboutMe
+2022-03-18 22:16:34,533 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method aboutMe,with result personalPage
+2022-03-18 22:16:36,549 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showContactInfo
+2022-03-18 22:16:36,550 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showContactInfo,with result contactsPage
+2022-03-18 22:18:45,875 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method welcomePage
+2022-03-18 22:18:45,894 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method welcomePage,with result l1
+2022-03-18 22:18:48,308 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showCatalog
+2022-03-18 22:18:48,693 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showCatalog,with result catalogPage
+2022-03-18 22:18:53,755 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showContactInfo
+2022-03-18 22:18:53,756 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showContactInfo,with result contactsPage
+2022-03-18 22:18:55,147 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method aboutMe
+2022-03-18 22:18:55,148 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method aboutMe,with result personalPage
+2022-03-18 22:18:56,558 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showContactInfo
+2022-03-18 22:18:56,559 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showContactInfo,with result contactsPage
+2022-03-18 22:18:59,011 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method aboutMe
+2022-03-18 22:18:59,011 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method aboutMe,with result personalPage
+2022-03-18 22:19:02,828 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showContactInfo
+2022-03-18 22:19:02,829 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showContactInfo,with result contactsPage
+2022-03-18 22:19:07,093 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method aboutMe
+2022-03-18 22:19:07,094 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method aboutMe,with result personalPage
+2022-03-18 22:19:09,465 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method welcomePage
+2022-03-18 22:19:09,466 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method welcomePage,with result l1
+2022-03-18 22:19:11,579 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showContactInfo
+2022-03-18 22:19:11,580 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showContactInfo,with result contactsPage
+2022-03-18 22:20:39,069 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method welcomePage
+2022-03-18 22:20:39,088 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method welcomePage,with result l1
+2022-03-18 22:20:41,964 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showContactInfo
+2022-03-18 22:20:41,964 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showContactInfo,with result contactsPage
+2022-03-18 22:20:44,019 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method aboutMe
+2022-03-18 22:20:44,019 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method aboutMe,with result personalPage
+2022-03-18 22:20:45,754 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showContactInfo
+2022-03-18 22:20:45,754 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showContactInfo,with result contactsPage
+2022-03-18 22:20:47,126 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showCatalog
+2022-03-18 22:20:47,513 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showCatalog,with result catalogPage
+2022-03-18 22:22:55,032 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showContactInfo
+2022-03-18 22:22:55,032 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showContactInfo,with result contactsPage
+2022-03-18 22:22:56,548 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showCatalog
+2022-03-18 22:22:56,601 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showCatalog,with result catalogPage
+2022-03-18 22:24:15,671 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showContactInfo
+2022-03-18 22:24:15,671 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showContactInfo,with result contactsPage
+2022-03-18 22:24:48,084 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showCatalog
+2022-03-18 22:24:48,120 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showCatalog,with result catalogPage
+2022-03-18 22:28:31,988 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method welcomePage
+2022-03-18 22:28:32,006 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method welcomePage,with result l1
+2022-03-18 22:28:35,078 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showContactInfo
+2022-03-18 22:28:35,078 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showContactInfo,with result contactsPage
+2022-03-18 22:28:36,977 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method aboutMe
+2022-03-18 22:28:36,977 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method aboutMe,with result personalPage
+2022-03-18 22:28:38,171 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showCatalog
+2022-03-18 22:28:38,611 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showCatalog,with result catalogPage
+2022-03-18 22:28:40,514 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showAddNewProductPage
+2022-03-18 22:28:40,515 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showAddNewProductPage,with result addNewProductPage
+2022-03-18 22:28:40,759 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 22:28:40,805 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 22:29:09,017 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showPersonalProductPage
+2022-03-18 22:29:09,176 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showPersonalProductPage,with result personalProductPage
+2022-03-18 22:29:09,425 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 22:29:09,426 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 22:29:23,897 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showPersonalProductPage
+2022-03-18 22:29:23,902 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showPersonalProductPage,with result personalProductPage
+2022-03-18 22:29:24,126 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 22:29:24,130 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 22:29:34,634 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProductById
+2022-03-18 22:29:34,639 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProductById,with result updateProductPage
+2022-03-18 22:29:34,929 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 22:29:34,929 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 22:29:38,571 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showAddNewProductPage
+2022-03-18 22:29:38,572 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showAddNewProductPage,with result addNewProductPage
+2022-03-18 22:29:38,748 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 22:29:38,748 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 22:29:42,316 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProductById
+2022-03-18 22:29:42,320 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProductById,with result updateProductPage
+2022-03-18 22:29:42,539 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 22:29:42,540 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 22:29:49,300 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showPersonalProductPage
+2022-03-18 22:29:49,303 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showPersonalProductPage,with result personalProductPage
+2022-03-18 22:29:49,624 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 22:29:49,625 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 22:31:52,045 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showAddNewProductPage
+2022-03-18 22:31:52,063 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showAddNewProductPage,with result addNewProductPage
+2022-03-18 22:31:52,977 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 22:31:53,002 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 22:32:02,119 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method welcomePage
+2022-03-18 22:32:02,119 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method welcomePage,with result l1
+2022-03-18 22:32:03,766 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showCatalog
+2022-03-18 22:32:04,218 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showCatalog,with result catalogPage
+2022-03-18 22:32:06,114 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showAddNewProductPage
+2022-03-18 22:32:06,115 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showAddNewProductPage,with result addNewProductPage
+2022-03-18 22:32:06,402 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 22:32:06,402 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 22:32:11,912 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProductById
+2022-03-18 22:32:11,992 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProductById,with result updateProductPage
+2022-03-18 22:32:12,243 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 22:32:12,243 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 22:32:24,788 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showAddNewProductPage
+2022-03-18 22:32:24,789 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showAddNewProductPage,with result addNewProductPage
+2022-03-18 22:32:24,965 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 22:32:24,966 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 22:34:01,353 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method welcomePage
+2022-03-18 22:34:01,372 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method welcomePage,with result l1
+2022-03-18 22:34:04,167 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showCatalog
+2022-03-18 22:34:04,537 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showCatalog,with result catalogPage
+2022-03-18 22:34:06,252 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showAddNewProductPage
+2022-03-18 22:34:06,253 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showAddNewProductPage,with result addNewProductPage
+2022-03-18 22:34:06,499 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 22:34:06,505 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 22:34:11,280 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProductById
+2022-03-18 22:34:11,355 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProductById,with result updateProductPage
+2022-03-18 22:34:11,586 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 22:34:11,586 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 22:35:45,429 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method welcomePage
+2022-03-18 22:35:45,447 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method welcomePage,with result l1
+2022-03-18 22:35:47,578 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showCatalog
+2022-03-18 22:35:47,961 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showCatalog,with result catalogPage
+2022-03-18 22:35:49,532 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showAddNewProductPage
+2022-03-18 22:35:49,532 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showAddNewProductPage,with result addNewProductPage
+2022-03-18 22:35:49,824 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 22:35:49,831 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 22:35:55,273 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProductById
+2022-03-18 22:35:55,362 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProductById,with result updateProductPage
+2022-03-18 22:35:55,568 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 22:35:55,568 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 22:36:03,167 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProduct
+2022-03-18 22:36:03,222 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProduct,with result redirect:/catalog
+2022-03-18 22:36:03,261 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showCatalog
+2022-03-18 22:36:03,286 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showCatalog,with result catalogPage
+2022-03-18 22:36:06,690 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showPersonalProductPage
+2022-03-18 22:36:06,695 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showPersonalProductPage,with result personalProductPage
+2022-03-18 22:36:06,919 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 22:36:06,920 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 22:36:11,480 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showCatalog
+2022-03-18 22:36:11,507 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showCatalog,with result catalogPage
+2022-03-18 22:36:13,238 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProductById
+2022-03-18 22:36:13,246 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProductById,with result updateProductPage
+2022-03-18 22:36:13,518 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-18 22:36:13,519 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-18 22:36:17,109 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method updateProduct
+2022-03-18 22:36:17,129 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method updateProduct,with result error
+2022-03-18 22:36:24,702 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method welcomePage
+2022-03-18 22:36:24,703 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method welcomePage,with result l1
