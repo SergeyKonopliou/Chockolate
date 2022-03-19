@@ -1,12 +1,16 @@
 package com.chockolate.config;
 
+import java.util.Locale;
+
 import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.support.ReloadableResourceBundleMessageSource;
 import org.springframework.context.support.ResourceBundleMessageSource;
 import org.springframework.web.servlet.LocaleResolver;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+import org.springframework.web.servlet.i18n.CookieLocaleResolver;
 import org.springframework.web.servlet.i18n.LocaleChangeInterceptor;
 import org.springframework.web.servlet.i18n.SessionLocaleResolver;
 
@@ -35,8 +39,10 @@ public class MessageConfig implements WebMvcConfigurer {
 	@Bean
 	public LocaleResolver localeResolver() {
 		SessionLocaleResolver slr = new SessionLocaleResolver();
-		slr.setLocaleAttributeName("session.current.locale");
-		slr.setTimeZoneAttributeName("session.current.timezone");
+		Locale defaultLocale = new Locale("ru");
+	    slr.setDefaultLocale(defaultLocale);
+//		slr.setLocaleAttributeName("session.current.locale");
+//		slr.setTimeZoneAttributeName("session.current.timezone");
 		return slr;
 	}
 

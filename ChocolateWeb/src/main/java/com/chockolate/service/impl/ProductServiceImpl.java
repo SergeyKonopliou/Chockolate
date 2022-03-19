@@ -92,22 +92,22 @@ public class ProductServiceImpl implements ProductService {
 	}
 
 	@Override
-	public void add(Product object,TypeProduct typeProduct) throws ServiceException {
+	public void add(Product object,TypeProduct givenTypeProduct) throws ServiceException {
 		try {
 			Product product = new Product();
 			product.setName(object.getName());
 			product.setDescription(object.getDescription());
 			product.setPrice(object.getPrice());
 			product.setImage(object.getImage());
-			TypeProduct type = typeRepository.findTypeProductByName(object.getTypeProduct().getName());
-			if(type != null) {
-				product.setTypeProduct(type);
-				type.getProducts().add(product);
-				typeRepository.save(type);
+			TypeProduct foundTypeProduct = typeRepository.findTypeProductByName(givenTypeProduct.getName());
+			if(foundTypeProduct != null) {
+				product.setTypeProduct(foundTypeProduct);
+				foundTypeProduct.getProducts().add(product);
+				typeRepository.save(foundTypeProduct);
 			}else {
-				product.setTypeProduct(typeProduct);
-				typeProduct.getProducts().add(product);
-				typeRepository.save(typeProduct);
+				product.setTypeProduct(givenTypeProduct);
+				givenTypeProduct.getProducts().add(product);
+				typeRepository.save(givenTypeProduct);
 			}
 			repository.save(product);
 		} catch (Exception e) {
@@ -127,7 +127,7 @@ public class ProductServiceImpl implements ProductService {
 	}
 
 	@Override
-	public void update(Product object,TypeProduct typeProduct) throws ServiceException {
+	public void update(Product object,TypeProduct givenTypeProduct) throws ServiceException {
 		try {
 			Product product = new Product();
 			product.setId(object.getId());
@@ -135,19 +135,39 @@ public class ProductServiceImpl implements ProductService {
 			product.setDescription(object.getDescription());
 			product.setPrice(object.getPrice());
 			product.setImage(object.getImage());
-			TypeProduct type = typeRepository.findTypeProductByName(object.getTypeProduct().getName());
-			if(type != null) {
-				product.setTypeProduct(type);
-				type.getProducts().add(product);
-				typeRepository.save(type);
+			TypeProduct foundTypeProduct = typeRepository.findTypeProductByName(givenTypeProduct.getName());
+			if(foundTypeProduct != null) {
+				product.setTypeProduct(foundTypeProduct);
+				foundTypeProduct.getProducts().add(product);
+				typeRepository.save(foundTypeProduct);
 			}else {
-				product.setTypeProduct(typeProduct);
+				product.setTypeProduct(givenTypeProduct);
 			}
 			repository.save(product);
 		} catch (Exception e) {
 			throw new ServiceException("Problems with updating product to DB service method  " + e.getMessage(), e);
 		}
 		
+	}
+
+	@Override
+	public List<TypeProduct> loadAllTypeProduct() throws ServiceException {
+		return typeRepository.findAll();	
+	}
+
+	@Override
+	public List<Product> loadAllProductByTypeProductId(String typeProduct) throws ServiceException {
+		TypeProduct type = typeRepository.findTypeProductByName(typeProduct);
+		List<Product> products = repository.findProductByTypeProductId(type.getId());
+		return products;
+	}
+
+	@Override
+	public List<Product> loadAllProductByTypeProductIdAndProductName(String typeName, String productName)
+			throws ServiceException {
+		TypeProduct type = typeRepository.findTypeProductByName(typeName);
+		List<Product> products = repository.findProductByTypeProductIdAndName(type.getId(),productName);
+		return products;
 	}
 
 }

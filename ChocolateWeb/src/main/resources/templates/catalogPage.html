@@ -29,13 +29,17 @@
 						<span></span>
 					</div>
 					<nav class="menu_body">
-                        <ul class="menu_list">
-                            <li><a th:href="@{/}" class="menu_link" th:utext="#{label.mainLink}"></a></li>
-							<li><a th:href="@{/catalog}" class="menu_link" th:utext="#{label.catalogLink}"></a></li>
-							<li><a th:href="@{/contacts}" class="menu_link" th:utext="#{label.contactsLink}"></a></li>
-							<li><a th:href="@{/about-me}" class="menu_link" th:utext="#{label.aboutmeLink}"></a></li>
-                        </ul>
-                    </nav>
+						<ul class="menu_list">
+							<li><a th:href="@{/}" class="menu_link"
+								th:utext="#{label.mainLink}"></a></li>
+							<li><a th:href="@{/catalog}" class="menu_link"
+								th:utext="#{label.catalogLink}"></a></li>
+							<li><a th:href="@{/contacts}" class="menu_link"
+								th:utext="#{label.contactsLink}"></a></li>
+							<li><a th:href="@{/about-me}" class="menu_link"
+								th:utext="#{label.aboutmeLink}"></a></li>
+						</ul>
+					</nav>
 				</div>
 			</div>
 		</header>
@@ -69,8 +73,11 @@
 									onchange="window.location.href=this.options[this.selectedIndex].value">
 									<option selected value="choice">Select type</option>
 									<option value="#" th:value="@{/catalog?select=all}">all</option>
-									<option value="#" th:value="@{/catalog?select=circle}">circle</option>
-									<option value="#" th:value="@{/catalog?select=ball}">ball</option>
+		<!-- 							<option value="#" th:value="@{/catalog?select=circle}">circle</option>
+									<option value="#" th:value="@{/catalog?select=ball}">line</option> -->
+									<option th:each="type : ${types}"
+										th:value="@{/catalog?select={select}(select=${type.name})}"
+										th:utext="${type.name}" />
 								</select>
 							</div>
 						</div>
@@ -97,11 +104,12 @@
 													th:text="${prod.name}"></a></td>
 												<td th:text="${prod.price}"></td>
 												<td th:text="${prod.typeProduct.name}"></td>
-												<td>
-													<a th:href="@{/updateProduct/{linkTitle}(linkTitle=${prod.id})}"><button type="button"
-													class="btn btn-primary mb-2">Update</button></a>
-													<a th:href="@{/deleteProduct/{linkTitle}(linkTitle=${prod.id})}"><button type="button"
-													class="btn btn-primary mb-2">Delete</button></a>
+												<td><a
+													th:href="@{/updateProduct/{linkTitle}(linkTitle=${prod.id})}"><button
+															type="button" class="btn btn-primary mb-2">Update</button></a>
+													<a
+													th:href="@{/deleteProduct/{linkTitle}(linkTitle=${prod.id})}"><button
+															type="button" class="btn btn-primary mb-2">Delete</button></a>
 												</td>
 											</tr>
 										</th:block>
