@@ -1,6 +1,7 @@
 ﻿package com.chockolate.service.impl;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -84,7 +85,7 @@ public class ProductServiceImpl implements ProductService {
 	public List<Product> loadProductByName(String name) throws ServiceException {
 		List<Product> products = new ArrayList<Product>();
 		try {
-			products = repository.findProductByName(name);
+			products = repository.findProductByNameContainsIgnoreCase(name);
 		} catch (Exception e) {
 			throw new ServiceException("Problems with loading searching product from DB service method " + e.getMessage(), e);
 		}
@@ -166,9 +167,76 @@ public class ProductServiceImpl implements ProductService {
 	public List<Product> loadAllProductByTypeProductIdAndProductName(String typeName, String productName)
 			throws ServiceException {
 		TypeProduct type = typeRepository.findTypeProductByName(typeName);
-		List<Product> products = repository.findProductByTypeProductIdAndName(type.getId(),productName);
+		List<Product> products = repository.findProductByTypeProductIdAndNameContainsIgnoreCase(type.getId(),productName);
 		return products;
 	}
+
+	@Override
+	public List<Product> loadAllProductByPrice(String priceSortType) throws ServiceException {
+		List<Product> products = new ArrayList<Product>();
+		products = repository.findAll();
+		try {
+			if(priceSortType.equals("high")) {
+				Collections.sort(products);
+			}else {
+				Collections.sort(products, Collections.reverseOrder());
+			}
+		} catch (Exception e) {
+			throw new ServiceException("Problems with loading searching product by price from DB service method " + e.getMessage(), e);
+		}
+		return products;
+	}
+
+	@Override
+	public List<Product> loadAllProductByTypeProductIdAndPrice(String typeName,String priceSortType) throws ServiceException {
+		List<Product> products = new ArrayList<Product>();
+		try {
+			TypeProduct type = typeRepository.findTypeProductByName(typeName);
+			if(priceSortType.equals("high")) {
+				products = repository.findProductByTypeProductIdOrderByPriceAsc(type.getId());
+			}else {
+				products = repository.findProductByTypeProductIdOrderByPriceDesc(type.getId());
+			}
+		} catch (Exception e) {
+			throw new ServiceException("Problems with loading searching product by price and product type from DB service method " + e.getMessage(), e);
+		}
+		return products;
+	}
+
+	@Override
+	public List<Product> loadAllProductByNameContainsIgnoreCaseAndPrice(String name, String priceSortType)
+			throws ServiceException {
+		List<Product> products = new ArrayList<Product>();
+		try {
+			if(priceSortType.equals("high")) {
+				products = repository.findProductByNameContainsIgnoreCaseOrderByPriceAsc(name);
+			}else {
+				products = repository.findProductByNameContainsIgnoreCaseOrderByPriceDesc(name);
+			}
+		} catch (Exception e) {
+			throw new ServiceException("Problems with loading searching product by price and product name from DB service method " + e.getMessage(), e);
+		}
+		return products;
+	}
+
+	@Override
+	public List<Product> loadAllProductByTypeProductIdAndPriceAndNameContainsIgnoreCase(String typeName, String priceSortType,
+			String name) throws ServiceException {
+		List<Product> products = new ArrayList<Product>();
+		try {
+			TypeProduct type = typeRepository.findTypeProductByName(typeName);
+			if(priceSortType.equals("high")) {
+				products = repository.findProductByTypeProductIdAndNameContainsIgnoreCaseOrderByPriceAsc(type.getId(), name);
+			}else {
+				products = repository.findProductByTypeProductIdAndNameContainsIgnoreCaseOrderByPriceDesc(type.getId(), name);
+			}
+			
+		} catch (Exception e) {
+			throw new ServiceException("Problems with loading searching product by price and product type and product name from DB service method " + e.getMessage(), e);
+		}
+		return products;
+	}
+
 
 }
 

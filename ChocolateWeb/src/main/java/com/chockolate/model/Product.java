@@ -13,7 +13,7 @@ import org.hibernate.annotations.Synchronize;
 
 @Entity
 @Synchronize(value = { "TypeProduct" })
-public class Product {
+public class Product implements Comparable<Product> {
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
@@ -144,6 +144,11 @@ public class Product {
 	public String toString() {
 		return "Product [id=" + id + ", name=" + name + ", description=" + description + ", price=" + price + ", image="
 				+ image + "]";
+	}
+
+	@Override
+	public int compareTo(Product o) {
+		return (int) (o.getPrice() - this.getPrice());
 	}
 	
 	

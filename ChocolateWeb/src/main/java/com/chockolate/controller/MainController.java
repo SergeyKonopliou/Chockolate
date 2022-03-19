@@ -55,37 +55,56 @@ public class MainController {
 
 	@GetMapping("/catalog")
 	public String showCatalog(@RequestParam(defaultValue = "") String search_product,
-			@RequestParam(defaultValue = "") String select, Model model) {
-		if (select.isEmpty()) {
-			try {
-				if (search_product.isEmpty()) {
-					products = service.loadAll();
-				} else {
-					products = service.loadProductByName(search_product);
-				}
-			} catch (ServiceException e) {
-				model.addAttribute("message", e.getMessage());
-				return "error";
+			@RequestParam(defaultValue = "") String select,@RequestParam(defaultValue = "") String selectPrice, Model model) {
+//		if (select.isEmpty()) {
+//			try {
+//				if (search_product.isEmpty()) {
+//					products = service.loadAll();
+//				} else {
+//					products = service.loadProductByName(search_product);
+//				}
+//			} catch (ServiceException e) {
+//				model.addAttribute("message", e.getMessage());
+//				return "error";
+//			}
+//		}else {
+//			try {
+//				if (search_product.isEmpty()) {
+//					try {
+//						products = service.loadAllProductByTypeProductId(select);
+//					} catch (ServiceException e) {
+//						model.addAttribute("message", e.getMessage());
+//						return "error";
+//					}
+//				} else {
+//					products = service.loadAllProductByTypeProductIdAndProductName(select, search_product);
+//				}
+//			} catch (ServiceException e) {
+//				model.addAttribute("message", e.getMessage());
+//				return "error";
+//			}
+		try {
+			if(!select.isEmpty() && !selectPrice.isEmpty() && !search_product.isEmpty()) {
+				products = service.loadAllProductByTypeProductIdAndPriceAndNameContainsIgnoreCase(select, selectPrice, search_product);
+			}else if(!selectPrice.isEmpty() && !search_product.isEmpty()) {
+				products = service.loadAllProductByNameContainsIgnoreCaseAndPrice(search_product, selectPrice);
+			}else if(!select.isEmpty() && !selectPrice.isEmpty()) {
+				products = service.loadAllProductByTypeProductIdAndPrice(select, selectPrice);
+			}else if(!select.isEmpty() && !search_product.isEmpty()) {
+				products = service.loadAllProductByTypeProductIdAndProductName(select, search_product);
+			}else if(!selectPrice.isEmpty()) {
+				products = service.loadAllProductByPrice(selectPrice);
+			}else if(!select.isEmpty()) {
+				products = service.loadAllProductByTypeProductId(select);
+			}else if(!search_product.isEmpty()) {
+				products = service.loadProductByName(search_product);
+			}else {
+				products = service.loadAll();
 			}
-		}else {
-			try {
-				if (search_product.isEmpty()) {
-					try {
-						products = service.loadAllProductByTypeProductId(select);
-					} catch (ServiceException e) {
-						model.addAttribute("message", e.getMessage());
-						return "error";
-					}
-				} else {
-					products = service.loadAllProductByTypeProductIdAndProductName(select, search_product);
-				}
-			} catch (ServiceException e) {
-				model.addAttribute("message", e.getMessage());
-				return "error";
-			}
-	
-		}
-		
+		} catch (ServiceException e) {
+			model.addAttribute("message", e.getMessage());
+			return "error";
+		}	
 		model.addAttribute("prod", products);
 		boolean findProductFlag = products.isEmpty() ? true : false;
 		model.addAttribute("findProductFlag", findProductFlag);
