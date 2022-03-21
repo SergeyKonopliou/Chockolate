@@ -9,14 +9,18 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.chockolate.exception.ServiceException;
 import com.chockolate.model.Product;
 import com.chockolate.model.TypeProduct;
+import com.chockolate.model.User;
 import com.chockolate.service.impl.ProductServiceImpl;
 
 
@@ -52,6 +56,24 @@ public class MainController {
 	@GetMapping("/contacts")
 	public String showContactInfo() {
 		return "contactsPage";
+	}
+	
+	@GetMapping("/login")
+	public String showLoginForm() {
+		return "loginPage";
+	}
+	
+	@PostMapping("/in")
+	public String logIn(@ModelAttribute User user,BindingResult binding,Model model) {
+		if (!binding.hasErrors()) {
+			try {
+				System.out.println(user.toString());
+			} catch (Exception e) {
+				model.addAttribute("message", e.getMessage());
+				return "error";
+			}
+		} 
+		return "l1";	
 	}
 
 	@GetMapping("/catalog")

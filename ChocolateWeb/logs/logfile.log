@@ -4182,3 +4182,65 @@ Field error in object 'product' on field 'typeProduct': rejected value [sdf]; co
 2022-03-21 13:21:37,301 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method welcomePage,with result l1
 2022-03-21 13:21:56,725 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method welcomePage
 2022-03-21 13:21:56,726 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method welcomePage,with result l1
+2022-03-21 14:24:00,231 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method welcomePage
+2022-03-21 14:24:00,284 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method welcomePage,with result l1
+2022-03-21 14:37:28,753 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method welcomePage
+2022-03-21 14:37:28,754 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method welcomePage,with result l1
+2022-03-21 14:39:58,572 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method welcomePage
+2022-03-21 14:39:58,573 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method welcomePage,with result l1
+2022-03-21 14:44:25,553 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method welcomePage
+2022-03-21 14:44:25,566 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method welcomePage,with result l1
+2022-03-21 14:46:14,872 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method welcomePage
+2022-03-21 14:46:14,873 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method welcomePage,with result l1
+2022-03-21 14:58:48,891 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method welcomePage
+2022-03-21 14:58:48,927 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method welcomePage,with result l1
+2022-03-21 14:58:51,381 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-21 14:58:51,388 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error404
+2022-03-21 14:58:56,806 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method welcomePage
+2022-03-21 14:58:56,807 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method welcomePage,with result l1
+2022-03-21 15:00:11,703 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method welcomePage
+2022-03-21 15:00:11,733 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method welcomePage,with result l1
+2022-03-21 15:00:13,591 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showLoginForm
+2022-03-21 15:00:13,592 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showLoginForm,with result loginPage
+2022-03-21 15:00:28,621 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method handleError
+2022-03-21 15:00:28,629 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method handleError,with result error
+2022-03-21 15:01:56,159 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showLoginForm
+2022-03-21 15:01:56,159 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showLoginForm,with result loginPage
+2022-03-21 15:03:05,753 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showLoginForm
+2022-03-21 15:03:05,753 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showLoginForm,with result loginPage
+2022-03-21 15:03:15,903 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showLoginForm
+2022-03-21 15:03:15,903 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showLoginForm,with result loginPage
+2022-03-21 15:03:35,966 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showLoginForm
+2022-03-21 15:03:35,967 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showLoginForm,with result loginPage
+2022-03-21 15:05:03,453 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showLoginForm
+2022-03-21 15:05:03,456 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showLoginForm,with result loginPage
+2022-03-21 15:05:38,037 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showLoginForm
+2022-03-21 15:05:38,038 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showLoginForm,with result loginPage
+2022-03-21 15:06:27,948 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showLoginForm
+2022-03-21 15:06:27,949 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showLoginForm,with result loginPage
+2022-03-21 15:06:44,573 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showLoginForm
+2022-03-21 15:06:44,573 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showLoginForm,with result loginPage
+2022-03-21 15:06:59,883 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showLoginForm
+2022-03-21 15:06:59,884 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showLoginForm,with result loginPage
+2022-03-21 15:07:19,104 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showLoginForm
+2022-03-21 15:07:19,105 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showLoginForm,with result loginPage
+2022-03-21 15:08:25,824 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showLoginForm
+2022-03-21 15:08:25,825 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showLoginForm,with result loginPage
+2022-03-21 15:08:38,358 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method welcomePage
+2022-03-21 15:08:38,359 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method welcomePage,with result l1
+2022-03-21 15:08:43,518 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showContactInfo
+2022-03-21 15:08:43,519 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showContactInfo,with result contactsPage
+2022-03-21 15:15:31,939 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method welcomePage
+2022-03-21 15:15:32,013 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method welcomePage,with result l1
+2022-03-21 15:15:40,108 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showLoginForm
+2022-03-21 15:15:40,109 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showLoginForm,with result loginPage
+2022-03-21 15:30:34,709 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method welcomePage
+2022-03-21 15:30:34,792 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method welcomePage,with result l1
+2022-03-21 15:30:37,076 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showLoginForm
+2022-03-21 15:30:37,077 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showLoginForm,with result loginPage
+2022-03-21 15:30:42,122 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method logIn
+2022-03-21 15:30:42,124 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method logIn,with result l1
+2022-03-21 15:31:06,569 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method showLoginForm
+2022-03-21 15:31:06,570 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method showLoginForm,with result loginPage
+2022-03-21 15:31:10,739 [INFO ] LoggableAspect.java:beforeMethodExecuting:34 - Before method logIn
+2022-03-21 15:31:10,741 [INFO ] LoggableAspect.java:afterMethodExecuting:40 - After method logIn,with result l1

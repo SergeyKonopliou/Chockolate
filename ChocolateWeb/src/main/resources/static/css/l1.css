@@ -388,7 +388,12 @@ main {
 .error {
         color: red;
     }
-
+.form_login{
+	width: 300px;
+  	margin: 0 auto;
+  	padding-top: 20px;
+  	color: #ff8080;
+}
 
 @media (max-width:992px) {
 
