@@ -61,19 +61,21 @@
 
 							<div class="search">
 								<form action="#" th:action="@{/catalog}" method="get"
-									name="searchForm">
-									<input type="text" name="search_product"
-										placeholder="Name product">
+									name="searchForm" class="form_search">
+									<div>
+										<input type="text" name="search_product"
+										placeholder="Name product" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
 									 <input type="hidden"
 										class="send_select" name="select">
 									<input type="hidden"
 										class="send_price" name="selectPrice">	
-									<button type="submit">Search</button>
+									</div>
+									<button type="submit" class="btn btn-primary mb-2">Search</button>
 								</form>
 							</div>
 
 							<div class="listType">
-								<select class="select" name="select" size="1">
+								<select class="select form-select" name="select" size="1" aria-label="Default select example">
 									<option th:value="all">Select type</option>
 									<option th:value="all">all</option>
 									<option th:each="type : ${types}" th:utext="${type.name}"
@@ -82,10 +84,10 @@
 							</div>
 							
 							<div class="listPrice">
-								<select class="selectPrice" name="selectPrice" size="1">
+								<select class="selectPrice form-select" name="selectPrice" size="1" aria-label="Default select example">
 									<option th:value="none">Price</option>
-									<option th:value="high">по возрастанию</option>
-									<option th:value="low">по убыванию</option>
+									<option th:value="high">по убыванию</option>
+									<option th:value="low">по возрастанию</option>
 								</select>
 							</div>
 						</div>
@@ -148,34 +150,41 @@
 							<div class="footer_block_spoiler_menu_title"
 								th:utext="#{label.contactsLink}"></div>
 							<div class="footer_block_spoiler_menu_text">
-								Velcome +234234234234 <br> Mail sdfgsdfgd@djffkgbkd.dfg
+								<div>
+									<img src="images/icons/icons-телефон.png" alt=""> Velcome
+									+234234234234
+								</div>
+								<img src="images/icons/icons-электронная-почта.png" alt="">
+								Mail sdfgsdfgd@djffkgbkd.dfg
 							</div>
-						</div>
-						<div class="footer_block_spoiler">
-							<div class="footer_block_spoiler_menu_title"
-								th:utext="#{label.SocialLink}"></div>
-							<div class="footer_block_spoiler_menu_text">
-								ВКонтакте ваопдваповдапдва <br> Instagram
-								dgfdjfkghdkjfgkdfg
-							</div>
-						</div>
-						<div class="footer_block_spoiler">
-							<div class="footer_block_spoiler_menu_title"
-								th:utext="#{label.UnitedInfoLink}"></div>
-							<div class="footer_block_spoiler_menu_text"
-								id="current_date_time_block2">Здесь будет находиться
-								какая-то общая информация</div>
 						</div>
 					</div>
-
-					<div class="footer_image">
-						<img src="images/mms2.gif" alt=""> <img
-							src="images/mms1.gif" alt="">
+					<div class="footer_block_spoiler">
+						<div class="footer_block_spoiler_menu_title"
+							th:utext="#{label.SocialLink}"></div>
+						<div class="footer_block_spoiler_menu_text">
+							<div>
+								<img src="images/icons/icons-instagram.png" alt="">
+								Instagram
+							</div>
+							<div>
+								<img src="images/icons/icons-вконтакте.png" alt=""> VK
+							</div>
+							<div>
+								<img src="images/icons/icons-viber.png" alt=""> Viber
+							</div>
+						</div>
+					</div>
+					<div class="footer_block_spoiler">
+						<div class="footer_block_spoiler_menu_title"
+							th:utext="#{label.UnitedInfoLink}"></div>
+						<div class="footer_block_spoiler_menu_text"
+							id="current_date_time_block2">Здесь будет находиться
+							какая-то общая информация</div>
 					</div>
 				</div>
 			</div>
 		</footer>
-	</div>
 	<script
 		src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	<script th:src="@{/js/l1.js}"></script>

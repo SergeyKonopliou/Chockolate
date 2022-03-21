@@ -26,21 +26,26 @@
 					<!-- <div class="brend"><img alt="" src="images/logotip.png"></div> -->
 					<nav class="menu_body">
 						<ul class="menu_list">
-							<li><a th:href="@{/}" class="menu_link" th:utext="#{label.mainLink}"></a></li>
-							<li><a th:href="@{/catalog}" class="menu_link" th:utext="#{label.catalogLink}"></a></li>
-							<li><a th:href="@{/contacts}" class="menu_link" th:utext="#{label.contactsLink}"></a></li>
-							<li><a th:href="@{/about-me}" class="menu_link" th:utext="#{label.aboutmeLink}"></a></li>
-								<div class="lang_link">
-									<a th:href="@{lang(lang=en)}"><img src="images/united_kingdom.png"></a>
-									<a th:href="@{lang(lang=ru)}"><img src="images/russia.png"></a>
-									<a th:href="@{lang(lang=de)}"><img src="images/germany.png"></a> 
-								</div>
+							<li><a th:href="@{/}" class="menu_link"
+								th:utext="#{label.mainLink}"></a></li>
+							<li><a th:href="@{/catalog}" class="menu_link"
+								th:utext="#{label.catalogLink}"></a></li>
+							<li><a th:href="@{/contacts}" class="menu_link"
+								th:utext="#{label.contactsLink}"></a></li>
+							<li><a th:href="@{/about-me}" class="menu_link"
+								th:utext="#{label.aboutmeLink}"></a></li>
+							<div class="lang_link">
+								<a th:href="@{lang(lang=en)}"><img
+									src="images/united_kingdom.png"></a> <a
+									th:href="@{lang(lang=ru)}"><img src="images/russia.png"></a>
+								<a th:href="@{lang(lang=de)}"><img src="images/germany.png"></a>
+							</div>
 							</li>
 						</ul>
 					</nav>
 				</div>
 			</div>
-			
+
 		</header>
 
 		<main style="background-image: url(images/chok1.jpg);">
@@ -116,37 +121,43 @@
 							<div class="footer_block_spoiler_menu_title"
 								th:utext="#{label.contactsLink}"></div>
 							<div class="footer_block_spoiler_menu_text">
-								Velcome +234234234234 <br> Mail sdfgsdfgd@djffkgbkd.dfg
+								<div>
+									<img src="images/icons/icons-телефон.png" alt=""> Velcome
+									+234234234234
+								</div>
+								<img src="images/icons/icons-электронная-почта.png" alt="">
+								Mail sdfgsdfgd@djffkgbkd.dfg
 							</div>
-						</div>
-						<div class="footer_block_spoiler">
-							<div class="footer_block_spoiler_menu_title"
-								th:utext="#{label.SocialLink}"></div>
-							<div class="footer_block_spoiler_menu_text">
-								ВКонтакте ваопдваповдапдва <br> Instagram
-								dgfdjfkghdkjfgkdfg
-							</div>
-						</div>
-						<div class="footer_block_spoiler">
-							<div class="footer_block_spoiler_menu_title"
-								th:utext="#{label.UnitedInfoLink}"></div>
-							<div class="footer_block_spoiler_menu_text"
-								id="current_date_time_block2">Здесь будет находиться
-								какая-то общая информация</div>
 						</div>
 					</div>
-
-					<div class="footer_image">
-						<img src="images/mms2.gif" alt=""> <img
-							src="images/mms1.gif" alt="">
+					<div class="footer_block_spoiler">
+						<div class="footer_block_spoiler_menu_title"
+							th:utext="#{label.SocialLink}"></div>
+						<div class="footer_block_spoiler_menu_text">
+							<div>
+								 <a href="https://www.instagram.com/" class="society_link" ><img src="images/icons/icons-instagram.png" alt=""> Instagram</a>
+							</div>
+							<div>
+								<a href="https://www.vk.com/" class="society_link"><img src="images/icons/icons-вконтакте.png" alt=""> VK</a>
+							</div>
+							<div>
+								<a href="https://www.viber.com/ru/" class="society_link"><img src="images/icons/icons-viber.png" alt=""> Viber</a>
+							</div>
+						</div>
+					</div>
+					<div class="footer_block_spoiler">
+						<div class="footer_block_spoiler_menu_title"
+							th:utext="#{label.UnitedInfoLink}"></div>
+						<div class="footer_block_spoiler_menu_text"
+							id="current_date_time_block2">Здесь будет находиться
+							какая-то общая информация</div>
 					</div>
 				</div>
 			</div>
 		</footer>
-	</div>
 
-	<script
-		src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-	<script th:src="@{/js/l1.js}"></script>
+		<script
+			src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+		<script th:src="@{/js/l1.js}"></script>
 </body>
 </html>

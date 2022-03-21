@@ -255,6 +255,7 @@ body {
 
     .menu_link {
         font-size: 24px;
+        
     }
 	.lang_link{
 		margin-left:0px;
@@ -304,7 +305,11 @@ main {
         margin: 0px 0px 15px 0px;
     }
 }
-
+.form_search{
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
 .page {
     display: flex;
@@ -380,6 +385,9 @@ main {
     justify-content: space-around;
     margin-bottom: 50px;
 }
+.error {
+        color: red;
+    }
 
 
 @media (max-width:992px) {
@@ -440,23 +448,15 @@ footer {
     max-height: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-}
-.footer_block_menu {
-    margin: 10px 0px 0px 0px;
-    /* добавляем прокрутку */
-   /*  overflow: auto; */
-}
-
-.footer_block_spoiler {
-    margin: 0px 0px 20px 0px;
+    justify-content: space-around;
+    margin-top:10px;
 }
 
 .footer_block_spoiler_menu_title {
     text-transform: uppercase;
     letter-spacing: 2px;
 
-    position: relative;
+    position:relative;
     /* отступаем слева,чтобы туда переместить галочки*/
     padding: 0px 0px 0px 30px;
     /* при наведении мыши будет меняться курсор*/
@@ -470,7 +470,19 @@ footer {
     color: burlywood;
 }
 
+.society_link{
+	color: burlywood;
+	outline: none;
+  	text-decoration: none;
+}
+.society_link:focus {
+  border-bottom: 1px solid;
+}
 
+.society_link:hover {
+  border-bottom: 1px solid;
+   text-shadow: 1px 20px 10px #c0c0c0; color: #ff8040;
+}
 
 @media (max-width:767px) {
 

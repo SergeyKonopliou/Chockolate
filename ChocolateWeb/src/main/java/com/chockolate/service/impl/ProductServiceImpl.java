@@ -32,37 +32,37 @@ public class ProductServiceImpl implements ProductService {
 	public List<Product> loadAll() throws ServiceException {
 		List<Product> products = new ArrayList<>();
 		try {
-			Product product = new Product();
-			product.setName("apple");
-			product.setDescription("sgsdlfgher r hgrel erul thelrh gelghelr ghkewr ge");
-			product.setPrice(12.12);
-			product.setImage("images/productImg/apple.jpg");			
-			Product product2 = new Product();
-			product2.setName("ball");
-			product2.setDescription("rty rturtur yu t yurt uy tyi ty itryityuytuytuyu");
-			product2.setPrice(112.1232);
-			product2.setImage("images/productImg/ball.jpg");
-			Product product3 = new Product();
-			product3.setName("pen");
-			product3.setDescription("ksahgrt rtjtkjhyhelrh gelghelr ghkewr ge");
-			product3.setPrice(5.1);
-			product3.setImage("images/productImg/pen.jpg");
-			
-			
-			TypeProduct type1 = new TypeProduct("circle");
-			TypeProduct type2 = new TypeProduct("line");
-			product.setTypeProduct(type1);
-			product2.setTypeProduct(type1);
-			product3.setTypeProduct(type2);
-			type1.getProducts().add(product);
-			type1.getProducts().add(product2);
-			type2.getProducts().add(product);
-			
-			typeRepository.save(type1);
-			typeRepository.save(type2);
-			repository.save(product);
-			repository.save(product2);
-			repository.save(product3);
+//			Product product = new Product();
+//			product.setName("apple");
+//			product.setDescription("sgsdlfgher r hgrel erul thelrh gelghelr ghkewr ge");
+//			product.setPrice(12.12);
+//			product.setImage("images/productImg/apple.jpg");			
+//			Product product2 = new Product();
+//			product2.setName("ball");
+//			product2.setDescription("rty rturtur yu t yurt uy tyi ty itryityuytuytuyu");
+//			product2.setPrice(112.1232);
+//			product2.setImage("images/productImg/ball.jpg");
+//			Product product3 = new Product();
+//			product3.setName("pen");
+//			product3.setDescription("ksahgrt rtjtkjhyhelrh gelghelr ghkewr ge");
+//			product3.setPrice(5.1);
+//			product3.setImage("images/productImg/pen.jpg");
+//			
+//			
+//			TypeProduct type1 = new TypeProduct("circle");
+//			TypeProduct type2 = new TypeProduct("line");
+//			product.setTypeProduct(type1);
+//			product2.setTypeProduct(type1);
+//			product3.setTypeProduct(type2);
+//			type1.getProducts().add(product);
+//			type1.getProducts().add(product2);
+//			type2.getProducts().add(product);
+//			
+//			typeRepository.save(type1);
+//			typeRepository.save(type2);
+//			repository.save(product);
+//			repository.save(product2);
+//			repository.save(product3);
 			products = repository.findAll();
 		} catch (Exception e) {
 			throw new ServiceException("Problems with loading all products from DB service method " + e.getMessage(), e);

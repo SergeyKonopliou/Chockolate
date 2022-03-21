@@ -49,29 +49,29 @@
 					<div class="add_new_product">
 						<form action="#" th:action="@{/add}" method="get" name="addForm">
 							<div class="form-group row">
-								Name: <input type="text" name="name"
-												placeholder="Product name">
+								Name: <input type="text" name="name" placeholder="Product name">
 							</div>
 							<div class="form-group row">
 								Price: <input type="text" name="price"
-												placeholder="Product price">
+									placeholder="Product price">
 							</div>
 							<div class="form-group row">
 								Type: <input type="text" name="typeProduct"
-												placeholder="Product type">
+									placeholder="Product type">
 							</div>
 							<div class="form-group row">
 								Description:
 								<textarea name="description" cols="20" rows="4"></textarea>
 							</div>
 							<div class="form-group row">
-								Image: <input type="text" name="image"
-												placeholder="images/productImg/your image name(img.jpg)">
+								Image: <input type="text" name="image" id="img" 
+									placeholder= "image link">
 							</div>
-							<input type="submit" name="add" value="Add" class="btn btn-primary btn-lg btn-block">
+							<input type="submit" name="add" value="Add"
+								class="btn btn-primary btn-lg btn-block">
 						</form>
 					</div>
-					
+
 				</div>
 
 
@@ -87,41 +87,50 @@
 							<div class="footer_block_spoiler_menu_title"
 								th:utext="#{label.contactsLink}"></div>
 							<div class="footer_block_spoiler_menu_text">
-								Velcome +234234234234 <br> Mail sdfgsdfgd@djffkgbkd.dfg
+								<div>
+									<img th:src="@{images/icons/icons-телефон.png}"> Velcome
+									+234234234234
+								</div>
+								<img th:src="@{images/icons/icons-электронная-почта.png}">
+								Mail sdfgsdfgd@djffkgbkd.dfg
 							</div>
-						</div>
-						<div class="footer_block_spoiler">
-							<div class="footer_block_spoiler_menu_title"
-								th:utext="#{label.SocialLink}"></div>
-							<div class="footer_block_spoiler_menu_text">
-								ВКонтакте ваопдваповдапдва <br> Instagram
-								dgfdjfkghdkjfgkdfg
-							</div>
-						</div>
-						<div class="footer_block_spoiler">
-							<div class="footer_block_spoiler_menu_title"
-								th:utext="#{label.UnitedInfoLink}"></div>
-							<div class="footer_block_spoiler_menu_text"
-								id="current_date_time_block2">Здесь будет находиться
-								какая-то общая информация</div>
 						</div>
 					</div>
-
-					<div class="footer_image">
-						<img src="#" th:src="@{/images/mms1.gif}">
-                    	<img src="#" th:src="@{/images/mms2.gif}">
+					<div class="footer_block_spoiler">
+						<div class="footer_block_spoiler_menu_title"
+							th:utext="#{label.SocialLink}"></div>
+						<div class="footer_block_spoiler_menu_text">
+							<div>
+								<img src="#" th:src="@{images/icons/icons-instagram.png}">
+								Instagram
+							</div>
+							<div>
+								<img src="#" th:src="@{images/icons/icons-вконтакте.png}"> VK
+							</div>
+							<div>
+								<img src="#" th:src="@{images/icons/icons-viber.png}"> Viber
+							</div>
+						</div>
+					</div>
+					<div class="footer_block_spoiler">
+						<div class="footer_block_spoiler_menu_title"
+							th:utext="#{label.UnitedInfoLink}"></div>
+						<div class="footer_block_spoiler_menu_text"
+							id="current_date_time_block2">Здесь будет находиться
+							какая-то общая информация</div>
 					</div>
 				</div>
 			</div>
 		</footer>
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-		crossorigin="anonymous"></script>
-	<script
-		src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-		crossorigin="anonymous"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+			crossorigin="anonymous"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+			crossorigin="anonymous"></script>
+		<script
+			src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 		<script th:src="@{/js/l1.js}"></script>
 </body>
 </html>

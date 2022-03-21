@@ -7,7 +7,6 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.Lob;
 import javax.persistence.ManyToOne;
-import javax.validation.constraints.NotEmpty;
 
 import org.hibernate.annotations.Synchronize;
 
@@ -16,14 +15,15 @@ import org.hibernate.annotations.Synchronize;
 public class Product implements Comparable<Product> {
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
 	private String name;
 	@Lob
 	private String description;
-
+	
 	private Double price;
+	@Lob
     private String image;
     
     @ManyToOne

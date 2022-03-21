@@ -19,6 +19,7 @@ import com.chockolate.model.Product;
 import com.chockolate.model.TypeProduct;
 import com.chockolate.service.impl.ProductServiceImpl;
 
+
 @Controller
 public class MainController {
 
@@ -56,33 +57,6 @@ public class MainController {
 	@GetMapping("/catalog")
 	public String showCatalog(@RequestParam(defaultValue = "") String search_product,
 			@RequestParam(defaultValue = "") String select,@RequestParam(defaultValue = "") String selectPrice, Model model) {
-//		if (select.isEmpty()) {
-//			try {
-//				if (search_product.isEmpty()) {
-//					products = service.loadAll();
-//				} else {
-//					products = service.loadProductByName(search_product);
-//				}
-//			} catch (ServiceException e) {
-//				model.addAttribute("message", e.getMessage());
-//				return "error";
-//			}
-//		}else {
-//			try {
-//				if (search_product.isEmpty()) {
-//					try {
-//						products = service.loadAllProductByTypeProductId(select);
-//					} catch (ServiceException e) {
-//						model.addAttribute("message", e.getMessage());
-//						return "error";
-//					}
-//				} else {
-//					products = service.loadAllProductByTypeProductIdAndProductName(select, search_product);
-//				}
-//			} catch (ServiceException e) {
-//				model.addAttribute("message", e.getMessage());
-//				return "error";
-//			}
 		try {
 			if(!select.isEmpty() && !selectPrice.isEmpty() && !search_product.isEmpty()) {
 				products = service.loadAllProductByTypeProductIdAndPriceAndNameContainsIgnoreCase(select, selectPrice, search_product);
@@ -133,12 +107,12 @@ public class MainController {
 	}
 
 	@GetMapping("/addNewProduct")
-	public String showAddNewProductPage() {
+	public String showAddNewProductPage(Model model) {
 		return "addNewProductPage";
 	}
 
 	@RequestMapping(value = "/add")
-	public String addProduct(@PathParam(value = "name") String name, @PathParam(value = "price") String price,
+	public String addProduct( @PathParam(value = "name") String name,@PathParam(value = "price") String price,
 			@PathParam(value = "typeProduct") String typeProduct, @PathParam(value = "description") String description,
 			@PathParam(value = "image") String image, Model model) {
 		try {

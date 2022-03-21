@@ -84,7 +84,7 @@
 			</div>
 		</main>
 
-		<footer>
+			<footer>
 			<div class="container">
 				<div class="footer_container">
 
@@ -93,29 +93,37 @@
 							<div class="footer_block_spoiler_menu_title"
 								th:utext="#{label.contactsLink}"></div>
 							<div class="footer_block_spoiler_menu_text">
-								Velcome +234234234234 <br> Mail sdfgsdfgd@djffkgbkd.dfg
+								<div>
+									<img th:src="@{images/icons/icons-телефон.png}"> Velcome
+									+234234234234
+								</div>
+								<img th:src="@{images/icons/icons-электронная-почта.png}">
+								Mail sdfgsdfgd@djffkgbkd.dfg
 							</div>
-						</div>
-						<div class="footer_block_spoiler">
-							<div class="footer_block_spoiler_menu_title"
-								th:utext="#{label.SocialLink}"></div>
-							<div class="footer_block_spoiler_menu_text">
-								ВКонтакте ваопдваповдапдва <br> Instagram
-								dgfdjfkghdkjfgkdfg
-							</div>
-						</div>
-						<div class="footer_block_spoiler">
-							<div class="footer_block_spoiler_menu_title"
-								th:utext="#{label.UnitedInfoLink}"></div>
-							<div class="footer_block_spoiler_menu_text"
-								id="current_date_time_block2">Здесь будет находиться
-								какая-то общая информация</div>
 						</div>
 					</div>
-
-					<div class="footer_image">
-						<img src="#" th:src="@{/images/mms1.gif}">
-                    	<img src="#" th:src="@{/images/mms2.gif}">
+					<div class="footer_block_spoiler">
+						<div class="footer_block_spoiler_menu_title"
+							th:utext="#{label.SocialLink}"></div>
+						<div class="footer_block_spoiler_menu_text">
+							<div>
+								<img src="#" th:src="@{images/icons/icons-instagram.png}">
+								Instagram
+							</div>
+							<div>
+								<img src="#" th:src="@{images/icons/icons-вконтакте.png}"> VK
+							</div>
+							<div>
+								<img src="#" th:src="@{images/icons/icons-viber.png}"> Viber
+							</div>
+						</div>
+					</div>
+					<div class="footer_block_spoiler">
+						<div class="footer_block_spoiler_menu_title"
+							th:utext="#{label.UnitedInfoLink}"></div>
+						<div class="footer_block_spoiler_menu_text"
+							id="current_date_time_block2">Здесь будет находиться
+							какая-то общая информация</div>
 					</div>
 				</div>
 			</div>

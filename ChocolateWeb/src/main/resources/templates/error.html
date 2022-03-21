@@ -34,7 +34,7 @@
         <main  style="background-image: url(images/chok1.jpg);">
             <div class="container">
 
-                <h1 class="main_title"> Возникла ошибка ${message} </h1>
+                <h1 class="main_title" th:utext="${message}">Возникла ошибка: </h1>
                 <div class="page">
                   <div><a th:href="@{/}">Back</a>.</div>
                 </div>
@@ -43,38 +43,49 @@
             </div>
         </main>
         
-<footer>
-            <div class="container">
-                <div class="footer_container">
+	<footer>
+			<div class="container">
+				<div class="footer_container">
 
-                  <div class="footer_block_menu one_spoiler_open">
+					<div class="footer_block_menu one_spoiler_open">
 						<div class="footer_block_spoiler ">
-							<div class="footer_block_spoiler_menu_title" th:utext="#{label.contactsLink}"></div>
+							<div class="footer_block_spoiler_menu_title"
+								th:utext="#{label.contactsLink}"></div>
 							<div class="footer_block_spoiler_menu_text">
-								Velcome +234234234234 <br> Mail sdfgsdfgd@djffkgbkd.dfg
+								<div>
+									<img th:src="@{images/icons/icons-телефон.png}"> Velcome
+									+234234234234
+								</div>
+								<img th:src="@{images/icons/icons-электронная-почта.png}">
+								Mail sdfgsdfgd@djffkgbkd.dfg
 							</div>
-						</div>
-						<div class="footer_block_spoiler">
-							<div class="footer_block_spoiler_menu_title" th:utext="#{label.SocialLink}"></div>
-							<div class="footer_block_spoiler_menu_text">
-								ВКонтакте ваопдваповдапдва <br> Instagram
-								dgfdjfkghdkjfgkdfg
-							</div>
-						</div>
-						<div class="footer_block_spoiler">
-							<div class="footer_block_spoiler_menu_title" th:utext="#{label.UnitedInfoLink}"></div>
-							<div class="footer_block_spoiler_menu_text"
-								id="current_date_time_block2">Здесь будет находиться
-								какая-то общая информация</div>
 						</div>
 					</div>
-                    
-                    <div class="footer_image">
-                        <img src="images/mms2.gif" alt="">
-                        <img src="images/mms1.gif" alt="">
-                    </div>
-                </div>
-            </div>
-        </footer>
+					<div class="footer_block_spoiler">
+						<div class="footer_block_spoiler_menu_title"
+							th:utext="#{label.SocialLink}"></div>
+						<div class="footer_block_spoiler_menu_text">
+							<div>
+								<img src="#" th:src="@{images/icons/icons-instagram.png}">
+								Instagram
+							</div>
+							<div>
+								<img src="#" th:src="@{images/icons/icons-вконтакте.png}"> VK
+							</div>
+							<div>
+								<img src="#" th:src="@{images/icons/icons-viber.png}"> Viber
+							</div>
+						</div>
+					</div>
+					<div class="footer_block_spoiler">
+						<div class="footer_block_spoiler_menu_title"
+							th:utext="#{label.UnitedInfoLink}"></div>
+						<div class="footer_block_spoiler_menu_text"
+							id="current_date_time_block2">Здесь будет находиться
+							какая-то общая информация</div>
+					</div>
+				</div>
+			</div>
+		</footer>
 </body>
 </html>
