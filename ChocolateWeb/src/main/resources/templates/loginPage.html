@@ -71,10 +71,9 @@
 										</div>
 									</div>
 							</form>
-							<a href="/registration">Зарегистрироваться</a>
+							<a th:href="@{/registration}">Зарегистрироваться</a>
 						</div>
 						<div class="text--center" th:if="${param.error}"> Неверное имя пользователя или пароль. </div>
-						<div class="text--center" th:if="${usernameError != null}" th:utext="${usernameError}"></div>
 					</div>
 				</div>
 		</main>

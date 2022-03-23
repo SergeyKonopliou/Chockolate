@@ -1,5 +1,6 @@
 package com.chockolate.service.impl;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,6 +38,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
     }
 
     public boolean saveUser(User user) {
+    	System.out.println(user.getUsername());
         User userFromDB = userRepository.getUserByUsername(user.getUsername());
 
         if (userFromDB != null) {
@@ -47,6 +49,9 @@ public class UserDetailsServiceImpl implements UserDetailsService {
         user.setPassword(bCryptPasswordEncoder.encode(user.getPassword()));
         user.setEnabled(true);
         userRepository.save(user);
+        List<User> users = new ArrayList<User>();
+        users = userRepository.findAll();
+        System.out.println(users);
         return true;
     }
 
