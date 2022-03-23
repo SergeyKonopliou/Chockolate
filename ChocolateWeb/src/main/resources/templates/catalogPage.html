@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
 
 <head>
 <meta charset="UTF-8">
@@ -54,7 +55,7 @@
 
 						<div class="options_bar">
 
-							<div class="add">
+							<div class="add" sec:authorize="hasRole('ADMIN')">
 								<a th:href="@{/addNewProduct}"><button type="button"
 										class="btn btn-primary mb-2">Add new product</button></a>
 							</div>
@@ -116,7 +117,7 @@
 													th:text="${prod.name}"></a></td>
 												<td th:text="${prod.price}"></td>
 												<td th:text="${prod.typeProduct.name}"></td>
-												<td><a
+												<td sec:authorize="hasRole('ADMIN')"><a
 													th:href="@{/updateProduct/{linkTitle}(linkTitle=${prod.id})}"><button
 															type="button" class="btn btn-primary mb-2">Update</button></a>
 													<a

@@ -12,7 +12,7 @@
 	integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
 	crossorigin="anonymous">
 <link rel="icon" type="image/x-icon" th:href="@{/images/icon.jpg}">
-<title th:utext="#{label.LoginLink}"></title>
+<title th:utext="Regictration"></title>
 </head>
 <body>
 	<div class="wrapper">
@@ -49,13 +49,13 @@
 					<div>
 						<div class="form_login">
 							<form class="form-horizontal" modelAttribute="userForm" method="POST"
-								action="#" th:action="@{/login}">
+								action="#" th:action="@{/registration}">
 								<div class="form-group">
 									<div class="form-group">
 										<label for="inputEmail3" class="col-sm-2 control-label">Логин</label>
 										<div class="col-sm-10">
 											<input type="text" class="form-control" placeholder="Логин"
-												name="username">
+												name="name">
 										</div>
 									</div>
 									<div class="form-group">
@@ -67,13 +67,19 @@
 									</div>
 									<div class="form-group">
 										<div class="col-sm-offset-2 col-sm-10">
-											<button type="submit" class="btn btn-primary">Войти</button>
+											<div class="checkbox">
+												<label> <input  type="hidden" name="role" value="none">
+												</label>
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="col-sm-offset-2 col-sm-10">
+											<button type="submit" class="btn btn-primary">Регистрация</button>
 										</div>
 									</div>
 							</form>
-							<a href="/registration">Зарегистрироваться</a>
 						</div>
-						<div class="text--center" th:if="${param.error}"> Неверное имя пользователя или пароль. </div>
 						<div class="text--center" th:if="${usernameError != null}" th:utext="${usernameError}"></div>
 					</div>
 				</div>

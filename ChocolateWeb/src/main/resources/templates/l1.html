@@ -1,5 +1,7 @@
 ﻿<!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
 
 <head>
 <meta http-equiv="Content-Type" content="text/html;">
@@ -35,11 +37,18 @@
 							<li><a th:href="@{/about-me}" class="menu_link"
 								th:utext="#{label.aboutmeLink}"></a></li>
 							<div class="lang_link">
-								<a th:href="@{/login}"><img src="images/icons-login.png"></a>
 								<a th:href="@{lang(lang=en)}"><img
 									src="images/united_kingdom.png"></a> <a
 									th:href="@{lang(lang=ru)}"><img src="images/russia.png"></a>
 								<a th:href="@{lang(lang=de)}"><img src="images/germany.png"></a>
+								<div sec:authorize="!isAuthenticated()"> <a
+									th:href="@{/login}"><img src="images/icons-login.png"></a>
+								</div> <div sec:authorize="isAuthenticated()"> 
+									<form th:action="@{/logout}" method="post">
+										<button type="submit" value="Logout" ><img
+										src="images/icons-login_succsess.png"></button>
+									</form>
+								</div> 
 							</div>
 							</li>
 						</ul>
@@ -136,13 +145,16 @@
 							th:utext="#{label.SocialLink}"></div>
 						<div class="footer_block_spoiler_menu_text">
 							<div>
-								 <a href="https://www.instagram.com/" class="society_link" ><img src="images/icons/icons-instagram.png" alt=""> Instagram</a>
+								<a href="https://www.instagram.com/" class="society_link"><img
+									src="images/icons/icons-instagram.png" alt=""> Instagram</a>
 							</div>
 							<div>
-								<a href="https://www.vk.com/" class="society_link"><img src="images/icons/icons-вконтакте.png" alt=""> VK</a>
+								<a href="https://www.vk.com/" class="society_link"><img
+									src="images/icons/icons-вконтакте.png" alt=""> VK</a>
 							</div>
 							<div>
-								<a href="https://www.viber.com/ru/" class="society_link"><img src="images/icons/icons-viber.png" alt=""> Viber</a>
+								<a href="https://www.viber.com/ru/" class="society_link"><img
+									src="images/icons/icons-viber.png" alt=""> Viber</a>
 							</div>
 						</div>
 					</div>

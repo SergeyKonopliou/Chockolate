@@ -58,22 +58,9 @@ public class MainController {
 		return "contactsPage";
 	}
 	
-	@GetMapping("/login")
+	@GetMapping(value = {"/login", "/403"})
 	public String showLoginForm() {
 		return "loginPage";
-	}
-	
-	@PostMapping("/in")
-	public String logIn(@ModelAttribute User user,BindingResult binding,Model model) {
-		if (!binding.hasErrors()) {
-			try {
-				System.out.println(user.toString());
-			} catch (Exception e) {
-				model.addAttribute("message", e.getMessage());
-				return "error";
-			}
-		} 
-		return "l1";	
 	}
 
 	@GetMapping("/catalog")
