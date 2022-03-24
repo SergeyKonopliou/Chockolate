@@ -37,30 +37,25 @@
 							<li><a th:href="@{/about-me}" class="menu_link"
 								th:utext="#{label.aboutmeLink}"></a></li>
 							<li>
-							<div class="lang_link">
-								<a th:href="@{lang(lang=en)}"><img
-									src="images/united_kingdom.png"></a> <a
-									th:href="@{lang(lang=ru)}"><img src="images/russia.png"></a>
-								<a th:href="@{lang(lang=de)}"><img src="images/germany.png"></a>
-								<div sec:authorize="!isAuthenticated()"> <a
-									th:href="@{/login}"><img src="images/icons-login.png"></a>
-								</div> 
+								<div class="lang_link">
+									<a th:href="@{lang(lang=en)}"><img
+										src="images/united_kingdom.png"></a> <a
+										th:href="@{lang(lang=ru)}"><img src="images/russia.png"></a>
+									<a th:href="@{lang(lang=de)}"><img src="images/germany.png"></a>
+								</div>
+							</li>
+							<li>
+								<div sec:authorize="!isAuthenticated()">
+									<a th:href="@{/login}"><img src="images/icons-login.png"></a>
+								</div>
 								<div sec:authorize="isAuthenticated()" class="login_user_info">
-								<span>Welcome </span> 
-								<span th:if="${userName != null}" th:text="${userName}"></span>
-								<form th:action="@{/logout}" method="post">
-										<button type="submit" value="Logout" class="login_user_info_logout_button">Log Out</button>
+									<span>Welcome </span> <span th:if="${userName != null}"
+										th:text="${userName}"></span>
+									<form th:action="@{/logout}" method="post">
+										<button type="submit" value="Logout"
+											class="login_user_info_logout_button">Log Out</button>
 									</form>
 								</div>
-								
-<!-- 								<div sec:authorize="isAuthenticated()"> 
-									<form th:action="@{/logout}" method="post">
-										<button type="submit" value="Logout" ><img
-										src="images/icons-login_succsess.png"></button>
-									</form>
-								</div> --> 
-								
-							</div>
 							</li>
 						</ul>
 					</nav>

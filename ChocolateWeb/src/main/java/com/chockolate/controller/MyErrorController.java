@@ -9,24 +9,28 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+/**
+ * Класс контроллер,реагирует на адрес /error
+ *
+ */
+
 @Controller
-public class MyErrorController implements ErrorController  {
+public class MyErrorController implements ErrorController {
 
 	@RequestMapping("/error")
-	public String handleError(HttpServletRequest request,Exception e, Model model) {
-	    Object status = request.getAttribute(RequestDispatcher.ERROR_STATUS_CODE);
-	    
-	    if (status != null) {
-	        Integer statusCode = Integer.valueOf(status.toString());
-	    
-	        if(statusCode == HttpStatus.NOT_FOUND.value()) {
-	            return "error404";
-	        }
-	        else if(statusCode == HttpStatus.INTERNAL_SERVER_ERROR.value()) {
-	        	model.addAttribute("message", e.getMessage());
-	            return "error";
-	        }
-	    }
-	    return "error";
+	public String handleError(HttpServletRequest request, Exception e, Model model) {
+		Object status = request.getAttribute(RequestDispatcher.ERROR_STATUS_CODE);
+
+		if (status != null) {
+			Integer statusCode = Integer.valueOf(status.toString());
+
+			if (statusCode == HttpStatus.NOT_FOUND.value()) {
+				return "error404";
+			} else if (statusCode == HttpStatus.INTERNAL_SERVER_ERROR.value()) {
+				model.addAttribute("message", e.getMessage());
+				return "error";
+			}
+		}
+		return "error";
 	}
 }

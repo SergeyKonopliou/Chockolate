@@ -11,7 +11,7 @@ import com.chockolate.model.Product;
 public interface ProductRepository extends JpaRepository<Product, Long> {
 
 	public Product findProductById(Long id);
-	
+
 	public Product findProductByName(String name);
 
 	public List<Product> findProductByNameContainsIgnoreCase(String name);
@@ -27,8 +27,8 @@ public interface ProductRepository extends JpaRepository<Product, Long> {
 	public List<Product> findProductByNameContainsIgnoreCaseOrderByPriceAsc(String name);
 
 	public List<Product> findProductByNameContainsIgnoreCaseOrderByPriceDesc(String name);
-	
+
 	public List<Product> findProductByTypeProductIdAndNameContainsIgnoreCaseOrderByPriceAsc(Long id, String name);
-	
+
 	public List<Product> findProductByTypeProductIdAndNameContainsIgnoreCaseOrderByPriceDesc(Long id, String name);
 }

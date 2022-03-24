@@ -31,6 +31,12 @@ import com.chockolate.model.Product;
 import com.chockolate.model.TypeProduct;
 import com.chockolate.service.impl.ProductServiceImpl;
 
+/**
+ * Класс отвечает за обработку основных адресов,
+ * использующихся вданном приложении
+ *
+ */
+
 @Controller
 public class MainController {
 
@@ -40,11 +46,18 @@ public class MainController {
 	private List<Product> products = new ArrayList<>();
 	private Product product = new Product();
 
+	/**
+	 * Метод реагирует на адреса "/", "/main",возвращает
+	 * стартовую страницу и узнает имя вошедшего пользователя
+	 */
 	@RequestMapping(value = { "/", "/main" })
 	public String welcomePage(Model model) {
-		 SecurityContext context = SecurityContextHolder.getContext();
-		    Authentication authentication = context.getAuthentication();
-		    String userName = authentication.getName();
+	    //SecurityContextHolder, в нем содержится информация о текущем контексте безопасности приложения.
+		//SecurityContext, содержит объект Authentication и в случае необходимости информацию системы безопасности,
+		//связанную с запросом от пользователя.
+		SecurityContext context = SecurityContextHolder.getContext();
+		Authentication authentication = context.getAuthentication();
+		String userName = authentication.getName();
 		model.addAttribute("userName", userName);
 		return "l1";
 	}
@@ -74,6 +87,10 @@ public class MainController {
 		return "loginPage";
 	}
 
+	/**
+	 * Метод формирует список продуктов из базы данных,выбранных
+	 * по заданным критериям.Возвращает страницу каталога.
+	 */
 	@GetMapping("/catalog")
 	public String showCatalog(@RequestParam(defaultValue = "") String search_product,
 			@RequestParam(defaultValue = "") String select, @RequestParam(defaultValue = "") String selectPrice,
@@ -116,6 +133,9 @@ public class MainController {
 		return "catalogPage";
 	}
 
+	/**
+	 * Метод возвращает персональную страницу выбранного продукта.
+	 */
 	@GetMapping("/info/{id}")
 	public String showPersonalProductPage(@PathVariable String id, Model model) {
 		try {
@@ -133,6 +153,10 @@ public class MainController {
 		return "addNewProductPage";
 	}
 
+	/**
+	 * Метод принимает данные для добавления в базу данных.Вызывает метод
+	 * сервис слоя для добавления продукта в базу данных
+	 */
 	@PostMapping(value = "/add")
 	public String addProduct(@PathParam(value = "name") String name, @PathParam(value = "price") String price,
 			@PathParam(value = "typeProduct") String typeProduct, @PathParam(value = "description") String description,
@@ -141,7 +165,7 @@ public class MainController {
 			product.setName(name);
 			product.setPrice(Double.parseDouble(price));
 			product.setDescription(description);
-			String fileName = StringUtils.cleanPath(multipartFile.getOriginalFilename()); 
+			String fileName = StringUtils.cleanPath(multipartFile.getOriginalFilename());
 			product.setImage(fileName);
 			TypeProduct type = new TypeProduct(typeProduct);
 			product.setTypeProduct(type);
@@ -149,12 +173,12 @@ public class MainController {
 			Product saveProduct = service.loadOneProductByName(name);
 			String uploadDir = "product-img/" + saveProduct.getId();
 			Path uploadPath = Paths.get(uploadDir);
-			if(!Files.exists(uploadPath)) {
+			if (!Files.exists(uploadPath)) {
 				Files.createDirectories(uploadPath);
 			}
 			InputStream inputStream = multipartFile.getInputStream();
 			Path filePath = uploadPath.resolve(fileName);
-			Files.copy(inputStream,filePath, StandardCopyOption.REPLACE_EXISTING);
+			Files.copy(inputStream, filePath, StandardCopyOption.REPLACE_EXISTING);
 		} catch (ServiceException | IOException e) {
 			model.addAttribute("message", e.getMessage());
 			return "error";
@@ -162,6 +186,10 @@ public class MainController {
 		return "redirect:/catalog";
 	}
 
+	/**
+	 * Метод принимает id продукта,вызывает метод сервис слоя
+	 * для удаления продукта по принятому id
+	 */
 	@GetMapping("/deleteProduct/{id}")
 	public String deleteProductById(@PathVariable String id, Model model) {
 		try {
@@ -173,6 +201,11 @@ public class MainController {
 		return "redirect:/catalog";
 	}
 
+	/**
+	 * Метод принимает id выбранного для изменения продукта,
+	 * находит его в базе данных по id,добавляет найденный продукт в модель
+	 * и передает на страницу изменения продукта .
+	 */
 	@GetMapping("/updateProduct/{id}")
 	public String updateProductById(@PathVariable String id, Model model) {
 		try {
@@ -185,11 +218,15 @@ public class MainController {
 		return "updateProductPage";
 	}
 
+	/**
+	 * Метод принимает из формы изменения продукта введенные данные
+	 * и вызывает метод сервис слоя для изменения данных в базе данных
+	 */
 	@PostMapping(value = "/update")
 	public String updateProduct(@PathParam(value = "id") String id, @PathParam(value = "name") String name,
 			@PathParam(value = "price") String price, @PathParam(value = "typeProduct") String typeProduct,
-			@PathParam(value = "description") String description, @RequestParam("fileImage") MultipartFile multipartFile,
-			Model model) {
+			@PathParam(value = "description") String description,
+			@RequestParam("fileImage") MultipartFile multipartFile, Model model) {
 		try {
 			product.setId(Long.parseLong(id));
 			product.setName(name);
@@ -197,19 +234,19 @@ public class MainController {
 			product.setDescription(description);
 			String fileName = StringUtils.cleanPath(multipartFile.getOriginalFilename());
 			Product prod = service.loadFindProductById(Long.parseLong(id));
-			if(fileName.isEmpty()) {
+			if (fileName.isEmpty()) {
 				product.setImage(prod.getImage());
-			}else {
+			} else {
 				product.setImage(fileName);
 				String uploadDir = "product-img/" + prod.getId();
 				Path uploadPath = Paths.get(uploadDir);
-				if(!Files.exists(uploadPath)) {
+				if (!Files.exists(uploadPath)) {
 					Files.createDirectories(uploadPath);
 				}
 				InputStream inputStream = multipartFile.getInputStream();
 				Path filePath = uploadPath.resolve(fileName);
-				Files.copy(inputStream,filePath, StandardCopyOption.REPLACE_EXISTING);
-			}		
+				Files.copy(inputStream, filePath, StandardCopyOption.REPLACE_EXISTING);
+			}
 			TypeProduct type = new TypeProduct(typeProduct);
 			type.setId(prod.getTypeProduct().getId());
 			product.setTypeProduct(type);

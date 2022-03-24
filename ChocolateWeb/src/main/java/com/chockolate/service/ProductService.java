@@ -17,7 +17,7 @@ public interface ProductService {
 	public List<Product> loadAll() throws ServiceException;
 
 	public List<Product> loadProductByName(String name) throws ServiceException;
-	
+
 	public Product loadOneProductByName(String name) throws ServiceException;
 
 	public Product loadFindProductById(Long id) throws ServiceException;
@@ -31,14 +31,13 @@ public interface ProductService {
 	public List<Product> loadAllProductByTypeProductIdAndProductName(String typeName, String productName)
 			throws ServiceException;
 
-	public List<Product> loadAllProductByTypeProductIdAndPrice(String typeName,String priceSortType)
+	public List<Product> loadAllProductByTypeProductIdAndPrice(String typeName, String priceSortType)
 			throws ServiceException;
 
-	public List<Product> loadAllProductByNameContainsIgnoreCaseAndPrice(String name,String priceSortType)
+	public List<Product> loadAllProductByNameContainsIgnoreCaseAndPrice(String name, String priceSortType)
 			throws ServiceException;
 
-	public List<Product> loadAllProductByTypeProductIdAndPriceAndNameContainsIgnoreCase(String typeName, String priceSortType,
-			String name) throws ServiceException;
-
+	public List<Product> loadAllProductByTypeProductIdAndPriceAndNameContainsIgnoreCase(String typeName,
+			String priceSortType, String name) throws ServiceException;
 
 }

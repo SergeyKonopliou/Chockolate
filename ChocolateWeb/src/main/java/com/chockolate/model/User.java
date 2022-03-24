@@ -16,18 +16,17 @@ public class User {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "user_id")
 	private Long id;
-	 @Size(min=4, message = "Min 4 characters")
+	@Size(min = 4, message = "Min 4 characters")
 	private String username;
-	 @Size(min=4, message = "Min 4 characters")
+	@Size(min = 4, message = "Min 4 characters")
 	private String password;
-	
+
 	private String role;
 	private boolean enabled;
 
 	public User() {
 	}
 
-	
 	public User(Long id, @Size(min = 4, message = "Min 4 characters") String name,
 			@Size(min = 4, message = "Min 4 characters") String password, String role, boolean enabled) {
 		super();
@@ -37,7 +36,6 @@ public class User {
 		this.role = role;
 		this.enabled = enabled;
 	}
-
 
 	public String getUsername() {
 		return username;
@@ -91,7 +89,6 @@ public class User {
 		return result;
 	}
 
-
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -126,10 +123,9 @@ public class User {
 		return true;
 	}
 
-
 	@Override
 	public String toString() {
 		return "User [name=" + username + ", password=" + password + ", role=" + role + "]";
 	}
-	
+
 }

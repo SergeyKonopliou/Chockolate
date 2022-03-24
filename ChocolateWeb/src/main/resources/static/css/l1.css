@@ -159,7 +159,14 @@ body {
 	font-size: 28px;
 	color: orange;
 	}
-
+@media (max-width:992px) {
+	.menu_link {
+    font-size: 14px;
+}
+.lang_link{
+	margin-left: 10px;
+}
+}
 @media (max-width:767px) {
 
     /*чтобы не скролилось содержимое под меню-бургером,когда меню-бургер открыто*/

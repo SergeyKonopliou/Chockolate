@@ -15,6 +15,10 @@ import org.springframework.security.web.access.AccessDeniedHandler;
 
 import com.chockolate.service.impl.UserDetailsServiceImpl;
 
+/**
+ * Класс настройки Spring Security
+ *
+ */
 @Configuration
 @EnableWebSecurity
 public class SecutrityConfig extends WebSecurityConfigurerAdapter {
@@ -48,12 +52,15 @@ public class SecutrityConfig extends WebSecurityConfigurerAdapter {
 
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
-		http.authorizeRequests()
-		.antMatchers("/**").permitAll()
-		.anyRequest().authenticated().and().formLogin().loginPage("/login").defaultSuccessUrl("/").permitAll().and().logout().permitAll().logoutSuccessUrl("/").and().exceptionHandling().accessDeniedHandler(accessDeniedHandler);
+		http.authorizeRequests().antMatchers("/**").permitAll().anyRequest().authenticated().and().formLogin()
+				.loginPage("/login").defaultSuccessUrl("/").permitAll().and().logout().permitAll().logoutSuccessUrl("/")
+				.and().exceptionHandling().accessDeniedHandler(accessDeniedHandler);
 	}
 
-
+	/**
+	 * Spring Security блокирует css,js,image. Данный метод предотвращает блокировку
+	 * данных ресурсов
+	 */
 	@Override
 	public void configure(WebSecurity web) throws Exception {
 		web.ignoring().antMatchers("/resources/**");

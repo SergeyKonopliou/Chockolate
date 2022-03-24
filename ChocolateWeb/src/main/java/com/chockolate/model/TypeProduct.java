@@ -15,9 +15,9 @@ public class TypeProduct {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	
+
 	private String name;
-	
+
 	@OneToMany(mappedBy = "typeProduct")
 	private Collection<Product> products = new ArrayList<Product>();
 
@@ -88,6 +88,5 @@ public class TypeProduct {
 	public String toString() {
 		return "TypeProduct [id=" + id + ", name=" + name + "]";
 	}
-	
-	
+
 }

@@ -1,48 +1,55 @@
 ﻿<!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
- <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scale=0">
-     <link rel="stylesheet" type="text/css" th:href="@{/css/l1.css}"/>
-     <link rel="icon" type="image/x-icon" th:href="@{/images/icon.jpg}">
+<meta charset="UTF-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scale=0">
+<link rel="stylesheet" type="text/css" th:href="@{/css/l1.css}" />
+<link rel="icon" type="image/x-icon" th:href="@{/images/icon.jpg}">
 <title th:utext="#{label.errorPage}"></title>
 </head>
 <body>
-<div class="wrapper">
-         <header class="header">
-            <div class="container">
-                <div class="header_row">
-                    <a href="" class="header_logo">
-                        <img src="images/logo1.jpg" alt="">
-                    </a>
-                    <div class="menu_burger">
-                        <span></span>
-                    </div>
-                    <nav class="menu_body">
-                        <ul class="menu_list">
-                            <li><a th:href="@{/}" class="menu_link" th:utext="#{label.mainLink}"></a></li>
-							<li><a th:href="@{/catalog}" class="menu_link" th:utext="#{label.catalogLink}"></a></li>
-							<li><a th:href="@{/contacts}" class="menu_link" th:utext="#{label.contactsLink}"></a></li>
-							<li><a th:href="@{/about-me}" class="menu_link" th:utext="#{label.aboutmeLink}"></a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </header>
-        
-        <main  style="background-image: url(images/chok1.jpg);">
-            <div class="container">
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="header_row">
+					<a href="" class="header_logo"> <img src="images/logo1.jpg"
+						alt="">
+					</a>
+					<div class="menu_burger">
+						<span></span>
+					</div>
+					<nav class="menu_body">
+						<ul class="menu_list">
+							<li><a th:href="@{/}" class="menu_link"
+								th:utext="#{label.mainLink}"></a></li>
+							<li><a th:href="@{/catalog}" class="menu_link"
+								th:utext="#{label.catalogLink}"></a></li>
+							<li><a th:href="@{/contacts}" class="menu_link"
+								th:utext="#{label.contactsLink}"></a></li>
+							<li><a th:href="@{/about-me}" class="menu_link"
+								th:utext="#{label.aboutmeLink}"></a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
 
-                <h1 class="main_title" th:utext="${message}">Возникла ошибка: </h1>
-                <div class="page">
-                  <div><a th:href="@{/}">Back</a>.</div>
-                </div>
+		<main style="background-image: url(images/chok1.jpg);">
+			<div class="container">
+
+				<h1 class="main_title" th:utext="${message}">Возникла ошибка:</h1>
+				<div class="page">
+					<div>
+						<a th:href="@{/}">Back</a>.
+					</div>
+				</div>
 
 
-            </div>
-        </main>
-        
-	<footer>
+			</div>
+		</main>
+
+		<footer>
 			<div class="container">
 				<div class="footer_container">
 
@@ -52,10 +59,11 @@
 								th:utext="#{label.contactsLink}"></div>
 							<div class="footer_block_spoiler_menu_text">
 								<div>
-									<img src="#" th:src="@{images/icons/icons-телефон.png}"> Velcome
-									+234234234234
+									<img src="#" th:src="@{images/icons/icons-телефон.png}">
+									Velcome +234234234234
 								</div>
-								<img src="#" th:src="@{images/icons/icons-электронная-почта.png}">
+								<img src="#"
+									th:src="@{images/icons/icons-электронная-почта.png}">
 								Mail sdfgsdfgd@djffkgbkd.dfg
 							</div>
 						</div>
@@ -65,13 +73,17 @@
 							th:utext="#{label.SocialLink}"></div>
 						<div class="footer_block_spoiler_menu_text">
 							<div>
-								 <a href="https://www.instagram.com/" class="society_link" ><img src="#" th:src="@{images/icons/icons-instagram.png}"> Instagram</a>
+								<a href="https://www.instagram.com/" class="society_link"><img
+									src="#" th:src="@{images/icons/icons-instagram.png}">
+									Instagram</a>
 							</div>
 							<div>
-								<a href="https://www.vk.com/" class="society_link"><img src="#" th:src="@{images/icons/icons-вконтакте.png}"> VK</a>
+								<a href="https://www.vk.com/" class="society_link"><img
+									src="#" th:src="@{images/icons/icons-вконтакте.png}"> VK</a>
 							</div>
 							<div>
-								<a href="https://www.viber.com/ru/" class="society_link"><img src="#" th:src="@{images/icons/icons-viber.png}"> Viber</a>
+								<a href="https://www.viber.com/ru/" class="society_link"><img
+									src="#" th:src="@{images/icons/icons-viber.png}"> Viber</a>
 							</div>
 						</div>
 					</div>

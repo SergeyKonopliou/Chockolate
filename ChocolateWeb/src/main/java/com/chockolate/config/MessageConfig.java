@@ -5,12 +5,10 @@ import java.util.Locale;
 import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.support.ReloadableResourceBundleMessageSource;
 import org.springframework.context.support.ResourceBundleMessageSource;
 import org.springframework.web.servlet.LocaleResolver;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
-import org.springframework.web.servlet.i18n.CookieLocaleResolver;
 import org.springframework.web.servlet.i18n.LocaleChangeInterceptor;
 import org.springframework.web.servlet.i18n.SessionLocaleResolver;
 
@@ -23,6 +21,7 @@ public class MessageConfig implements WebMvcConfigurer {
 	@Bean("messageSource")
 	public MessageSource messageSource() {
 		ResourceBundleMessageSource messageSource = new ResourceBundleMessageSource();
+		//задается путь поиск properties файлов
 		messageSource.setBasenames("i18n/rez");
 		messageSource.setCacheSeconds(3600);
 		messageSource.setDefaultEncoding("UTF-8");
@@ -33,14 +32,13 @@ public class MessageConfig implements WebMvcConfigurer {
 	 * Этот бин даёт пользователю возможность самому менять язык системы. Делается
 	 * это с помощью передачи дополнительного GET параметра, например, ?lang=en к
 	 * любому url адресу приложения. Для этого нужно переопределить бин
-	 * LocaleResolver применив реализацию SessionLocaleResolver. Вообще говоря у
-	 * LocaleResolver есть несколько реализаций.
+	 * LocaleResolver применив реализацию SessionLocaleResolver.
 	 */
 	@Bean
 	public LocaleResolver localeResolver() {
 		SessionLocaleResolver slr = new SessionLocaleResolver();
 		Locale defaultLocale = new Locale("ru");
-	    slr.setDefaultLocale(defaultLocale);
+		slr.setDefaultLocale(defaultLocale);
 //		slr.setLocaleAttributeName("session.current.locale");
 //		slr.setTimeZoneAttributeName("session.current.timezone");
 		return slr;
@@ -58,6 +56,7 @@ public class MessageConfig implements WebMvcConfigurer {
 		localeChangeInterceptor.setParamName("lang");
 		return localeChangeInterceptor;
 	}
+
 	/**
 	 * Регистрация интерцептора
 	 */

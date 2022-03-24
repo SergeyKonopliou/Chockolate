@@ -18,25 +18,24 @@ public class Product implements Comparable<Product> {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	
+
 	private String name;
 	@Lob
 	private String description;
-	
+
 	private Double price;
 	@Lob
-    private String image;
-    
-    @ManyToOne
-    @JoinColumn(name="product_id")
-    private TypeProduct typeProduct;
-	
+	private String image;
+
+	@ManyToOne
+	@JoinColumn(name = "product_id")
+	private TypeProduct typeProduct;
+
 	public Product() {
-		
+
 	}
 
-	public Product(String name, String description, Double price,
-			String image, TypeProduct typeProduct) {
+	public Product(String name, String description, Double price, String image, TypeProduct typeProduct) {
 		this.name = name;
 		this.description = description;
 		this.price = price;
@@ -79,13 +78,14 @@ public class Product implements Comparable<Product> {
 	public String getImage() {
 		return image;
 	}
-	
+
 	@Transient
 	public String getImagePath() {
-        if (image == null || id == null) return null;
-         
-        return "product-img/" + id + "/" + image;
-    }
+		if (image == null || id == null)
+			return null;
+
+		return "product-img/" + id + "/" + image;
+	}
 
 	public void setImage(String image) {
 		this.image = image;
@@ -158,6 +158,5 @@ public class Product implements Comparable<Product> {
 	public int compareTo(Product o) {
 		return (int) (o.getPrice() - this.getPrice());
 	}
-	
-	
+
 }

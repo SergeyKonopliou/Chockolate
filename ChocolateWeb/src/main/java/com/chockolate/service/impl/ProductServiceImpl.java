@@ -15,7 +15,6 @@ import com.chockolate.repository.ProductRepository;
 import com.chockolate.repository.TypeProductRepository;
 import com.chockolate.service.ProductService;
 
-
 @Service
 public class ProductServiceImpl implements ProductService {
 
@@ -34,7 +33,8 @@ public class ProductServiceImpl implements ProductService {
 		try {
 			products = repository.findAll();
 		} catch (Exception e) {
-			throw new ServiceException("Problems with loading all products from DB service method " + e.getMessage(), e);
+			throw new ServiceException("Problems with loading all products from DB service method " + e.getMessage(),
+					e);
 		}
 		return products;
 	}
@@ -45,7 +45,8 @@ public class ProductServiceImpl implements ProductService {
 		try {
 			product = repository.findProductById(id);
 		} catch (Exception e) {
-			throw new ServiceException("Problems with loading all products from DB service method " + e.getMessage(), e);
+			throw new ServiceException("Problems with loading all products from DB service method " + e.getMessage(),
+					e);
 		}
 		return product;
 	}
@@ -56,7 +57,8 @@ public class ProductServiceImpl implements ProductService {
 		try {
 			products = repository.findProductByNameContainsIgnoreCase(name);
 		} catch (Exception e) {
-			throw new ServiceException("Problems with loading searching product from DB service method " + e.getMessage(), e);
+			throw new ServiceException(
+					"Problems with loading searching product from DB service method " + e.getMessage(), e);
 		}
 		return products;
 	}
@@ -67,13 +69,14 @@ public class ProductServiceImpl implements ProductService {
 		try {
 			product = repository.findProductByName(name);
 		} catch (Exception e) {
-			throw new ServiceException("Problems with loading searching product from DB service method " + e.getMessage(), e);
+			throw new ServiceException(
+					"Problems with loading searching product from DB service method " + e.getMessage(), e);
 		}
 		return product;
 	}
-	
+
 	@Override
-	public void add(Product object,TypeProduct givenTypeProduct) throws ServiceException {
+	public void add(Product object, TypeProduct givenTypeProduct) throws ServiceException {
 		try {
 			Product product = new Product();
 			product.setName(object.getName());
@@ -81,11 +84,11 @@ public class ProductServiceImpl implements ProductService {
 			product.setPrice(object.getPrice());
 			product.setImage(object.getImage());
 			TypeProduct foundTypeProduct = typeRepository.findTypeProductByName(givenTypeProduct.getName());
-			if(foundTypeProduct != null) {
+			if (foundTypeProduct != null) {
 				product.setTypeProduct(foundTypeProduct);
 				foundTypeProduct.getProducts().add(product);
 				typeRepository.save(foundTypeProduct);
-			}else {
+			} else {
 				product.setTypeProduct(givenTypeProduct);
 				givenTypeProduct.getProducts().add(product);
 				typeRepository.save(givenTypeProduct);
@@ -95,7 +98,7 @@ public class ProductServiceImpl implements ProductService {
 			System.out.println(e.getMessage());
 			throw new ServiceException("Problems with adding new products to DB service method  " + e.getMessage(), e);
 		}
-		
+
 	}
 
 	@Override
@@ -108,7 +111,7 @@ public class ProductServiceImpl implements ProductService {
 	}
 
 	@Override
-	public void update(Product object,TypeProduct givenTypeProduct) throws ServiceException {
+	public void update(Product object, TypeProduct givenTypeProduct) throws ServiceException {
 		try {
 			Product product = new Product();
 			product.setId(object.getId());
@@ -117,23 +120,23 @@ public class ProductServiceImpl implements ProductService {
 			product.setPrice(object.getPrice());
 			product.setImage(object.getImage());
 			TypeProduct foundTypeProduct = typeRepository.findTypeProductByName(givenTypeProduct.getName());
-			if(foundTypeProduct != null) {
+			if (foundTypeProduct != null) {
 				product.setTypeProduct(foundTypeProduct);
 				foundTypeProduct.getProducts().add(product);
 				typeRepository.save(foundTypeProduct);
-			}else {
+			} else {
 				product.setTypeProduct(givenTypeProduct);
 			}
 			repository.save(product);
 		} catch (Exception e) {
 			throw new ServiceException("Problems with updating product to DB service method  " + e.getMessage(), e);
 		}
-		
+
 	}
 
 	@Override
 	public List<TypeProduct> loadAllTypeProduct() throws ServiceException {
-		return typeRepository.findAll();	
+		return typeRepository.findAll();
 	}
 
 	@Override
@@ -147,7 +150,8 @@ public class ProductServiceImpl implements ProductService {
 	public List<Product> loadAllProductByTypeProductIdAndProductName(String typeName, String productName)
 			throws ServiceException {
 		TypeProduct type = typeRepository.findTypeProductByName(typeName);
-		List<Product> products = repository.findProductByTypeProductIdAndNameContainsIgnoreCase(type.getId(),productName);
+		List<Product> products = repository.findProductByTypeProductIdAndNameContainsIgnoreCase(type.getId(),
+				productName);
 		return products;
 	}
 
@@ -156,29 +160,34 @@ public class ProductServiceImpl implements ProductService {
 		List<Product> products = new ArrayList<Product>();
 		products = repository.findAll();
 		try {
-			if(priceSortType.equals("high")) {
+			if (priceSortType.equals("high")) {
 				Collections.sort(products);
-			}else {
+			} else {
 				Collections.sort(products, Collections.reverseOrder());
 			}
 		} catch (Exception e) {
-			throw new ServiceException("Problems with loading searching product by price from DB service method " + e.getMessage(), e);
+			throw new ServiceException(
+					"Problems with loading searching product by price from DB service method " + e.getMessage(), e);
 		}
 		return products;
 	}
 
 	@Override
-	public List<Product> loadAllProductByTypeProductIdAndPrice(String typeName,String priceSortType) throws ServiceException {
+	public List<Product> loadAllProductByTypeProductIdAndPrice(String typeName, String priceSortType)
+			throws ServiceException {
 		List<Product> products = new ArrayList<Product>();
 		try {
 			TypeProduct type = typeRepository.findTypeProductByName(typeName);
-			if(priceSortType.equals("high")) {
+			if (priceSortType.equals("high")) {
 				products = repository.findProductByTypeProductIdOrderByPriceAsc(type.getId());
-			}else {
+			} else {
 				products = repository.findProductByTypeProductIdOrderByPriceDesc(type.getId());
 			}
 		} catch (Exception e) {
-			throw new ServiceException("Problems with loading searching product by price and product type from DB service method " + e.getMessage(), e);
+			throw new ServiceException(
+					"Problems with loading searching product by price and product type from DB service method "
+							+ e.getMessage(),
+					e);
 		}
 		return products;
 	}
@@ -188,35 +197,41 @@ public class ProductServiceImpl implements ProductService {
 			throws ServiceException {
 		List<Product> products = new ArrayList<Product>();
 		try {
-			if(priceSortType.equals("high")) {
+			if (priceSortType.equals("high")) {
 				products = repository.findProductByNameContainsIgnoreCaseOrderByPriceAsc(name);
-			}else {
+			} else {
 				products = repository.findProductByNameContainsIgnoreCaseOrderByPriceDesc(name);
 			}
 		} catch (Exception e) {
-			throw new ServiceException("Problems with loading searching product by price and product name from DB service method " + e.getMessage(), e);
+			throw new ServiceException(
+					"Problems with loading searching product by price and product name from DB service method "
+							+ e.getMessage(),
+					e);
 		}
 		return products;
 	}
 
 	@Override
-	public List<Product> loadAllProductByTypeProductIdAndPriceAndNameContainsIgnoreCase(String typeName, String priceSortType,
-			String name) throws ServiceException {
+	public List<Product> loadAllProductByTypeProductIdAndPriceAndNameContainsIgnoreCase(String typeName,
+			String priceSortType, String name) throws ServiceException {
 		List<Product> products = new ArrayList<Product>();
 		try {
 			TypeProduct type = typeRepository.findTypeProductByName(typeName);
-			if(priceSortType.equals("high")) {
-				products = repository.findProductByTypeProductIdAndNameContainsIgnoreCaseOrderByPriceAsc(type.getId(), name);
-			}else {
-				products = repository.findProductByTypeProductIdAndNameContainsIgnoreCaseOrderByPriceDesc(type.getId(), name);
+			if (priceSortType.equals("high")) {
+				products = repository.findProductByTypeProductIdAndNameContainsIgnoreCaseOrderByPriceAsc(type.getId(),
+						name);
+			} else {
+				products = repository.findProductByTypeProductIdAndNameContainsIgnoreCaseOrderByPriceDesc(type.getId(),
+						name);
 			}
-			
+
 		} catch (Exception e) {
-			throw new ServiceException("Problems with loading searching product by price and product type and product name from DB service method " + e.getMessage(), e);
+			throw new ServiceException(
+					"Problems with loading searching product by price and product type and product name from DB service method "
+							+ e.getMessage(),
+					e);
 		}
 		return products;
 	}
 
-
 }
-

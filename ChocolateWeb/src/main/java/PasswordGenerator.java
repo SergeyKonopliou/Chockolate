@@ -1,5 +1,10 @@
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-
+/**
+ * Класс использовался для кодировки пароля
+ * добавляемых в базу данных пользователей при старте 
+ * приложения через файл data.sql
+ *
+ */
 public class PasswordGenerator {
 
 	public static void main(String[] args) {
@@ -7,7 +12,5 @@ public class PasswordGenerator {
 		String pass = "user";
 		String encp = en.encode(pass);
 		System.out.println(encp);
-
 	}
-
 }
