@@ -138,6 +138,22 @@ body {
 	flex-direction:row;
 	margin-left: 50px;
 }
+.login_user_info{
+	 color: burlywood;
+    text-align:center;
+    font-size: 18px;
+    text-decoration: none;
+}
+.login_user_info_logout_button{
+  background-color: burlywood;
+  color: black;
+  margin: 12px 28px;
+  transition-duration: 0.4s;
+}
+.login_user_info_logout_button:hover{
+	background-color: #ff0000;
+  color: white;
+}
 .brend{
 	z-index: 3;
 	font-size: 28px;

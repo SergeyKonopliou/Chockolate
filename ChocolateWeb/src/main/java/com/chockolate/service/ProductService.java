@@ -17,6 +17,8 @@ public interface ProductService {
 	public List<Product> loadAll() throws ServiceException;
 
 	public List<Product> loadProductByName(String name) throws ServiceException;
+	
+	public Product loadOneProductByName(String name) throws ServiceException;
 
 	public Product loadFindProductById(Long id) throws ServiceException;
 

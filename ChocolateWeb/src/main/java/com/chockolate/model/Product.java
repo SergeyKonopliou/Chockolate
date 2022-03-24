@@ -7,6 +7,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.Lob;
 import javax.persistence.ManyToOne;
+import javax.persistence.Transient;
 
 import org.hibernate.annotations.Synchronize;
 
@@ -78,6 +79,13 @@ public class Product implements Comparable<Product> {
 	public String getImage() {
 		return image;
 	}
+	
+	@Transient
+	public String getImagePath() {
+        if (image == null || id == null) return null;
+         
+        return "product-img/" + id + "/" + image;
+    }
 
 	public void setImage(String image) {
 		this.image = image;

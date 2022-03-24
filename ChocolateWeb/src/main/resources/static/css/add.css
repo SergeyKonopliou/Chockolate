@@ -14,3 +14,7 @@ form div{
     justify-content: space-between;
     padding-left: 25px;
 }
+.image_preview{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}

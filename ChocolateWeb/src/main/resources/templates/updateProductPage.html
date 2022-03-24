@@ -48,7 +48,8 @@
 				<div class="page">
 
 					<div class="add_new_product">
-						<form action="#" th:action="@{/update}" method="get" name="updateForm">
+						<form action="#" th:action="@{/update}" method="post" name="updateForm"
+						 enctype="multipart/form-data">
 							<div>
 							<input type="hidden" name="id" value="#" th:value="${product.id}" />
 							</div>
@@ -71,8 +72,11 @@
 								 <input id="textArea1" th:value="${product.description}" th:hidden="true">
 							</div>
 							<div class="form-group row">
-								Image: <input type="text" name="image"
-												value="#" th:value="${product.image}">
+								Image:
+								<input class="form-control" name="fileImage" type="file" id="formFile" accept="image/png, image/jpeg">
+								<div class="image_preview">
+									<img alt="Image preview" id="thumbnail" style="width: 100px; height: 100px;">
+								</div>
 							</div>
 							<input type="submit" name="update" value="Update" class="btn btn-primary btn-lg btn-block">
 						</form>
@@ -140,6 +144,21 @@
 		<script type="text/javascript">
 			var val = $("#textArea1").val();
 			document.querySelector("textArea").value = val;
+			
+			$(document).ready(function(){
+				$('#formFile').change(function(){
+					showImageThumbnail(this)	
+				});
+			});
+		
+			function showImageThumbnail(fileInput){
+				file = fileInput.files[0];
+				reader = new FileReader();
+				reader.onload = function(e){
+					$('#thumbnail').attr('src',e.target.result);
+				};
+				reader.readAsDataURL(file);
+			}
 		</script>
 </body>
 </html>

@@ -47,7 +47,8 @@
 				<div class="page">
 
 					<div class="add_new_product">
-						<form action="#" th:action="@{/add}" method="get" name="addForm">
+						<form action="#" th:action="@{/add}" method="post" name="addForm"
+						   enctype="multipart/form-data">
 							<div class="form-group row">
 								Name: <input type="text" name="name" placeholder="Product name">
 							</div>
@@ -61,11 +62,14 @@
 							</div>
 							<div class="form-group row">
 								Description:
-								<textarea name="description" cols="20" rows="4"></textarea>
+								<textarea name="description" cols="20" rows="4" style="resize: none;"></textarea>
 							</div>
 							<div class="form-group row">
-								Image: <input type="text" name="image" id="img" 
-									placeholder= "image link">
+								Image: 
+								<input class="form-control" name="fileImage" type="file" id="formFile" accept="image/png, image/jpeg">
+								<div class="image_preview">
+									<img alt="Image preview" id="thumbnail" style="width: 100px; height: 100px;">
+								</div>
 							</div>
 							<input type="submit" name="add" value="Add"
 								class="btn btn-primary btn-lg btn-block">
@@ -131,5 +135,22 @@
 		<script
 			src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 		<script th:src="@{/js/l1.js}"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('#formFile').change(function(){
+					showImageThumbnail(this)	
+				});
+			});
+		
+			function showImageThumbnail(fileInput){
+				file = fileInput.files[0];
+				reader = new FileReader();
+				reader.onload = function(e){
+					$('#thumbnail').attr('src',e.target.result);
+				};
+				reader.readAsDataURL(file);
+			}
+		
+		</script>
 </body>
 </html>

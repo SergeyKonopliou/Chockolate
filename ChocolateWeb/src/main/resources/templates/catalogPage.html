@@ -110,8 +110,9 @@
 										<th:block th:each="prod : ${prod}">
 											<tr>
 												<td><img src="#"
-													th:src="@{{linkImg}(linkImg=${prod.image})}"
-													style="width: 100px; height: 100px;"></td>
+													th:src="@{{linkImg}(linkImg=${prod.ImagePath})}" 
+													onError="this.src='images/nophoto.png'"
+													style="width: 100px; height: 100px;"></td> 
 												<td><a href="#"
 													th:href="@{/info/{linkTitle}(linkTitle=${prod.id})}"
 													th:text="${prod.name}"></a></td>
