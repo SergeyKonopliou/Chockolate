@@ -38,8 +38,7 @@
 			</div>
 		</header>
 
-		<main style="background-image: url(@{/images/fon_personal_page.jpg});">
-			<!-- не работает!!! -->
+		<main style="background-image: url(http://localhost:8080/main/images/fon_personal_page.jpg);">
 			<div class="container">
 
 				<h1 class="main_title">Информация о продукте</h1>
@@ -49,7 +48,8 @@
 
 						<!-- адрес изображения тоже учитывается от стартового http://localhost:8080/main -->
 						<div>
-							<img src="#" th:src="@{/{linkImg}(linkImg=${product.image})}"
+							<img src="#" th:src="@{/{linkImg}(linkImg=${product.ImagePath})}"
+								onError="this.src='/images/nophoto.png'"
 								style="width: 400px; height: 400px;">
 						</div>
 						<div th:text="${product.name}">Название:</div>
@@ -75,11 +75,11 @@
 								th:utext="#{label.contactsLink}"></div>
 							<div class="footer_block_spoiler_menu_text">
 								<div>
-									<img src="#" th:src="@{images/icons/icons-телефон.png}">
+									<img src="#" th:src="@{/images/icons/icons-телефон.png}">
 									Velcome +234234234234
 								</div>
 								<img src="#"
-									th:src="@{images/icons/icons-электронная-почта.png}">
+									th:src="@{/images/icons/icons-электронная-почта.png}">
 								Mail sdfgsdfgd@djffkgbkd.dfg
 							</div>
 						</div>
@@ -90,16 +90,16 @@
 						<div class="footer_block_spoiler_menu_text">
 							<div>
 								<a href="https://www.instagram.com/" class="society_link"><img
-									src="#" th:src="@{images/icons/icons-instagram.png}">
+									src="#" th:src="@{/images/icons/icons-instagram.png}">
 									Instagram</a>
 							</div>
 							<div>
 								<a href="https://www.vk.com/" class="society_link"><img
-									src="#" th:src="@{images/icons/icons-вконтакте.png}"> VK</a>
+									src="#" th:src="@{/images/icons/icons-вконтакте.png}"> VK</a>
 							</div>
 							<div>
 								<a href="https://www.viber.com/ru/" class="society_link"><img
-									src="#" th:src="@{images/icons/icons-viber.png}"> Viber</a>
+									src="#" th:src="@{/images/icons/icons-viber.png}"> Viber</a>
 							</div>
 						</div>
 					</div>
