@@ -120,13 +120,20 @@ public class ProductServiceImpl implements ProductService {
 			product.setPrice(object.getPrice());
 			product.setImage(object.getImage());
 			TypeProduct foundTypeProduct = typeRepository.findTypeProductByName(givenTypeProduct.getName());
-			if (foundTypeProduct != null) {
-				product.setTypeProduct(foundTypeProduct);
-				foundTypeProduct.getProducts().add(product);
-				typeRepository.save(foundTypeProduct);
-			} else {
-				product.setTypeProduct(givenTypeProduct);
+			if (foundTypeProduct == null) {
+				typeRepository.save(givenTypeProduct);
 			}
+			product.setTypeProduct(givenTypeProduct);
+			givenTypeProduct.getProducts().add(product);
+//			if (foundTypeProduct != null) {
+//				product.setTypeProduct(foundTypeProduct);
+//				foundTypeProduct.getProducts().add(product);
+//				typeRepository.save(foundTypeProduct);
+//			} else {
+//				product.setTypeProduct(givenTypeProduct);
+//				givenTypeProduct.getProducts().add(product);
+//				typeRepository.save(givenTypeProduct);
+//			}
 			repository.save(product);
 		} catch (Exception e) {
 			throw new ServiceException("Problems with updating product to DB service method  " + e.getMessage(), e);

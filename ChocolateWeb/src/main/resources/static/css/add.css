@@ -18,3 +18,17 @@ form div{
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
+.input_name:invalid,
+.input_price:invalid{
+  border: 2px dashed red;
+}
+
+.input_name:invalid:required,
+.input_price:invalid:required {
+  background-color: red;
+}
+
+.input_name:valid,
+.input_price:valid{
+  border: 2px solid #00ff00;
+}

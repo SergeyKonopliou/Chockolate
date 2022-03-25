@@ -65,127 +65,130 @@
 									name="searchForm" class="form_search">
 									<div>
 										<input type="text" name="search_product"
-										placeholder="Name product" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
-									 <input type="hidden"
-										class="send_select" name="select">
-									<input type="hidden"
-										class="send_price" name="selectPrice">	
+											placeholder="Name product" class="form-control"
+											aria-label="Default"
+											aria-describedby="inputGroup-sizing-default"> <input
+											type="hidden" class="send_select" name="select"> <input
+											type="hidden" class="send_price" name="selectPrice">
 									</div>
 									<button type="submit" class="btn btn-primary mb-2">Search</button>
 								</form>
 							</div>
 
 							<div class="listType">
-								<select class="select form-select" name="select" size="1" aria-label="Default select example">
+								<select class="select form-select" name="select" size="1"
+									aria-label="Default select example">
 									<option th:value="all">Select type</option>
 									<option th:value="all">all</option>
 									<option th:each="type : ${types}" th:utext="${type.name}"
 										th:value="${type.name}" />
 								</select>
 							</div>
-							
+
 							<div class="listPrice">
-								<select class="selectPrice form-select" name="selectPrice" size="1" aria-label="Default select example">
+								<select class="selectPrice form-select" name="selectPrice"
+									size="1" aria-label="Default select example">
 									<option th:value="none">Price</option>
 									<option th:value="high">по убыванию</option>
 									<option th:value="low">по возрастанию</option>
 								</select>
 							</div>
 						</div>
-						
-						</div>
 
-						<div class="page_catalog">
-							<div class="table-responsive">
+					</div>
 
-								<div th:if="${not findProductFlag}">
-									<table class="table align-middle">
+					<div class="page_catalog">
+						<div class="table-responsive">
+
+							<div th:if="${not findProductFlag}">
+								<table class="table align-middle">
+									<tr>
+										<th>View</th>
+										<th>Name</th>
+										<th>Price</th>
+										<th>Type</th>
+										<th></th>
+									</tr>
+									<th:block th:each="prod : ${prod}">
 										<tr>
-											<th>View</th>
-											<th>Name</th>
-											<th>Price</th>
-											<th>Type</th>
-											<th></th>
+											<td><img src="#"
+												th:src="@{{linkImg}(linkImg=${prod.ImagePath})}"
+												onError="this.src='images/nophoto.png'"
+												style="width: 100px; height: 100px;"></td>
+											<td><a href="#"
+												th:href="@{/info/{linkTitle}(linkTitle=${prod.id})}"
+												th:text="${prod.name}"></a></td>
+											<td th:text="${prod.price}"></td>
+											<td th:text="${prod.typeProduct.name}"></td>
+											<td sec:authorize="hasRole('ADMIN')"><a
+												th:href="@{/updateProduct/{linkTitle}(linkTitle=${prod.id})}"><button
+														type="button" class="btn btn-primary mb-2">Update</button></a>
+												<a
+												th:href="@{/deleteProduct/{linkTitle}(linkTitle=${prod.id})}"><button
+														type="button" class="btn btn-primary mb-2">Delete</button></a>
+											</td>
 										</tr>
-										<th:block th:each="prod : ${prod}">
-											<tr>
-												<td><img src="#"
-													th:src="@{{linkImg}(linkImg=${prod.ImagePath})}" 
-													onError="this.src='images/nophoto.png'"
-													style="width: 100px; height: 100px;"></td> 
-												<td><a href="#"
-													th:href="@{/info/{linkTitle}(linkTitle=${prod.id})}"
-													th:text="${prod.name}"></a></td>
-												<td th:text="${prod.price}"></td>
-												<td th:text="${prod.typeProduct.name}"></td>
-												<td sec:authorize="hasRole('ADMIN')"><a
-													th:href="@{/updateProduct/{linkTitle}(linkTitle=${prod.id})}"><button
-															type="button" class="btn btn-primary mb-2">Update</button></a>
-													<a
-													th:href="@{/deleteProduct/{linkTitle}(linkTitle=${prod.id})}"><button
-															type="button" class="btn btn-primary mb-2">Delete</button></a>
-												</td>
-											</tr>
-										</th:block>
-									</table>
-								</div>
+									</th:block>
+								</table>
+							</div>
 
-								<div th:if="${findProductFlag}">
-									<p>Ничего не найдено</p>
-								</div>
+							<div th:if="${findProductFlag}">
+								<p>Ничего не найдено</p>
 							</div>
 						</div>
 					</div>
-
 				</div>
 
-
 			</div>
-		</main>
+	</main>
 
-		<footer>
-			<div class="container">
-				<div class="footer_container">
+	<footer>
+		<div class="container">
+			<div class="footer_container">
 
-					<div class="footer_block_menu one_spoiler_open">
-						<div class="footer_block_spoiler ">
-							<div class="footer_block_spoiler_menu_title"
-								th:utext="#{label.contactsLink}"></div>
-							<div class="footer_block_spoiler_menu_text">
-								<div>
-									<img src="#" th:src="@{images/icons/icons-телефон.png}"> Velcome
-									+234234234234
-								</div>
-								<img src="#" th:src="@{images/icons/icons-электронная-почта.png}">
-								Mail sdfgsdfgd@djffkgbkd.dfg
-							</div>
-						</div>
-					</div>
-					<div class="footer_block_spoiler">
+				<div class="footer_block_menu one_spoiler_open">
+					<div class="footer_block_spoiler ">
 						<div class="footer_block_spoiler_menu_title"
-							th:utext="#{label.SocialLink}"></div>
+							th:utext="#{label.contactsLink}"></div>
 						<div class="footer_block_spoiler_menu_text">
 							<div>
-								 <a href="https://www.instagram.com/" class="society_link" ><img src="#" th:src="@{images/icons/icons-instagram.png}"> Instagram</a>
+								<img src="#" th:src="@{images/icons/icons-телефон.png}">
+								Velcome +234234234234
 							</div>
-							<div>
-								<a href="https://www.vk.com/" class="society_link"><img src="#" th:src="@{images/icons/icons-вконтакте.png}"> VK</a>
-							</div>
-							<div>
-								<a href="https://www.viber.com/ru/" class="society_link"><img src="#" th:src="@{images/icons/icons-viber.png}"> Viber</a>
-							</div>
+							<img src="#" th:src="@{images/icons/icons-электронная-почта.png}">
+							Mail sdfgsdfgd@djffkgbkd.dfg
 						</div>
 					</div>
-					<div class="footer_block_spoiler">
-						<div class="footer_block_spoiler_menu_title"
-							th:utext="#{label.UnitedInfoLink}"></div>
-						<div class="footer_block_spoiler_menu_text"
-							id="current_date_time_block2">Здесь будет находиться
-							какая-то общая информация</div>
+				</div>
+				<div class="footer_block_spoiler">
+					<div class="footer_block_spoiler_menu_title"
+						th:utext="#{label.SocialLink}"></div>
+					<div class="footer_block_spoiler_menu_text">
+						<div>
+							<a href="https://www.instagram.com/" class="society_link"><img
+								src="#" th:src="@{images/icons/icons-instagram.png}">
+								Instagram</a>
+						</div>
+						<div>
+							<a href="https://www.vk.com/" class="society_link"><img
+								src="#" th:src="@{images/icons/icons-вконтакте.png}"> VK</a>
+						</div>
+						<div>
+							<a href="https://www.viber.com/ru/" class="society_link"><img
+								src="#" th:src="@{images/icons/icons-viber.png}"> Viber</a>
+						</div>
 					</div>
 				</div>
+				<div class="footer_block_spoiler">
+					<div class="footer_block_spoiler_menu_title"
+						th:utext="#{label.UnitedInfoLink}"></div>
+					<div class="footer_block_spoiler_menu_text"
+						id="current_date_time_block2">Здесь будет находиться
+						какая-то общая информация</div>
+				</div>
 			</div>
-		</footer>
+		</div>
+	</footer>
 	<script
 		src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	<script th:src="@{/js/l1.js}"></script>
@@ -204,13 +207,12 @@
 			$('.send_price').val(sel);
 		});
 	</script>
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-		crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous">
+	</script>
 	<script
-		src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-		crossorigin="anonymous"></script>
-
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+		crossorigin="anonymous">
+	</script>
 </body>
 </html>

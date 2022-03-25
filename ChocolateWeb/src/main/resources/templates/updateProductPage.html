@@ -20,7 +20,8 @@
 		<header class="header">
 			<div class="container">
 				<div class="header_row">
-					<img src="/images/logo1.jpg"> 
+					<a href="" class="header_logo"> <img src="#"
+						th:src="@{/images/logo1.jpg}">
 					</a>
 					<div class="menu_burger">
 						<span></span>
@@ -41,7 +42,7 @@
 			</div>
 		</header>
 
-		<main >
+		<main style="background-image: url(http://localhost:8080/main/images/fon_personal_page.jpg);">
 			<div class="container">
 
 				<h1 class="main_title">Форма изменения продукта</h1>
@@ -58,8 +59,8 @@
 											value="#" th:value="${product.name}">
 							</div>
 							<div class="form-group row">
-								Price: <input type="text" name="price"
-												value="#" th:value="${product.price}">
+								Price: <input type="number" name="price"
+												value="#" th:value="${product.price}" min="0">
 							</div>
 							<div class="form-group row">
 								Type: <input type="text" name="typeProduct"
@@ -98,10 +99,10 @@
 								th:utext="#{label.contactsLink}"></div>
 							<div class="footer_block_spoiler_menu_text">
 								<div>
-									<img src="#" th:src="@{images/icons/icons-телефон.png}"> Velcome
+									<img src="#" th:src="@{/images/icons/icons-телефон.png}"> Velcome
 									+234234234234
 								</div>
-								<img src="#" th:src="@{images/icons/icons-электронная-почта.png}">
+								<img src="#" th:src="@{/images/icons/icons-электронная-почта.png}">
 								Mail sdfgsdfgd@djffkgbkd.dfg
 							</div>
 						</div>
@@ -111,13 +112,13 @@
 							th:utext="#{label.SocialLink}"></div>
 						<div class="footer_block_spoiler_menu_text">
 							<div>
-								 <a href="https://www.instagram.com/" class="society_link" ><img src="#" th:src="@{images/icons/icons-instagram.png}"> Instagram</a>
+								 <a href="https://www.instagram.com/" class="society_link" ><img src="#" th:src="@{/images/icons/icons-instagram.png}"> Instagram</a>
 							</div>
 							<div>
-								<a href="https://www.vk.com/" class="society_link"><img src="#" th:src="@{images/icons/icons-вконтакте.png}"> VK</a>
+								<a href="https://www.vk.com/" class="society_link"><img src="#" th:src="@{/images/icons/icons-вконтакте.png}"> VK</a>
 							</div>
 							<div>
-								<a href="https://www.viber.com/ru/" class="society_link"><img src="#" th:src="@{images/icons/icons-viber.png}"> Viber</a>
+								<a href="https://www.viber.com/ru/" class="society_link"><img src="#" th:src="@{/images/icons/icons-viber.png}"> Viber</a>
 							</div>
 						</div>
 					</div>
@@ -131,6 +132,7 @@
 				</div>
 			</div>
 		</footer>
+	</div>
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
 		crossorigin="anonymous"></script>

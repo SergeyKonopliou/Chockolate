@@ -315,6 +315,33 @@ main {
     -webkit-text-fill-color: transparent;
     color: #3b3b3b;
 }
+.form_search{
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.personal_product_page_info{
+	display:flex;
+	flex-direction:row;
+	padding: 5px;
+     color: black;
+    font-size: 24px;
+}
+.personal_product_page_image{
+	padding-right: 10px;
+}
+.personal_product_page_text{
+	text-indent:30px;
+	line-height: 1.5;
+}
+.personal_product_page_text_value{
+	text-indent:50px;
+}
+.personal_product_page_text_title{
+	text-indent:none;
+	font-size: 28px;
+	color: gray;
+}
 
 /*медиа запросы ставить после того блока,для которого что-то изменяется в медиа запросе(группировка),иначе плохо отрабатывают изменения*/
 @media (max-width:992px) {
@@ -325,15 +352,25 @@ main {
 }
 
 @media (max-width:767px) {
-    .main_title {
+ .main_title {
         font-size: 30px;
         margin: 0px 0px 15px 0px;
     }
+    .personal_product_page_info{
+	flex-direction:column;
+    font-size: 20px;
 }
-.form_search{
-	display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.personal_product_page_text{
+	text-indent:30px;
+	line-height: 2;
+}
+.personal_product_page_text_value{
+	text-indent:50px;
+}
+.personal_product_page_text_title{
+	font-size: 24px;
+	color: gray;
+}
 }
 
 .page {
@@ -375,18 +412,12 @@ main {
     margin: 7px 7px 7px 0; /* Отступы вокруг картинки */
      max-width: 40%;
     max-height: 40%;
-    /* для адаптации картинок в галерее под размер */
-    object-fit: cover;
-    object-position: center;
    }
 .personal_page_img2  {
     float: right; /* Выравнивание по правому краю  */ 
     margin: 7px 0 7px 7px; /* Отступы вокруг картинки */
-       max-width: 40%;
+    max-width: 40%;
     max-height: 40%;
-    /* для адаптации картинок в галерее под размер */
-    object-fit: cover;
-    object-position: center;
    }
 .page_text_about_me{
     padding: 5px;
