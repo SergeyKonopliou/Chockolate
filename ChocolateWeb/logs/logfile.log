@@ -24496,3 +24496,731 @@ Field error in object 'product' on field 'typeProduct': rejected value [sdf]; co
 2022-03-24 21:35:05,284 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showAddNewProductPage,with result addNewProductPage
 2022-03-24 21:35:08,617 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
 2022-03-24 21:35:08,623 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 10:45:32,977 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 10:45:33,020 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 10:45:40,997 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-25 10:45:40,998 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-25 10:45:50,176 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 10:45:50,177 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 10:45:52,300 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 10:45:52,449 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 10:45:54,639 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showAddNewProductPage
+2022-03-25 10:45:54,642 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showAddNewProductPage,with result addNewProductPage
+2022-03-25 10:46:12,781 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProduct
+2022-03-25 10:46:12,910 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addProduct,with result redirect:/catalog
+2022-03-25 10:46:12,958 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 10:46:12,964 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 10:46:15,222 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method updateProductById
+2022-03-25 10:46:15,248 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method updateProductById,with result updateProductPage
+2022-03-25 10:46:29,519 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method updateProduct
+2022-03-25 10:46:29,582 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method updateProduct,with result redirect:/catalog
+2022-03-25 10:46:29,619 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 10:46:29,629 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 10:54:14,390 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 10:54:14,405 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 10:54:14,952 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 10:54:14,953 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 10:54:17,162 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-25 10:54:17,163 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-25 10:54:22,533 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 10:54:22,534 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 10:54:24,179 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 10:54:24,256 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 10:54:25,479 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showAddNewProductPage
+2022-03-25 10:54:25,480 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showAddNewProductPage,with result addNewProductPage
+2022-03-25 10:54:38,585 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProduct
+2022-03-25 10:54:38,714 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addProduct,with result redirect:/catalog
+2022-03-25 10:54:38,753 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 10:54:38,760 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 10:54:40,916 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method updateProductById
+2022-03-25 10:54:40,927 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method updateProductById,with result updateProductPage
+2022-03-25 10:54:53,008 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method updateProduct
+2022-03-25 10:54:53,038 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method updateProduct,with result redirect:/catalog
+2022-03-25 10:54:53,070 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 10:54:53,079 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 10:55:00,343 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showAddNewProductPage
+2022-03-25 10:55:00,344 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showAddNewProductPage,with result addNewProductPage
+2022-03-25 10:55:02,080 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 10:55:02,103 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 10:55:04,279 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 10:55:04,289 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 10:55:18,720 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 10:55:18,738 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 10:55:26,793 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method updateProductById
+2022-03-25 10:55:26,804 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method updateProductById,with result updateProductPage
+2022-03-25 10:59:27,208 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 10:59:27,225 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 10:59:29,512 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-25 10:59:29,513 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-25 10:59:34,655 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 10:59:34,656 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 10:59:37,583 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 10:59:37,659 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 10:59:40,893 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method updateProductById
+2022-03-25 10:59:40,908 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method updateProductById,with result updateProductPage
+2022-03-25 10:59:47,893 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method updateProduct
+2022-03-25 10:59:47,990 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method updateProduct,with result redirect:/catalog
+2022-03-25 10:59:48,033 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 10:59:48,040 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 11:00:02,267 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 11:00:02,268 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 11:05:49,502 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 11:05:49,523 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 11:05:51,521 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-25 11:05:51,523 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-25 11:06:00,640 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 11:06:00,641 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 11:06:02,845 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 11:06:02,915 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 11:06:05,130 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method updateProductById
+2022-03-25 11:06:05,143 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method updateProductById,with result updateProductPage
+2022-03-25 11:06:08,544 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method updateProduct
+2022-03-25 11:06:08,647 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method updateProduct,with result redirect:/catalog
+2022-03-25 11:06:08,696 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 11:06:08,713 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 11:06:15,076 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 11:06:15,111 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 11:43:56,673 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 11:43:57,631 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 11:43:57,756 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 11:43:57,820 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 11:43:57,824 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 11:44:00,542 [ERROR] LoggableAspect.java:recordFailedExecution:24 - Method showCatalog class com.chockolate.controller.MainController was aborted with an exception java.lang.NullPointerException: Cannot invoke "com.chockolate.model.TypeProduct.getId()" because "type" is null
+
+2022-03-25 11:44:00,705 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method handleError
+2022-03-25 11:44:00,728 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method handleError,with result error
+2022-03-25 11:44:03,677 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-25 11:44:03,679 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-25 11:44:14,619 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 11:44:14,620 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 11:44:16,362 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 11:44:16,505 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 11:44:18,084 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showAddNewProductPage
+2022-03-25 11:44:18,085 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showAddNewProductPage,with result addNewProductPage
+2022-03-25 11:44:27,034 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProduct
+2022-03-25 11:44:27,060 [ERROR] LoggableAspect.java:recordFailedExecution:24 - Method addProduct class com.chockolate.controller.MainController was aborted with an exception javax.validation.ConstraintViolationException: addProduct.name: name can not be empty
+
+2022-03-25 11:44:27,062 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method handleConstraintViolationException
+2022-03-25 11:44:27,065 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method handleConstraintViolationException,with result <400 BAD_REQUEST Bad Request,not valid due to validation error: addProduct.name: name can not be empty,[]>
+2022-03-25 11:44:43,092 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProduct
+2022-03-25 11:44:43,094 [ERROR] LoggableAspect.java:recordFailedExecution:24 - Method addProduct class com.chockolate.controller.MainController was aborted with an exception javax.validation.ConstraintViolationException: addProduct.name: name can not be empty
+
+2022-03-25 11:44:43,095 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method handleConstraintViolationException
+2022-03-25 11:44:43,096 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method handleConstraintViolationException,with result <400 BAD_REQUEST Bad Request,not valid due to validation error: addProduct.name: name can not be empty,[]>
+2022-03-25 11:44:49,239 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProduct
+2022-03-25 11:44:49,241 [ERROR] LoggableAspect.java:recordFailedExecution:24 - Method addProduct class com.chockolate.controller.MainController was aborted with an exception javax.validation.ConstraintViolationException: addProduct.name: name can not be empty
+
+2022-03-25 11:44:49,242 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method handleConstraintViolationException
+2022-03-25 11:44:49,243 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method handleConstraintViolationException,with result <400 BAD_REQUEST Bad Request,not valid due to validation error: addProduct.name: name can not be empty,[]>
+2022-03-25 11:44:50,978 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showAddNewProductPage
+2022-03-25 11:44:50,981 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showAddNewProductPage,with result addNewProductPage
+2022-03-25 11:54:33,262 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 11:54:33,318 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 11:54:33,961 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 11:54:33,962 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 11:54:35,345 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-25 11:54:35,348 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-25 11:54:41,161 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 11:54:41,162 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 11:54:43,500 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 11:54:43,588 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 11:54:45,198 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showAddNewProductPage
+2022-03-25 11:54:45,199 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showAddNewProductPage,with result addNewProductPage
+2022-03-25 11:54:51,480 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProduct
+2022-03-25 11:54:51,506 [ERROR] LoggableAspect.java:recordFailedExecution:24 - Method addProduct class com.chockolate.controller.MainController was aborted with an exception javax.validation.ConstraintViolationException: addProduct.name: name can not be empty
+
+2022-03-25 11:54:51,509 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method handleConstraintViolationException
+2022-03-25 11:54:51,512 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method handleConstraintViolationException,with result <400 BAD_REQUEST Bad Request,not valid due to validation error: addProduct.name: name can not be empty,[]>
+2022-03-25 12:02:52,388 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 12:02:52,432 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 12:02:56,882 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 12:02:56,884 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 12:02:58,812 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-25 12:02:58,815 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-25 12:03:05,074 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 12:03:05,075 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 12:03:06,791 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 12:03:06,867 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 12:03:09,058 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showAddNewProductPage
+2022-03-25 12:03:09,060 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showAddNewProductPage,with result addNewProductPage
+2022-03-25 12:03:09,162 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method handleError
+2022-03-25 12:03:09,176 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method handleError,with result error
+2022-03-25 12:03:11,622 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 12:03:11,623 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 12:04:31,770 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 12:04:31,815 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 12:04:32,674 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 12:04:32,688 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 12:04:41,032 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 12:04:41,036 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 12:04:42,213 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-25 12:04:42,215 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-25 12:04:45,201 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-25 12:04:45,203 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-25 12:04:51,095 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 12:04:51,096 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 12:04:52,746 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 12:04:52,765 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 12:04:54,443 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showAddNewProductPage
+2022-03-25 12:04:54,444 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showAddNewProductPage,with result addNewProductPage
+2022-03-25 12:04:54,531 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method handleError
+2022-03-25 12:04:54,537 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method handleError,with result error
+2022-03-25 12:05:01,924 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 12:05:01,926 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 12:26:24,655 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 12:26:24,690 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 12:26:30,843 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-25 12:26:30,847 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-25 12:26:40,500 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 12:26:40,500 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 12:26:42,634 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 12:26:42,749 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 12:26:44,859 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showAddNewProductPage
+2022-03-25 12:26:44,860 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showAddNewProductPage,with result addNewProductPage
+2022-03-25 12:26:44,990 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method handleError
+2022-03-25 12:26:44,995 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method handleError,with result error
+2022-03-25 12:26:46,936 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 12:26:46,937 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 12:27:36,775 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 12:27:36,783 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 12:27:37,956 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showAddNewProductPage
+2022-03-25 12:27:37,958 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showAddNewProductPage,with result addNewProductPage
+2022-03-25 12:27:38,012 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method handleError
+2022-03-25 12:27:38,013 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method handleError,with result error
+2022-03-25 12:27:40,026 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 12:27:40,027 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 12:28:32,498 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 12:28:32,499 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 12:28:34,359 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 12:28:34,368 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 12:28:35,897 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showAddNewProductPage
+2022-03-25 12:28:35,898 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showAddNewProductPage,with result addNewProductPage
+2022-03-25 12:28:35,930 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method handleError
+2022-03-25 12:28:35,931 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method handleError,with result error
+2022-03-25 12:28:37,863 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 12:28:37,867 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 12:30:10,481 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 12:30:10,501 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 12:30:12,262 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-25 12:30:12,264 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-25 12:30:18,664 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 12:30:18,665 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 12:30:20,427 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 12:30:20,515 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 12:30:21,912 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showAddNewProductPage
+2022-03-25 12:30:21,913 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showAddNewProductPage,with result addNewProductPage
+2022-03-25 12:30:22,004 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method handleError
+2022-03-25 12:30:22,013 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method handleError,with result error
+2022-03-25 12:30:23,556 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 12:30:23,557 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 12:33:44,067 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 12:33:44,128 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 12:33:58,379 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-25 12:33:58,381 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-25 12:34:04,806 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 12:34:04,807 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 12:34:06,628 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 12:34:06,704 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 12:34:12,191 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showAddNewProductPage
+2022-03-25 12:34:12,192 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showAddNewProductPage,with result addNewProductPage
+2022-03-25 12:34:12,280 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method handleError
+2022-03-25 12:34:12,288 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method handleError,with result error
+2022-03-25 12:34:14,196 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 12:34:14,200 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 12:35:24,656 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 12:35:24,709 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 12:35:26,286 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-25 12:35:26,288 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-25 12:35:32,642 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 12:35:32,643 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 12:35:34,355 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 12:35:34,428 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 12:35:36,135 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showAddNewProductPage
+2022-03-25 12:35:36,136 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showAddNewProductPage,with result addNewProductPage
+2022-03-25 12:35:37,768 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProduct
+2022-03-25 12:35:37,835 [ERROR] LoggableAspect.java:recordFailedExecution:24 - Method addProduct class com.chockolate.controller.MainController was aborted with an exception javax.validation.ConstraintViolationException: addProduct.name: не должно быть пустым, addProduct.price: должно соответствовать "^(-?\d+)(\.\d+)?$"
+
+2022-03-25 12:35:37,839 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method handleConstraintViolationException
+2022-03-25 12:35:37,843 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method handleConstraintViolationException,with result <400 BAD_REQUEST Bad Request,not valid date to validation error: addProduct.name: не должно быть пустым, addProduct.price: должно соответствовать "^(-?\d+)(\.\d+)?$",[]>
+2022-03-25 12:35:44,329 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showAddNewProductPage
+2022-03-25 12:35:44,330 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showAddNewProductPage,with result addNewProductPage
+2022-03-25 13:02:15,351 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 13:02:15,418 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 13:02:15,932 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 13:02:15,933 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 13:02:17,639 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 13:02:17,774 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 13:02:28,268 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showPersonalProductPage
+2022-03-25 13:02:28,291 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showPersonalProductPage,with result personalProductPage
+2022-03-25 13:02:35,526 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 13:02:35,539 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 13:02:50,075 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 13:02:50,077 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 13:03:08,144 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 13:03:08,163 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 13:03:12,973 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 13:03:12,975 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 13:08:26,565 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 13:08:26,645 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 13:08:28,420 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 13:08:28,543 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 13:08:30,262 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showPersonalProductPage
+2022-03-25 13:08:30,286 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showPersonalProductPage,with result personalProductPage
+2022-03-25 13:08:37,045 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method aboutMe
+2022-03-25 13:08:37,047 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method aboutMe,with result personalPage
+2022-03-25 13:08:49,597 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method aboutMe
+2022-03-25 13:08:49,599 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method aboutMe,with result personalPage
+2022-03-25 13:08:52,286 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method aboutMe
+2022-03-25 13:08:52,288 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method aboutMe,with result personalPage
+2022-03-25 13:08:53,873 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 13:08:53,874 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 13:08:55,610 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method aboutMe
+2022-03-25 13:08:55,611 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method aboutMe,with result personalPage
+2022-03-25 13:09:33,057 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 13:09:33,069 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 13:09:34,867 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showPersonalProductPage
+2022-03-25 13:09:34,875 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showPersonalProductPage,with result personalProductPage
+2022-03-25 13:09:40,646 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 13:09:40,658 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 13:12:04,007 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 13:12:04,019 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 13:12:05,213 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showPersonalProductPage
+2022-03-25 13:12:05,219 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showPersonalProductPage,with result personalProductPage
+2022-03-25 13:12:20,330 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showPersonalProductPage
+2022-03-25 13:12:20,335 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showPersonalProductPage,with result personalProductPage
+2022-03-25 13:12:22,184 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 13:12:22,187 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 13:12:23,606 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 13:12:23,627 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 13:12:24,756 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showPersonalProductPage
+2022-03-25 13:12:24,766 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showPersonalProductPage,with result personalProductPage
+2022-03-25 13:12:27,760 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 13:12:27,769 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 13:13:08,306 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showPersonalProductPage
+2022-03-25 13:13:08,309 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showPersonalProductPage,with result personalProductPage
+2022-03-25 13:13:10,065 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showPersonalProductPage
+2022-03-25 13:13:10,074 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showPersonalProductPage,with result personalProductPage
+2022-03-25 13:13:11,113 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showPersonalProductPage
+2022-03-25 13:13:11,117 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showPersonalProductPage,with result personalProductPage
+2022-03-25 13:13:12,279 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showPersonalProductPage
+2022-03-25 13:13:12,291 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showPersonalProductPage,with result personalProductPage
+2022-03-25 13:13:13,565 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showPersonalProductPage
+2022-03-25 13:13:13,575 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showPersonalProductPage,with result personalProductPage
+2022-03-25 13:14:15,500 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showPersonalProductPage
+2022-03-25 13:14:15,506 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showPersonalProductPage,with result personalProductPage
+2022-03-25 13:14:17,926 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showPersonalProductPage
+2022-03-25 13:14:17,935 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showPersonalProductPage,with result personalProductPage
+2022-03-25 13:14:19,580 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 13:14:19,581 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 13:14:20,684 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 13:14:20,695 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 13:14:22,003 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showPersonalProductPage
+2022-03-25 13:14:22,013 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showPersonalProductPage,with result personalProductPage
+2022-03-25 13:14:24,023 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showPersonalProductPage
+2022-03-25 13:14:24,031 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showPersonalProductPage,with result personalProductPage
+2022-03-25 13:14:24,938 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showPersonalProductPage
+2022-03-25 13:14:24,945 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showPersonalProductPage,with result personalProductPage
+2022-03-25 13:15:32,070 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showPersonalProductPage
+2022-03-25 13:15:32,080 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showPersonalProductPage,with result personalProductPage
+2022-03-25 13:15:36,583 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 13:15:36,584 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 13:16:09,708 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 13:16:09,776 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 13:16:11,279 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 13:16:11,971 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 13:16:13,286 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showPersonalProductPage
+2022-03-25 13:16:13,314 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showPersonalProductPage,with result personalProductPage
+2022-03-25 13:18:47,914 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showPersonalProductPage
+2022-03-25 13:18:47,919 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showPersonalProductPage,with result personalProductPage
+2022-03-25 13:18:55,006 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 13:18:55,009 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 13:18:58,075 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 13:18:58,095 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 13:19:03,610 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 13:19:03,623 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 13:21:46,993 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showPersonalProductPage
+2022-03-25 13:21:47,000 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showPersonalProductPage,with result personalProductPage
+2022-03-25 13:21:56,242 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showPersonalProductPage
+2022-03-25 13:21:56,250 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showPersonalProductPage,with result personalProductPage
+2022-03-25 13:22:17,950 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showPersonalProductPage
+2022-03-25 13:22:17,955 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showPersonalProductPage,with result personalProductPage
+2022-03-25 13:22:19,996 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 13:22:20,002 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 13:22:21,428 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 13:22:21,446 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 13:22:23,349 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showPersonalProductPage
+2022-03-25 13:22:23,355 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showPersonalProductPage,with result personalProductPage
+2022-03-25 13:23:26,626 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showPersonalProductPage
+2022-03-25 13:23:26,631 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showPersonalProductPage,with result personalProductPage
+2022-03-25 13:24:05,832 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showPersonalProductPage
+2022-03-25 13:24:05,838 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showPersonalProductPage,with result personalProductPage
+2022-03-25 13:27:33,453 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showPersonalProductPage
+2022-03-25 13:27:33,461 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showPersonalProductPage,with result personalProductPage
+2022-03-25 13:30:40,114 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showPersonalProductPage
+2022-03-25 13:30:40,123 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showPersonalProductPage,with result personalProductPage
+2022-03-25 13:31:59,106 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showPersonalProductPage
+2022-03-25 13:31:59,112 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showPersonalProductPage,with result personalProductPage
+2022-03-25 13:32:00,667 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showPersonalProductPage
+2022-03-25 13:32:00,672 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showPersonalProductPage,with result personalProductPage
+2022-03-25 13:32:01,448 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showPersonalProductPage
+2022-03-25 13:32:01,456 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showPersonalProductPage,with result personalProductPage
+2022-03-25 13:33:28,862 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showPersonalProductPage
+2022-03-25 13:33:28,867 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showPersonalProductPage,with result personalProductPage
+2022-03-25 13:34:22,621 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showPersonalProductPage
+2022-03-25 13:34:22,626 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showPersonalProductPage,with result personalProductPage
+2022-03-25 13:34:35,391 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showPersonalProductPage
+2022-03-25 13:34:35,400 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showPersonalProductPage,with result personalProductPage
+2022-03-25 13:36:23,857 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showPersonalProductPage
+2022-03-25 13:36:23,861 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showPersonalProductPage,with result personalProductPage
+2022-03-25 13:37:02,610 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showPersonalProductPage
+2022-03-25 13:37:02,614 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showPersonalProductPage,with result personalProductPage
+2022-03-25 13:37:24,851 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showPersonalProductPage
+2022-03-25 13:37:24,855 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showPersonalProductPage,with result personalProductPage
+2022-03-25 13:37:35,972 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showPersonalProductPage
+2022-03-25 13:37:35,977 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showPersonalProductPage,with result personalProductPage
+2022-03-25 13:37:51,185 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showPersonalProductPage
+2022-03-25 13:37:51,188 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showPersonalProductPage,with result personalProductPage
+2022-03-25 13:37:54,676 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showPersonalProductPage
+2022-03-25 13:37:54,682 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showPersonalProductPage,with result personalProductPage
+2022-03-25 13:37:55,382 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showPersonalProductPage
+2022-03-25 13:37:55,387 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showPersonalProductPage,with result personalProductPage
+2022-03-25 13:37:55,624 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showPersonalProductPage
+2022-03-25 13:37:55,627 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showPersonalProductPage,with result personalProductPage
+2022-03-25 13:37:55,823 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showPersonalProductPage
+2022-03-25 13:37:55,828 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showPersonalProductPage,with result personalProductPage
+2022-03-25 13:37:56,022 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showPersonalProductPage
+2022-03-25 13:37:56,026 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showPersonalProductPage,with result personalProductPage
+2022-03-25 13:38:31,680 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showPersonalProductPage
+2022-03-25 13:38:31,686 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showPersonalProductPage,with result personalProductPage
+2022-03-25 13:38:34,238 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showPersonalProductPage
+2022-03-25 13:38:34,244 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showPersonalProductPage,with result personalProductPage
+2022-03-25 13:39:07,750 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showPersonalProductPage
+2022-03-25 13:39:07,756 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showPersonalProductPage,with result personalProductPage
+2022-03-25 13:40:26,171 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showPersonalProductPage
+2022-03-25 13:40:26,175 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showPersonalProductPage,with result personalProductPage
+2022-03-25 13:40:36,366 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showPersonalProductPage
+2022-03-25 13:40:36,370 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showPersonalProductPage,with result personalProductPage
+2022-03-25 13:40:36,946 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showPersonalProductPage
+2022-03-25 13:40:36,957 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showPersonalProductPage,with result personalProductPage
+2022-03-25 13:40:37,770 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showPersonalProductPage
+2022-03-25 13:40:37,777 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showPersonalProductPage,with result personalProductPage
+2022-03-25 13:41:29,972 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showPersonalProductPage
+2022-03-25 13:41:29,977 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showPersonalProductPage,with result personalProductPage
+2022-03-25 13:41:58,890 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showPersonalProductPage
+2022-03-25 13:41:58,894 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showPersonalProductPage,with result personalProductPage
+2022-03-25 13:42:26,608 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 13:42:26,687 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 13:42:26,940 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 13:42:26,941 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 13:42:28,654 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 13:42:28,875 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 13:42:30,230 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showPersonalProductPage
+2022-03-25 13:42:30,255 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showPersonalProductPage,with result personalProductPage
+2022-03-25 13:43:57,516 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showPersonalProductPage
+2022-03-25 13:43:57,520 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showPersonalProductPage,with result personalProductPage
+2022-03-25 13:44:54,524 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showPersonalProductPage
+2022-03-25 13:44:54,527 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showPersonalProductPage,with result personalProductPage
+2022-03-25 13:46:02,377 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showPersonalProductPage
+2022-03-25 13:46:02,381 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showPersonalProductPage,with result personalProductPage
+2022-03-25 13:46:12,441 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showPersonalProductPage
+2022-03-25 13:46:12,449 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showPersonalProductPage,with result personalProductPage
+2022-03-25 14:53:28,633 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 14:53:28,691 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 14:53:29,342 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 14:53:29,343 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 14:53:31,478 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-25 14:53:31,478 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-25 14:53:38,293 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 14:53:38,294 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 14:53:39,877 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 14:53:40,113 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 14:53:44,981 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showAddNewProductPage
+2022-03-25 14:53:44,982 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showAddNewProductPage,with result addNewProductPage
+2022-03-25 14:57:14,332 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 14:57:14,345 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 14:57:16,820 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-25 14:57:16,823 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-25 14:57:22,974 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 14:57:22,975 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 14:57:24,661 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 14:57:24,741 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 14:57:26,592 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showAddNewProductPage
+2022-03-25 14:57:26,593 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showAddNewProductPage,with result addNewProductPage
+2022-03-25 14:57:45,766 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProduct
+2022-03-25 14:57:45,881 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addProduct,with result redirect:/catalog
+2022-03-25 14:57:45,909 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 14:57:45,929 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 14:57:49,236 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method deleteProductById
+2022-03-25 14:57:49,317 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method deleteProductById,with result redirect:/catalog
+2022-03-25 14:57:49,333 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 14:57:49,344 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 14:57:54,858 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showAddNewProductPage
+2022-03-25 14:57:54,859 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showAddNewProductPage,with result addNewProductPage
+2022-03-25 14:58:08,045 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProduct
+2022-03-25 14:58:08,074 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addProduct,with result redirect:/catalog
+2022-03-25 14:58:08,092 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 14:58:08,107 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 14:58:17,671 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 14:58:17,690 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 15:05:19,032 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 15:05:19,045 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 15:05:19,701 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 15:05:19,702 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 15:05:21,174 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-25 15:05:21,174 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-25 15:05:28,201 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 15:05:28,202 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 15:05:29,808 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 15:05:29,911 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 15:05:31,895 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showAddNewProductPage
+2022-03-25 15:05:31,895 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showAddNewProductPage,with result addNewProductPage
+2022-03-25 15:08:14,415 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showAddNewProductPage
+2022-03-25 15:08:14,416 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showAddNewProductPage,with result addNewProductPage
+2022-03-25 15:09:02,414 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showAddNewProductPage
+2022-03-25 15:09:02,415 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showAddNewProductPage,with result addNewProductPage
+2022-03-25 15:09:06,604 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProduct
+2022-03-25 15:09:06,702 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addProduct,with result redirect:/catalog
+2022-03-25 15:09:06,733 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 15:09:06,743 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 15:09:10,083 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method deleteProductById
+2022-03-25 15:09:10,125 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method deleteProductById,with result redirect:/catalog
+2022-03-25 15:09:10,148 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 15:09:10,159 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 15:09:12,039 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showAddNewProductPage
+2022-03-25 15:09:12,040 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showAddNewProductPage,with result addNewProductPage
+2022-03-25 15:09:17,036 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProduct
+2022-03-25 15:09:17,080 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addProduct,with result redirect:/catalog
+2022-03-25 15:09:17,098 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 15:09:17,111 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 15:09:23,264 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method deleteProductById
+2022-03-25 15:09:23,276 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method deleteProductById,with result redirect:/catalog
+2022-03-25 15:09:23,293 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 15:09:23,306 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 15:09:25,784 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showAddNewProductPage
+2022-03-25 15:09:25,785 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showAddNewProductPage,with result addNewProductPage
+2022-03-25 15:09:57,982 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProduct
+2022-03-25 15:09:58,011 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addProduct,with result redirect:/catalog
+2022-03-25 15:09:58,060 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 15:09:58,078 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 15:10:00,112 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method deleteProductById
+2022-03-25 15:10:00,127 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method deleteProductById,with result redirect:/catalog
+2022-03-25 15:10:00,145 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 15:10:00,161 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 15:10:01,480 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showAddNewProductPage
+2022-03-25 15:10:01,481 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showAddNewProductPage,with result addNewProductPage
+2022-03-25 15:10:44,709 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showAddNewProductPage
+2022-03-25 15:10:44,709 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showAddNewProductPage,with result addNewProductPage
+2022-03-25 20:23:03,861 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 20:23:03,947 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 20:23:22,175 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-25 20:23:22,176 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-25 20:23:32,098 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 20:23:32,098 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 20:23:37,508 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 20:23:37,657 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 20:23:50,634 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showAddNewProductPage
+2022-03-25 20:23:50,635 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showAddNewProductPage,with result addNewProductPage
+2022-03-25 20:24:15,213 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 20:24:15,222 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 20:24:16,723 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method updateProductById
+2022-03-25 20:24:16,740 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method updateProductById,with result updateProductPage
+2022-03-25 20:26:12,581 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 20:26:12,582 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 20:26:14,286 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 20:26:14,324 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 20:26:15,694 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showAddNewProductPage
+2022-03-25 20:26:15,695 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showAddNewProductPage,with result addNewProductPage
+2022-03-25 20:26:26,144 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 20:26:26,145 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 20:26:58,767 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 20:26:58,791 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 20:27:00,724 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-25 20:27:00,725 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-25 20:27:06,765 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 20:27:06,766 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 20:27:08,735 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 20:27:08,818 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 20:27:10,767 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showAddNewProductPage
+2022-03-25 20:27:10,767 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showAddNewProductPage,with result addNewProductPage
+2022-03-25 20:27:16,859 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 20:27:16,877 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 20:27:18,232 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method updateProductById
+2022-03-25 20:27:18,245 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method updateProductById,with result updateProductPage
+2022-03-25 20:27:27,412 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 20:27:27,413 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 20:27:33,545 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 20:27:33,557 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 20:27:34,752 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showAddNewProductPage
+2022-03-25 20:27:34,752 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showAddNewProductPage,with result addNewProductPage
+2022-03-25 20:28:14,484 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 20:28:14,498 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 20:28:34,910 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showPersonalProductPage
+2022-03-25 20:28:34,913 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showPersonalProductPage,with result personalProductPage
+2022-03-25 20:28:54,129 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 20:28:54,129 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 20:29:19,375 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 20:29:19,396 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 20:30:52,966 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 20:30:52,982 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 20:30:56,359 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 20:30:56,360 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 20:30:58,192 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 20:30:58,193 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 20:30:59,827 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 20:30:59,838 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 20:31:01,866 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 20:31:01,878 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 20:31:55,304 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 20:31:55,315 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 20:31:59,031 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 20:31:59,038 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 20:35:06,735 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 20:35:06,774 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 20:35:14,457 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 20:35:14,467 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 20:35:43,104 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 20:35:43,127 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 20:36:21,971 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 20:36:21,983 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 20:37:44,196 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 20:37:44,208 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 20:44:03,346 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 20:44:03,365 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 20:44:08,819 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 20:44:08,820 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 20:44:14,694 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 20:44:14,869 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 21:56:34,245 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 21:56:34,283 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 21:56:49,173 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 21:56:49,446 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 21:57:14,434 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 21:57:14,443 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 21:58:47,181 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 21:58:47,195 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 21:58:59,598 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 21:58:59,612 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 21:59:10,211 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 21:59:10,225 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 22:00:24,168 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 22:00:24,177 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 22:03:21,691 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 22:03:21,691 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 22:03:30,187 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showContactInfo
+2022-03-25 22:03:30,188 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showContactInfo,with result contactsPage
+2022-03-25 22:03:35,524 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method aboutMe
+2022-03-25 22:03:35,524 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method aboutMe,with result personalPage
+2022-03-25 22:04:14,066 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method aboutMe
+2022-03-25 22:04:14,067 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method aboutMe,with result personalPage
+2022-03-25 22:04:22,752 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method aboutMe
+2022-03-25 22:04:22,752 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method aboutMe,with result personalPage
+2022-03-25 22:04:52,141 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 22:04:52,142 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 22:04:58,400 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 22:04:58,408 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 22:05:21,037 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 22:05:21,037 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 22:05:37,494 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method aboutMe
+2022-03-25 22:05:37,495 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method aboutMe,with result personalPage
+2022-03-25 22:06:14,190 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 22:06:14,206 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 22:08:32,744 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 22:08:32,753 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 22:09:04,370 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 22:09:04,381 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 22:09:13,560 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 22:09:13,572 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 22:10:13,842 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 22:10:13,853 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 22:10:48,075 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 22:10:48,083 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 22:19:24,412 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 22:19:24,428 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 22:19:45,021 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePageLang
+2022-03-25 22:19:45,021 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePageLang,with result l1
+2022-03-25 22:19:47,947 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePageLang
+2022-03-25 22:19:47,948 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePageLang,with result l1
+2022-03-25 22:19:50,145 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePageLang
+2022-03-25 22:19:50,146 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePageLang,with result l1
+2022-03-25 22:19:51,824 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 22:19:51,979 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 22:20:01,783 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showContactInfo
+2022-03-25 22:20:01,784 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showContactInfo,with result contactsPage
+2022-03-25 22:20:03,520 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 22:20:03,529 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 22:20:16,747 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method aboutMe
+2022-03-25 22:20:16,748 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method aboutMe,with result personalPage
+2022-03-25 22:20:21,770 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showContactInfo
+2022-03-25 22:20:21,771 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showContactInfo,with result contactsPage
+2022-03-25 22:20:35,923 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method aboutMe
+2022-03-25 22:20:35,923 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method aboutMe,with result personalPage
+2022-03-25 22:20:42,180 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 22:20:42,190 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-25 22:20:46,591 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 22:20:46,592 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 22:22:20,439 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 22:22:20,440 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 22:22:58,069 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 22:22:58,070 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 22:23:31,752 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 22:23:31,752 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 22:23:49,580 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 22:23:49,581 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 22:24:07,511 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 22:24:07,512 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 22:24:19,291 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 22:24:19,292 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 22:24:39,216 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 22:24:39,216 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 22:24:51,999 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 22:24:52,000 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 22:25:08,483 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 22:25:08,485 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 22:29:26,236 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 22:29:26,237 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 22:31:16,931 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 22:31:16,931 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 22:31:26,638 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 22:31:26,639 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 22:34:14,379 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 22:34:14,380 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 22:34:45,033 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 22:34:45,036 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 22:35:13,925 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-25 22:35:13,925 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-25 22:35:22,044 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePageLang
+2022-03-25 22:35:22,044 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePageLang,with result l1
+2022-03-25 22:35:33,669 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePageLang
+2022-03-25 22:35:33,669 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePageLang,with result l1
+2022-03-25 22:35:52,586 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePageLang
+2022-03-25 22:35:52,587 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePageLang,with result l1
+2022-03-25 22:36:00,462 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePageLang
+2022-03-25 22:36:00,463 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePageLang,with result l1
+2022-03-25 22:37:49,342 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePageLang
+2022-03-25 22:37:49,342 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePageLang,with result l1
+2022-03-25 22:38:05,918 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePageLang
+2022-03-25 22:38:05,918 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePageLang,with result l1
+2022-03-25 22:38:13,585 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePageLang
+2022-03-25 22:38:13,586 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePageLang,with result l1
+2022-03-25 22:38:43,582 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePageLang
+2022-03-25 22:38:43,582 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePageLang,with result l1
+2022-03-25 22:39:01,397 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePageLang
+2022-03-25 22:39:01,397 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePageLang,with result l1
+2022-03-25 22:39:29,086 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePageLang
+2022-03-25 22:39:29,087 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePageLang,with result l1
+2022-03-25 22:39:55,996 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePageLang
+2022-03-25 22:39:55,997 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePageLang,with result l1
+2022-03-25 22:40:04,109 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePageLang
+2022-03-25 22:40:04,109 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePageLang,with result l1
+2022-03-25 22:40:25,259 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePageLang
+2022-03-25 22:40:25,261 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePageLang,with result l1
+2022-03-25 22:40:40,265 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePageLang
+2022-03-25 22:40:40,265 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePageLang,with result l1
+2022-03-25 22:40:49,523 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePageLang
+2022-03-25 22:40:49,523 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePageLang,with result l1
+2022-03-25 22:42:03,394 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePageLang
+2022-03-25 22:42:03,395 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePageLang,with result l1
+2022-03-25 22:42:18,143 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePageLang
+2022-03-25 22:42:18,143 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePageLang,with result l1
+2022-03-25 22:42:59,714 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-25 22:42:59,726 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
