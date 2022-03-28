@@ -105,18 +105,34 @@ public class MainController {
 			Model model) {
 		try {
 			if (!select.isEmpty() && !selectPrice.isEmpty() && !search_product.isEmpty()) {
-				products = service.loadAllProductByTypeProductIdAndPriceAndNameContainsIgnoreCase(select, selectPrice,
-						search_product);
+				if("all".equals(select)) {
+					products = service.loadAllProductByNameContainsIgnoreCaseAndPrice(search_product, selectPrice);
+				}else {
+					products = service.loadAllProductByTypeProductIdAndPriceAndNameContainsIgnoreCase(select, selectPrice,
+							search_product);
+				}
 			} else if (!selectPrice.isEmpty() && !search_product.isEmpty()) {
 				products = service.loadAllProductByNameContainsIgnoreCaseAndPrice(search_product, selectPrice);
 			} else if (!select.isEmpty() && !selectPrice.isEmpty()) {
-				products = service.loadAllProductByTypeProductIdAndPrice(select, selectPrice);
+				if("all".equals(select)) {
+					products = service.loadAllProductByPrice(selectPrice);
+				}else {
+					products = service.loadAllProductByTypeProductIdAndPrice(select, selectPrice);
+				}			
 			} else if (!select.isEmpty() && !search_product.isEmpty()) {
-				products = service.loadAllProductByTypeProductIdAndProductName(select, search_product);
+				if("all".equals(select)) {
+					products = service.loadProductByName(search_product);
+				}else {
+					products = service.loadAllProductByTypeProductIdAndProductName(select, search_product);
+				}
 			} else if (!selectPrice.isEmpty()) {
 				products = service.loadAllProductByPrice(selectPrice);
 			} else if (!select.isEmpty()) {
-				products = service.loadAllProductByTypeProductId(select);
+				if("all".equals(select)) {
+					products = service.loadAll();
+				}else {
+					products = service.loadAllProductByTypeProductId(select);
+				}
 			} else if (!search_product.isEmpty()) {
 				products = service.loadProductByName(search_product);
 			} else {

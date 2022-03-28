@@ -25224,3 +25224,574 @@ Field error in object 'product' on field 'typeProduct': rejected value [sdf]; co
 2022-03-25 22:42:18,143 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePageLang,with result l1
 2022-03-25 22:42:59,714 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
 2022-03-25 22:42:59,726 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-26 23:48:10,423 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-26 23:48:10,463 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-26 23:48:16,174 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-26 23:48:16,394 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-26 23:48:23,035 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-26 23:48:23,043 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-26 23:48:27,377 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-26 23:48:27,457 [ERROR] LoggableAspect.java:recordFailedExecution:24 - Method showCatalog class com.chockolate.controller.MainController was aborted with an exception java.lang.NullPointerException: Cannot invoke "com.chockolate.model.TypeProduct.getId()" because "type" is null
+
+2022-03-26 23:48:27,512 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method handleError
+2022-03-26 23:48:27,518 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method handleError,with result error
+2022-03-26 23:48:47,207 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-26 23:48:47,208 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-26 23:48:48,869 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-26 23:48:48,882 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-26 23:48:53,337 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-26 23:48:53,365 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-26 23:49:00,217 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-26 23:49:00,231 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-26 23:49:04,208 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-26 23:49:04,211 [ERROR] LoggableAspect.java:recordFailedExecution:24 - Method showCatalog class com.chockolate.controller.MainController was aborted with an exception java.lang.NullPointerException: Cannot invoke "com.chockolate.model.TypeProduct.getId()" because "type" is null
+
+2022-03-26 23:49:04,220 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method handleError
+2022-03-26 23:49:04,220 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method handleError,with result error
+2022-03-26 23:49:09,391 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-26 23:49:09,393 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-26 23:56:36,428 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-26 23:56:36,443 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-26 23:56:38,997 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-26 23:56:39,975 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-26 23:56:46,853 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-26 23:56:46,905 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-26 23:56:49,854 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-26 23:56:49,869 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-26 23:57:05,504 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-26 23:57:05,545 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-26 23:57:16,133 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-26 23:57:16,146 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-26 23:57:21,443 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-26 23:57:21,458 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-26 23:57:28,685 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showPersonalProductPage
+2022-03-26 23:57:28,692 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showPersonalProductPage,with result personalProductPage
+2022-03-26 23:57:33,698 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-26 23:57:33,699 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-26 23:57:35,678 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-26 23:57:35,678 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-26 23:57:37,617 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method registration
+2022-03-26 23:57:37,624 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method registration,with result registrationPage
+2022-03-26 23:57:45,175 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addUser
+2022-03-26 23:57:45,176 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addUser,with result registrationPage
+2022-03-26 23:58:38,976 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addUser
+2022-03-26 23:58:39,262 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addUser,with result redirect:/login
+2022-03-26 23:58:39,292 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-26 23:58:39,292 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-26 23:58:40,405 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method registration
+2022-03-26 23:58:40,405 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method registration,with result registrationPage
+2022-03-26 23:58:49,046 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addUser
+2022-03-26 23:58:49,049 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addUser,with result registrationPage
+2022-03-27 00:01:32,089 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addUser
+2022-03-27 00:01:32,092 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addUser,with result registrationPage
+2022-03-27 00:01:38,364 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-27 00:01:38,365 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-27 00:01:40,017 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-27 00:01:40,018 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-27 00:01:41,438 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method registration
+2022-03-27 00:01:41,438 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method registration,with result registrationPage
+2022-03-27 00:01:49,514 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addUser
+2022-03-27 00:01:49,520 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addUser,with result registrationPage
+2022-03-27 00:02:31,936 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-27 00:02:31,954 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-27 00:02:34,441 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-27 00:02:34,442 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-27 00:02:35,694 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method registration
+2022-03-27 00:02:35,705 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method registration,with result registrationPage
+2022-03-27 00:02:43,596 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addUser
+2022-03-27 00:02:43,984 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addUser,with result redirect:/login
+2022-03-27 00:02:44,078 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-27 00:02:44,078 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-27 00:02:46,945 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method registration
+2022-03-27 00:02:46,946 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method registration,with result registrationPage
+2022-03-27 00:02:53,260 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addUser
+2022-03-27 00:02:53,264 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addUser,with result registrationPage
+2022-03-27 00:04:06,003 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-27 00:04:06,005 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-27 00:04:07,235 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-27 00:04:07,236 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-27 00:04:11,330 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-27 00:04:11,332 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-27 00:05:48,958 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-27 00:05:49,396 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-27 00:05:59,167 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-27 00:05:59,222 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-27 00:06:03,066 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-27 00:06:03,078 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-27 00:06:08,385 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-27 00:06:08,401 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-27 00:06:12,039 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-27 00:06:12,057 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-27 00:06:19,798 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-27 00:06:19,811 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-27 00:06:22,951 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-27 00:06:22,966 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-27 00:06:28,685 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-27 00:06:28,696 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-27 00:06:32,109 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-27 00:06:32,123 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-27 00:06:36,108 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-27 00:06:36,120 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-27 00:06:41,848 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-27 00:06:41,848 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-27 00:06:43,077 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-27 00:06:43,077 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-27 00:06:49,317 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-27 00:06:49,318 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-27 00:06:51,903 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-27 00:06:51,903 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-27 00:06:53,401 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-27 00:06:53,402 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-27 00:06:59,220 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-27 00:06:59,220 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-27 00:07:00,967 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-27 00:07:00,986 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-27 00:07:05,013 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showAddNewProductPage
+2022-03-27 00:07:05,013 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showAddNewProductPage,with result addNewProductPage
+2022-03-27 00:07:33,522 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-27 00:07:33,523 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-28 09:51:01,091 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-28 09:51:01,115 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-28 09:51:06,633 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method shoppingCart
+2022-03-28 09:51:06,652 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method shoppingCart,with result basketPage
+2022-03-28 09:51:11,696 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-28 09:51:11,698 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-28 09:56:39,970 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-28 09:56:39,986 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-28 09:56:41,903 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-28 09:56:41,903 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-28 09:56:44,443 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-28 09:56:44,444 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-28 09:56:45,827 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-28 09:56:45,828 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-28 09:56:48,877 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-28 09:56:48,878 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-28 11:10:32,972 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-28 11:10:33,002 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-28 11:10:35,691 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-28 11:10:35,692 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-28 11:10:47,757 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method basket
+2022-03-28 11:10:47,776 [ERROR] LoggableAspect.java:recordFailedExecution:24 - Method basket class com.chockolate.controller.BasketController was aborted with an exception java.lang.NullPointerException: Cannot invoke "com.chockolate.service.impl.BasketServiceImpl.getProductsInBasket()" because "this.basketServiceImpl" is null
+
+2022-03-28 11:10:47,848 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method handleError
+2022-03-28 11:10:47,854 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method handleError,with result error
+2022-03-28 11:14:00,416 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-28 11:14:00,453 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-28 11:14:04,397 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-28 11:14:04,398 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-28 11:14:11,974 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method basket
+2022-03-28 11:14:12,030 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method basket,with result ModelAndView [view="/basketPage"; model={products={}, total=0.0}]
+2022-03-28 11:14:38,617 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-28 11:14:38,617 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-28 11:16:41,981 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-28 11:16:41,994 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-28 11:16:43,689 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-28 11:16:43,691 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-28 11:16:50,540 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method basket
+2022-03-28 11:16:50,578 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method basket,with result ModelAndView [view="/basketPage"; model={products={}, total=0.0}]
+2022-03-28 11:16:50,675 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method handleError
+2022-03-28 11:16:50,683 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method handleError,with result error
+2022-03-28 11:21:30,801 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-28 11:21:30,810 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-28 11:21:33,961 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-28 11:21:33,961 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-28 11:21:39,772 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-28 11:21:39,773 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-28 11:21:48,626 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method basket
+2022-03-28 11:21:48,651 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method basket,with result ModelAndView [view="/basketPage"; model={products={}, total=0.0}]
+2022-03-28 11:24:52,934 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-28 11:24:52,934 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-28 11:24:54,342 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method basket
+2022-03-28 11:24:54,346 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method basket,with result ModelAndView [view="/basketPage"; model={products={}, total=0.0}]
+2022-03-28 11:25:00,189 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-28 11:25:00,190 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-28 11:45:25,247 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-28 11:45:25,263 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-28 11:45:27,555 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-28 11:45:27,748 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-28 11:45:35,579 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-28 11:45:35,579 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-28 11:46:34,418 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-28 11:46:34,418 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-28 11:46:35,568 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-28 11:46:35,581 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-28 11:46:38,093 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProductInBasket
+2022-03-28 11:46:38,226 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addProductInBasket,with result redirect:/catalog
+2022-03-28 11:46:38,253 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-28 11:46:38,264 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-28 11:46:39,662 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProductInBasket
+2022-03-28 11:46:39,672 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addProductInBasket,with result redirect:/catalog
+2022-03-28 11:46:39,693 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-28 11:46:39,707 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-28 11:46:41,026 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-28 11:46:41,027 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-28 11:46:42,390 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-28 11:46:42,390 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-28 11:46:49,011 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method basket
+2022-03-28 11:46:49,019 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method basket,with result ModelAndView [view="/basketPage"; model={products={Product [id=2, name=Walnut, description=description, price=12.8, image=stick_choc.jpg]=1, Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=18.200000000000003}]
+2022-03-28 11:46:49,087 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method handleError
+2022-03-28 11:46:49,092 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method handleError,with result error
+2022-03-28 11:47:39,837 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-28 11:47:39,850 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-28 11:47:42,004 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-28 11:47:42,005 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-28 11:47:43,231 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method basket
+2022-03-28 11:47:43,237 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method basket,with result ModelAndView [view="/basketPage"; model={products={Product [id=2, name=Walnut, description=description, price=12.8, image=stick_choc.jpg]=1, Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=18.200000000000003}]
+2022-03-28 11:47:43,275 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method handleError
+2022-03-28 11:47:43,276 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method handleError,with result error
+2022-03-28 11:49:24,636 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-28 11:49:24,664 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-28 11:49:26,854 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-28 11:49:26,977 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-28 11:49:28,161 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProductInBasket
+2022-03-28 11:49:28,251 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addProductInBasket,with result redirect:/catalog
+2022-03-28 11:49:28,283 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-28 11:49:28,293 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-28 11:49:29,402 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-28 11:49:29,403 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-28 11:49:30,368 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-28 11:49:30,369 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-28 11:49:35,814 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method basket
+2022-03-28 11:49:35,826 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method basket,with result ModelAndView [view="/basketPage"; model={products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=5.4}]
+2022-03-28 12:26:41,179 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-28 12:26:41,228 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-28 12:26:46,346 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-28 12:26:46,347 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-28 12:26:53,315 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method basket
+2022-03-28 12:26:53,364 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method basket,with result ModelAndView [view="/basketPage"; model={products={}, total=0.0}]
+2022-03-28 12:26:55,589 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-28 12:26:55,657 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-28 12:26:57,514 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProductInBasket
+2022-03-28 12:26:57,569 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addProductInBasket,with result redirect:/catalog
+2022-03-28 12:26:57,603 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-28 12:26:57,616 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-28 12:26:58,721 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProductInBasket
+2022-03-28 12:26:58,734 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addProductInBasket,with result redirect:/catalog
+2022-03-28 12:26:58,747 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-28 12:26:58,759 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-28 12:26:59,998 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProductInBasket
+2022-03-28 12:27:00,006 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addProductInBasket,with result redirect:/catalog
+2022-03-28 12:27:00,043 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-28 12:27:00,058 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-28 12:27:01,701 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-28 12:27:01,702 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-28 12:27:02,570 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method basket
+2022-03-28 12:27:02,574 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method basket,with result ModelAndView [view="/basketPage"; model={products={Product [id=2, name=Walnut, description=description, price=12.8, image=stick_choc.jpg]=1, Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=2}, total=18.200000000000003}]
+2022-03-28 12:27:22,782 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method deleteProductInBasket
+2022-03-28 12:27:22,784 [ERROR] LoggableAspect.java:recordFailedExecution:24 - Method deleteProductInBasket class com.chockolate.controller.BasketController was aborted with an exception java.lang.NumberFormatException: For input string: "2'"
+
+2022-03-28 12:27:22,825 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method handleError
+2022-03-28 12:27:22,835 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method handleError,with result error
+2022-03-28 12:27:22,971 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method handleError
+2022-03-28 12:27:22,972 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method handleError,with result error404
+2022-03-28 12:27:23,010 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method handleError
+2022-03-28 12:27:23,010 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method handleError,with result error404
+2022-03-28 12:27:23,063 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method handleError
+2022-03-28 12:27:23,083 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method handleError,with result error404
+2022-03-28 12:27:23,075 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method handleError
+2022-03-28 12:27:23,104 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method handleError,with result error404
+2022-03-28 12:27:23,101 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method handleError
+2022-03-28 12:27:23,116 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method handleError,with result error404
+2022-03-28 12:27:23,095 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method handleError
+2022-03-28 12:27:23,120 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method handleError,with result error404
+2022-03-28 12:27:23,133 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method handleError
+2022-03-28 12:27:23,134 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method handleError,with result error404
+2022-03-28 12:27:41,894 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method basket
+2022-03-28 12:27:41,901 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method basket,with result ModelAndView [view="/basketPage"; model={products={Product [id=2, name=Walnut, description=description, price=12.8, image=stick_choc.jpg]=1, Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=2}, total=18.200000000000003}]
+2022-03-28 12:29:23,668 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method basket
+2022-03-28 12:29:23,671 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method basket,with result ModelAndView [view="/basketPage"; model={products={Product [id=2, name=Walnut, description=description, price=12.8, image=stick_choc.jpg]=1, Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=2}, total=18.200000000000003}]
+2022-03-28 12:29:28,595 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method deleteProductInBasket
+2022-03-28 12:29:28,601 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method deleteProductInBasket,with result redirect:/basket
+2022-03-28 12:29:28,613 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method basket
+2022-03-28 12:29:28,614 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method basket,with result ModelAndView [view="/basketPage"; model={products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=2}, total=5.4}]
+2022-03-28 12:29:38,804 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-28 12:29:38,805 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-28 12:31:10,006 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-28 12:31:10,024 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-28 12:31:12,231 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-28 12:31:12,232 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-28 12:31:18,892 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-28 12:31:18,893 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-28 12:31:20,708 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-28 12:31:20,784 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-28 12:31:22,590 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProductInBasket
+2022-03-28 12:31:22,665 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addProductInBasket,with result redirect:/catalog
+2022-03-28 12:31:22,698 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-28 12:31:22,705 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-28 12:31:23,717 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProductInBasket
+2022-03-28 12:31:23,733 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addProductInBasket,with result redirect:/catalog
+2022-03-28 12:31:23,751 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-28 12:31:23,766 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-28 12:31:24,751 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProductInBasket
+2022-03-28 12:31:24,759 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addProductInBasket,with result redirect:/catalog
+2022-03-28 12:31:24,778 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-28 12:31:24,790 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-28 12:31:26,831 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-28 12:31:26,832 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-28 12:31:27,907 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method basket
+2022-03-28 12:31:27,922 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method basket,with result ModelAndView [view="/basketPage"; model={products={Product [id=2, name=Walnut, description=description, price=12.8, image=stick_choc.jpg]=1, Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=2}, total=23.6}]
+2022-03-28 12:32:01,560 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-28 12:32:01,563 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-28 12:32:07,429 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-28 12:32:07,431 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-28 12:32:08,860 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-28 12:32:08,861 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-28 12:32:10,751 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-28 12:32:10,753 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-28 12:32:12,129 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-28 12:32:12,145 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-28 12:32:13,335 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProductInBasket
+2022-03-28 12:32:13,366 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addProductInBasket,with result redirect:/catalog
+2022-03-28 12:32:13,378 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-28 12:32:13,385 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-28 12:32:14,304 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProductInBasket
+2022-03-28 12:32:14,312 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addProductInBasket,with result redirect:/catalog
+2022-03-28 12:32:14,321 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-28 12:32:14,336 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-28 12:32:15,964 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-28 12:32:15,965 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-28 12:32:16,787 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-28 12:32:16,788 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-28 12:32:22,230 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method basket
+2022-03-28 12:32:22,232 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method basket,with result ModelAndView [view="/basketPage"; model={products={Product [id=3, name=Sweet cherry, description=description, price=3.5, image=jeele.jpg]=1, Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=8.9}]
+2022-03-28 12:32:25,834 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showPersonalProductPage
+2022-03-28 12:32:25,843 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showPersonalProductPage,with result personalProductPage
+2022-03-28 12:32:33,463 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method basket
+2022-03-28 12:32:33,465 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method basket,with result ModelAndView [view="/basketPage"; model={products={Product [id=3, name=Sweet cherry, description=description, price=3.5, image=jeele.jpg]=1, Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=8.9}]
+2022-03-28 12:32:36,914 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showPersonalProductPage
+2022-03-28 12:32:36,917 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showPersonalProductPage,with result personalProductPage
+2022-03-28 12:32:38,916 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method basket
+2022-03-28 12:32:38,921 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method basket,with result ModelAndView [view="/basketPage"; model={products={Product [id=3, name=Sweet cherry, description=description, price=3.5, image=jeele.jpg]=1, Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=8.9}]
+2022-03-28 12:32:40,624 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-28 12:32:40,625 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-28 12:33:53,785 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-28 12:33:53,803 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-28 12:33:56,603 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-28 12:33:56,604 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-28 12:34:02,677 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-28 12:34:02,678 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-28 12:34:04,538 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-28 12:34:04,610 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-28 12:34:05,991 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProductInBasket
+2022-03-28 12:34:06,077 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addProductInBasket,with result redirect:/catalog
+2022-03-28 12:34:06,130 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-28 12:34:06,143 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-28 12:34:06,749 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProductInBasket
+2022-03-28 12:34:06,759 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addProductInBasket,with result redirect:/catalog
+2022-03-28 12:34:06,780 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-28 12:34:06,796 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-28 12:34:07,668 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProductInBasket
+2022-03-28 12:34:07,676 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addProductInBasket,with result redirect:/catalog
+2022-03-28 12:34:07,689 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-28 12:34:07,701 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-28 12:34:08,347 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProductInBasket
+2022-03-28 12:34:08,354 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addProductInBasket,with result redirect:/catalog
+2022-03-28 12:34:08,382 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-28 12:34:08,388 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-28 12:34:10,210 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-28 12:34:10,211 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-28 12:34:11,368 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method basket
+2022-03-28 12:34:11,382 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method basket,with result ModelAndView [view="/basketPage"; model={products={Product [id=3, name=Sweet cherry, description=description, price=3.5, image=jeele.jpg]=1, Product [id=2, name=Walnut, description=description, price=12.8, image=stick_choc.jpg]=1, Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=2}, total=27.1}]
+2022-03-28 12:36:20,665 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method basket
+2022-03-28 12:36:20,667 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method basket,with result ModelAndView [view="/basketPage"; model={products={Product [id=3, name=Sweet cherry, description=description, price=3.5, image=jeele.jpg]=1, Product [id=2, name=Walnut, description=description, price=12.8, image=stick_choc.jpg]=1, Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=2}, total=27.1}]
+2022-03-28 12:38:14,363 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-28 12:38:14,387 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-28 12:38:17,191 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-28 12:38:17,305 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-28 12:38:19,041 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProductInBasket
+2022-03-28 12:38:19,147 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addProductInBasket,with result redirect:/catalog
+2022-03-28 12:38:19,178 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-28 12:38:19,188 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-28 12:38:19,762 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProductInBasket
+2022-03-28 12:38:19,769 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addProductInBasket,with result redirect:/catalog
+2022-03-28 12:38:19,784 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-28 12:38:19,796 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-28 12:38:20,489 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProductInBasket
+2022-03-28 12:38:20,494 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addProductInBasket,with result redirect:/catalog
+2022-03-28 12:38:20,515 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-28 12:38:20,529 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-28 12:38:21,668 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-28 12:38:21,669 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-28 12:38:22,869 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-28 12:38:22,870 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-28 12:38:29,648 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method basket
+2022-03-28 12:38:29,655 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method basket,with result ModelAndView [view="/basketPage"; model={products={Product [id=2, name=Walnut, description=description, price=12.8, image=stick_choc.jpg]=1, Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=2}, total=23.6}]
+2022-03-28 12:38:31,692 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method deleteProductInBasket
+2022-03-28 12:38:31,700 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method deleteProductInBasket,with result redirect:/basket
+2022-03-28 12:38:31,721 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method basket
+2022-03-28 12:38:31,724 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method basket,with result ModelAndView [view="/basketPage"; model={products={Product [id=2, name=Walnut, description=description, price=12.8, image=stick_choc.jpg]=1, Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=18.200000000000003}]
+2022-03-28 12:38:39,356 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method handleError
+2022-03-28 12:38:39,365 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method handleError,with result error404
+2022-03-28 12:38:42,761 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-28 12:38:42,762 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-28 12:38:47,260 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method basket
+2022-03-28 12:38:47,262 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method basket,with result ModelAndView [view="/basketPage"; model={products={Product [id=2, name=Walnut, description=description, price=12.8, image=stick_choc.jpg]=1, Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=18.200000000000003}]
+2022-03-28 12:38:50,042 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-28 12:38:50,043 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-28 12:58:53,300 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-28 12:58:53,323 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-28 12:58:57,190 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-28 12:58:57,324 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-28 12:58:58,630 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProductInBasket
+2022-03-28 12:58:58,747 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addProductInBasket,with result redirect:/catalog
+2022-03-28 12:58:58,787 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-28 12:58:58,797 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-28 12:59:00,839 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-28 12:59:00,840 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-28 12:59:01,961 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-28 12:59:01,962 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-28 12:59:10,829 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method basket
+2022-03-28 12:59:10,841 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method basket,with result ModelAndView [view="/basketPage"; model={products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=5.4}]
+2022-03-28 12:59:13,318 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePageLang
+2022-03-28 12:59:13,320 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePageLang,with result orderPage
+2022-03-28 13:05:01,241 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-28 13:05:01,252 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-28 13:05:01,796 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-28 13:05:01,797 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-28 13:05:04,595 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-28 13:05:04,737 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-28 13:05:05,930 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProductInBasket
+2022-03-28 13:05:06,071 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addProductInBasket,with result redirect:/catalog
+2022-03-28 13:05:06,117 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-28 13:05:06,124 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-28 13:05:06,730 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProductInBasket
+2022-03-28 13:05:06,735 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addProductInBasket,with result redirect:/catalog
+2022-03-28 13:05:06,754 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-28 13:05:06,767 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-28 13:05:08,643 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-28 13:05:08,644 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-28 13:05:09,562 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-28 13:05:09,563 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-28 13:05:15,232 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method basket
+2022-03-28 13:05:15,241 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method basket,with result ModelAndView [view="/basketPage"; model={products={Product [id=2, name=Walnut, description=description, price=12.8, image=stick_choc.jpg]=1, Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=18.200000000000003}]
+2022-03-28 13:05:18,852 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePageLang
+2022-03-28 13:05:18,853 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePageLang,with result orderPage
+2022-03-28 13:06:49,852 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePageLang
+2022-03-28 13:06:49,853 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePageLang,with result orderPage
+2022-03-28 13:07:06,482 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePageLang
+2022-03-28 13:07:06,484 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePageLang,with result orderPage
+2022-03-28 13:07:41,210 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePageLang
+2022-03-28 13:07:41,211 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePageLang,with result orderPage
+2022-03-28 13:20:22,801 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-28 13:20:22,847 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-28 13:20:24,678 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-28 13:20:24,679 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-28 13:20:32,363 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method basket
+2022-03-28 13:20:32,402 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method basket,with result ModelAndView [view="/basketPage"; model={products={}, total=0.0}]
+2022-03-28 13:20:34,467 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-28 13:20:34,532 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-28 13:20:36,059 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProductInBasket
+2022-03-28 13:20:36,106 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addProductInBasket,with result redirect:/catalog
+2022-03-28 13:20:36,153 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-28 13:20:36,163 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-28 13:20:37,443 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-28 13:20:37,444 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-28 13:20:38,499 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method basket
+2022-03-28 13:20:38,503 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method basket,with result ModelAndView [view="/basketPage"; model={products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=5.4}]
+2022-03-28 13:20:40,249 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePageLang
+2022-03-28 13:20:40,250 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePageLang,with result orderPage
+2022-03-28 13:23:38,692 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePageLang
+2022-03-28 13:23:38,693 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePageLang,with result orderPage
+2022-03-28 13:23:53,493 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePageLang
+2022-03-28 13:23:53,494 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePageLang,with result orderPage
+2022-03-28 13:24:13,259 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePageLang
+2022-03-28 13:24:13,260 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePageLang,with result orderPage
+2022-03-28 13:24:42,118 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePageLang
+2022-03-28 13:24:42,118 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePageLang,with result orderPage
+2022-03-28 13:24:59,033 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePageLang
+2022-03-28 13:24:59,034 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePageLang,with result orderPage
+2022-03-28 13:25:18,306 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePageLang
+2022-03-28 13:25:18,306 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePageLang,with result orderPage
+2022-03-28 13:25:34,369 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePageLang
+2022-03-28 13:25:34,370 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePageLang,with result orderPage
+2022-03-28 13:25:50,326 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePageLang
+2022-03-28 13:25:50,326 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePageLang,with result orderPage
+2022-03-28 14:35:01,154 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-28 14:35:01,167 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-28 14:35:04,194 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-28 14:35:04,325 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-28 14:35:05,350 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProductInBasket
+2022-03-28 14:35:05,510 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addProductInBasket,with result redirect:/catalog
+2022-03-28 14:35:05,544 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-28 14:35:05,555 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-28 14:35:06,453 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProductInBasket
+2022-03-28 14:35:06,465 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addProductInBasket,with result redirect:/catalog
+2022-03-28 14:35:06,483 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-28 14:35:06,496 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-28 14:35:07,730 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-28 14:35:07,731 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-28 14:35:08,838 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-28 14:35:08,839 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-28 14:35:17,166 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method basket
+2022-03-28 14:35:17,176 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method basket,with result ModelAndView [view="/basketPage"; model={products={Product [id=2, name=Walnut, description=description, price=12.8, image=stick_choc.jpg]=1, Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=18.200000000000003}]
+2022-03-28 14:35:18,734 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method OrderPage
+2022-03-28 14:35:18,736 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method OrderPage,with result ModelAndView [view="/orderPage"; model={products={Product [id=2, name=Walnut, description=description, price=12.8, image=stick_choc.jpg]=1, Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=18.200000000000003}]
+2022-03-28 14:35:56,504 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method OrderPage
+2022-03-28 14:35:56,507 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method OrderPage,with result ModelAndView [view="/orderPage"; model={products={Product [id=2, name=Walnut, description=description, price=12.8, image=stick_choc.jpg]=1, Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=18.200000000000003}]
+2022-03-28 14:39:02,702 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-28 14:39:02,716 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-28 14:39:05,343 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-28 14:39:05,462 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-28 14:39:07,198 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProductInBasket
+2022-03-28 14:39:07,293 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addProductInBasket,with result redirect:/catalog
+2022-03-28 14:39:07,360 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-28 14:39:07,370 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-28 14:39:08,200 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProductInBasket
+2022-03-28 14:39:08,211 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addProductInBasket,with result redirect:/catalog
+2022-03-28 14:39:08,230 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-28 14:39:08,243 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-28 14:39:09,405 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-28 14:39:09,406 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-28 14:39:10,594 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-28 14:39:10,594 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-28 14:39:18,220 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method basket
+2022-03-28 14:39:18,228 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method basket,with result ModelAndView [view="/basketPage"; model={products={Product [id=2, name=Walnut, description=description, price=12.8, image=stick_choc.jpg]=1, Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=18.200000000000003}]
+2022-03-28 14:39:19,767 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method OrderPage
+2022-03-28 14:39:19,773 [ERROR] LoggableAspect.java:recordFailedExecution:24 - Method OrderPage class com.chockolate.controller.BasketController was aborted with an exception java.util.IllegalFormatConversionException: f != java.lang.String
+
+2022-03-28 14:39:19,845 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method handleError
+2022-03-28 14:39:19,907 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method handleError,with result error
+2022-03-28 14:40:00,438 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-28 14:40:00,445 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-28 14:40:02,558 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-28 14:40:02,581 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-28 14:40:04,413 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProductInBasket
+2022-03-28 14:40:04,460 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addProductInBasket,with result redirect:/catalog
+2022-03-28 14:40:04,492 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-28 14:40:04,501 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-28 14:40:05,047 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProductInBasket
+2022-03-28 14:40:05,057 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addProductInBasket,with result redirect:/catalog
+2022-03-28 14:40:05,072 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-28 14:40:05,077 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-28 14:40:06,243 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-28 14:40:06,244 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-28 14:40:07,169 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-28 14:40:07,169 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-28 14:40:12,548 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method basket
+2022-03-28 14:40:12,554 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method basket,with result ModelAndView [view="/basketPage"; model={products={Product [id=2, name=Walnut, description=description, price=12.8, image=stick_choc.jpg]=1, Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=18.200000000000003}]
+2022-03-28 14:40:14,150 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method OrderPage
+2022-03-28 14:40:14,180 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method OrderPage,with result ModelAndView [view="/orderPage"; model={products={Product [id=2, name=Walnut, description=description, price=12.8, image=stick_choc.jpg]=1, Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=18,20}]
+2022-03-28 14:40:18,710 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method basket
+2022-03-28 14:40:18,713 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method basket,with result ModelAndView [view="/basketPage"; model={products={Product [id=2, name=Walnut, description=description, price=12.8, image=stick_choc.jpg]=1, Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=18.200000000000003}]
+2022-03-28 14:41:11,208 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-28 14:41:11,233 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-28 14:41:14,014 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-28 14:41:14,134 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-28 14:41:15,461 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProductInBasket
+2022-03-28 14:41:15,561 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addProductInBasket,with result redirect:/catalog
+2022-03-28 14:41:15,592 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-28 14:41:15,603 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-28 14:41:16,299 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProductInBasket
+2022-03-28 14:41:16,315 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addProductInBasket,with result redirect:/catalog
+2022-03-28 14:41:16,338 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-28 14:41:16,348 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-28 14:41:17,978 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-28 14:41:17,980 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-28 14:41:19,142 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-28 14:41:19,143 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-28 14:41:25,487 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method basket
+2022-03-28 14:41:25,495 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method basket,with result ModelAndView [view="/basketPage"; model={products={Product [id=2, name=Walnut, description=description, price=12.8, image=stick_choc.jpg]=1, Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=18,20}]
+2022-03-28 14:41:29,588 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method OrderPage
+2022-03-28 14:41:29,596 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method OrderPage,with result ModelAndView [view="/orderPage"; model={products={Product [id=2, name=Walnut, description=description, price=12.8, image=stick_choc.jpg]=1, Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=18,20}]
+2022-03-28 14:41:33,579 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-28 14:41:33,580 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1

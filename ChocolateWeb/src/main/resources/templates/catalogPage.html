@@ -129,6 +129,11 @@
 												th:href="@{/deleteProduct/{linkTitle}(linkTitle=${prod.id})}"><button
 														type="button" class="btn btn-primary mb-2">Delete</button></a>
 											</td>
+											<td>
+												<a
+												th:href="@{/addInBasket/{linkTitle}(linkTitle=${prod.id})}"><button
+														type="button" class="btn btn-primary mb-2">In basket</button></a>
+											</td>
 										</tr>
 									</th:block>
 								</table>

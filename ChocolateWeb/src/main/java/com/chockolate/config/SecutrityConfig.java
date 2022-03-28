@@ -52,7 +52,9 @@ public class SecutrityConfig extends WebSecurityConfigurerAdapter {
 
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
-		http.authorizeRequests().antMatchers("/**").permitAll()//разрешено всем независимо от роли заходить на все адреса
+		http.authorizeRequests()
+		.antMatchers("/basket").access("hasAnyRole('ROLE_USER','ROLE_ADMIN')")//для входа в корзину нужно войти под своим логином и паролем
+		.antMatchers("/**").permitAll()//разрешено всем независимо от роли заходить на все адреса
 		.anyRequest().authenticated().and().formLogin()
 		.loginPage("/login").defaultSuccessUrl("/").permitAll().and().logout().permitAll().logoutSuccessUrl("/")//здесь задаю адрес для страницы логирования
 		//и в контроллере создал метод реагирующий на /login и перенаправляющий на страницу входа
