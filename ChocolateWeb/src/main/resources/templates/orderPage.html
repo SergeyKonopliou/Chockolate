@@ -69,42 +69,60 @@
 									<div class="row">
 										<div class="col-50">
 											<h3>Данные для заказа</h3>
-											<label for="name">ФИО</label> <input type="text" id="name"
+											<label for="name">ФИО</label> <input type="text" id="name" th:field="*{name}"
 												name="name" placeholder="Иванов Иван Иванович" required
 												autofocus="autofocus">
-												<div class="alert alert-warning" th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></div>
-												 <label for="email">Email</label>
-											<input type="text" id="email" name="email"
-												placeholder="email@mail.ru" th:field="*{email}">
-												<div class="alert alert-warning" th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></div>
-												 <label for="city">Город</label>
-											<input type="text" id="city" name="city" placeholder="Минск" th:field="*{city}"
-												required>
-												<div class="alert alert-warning" th:if="${#fields.hasErrors('city')}" th:errors="*{city}"></div>
-												 <label for="address">Адрес</label> <input
-												type="text" id="address" name="address" th:field="*{address}"
+											<ul>
+												<li th:each="err : ${#fields.errors('name')}"
+													th:text="${err}" class="error" />
+											</ul>
+											<label for="email">Email</label> <input type="text"
+												id="email" name="email" th:field="*{email}" placeholder="email@mail.ru">
+											<ul>
+												<li th:each="err : ${#fields.errors('email')}"
+													th:text="${err}" class="error" />
+											</ul>
+											<label for="city">Город</label> <input type="text" id="city"
+												name="city" placeholder="Минск" th:field="*{city}" required>
+											<ul>
+												<li th:each="err : ${#fields.errors('city')}"
+													th:text="${err}" class="error" />
+											</ul>
+											<label for="address">Адрес</label> <input type="text"
+												id="address" name="address" th:field="*{address}"
 												placeholder="Пушкина 5-55" required>
-												<div class="alert alert-warning" th:if="${#fields.hasErrors('address')}" th:errors="*{address}"></div>
+											<ul>
+												<li th:each="err : ${#fields.errors('address')}"
+													th:text="${err}" class="error" />
+											</ul>
 											<div class="row">
 												<div class="col-50">
 													<label for="phoneNumber">Номер телефона</label> <input
-														type="text" id="phoneNumber" name="phoneNumber" th:field="*{phoneNumber}"
-														placeholder="+375111111111" required min="12" maxlength="13">
-														<div class="alert alert-warning" th:if="${#fields.hasErrors('phoneNumber')}" th:errors="*{phoneNumber}"></div>
+														type="text" id="phoneNumber" name="phoneNumber"
+														th:field="*{phoneNumber}" placeholder="+375111111111"
+														required min="12" maxlength="13">
+													<ul>
+														<li th:each="err : ${#fields.errors('phoneNumber')}"
+															th:text="${err}" class="error" />
+													</ul>
 												</div>
 												<div class="col-50">
-													<label for="zip">Индекс</label> <input type="text"
-														id="zip" name="zip" th:field="*{zip}" placeholder="213234" required min="6" maxlength="6">
-														<div class="alert alert-warning" th:if="${#fields.hasErrors('zip')}" th:errors="*{zip}"></div>
+													<label for="zip">Индекс</label> <input type="text" id="zip"
+														name="zip" th:field="*{zip}" placeholder="213234" required
+														min="6" maxlength="6">
+													<ul>
+														<li th:each="err : ${#fields.errors('zip')}"
+															th:text="${err}" class="error" />
+													</ul>
 												</div>
-											</div>
 												<input id="orderList" name="orderList"
-												th:value="${orderList}" th:hidden="true">
-												<input id="total" name="total" th:value="${total}"
-												th:hidden="true" /> 
+													th:value="${orderList}" th:hidden="true"> <input
+													id="total" name="total" th:value="${total}"
+													th:hidden="true" />
+											</div>
 										</div>
+										<input type="submit" value="Оформить заказ" class="btn">
 									</div>
-									<input type="submit" value="Оформить заказ" class="btn">
 								</form>
 							</div>
 						</div>
@@ -124,6 +142,10 @@
 								<p>
 									Всего <span class="price" style="color: black"><b>[[${total}]]</b></span>
 								</p>
+							</div>
+							<div></div>
+							<div th:if="${err}" class="error">
+								<span>Проверьте введённые данные</span>
 							</div>
 						</div>
 					</div>

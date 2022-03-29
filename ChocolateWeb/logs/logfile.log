@@ -27316,3 +27316,493 @@ Field error in object 'product' on field 'typeProduct': rejected value [sdf]; co
 2022-03-29 15:26:33,074 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method saveOrder,with result redirect:/order
 2022-03-29 15:26:33,085 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method OrderPage
 2022-03-29 15:26:33,086 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method OrderPage,with result ModelAndView [view="/orderPage"; model={order=Order [id=null, name=null, city=null, email=null, address=null, phoneNumber=null, zip=null, orderList=null, total=null], orderList=Walnut-1 Truffle candy-2 , products={Product [id=2, name=Walnut, description=description, price=12.8, image=stick_choc.jpg]=1, Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=2}, total=23,60}]
+2022-03-29 16:07:47,235 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-29 16:07:47,295 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-29 16:07:51,377 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-29 16:07:51,564 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-29 16:07:53,347 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProductInBasket
+2022-03-29 16:07:53,562 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addProductInBasket,with result redirect:/catalog
+2022-03-29 16:07:53,625 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-29 16:07:53,635 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-29 16:07:54,416 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-29 16:07:54,416 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-29 16:08:00,798 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method basket
+2022-03-29 16:08:00,836 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method basket,with result ModelAndView [view="/basketPage"; model={products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=5,40}]
+2022-03-29 16:08:02,951 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method OrderPage
+2022-03-29 16:08:02,956 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method OrderPage,with result ModelAndView [view="/orderPage"; model={order=Order [id=null, name=null, city=null, email=null, address=null, phoneNumber=null, zip=null, orderList=null, total=null], orderList=Truffle candy-1 , products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=5,40}]
+2022-03-29 16:08:14,533 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method saveOrder
+2022-03-29 16:08:14,534 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method saveOrder,with result orderPage
+2022-03-29 16:08:14,646 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method handleError
+2022-03-29 16:08:14,664 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method handleError,with result error
+2022-03-29 16:08:42,371 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-29 16:08:42,372 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-29 16:11:00,143 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-29 16:11:00,286 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-29 16:11:01,867 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProductInBasket
+2022-03-29 16:11:01,958 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addProductInBasket,with result redirect:/catalog
+2022-03-29 16:11:01,983 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-29 16:11:01,992 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-29 16:11:03,229 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-29 16:11:03,229 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-29 16:11:08,086 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method basket
+2022-03-29 16:11:08,096 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method basket,with result ModelAndView [view="/basketPage"; model={products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=5,40}]
+2022-03-29 16:11:10,183 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method OrderPage
+2022-03-29 16:11:10,186 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method OrderPage,with result ModelAndView [view="/orderPage"; model={orderList=Truffle candy-1 , products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=5,40}]
+2022-03-29 16:11:10,295 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method handleError
+2022-03-29 16:11:10,306 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method handleError,with result error
+2022-03-29 16:12:23,192 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-29 16:12:23,340 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-29 16:12:25,053 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProductInBasket
+2022-03-29 16:12:25,166 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addProductInBasket,with result redirect:/catalog
+2022-03-29 16:12:25,197 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-29 16:12:25,205 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-29 16:12:26,046 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-29 16:12:26,046 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-29 16:12:30,707 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method basket
+2022-03-29 16:12:30,717 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method basket,with result ModelAndView [view="/basketPage"; model={products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=5,40}]
+2022-03-29 16:12:31,866 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method OrderPage
+2022-03-29 16:12:31,868 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method OrderPage,with result ModelAndView [view="/orderPage"; model={order=Order [id=null, name=null, city=null, email=null, address=null, phoneNumber=null, zip=null, orderList=null, total=null], orderList=Truffle candy-1 , products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=5,40}]
+2022-03-29 16:12:42,783 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method saveOrder
+2022-03-29 16:12:42,784 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method saveOrder,with result orderPage
+2022-03-29 16:12:42,849 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method handleError
+2022-03-29 16:12:42,854 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method handleError,with result error
+2022-03-29 16:12:44,404 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-29 16:12:44,404 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-29 16:17:03,413 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-29 16:17:03,542 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-29 16:17:05,064 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProductInBasket
+2022-03-29 16:17:05,159 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addProductInBasket,with result redirect:/catalog
+2022-03-29 16:17:05,193 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-29 16:17:05,199 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-29 16:17:06,869 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-29 16:17:06,870 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-29 16:17:11,338 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method basket
+2022-03-29 16:17:11,350 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method basket,with result ModelAndView [view="/basketPage"; model={products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=5,40}]
+2022-03-29 16:17:12,764 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method OrderPage
+2022-03-29 16:17:12,767 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method OrderPage,with result ModelAndView [view="/orderPage"; model={order=Order [id=null, name=null, city=null, email=null, address=null, phoneNumber=null, zip=null, orderList=null, total=null], orderList=Truffle candy-1 , products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=5,40}]
+2022-03-29 16:17:30,183 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method saveOrder
+2022-03-29 16:17:30,184 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method saveOrder,with result redirect:/order
+2022-03-29 16:17:30,207 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method OrderPage
+2022-03-29 16:17:30,208 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method OrderPage,with result ModelAndView [view="/orderPage"; model={order=Order [id=null, name=null, city=null, email=null, address=null, phoneNumber=null, zip=null, orderList=null, total=null], orderList=Truffle candy-1 , products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=5,40}]
+2022-03-29 16:19:42,625 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-29 16:19:42,651 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-29 16:19:44,022 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProductInBasket
+2022-03-29 16:19:44,060 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addProductInBasket,with result redirect:/catalog
+2022-03-29 16:19:44,093 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-29 16:19:44,103 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-29 16:19:44,927 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-29 16:19:44,928 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-29 16:19:50,286 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method basket
+2022-03-29 16:19:50,291 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method basket,with result ModelAndView [view="/basketPage"; model={products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=5,40}]
+2022-03-29 16:19:51,757 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method OrderPage
+2022-03-29 16:19:51,761 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method OrderPage,with result ModelAndView [view="/orderPage"; model={order=Order [id=null, name=null, city=null, email=null, address=null, phoneNumber=null, zip=null, orderList=null, total=null], orderList=Truffle candy-1 , products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=5,40}]
+2022-03-29 16:20:01,889 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method saveOrder
+2022-03-29 16:20:01,890 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method saveOrder,with result redirect:/order
+2022-03-29 16:20:01,903 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method OrderPage
+2022-03-29 16:20:01,906 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method OrderPage,with result ModelAndView [view="/orderPage"; model={order=Order [id=null, name=null, city=null, email=null, address=null, phoneNumber=null, zip=null, orderList=null, total=null], orderList=Truffle candy-1 , products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=5,40}]
+2022-03-29 16:21:48,193 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-29 16:21:48,326 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-29 16:21:50,055 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProductInBasket
+2022-03-29 16:21:50,148 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addProductInBasket,with result redirect:/catalog
+2022-03-29 16:21:50,175 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-29 16:21:50,183 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-29 16:21:51,089 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-29 16:21:51,090 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-29 16:21:56,580 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method basket
+2022-03-29 16:21:56,589 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method basket,with result ModelAndView [view="/basketPage"; model={products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=5,40}]
+2022-03-29 16:21:57,713 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method OrderPage
+2022-03-29 16:21:57,716 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method OrderPage,with result ModelAndView [view="/orderPage"; model={order=Order [id=null, name=null, city=null, email=null, address=null, phoneNumber=null, zip=null, orderList=null, total=null], orderList=Truffle candy-1 , products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=5,40}]
+2022-03-29 16:22:08,730 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method saveOrder
+2022-03-29 16:22:08,730 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method saveOrder,with result redirect:/order
+2022-03-29 16:22:08,742 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method OrderPage
+2022-03-29 16:22:08,745 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method OrderPage,with result ModelAndView [view="/orderPage"; model={order=Order [id=null, name=null, city=null, email=null, address=null, phoneNumber=null, zip=null, orderList=null, total=null], orderList=Truffle candy-1 , products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=5,40}]
+2022-03-29 16:25:11,970 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method OrderPage
+2022-03-29 16:25:11,974 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method OrderPage,with result ModelAndView [view="/orderPage"; model={order=Order [id=null, name=null, city=null, email=null, address=null, phoneNumber=null, zip=null, orderList=null, total=null], orderList=Truffle candy-1 , products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=5,40}]
+2022-03-29 16:28:01,557 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-29 16:28:01,572 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-29 16:28:02,089 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-29 16:28:02,089 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-29 16:28:05,942 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-29 16:28:06,057 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-29 16:28:07,559 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProductInBasket
+2022-03-29 16:28:07,656 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addProductInBasket,with result redirect:/catalog
+2022-03-29 16:28:07,683 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-29 16:28:07,693 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-29 16:28:10,240 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-29 16:28:10,241 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-29 16:28:15,098 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method basket
+2022-03-29 16:28:15,107 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method basket,with result ModelAndView [view="/basketPage"; model={products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=5,40}]
+2022-03-29 16:28:20,222 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method OrderPage
+2022-03-29 16:28:20,227 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method OrderPage,with result ModelAndView [view="/orderPage"; model={order=Order [id=null, name=null, city=null, email=null, address=null, phoneNumber=null, zip=null, orderList=null, total=null], orderList=Truffle candy-1 , products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=5,40}]
+2022-03-29 16:28:37,007 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method saveOrder
+2022-03-29 16:28:37,007 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method saveOrder,with result redirect:/order
+2022-03-29 16:28:37,017 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method OrderPage
+2022-03-29 16:28:37,019 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method OrderPage,with result ModelAndView [view="/orderPage"; model={order=Order [id=null, name=null, city=null, email=null, address=null, phoneNumber=null, zip=null, orderList=null, total=null], orderList=Truffle candy-1 , products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=5,40}]
+2022-03-29 16:29:35,342 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-29 16:29:35,355 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-29 16:29:37,000 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-29 16:29:37,127 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-29 16:29:39,285 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProductInBasket
+2022-03-29 16:29:39,386 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addProductInBasket,with result redirect:/catalog
+2022-03-29 16:29:39,418 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-29 16:29:39,427 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-29 16:29:40,542 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-29 16:29:40,545 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-29 16:29:46,462 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method basket
+2022-03-29 16:29:46,472 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method basket,with result ModelAndView [view="/basketPage"; model={products={Product [id=2, name=Walnut, description=description, price=12.8, image=stick_choc.jpg]=1}, total=12,80}]
+2022-03-29 16:29:47,871 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method OrderPage
+2022-03-29 16:29:47,878 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method OrderPage,with result ModelAndView [view="/orderPage"; model={order=Order [id=null, name=null, city=null, email=null, address=null, phoneNumber=null, zip=null, orderList=null, total=null], orderList=Walnut-1 , products={Product [id=2, name=Walnut, description=description, price=12.8, image=stick_choc.jpg]=1}, total=12,80}]
+2022-03-29 16:30:02,519 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method saveOrder
+2022-03-29 16:30:02,520 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method saveOrder,with result redirect:/order
+2022-03-29 16:30:02,534 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method OrderPage
+2022-03-29 16:30:02,536 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method OrderPage,with result ModelAndView [view="/orderPage"; model={order=Order [id=null, name=null, city=null, email=null, address=null, phoneNumber=null, zip=null, orderList=null, total=null], orderList=Walnut-1 , products={Product [id=2, name=Walnut, description=description, price=12.8, image=stick_choc.jpg]=1}, total=12,80}]
+2022-03-29 16:30:50,113 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method saveOrder
+2022-03-29 16:30:50,114 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method saveOrder,with result redirect:/order
+2022-03-29 16:30:50,127 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method OrderPage
+2022-03-29 16:30:50,130 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method OrderPage,with result ModelAndView [view="/orderPage"; model={order=Order [id=null, name=null, city=null, email=null, address=null, phoneNumber=null, zip=null, orderList=null, total=null], orderList=Walnut-1 , products={Product [id=2, name=Walnut, description=description, price=12.8, image=stick_choc.jpg]=1}, total=12,80}]
+2022-03-29 16:31:57,891 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method saveOrder
+2022-03-29 16:31:57,892 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method saveOrder,with result redirect:/order
+2022-03-29 16:31:57,907 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method OrderPage
+2022-03-29 16:31:57,909 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method OrderPage,with result ModelAndView [view="/orderPage"; model={order=Order [id=null, name=null, city=null, email=null, address=null, phoneNumber=null, zip=null, orderList=null, total=null], orderList=Walnut-1 , products={Product [id=2, name=Walnut, description=description, price=12.8, image=stick_choc.jpg]=1}, total=12,80}]
+2022-03-29 16:34:40,980 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-29 16:34:41,003 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-29 16:34:42,747 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProductInBasket
+2022-03-29 16:34:42,791 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addProductInBasket,with result redirect:/catalog
+2022-03-29 16:34:42,818 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-29 16:34:42,831 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-29 16:34:43,728 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-29 16:34:43,729 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-29 16:34:49,369 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method basket
+2022-03-29 16:34:49,373 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method basket,with result ModelAndView [view="/basketPage"; model={products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=5,40}]
+2022-03-29 16:34:50,734 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method OrderPage
+2022-03-29 16:34:50,741 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method OrderPage,with result ModelAndView [view="/orderPage"; model={order=Order [id=null, name=null, city=null, email=null, address=null, phoneNumber=null, zip=null, orderList=null, total=null], orderList=Truffle candy-1 , products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=5,40}]
+2022-03-29 16:35:01,250 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method saveOrder
+2022-03-29 16:35:01,250 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method saveOrder,with result redirect:/order
+2022-03-29 16:35:01,259 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method OrderPage
+2022-03-29 16:35:01,261 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method OrderPage,with result ModelAndView [view="/orderPage"; model={order=Order [id=null, name=null, city=null, email=null, address=null, phoneNumber=null, zip=null, orderList=null, total=null], orderList=Truffle candy-1 , products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=5,40}]
+2022-03-29 16:36:04,548 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-29 16:36:04,577 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-29 16:36:06,675 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProductInBasket
+2022-03-29 16:36:06,715 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addProductInBasket,with result redirect:/catalog
+2022-03-29 16:36:06,743 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-29 16:36:06,753 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-29 16:36:08,404 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-29 16:36:08,405 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-29 16:36:13,875 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method basket
+2022-03-29 16:36:13,878 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method basket,with result ModelAndView [view="/basketPage"; model={products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=5,40}]
+2022-03-29 16:36:15,361 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method OrderPage
+2022-03-29 16:36:15,371 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method OrderPage,with result ModelAndView [view="/orderPage"; model={order=Order [id=null, name=null, city=null, email=null, address=null, phoneNumber=null, zip=null, orderList=null, total=null], orderList=Truffle candy-1 , products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=5,40}]
+2022-03-29 16:36:32,039 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method saveOrder
+2022-03-29 16:36:32,040 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method saveOrder,with result redirect:/order
+2022-03-29 16:36:32,047 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method OrderPage
+2022-03-29 16:36:32,049 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method OrderPage,with result ModelAndView [view="/orderPage"; model={order=Order [id=null, name=null, city=null, email=null, address=null, phoneNumber=null, zip=null, orderList=null, total=null], orderList=Truffle candy-1 , products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=5,40}]
+2022-03-29 16:37:37,050 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-29 16:37:37,073 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-29 16:37:42,391 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProductInBasket
+2022-03-29 16:37:42,474 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addProductInBasket,with result redirect:/catalog
+2022-03-29 16:37:42,503 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-29 16:37:42,513 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-29 16:37:43,739 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-29 16:37:43,739 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-29 16:37:54,834 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method basket
+2022-03-29 16:37:54,838 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method basket,with result ModelAndView [view="/basketPage"; model={products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=5,40}]
+2022-03-29 16:37:56,649 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method OrderPage
+2022-03-29 16:37:56,652 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method OrderPage,with result ModelAndView [view="/orderPage"; model={order=Order [id=null, name=null, city=null, email=null, address=null, phoneNumber=null, zip=null, orderList=null, total=null], orderList=Truffle candy-1 , products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=5,40}]
+2022-03-29 16:38:06,835 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method saveOrder
+2022-03-29 16:38:06,908 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method saveOrder,with result redirect:/basket
+2022-03-29 16:38:06,916 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method basket
+2022-03-29 16:38:06,920 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method basket,with result ModelAndView [view="/basketPage"; model={products={}, addmessage=true, total=0,00}]
+2022-03-29 16:42:34,192 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-29 16:42:34,316 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-29 16:42:36,583 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProductInBasket
+2022-03-29 16:42:36,681 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addProductInBasket,with result redirect:/catalog
+2022-03-29 16:42:36,719 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-29 16:42:36,728 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-29 16:42:37,503 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-29 16:42:37,504 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-29 16:42:42,894 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method basket
+2022-03-29 16:42:42,904 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method basket,with result ModelAndView [view="/basketPage"; model={products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=5,40}]
+2022-03-29 16:42:44,197 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method OrderPage
+2022-03-29 16:42:44,200 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method OrderPage,with result ModelAndView [view="/orderPage"; model={order=Order [id=null, name=null, city=null, email=null, address=null, phoneNumber=null, zip=null, orderList=null, total=null], orderList=Truffle candy-1 , products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=5,40}]
+2022-03-29 16:42:56,805 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method saveOrder
+2022-03-29 16:42:56,806 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method saveOrder,with result redirect:/order
+2022-03-29 16:42:56,816 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method OrderPage
+2022-03-29 16:42:56,819 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method OrderPage,with result ModelAndView [view="/orderPage"; model={order=Order [id=null, name=null, city=null, email=null, address=null, phoneNumber=null, zip=null, orderList=null, total=null], orderList=Truffle candy-1 , products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=5,40}]
+2022-03-29 16:45:26,504 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method OrderPage
+2022-03-29 16:45:26,510 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method OrderPage,with result ModelAndView [view="/orderPage"; model={order=Order [id=null, name=null, city=null, email=null, address=null, phoneNumber=null, zip=null, orderList=null, total=null], orderList=Truffle candy-1 , products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=5,40}]
+2022-03-29 16:45:28,841 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-29 16:45:28,856 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-29 16:45:31,316 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProductInBasket
+2022-03-29 16:45:31,325 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addProductInBasket,with result redirect:/catalog
+2022-03-29 16:45:31,339 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-29 16:45:31,346 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-29 16:45:32,758 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method basket
+2022-03-29 16:45:32,762 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method basket,with result ModelAndView [view="/basketPage"; model={products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=2}, total=10,80}]
+2022-03-29 16:45:34,259 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method OrderPage
+2022-03-29 16:45:34,260 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method OrderPage,with result ModelAndView [view="/orderPage"; model={order=Order [id=null, name=null, city=null, email=null, address=null, phoneNumber=null, zip=null, orderList=null, total=null], orderList=Truffle candy-2 , products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=2}, total=10,80}]
+2022-03-29 16:45:46,932 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method saveOrder
+2022-03-29 16:45:46,933 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method saveOrder,with result redirect:/order
+2022-03-29 16:45:46,951 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method OrderPage
+2022-03-29 16:45:46,957 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method OrderPage,with result ModelAndView [view="/orderPage"; model={order=Order [id=null, name=null, city=null, email=null, address=null, phoneNumber=null, zip=null, orderList=null, total=null], orderList=Truffle candy-2 , products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=2}, total=10,80}]
+2022-03-29 16:49:06,115 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-29 16:49:06,275 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-29 16:49:08,033 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProductInBasket
+2022-03-29 16:49:08,126 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addProductInBasket,with result redirect:/catalog
+2022-03-29 16:49:08,161 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-29 16:49:08,169 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-29 16:49:09,091 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-29 16:49:09,091 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-29 16:49:13,787 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method basket
+2022-03-29 16:49:13,798 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method basket,with result ModelAndView [view="/basketPage"; model={products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=5,40}]
+2022-03-29 16:49:15,391 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method OrderPage
+2022-03-29 16:49:15,395 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method OrderPage,with result ModelAndView [view="/orderPage"; model={order=Order [id=null, name=null, city=null, email=null, address=null, phoneNumber=null, zip=null, orderList=null, total=null], orderList=Truffle candy-1 , products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=5,40}]
+2022-03-29 16:49:26,851 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method saveOrder
+2022-03-29 16:49:26,852 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method saveOrder,with result redirect:/order
+2022-03-29 16:49:26,873 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method OrderPage
+2022-03-29 16:49:26,875 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method OrderPage,with result ModelAndView [view="/orderPage"; model={order=Order [id=null, name=null, city=null, email=null, address=null, phoneNumber=null, zip=null, orderList=null, total=null], orderList=Truffle candy-1 , products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=5,40}]
+2022-03-29 16:50:32,192 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-29 16:50:32,321 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-29 16:50:33,849 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProductInBasket
+2022-03-29 16:50:33,934 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addProductInBasket,with result redirect:/catalog
+2022-03-29 16:50:33,960 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-29 16:50:33,967 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-29 16:50:35,772 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-29 16:50:35,773 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-29 16:50:40,133 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method basket
+2022-03-29 16:50:40,145 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method basket,with result ModelAndView [view="/basketPage"; model={products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=5,40}]
+2022-03-29 16:50:41,399 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method OrderPage
+2022-03-29 16:50:41,403 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method OrderPage,with result ModelAndView [view="/orderPage"; model={order=Order [id=null, name=null, city=null, email=null, address=null, phoneNumber=null, zip=null, orderList=null, total=null], orderList=Truffle candy-1 , products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=5,40}]
+2022-03-29 16:50:52,044 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method saveOrder
+2022-03-29 16:50:52,045 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method saveOrder,with result redirect:/order
+2022-03-29 16:50:52,066 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method OrderPage
+2022-03-29 16:50:52,067 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method OrderPage,with result ModelAndView [view="/orderPage"; model={order=Order [id=null, name=null, city=null, email=null, address=null, phoneNumber=null, zip=null, orderList=null, total=null], orderList=Truffle candy-1 , products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=5,40}]
+2022-03-29 19:51:25,945 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-29 19:51:26,021 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-29 19:51:32,349 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-29 19:51:32,630 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-29 19:51:35,014 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProductInBasket
+2022-03-29 19:51:35,226 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addProductInBasket,with result redirect:/catalog
+2022-03-29 19:51:35,279 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-29 19:51:35,287 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-29 19:51:36,389 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-29 19:51:36,390 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-29 19:51:45,543 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method basket
+2022-03-29 19:51:45,603 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method basket,with result ModelAndView [view="/basketPage"; model={products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=5,40}]
+2022-03-29 19:51:47,266 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method OrderPage
+2022-03-29 19:51:47,269 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method OrderPage,with result ModelAndView [view="/orderPage"; model={order=Order [id=null, name=null, city=null, email=null, address=null, phoneNumber=null, zip=null, orderList=null, total=null], orderList=Truffle candy-1 , products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=5,40}]
+2022-03-29 19:52:37,285 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method saveOrder
+2022-03-29 19:52:37,286 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method saveOrder,with result redirect:/order
+2022-03-29 19:52:37,314 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method OrderPage
+2022-03-29 19:52:37,316 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method OrderPage,with result ModelAndView [view="/orderPage"; model={order=Order [id=null, name=null, city=null, email=null, address=null, phoneNumber=null, zip=null, orderList=null, total=null], orderList=Truffle candy-1 , products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=5,40}]
+2022-03-29 19:53:44,398 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-29 19:53:44,406 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-29 19:53:50,115 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-29 19:53:50,117 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-29 19:53:58,609 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method saveOrder
+2022-03-29 19:53:58,617 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method saveOrder,with result redirect:/order
+2022-03-29 19:53:58,644 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method OrderPage
+2022-03-29 19:53:58,667 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method OrderPage,with result ModelAndView [view="/orderPage"; model={order=Order [id=null, name=null, city=null, email=null, address=null, phoneNumber=null, zip=null, orderList=null, total=null], orderList=, products={}, total=0,00}]
+2022-03-29 20:00:52,008 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-29 20:00:53,344 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-29 20:00:56,270 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProductInBasket
+2022-03-29 20:00:56,421 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addProductInBasket,with result redirect:/catalog
+2022-03-29 20:00:56,504 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-29 20:00:56,517 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-29 20:00:57,437 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-29 20:00:57,438 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-29 20:01:03,919 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method basket
+2022-03-29 20:01:03,932 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method basket,with result ModelAndView [view="/basketPage"; model={products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=5,40}]
+2022-03-29 20:01:05,658 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method OrderPage
+2022-03-29 20:01:05,662 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method OrderPage,with result ModelAndView [view="/orderPage"; model={order=Order [id=null, name=null, city=null, email=null, address=null, phoneNumber=null, zip=null, orderList=null, total=null], orderList=Truffle candy-1 , products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=5,40}]
+2022-03-29 20:01:14,014 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method saveOrder
+2022-03-29 20:01:14,017 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method saveOrder,with result redirect:/order
+2022-03-29 20:01:14,041 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method OrderPage
+2022-03-29 20:01:14,043 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method OrderPage,with result ModelAndView [view="/orderPage"; model={order=Order [id=null, name=null, city=null, email=null, address=null, phoneNumber=null, zip=null, orderList=null, total=null], orderList=Truffle candy-1 , products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=5,40}]
+2022-03-29 20:09:44,750 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-29 20:09:44,910 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-29 20:09:47,318 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProductInBasket
+2022-03-29 20:09:47,419 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addProductInBasket,with result redirect:/catalog
+2022-03-29 20:09:47,455 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-29 20:09:47,465 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-29 20:09:49,326 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-29 20:09:49,327 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-29 20:09:55,874 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method basket
+2022-03-29 20:09:55,886 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method basket,with result ModelAndView [view="/basketPage"; model={products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=5,40}]
+2022-03-29 20:09:57,643 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method OrderPage
+2022-03-29 20:09:57,646 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method OrderPage,with result ModelAndView [view="/orderPage"; model={order=Order [id=null, name=null, city=null, email=null, address=null, phoneNumber=null, zip=null, orderList=null, total=null], orderList=Truffle candy-1 , products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=5,40}]
+2022-03-29 20:09:57,823 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method handleError
+2022-03-29 20:09:57,840 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method handleError,with result error
+2022-03-29 20:11:16,502 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-29 20:11:16,666 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-29 20:11:18,675 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProductInBasket
+2022-03-29 20:11:18,772 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addProductInBasket,with result redirect:/catalog
+2022-03-29 20:11:18,811 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-29 20:11:18,822 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-29 20:11:20,951 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-29 20:11:20,951 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-29 20:11:27,365 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method basket
+2022-03-29 20:11:27,377 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method basket,with result ModelAndView [view="/basketPage"; model={products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=5,40}]
+2022-03-29 20:11:28,679 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method OrderPage
+2022-03-29 20:11:28,681 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method OrderPage,with result ModelAndView [view="/orderPage"; model={order=Order [id=null, name=null, city=null, email=null, address=null, phoneNumber=null, zip=null, orderList=null, total=null], orderList=Truffle candy-1 , products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=5,40}]
+2022-03-29 20:11:45,048 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method saveOrder
+2022-03-29 20:11:45,049 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method saveOrder,with result redirect:/order
+2022-03-29 20:11:45,077 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method OrderPage
+2022-03-29 20:11:45,079 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method OrderPage,with result ModelAndView [view="/orderPage"; model={order=Order [id=null, name=null, city=null, email=null, address=null, phoneNumber=null, zip=null, orderList=null, total=null], orderList=Truffle candy-1 , products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=5,40}]
+2022-03-29 20:16:10,680 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-29 20:16:10,845 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-29 20:16:13,609 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProductInBasket
+2022-03-29 20:16:13,705 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addProductInBasket,with result redirect:/catalog
+2022-03-29 20:16:13,749 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-29 20:16:13,761 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-29 20:16:15,403 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-29 20:16:15,404 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-29 20:16:21,838 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method basket
+2022-03-29 20:16:21,852 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method basket,with result ModelAndView [view="/basketPage"; model={products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=5,40}]
+2022-03-29 20:16:23,482 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method OrderPage
+2022-03-29 20:16:23,485 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method OrderPage,with result ModelAndView [view="/orderPage"; model={order=Order [id=null, name=null, city=null, email=null, address=null, phoneNumber=null, zip=null, orderList=null, total=null], orderList=Truffle candy-1 , products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=5,40}]
+2022-03-29 20:16:33,746 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method saveOrder
+2022-03-29 20:16:33,747 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method saveOrder,with result redirect:/order
+2022-03-29 20:16:33,775 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method OrderPage
+2022-03-29 20:16:33,779 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method OrderPage,with result ModelAndView [view="/orderPage"; model={order=Order [id=null, name=null, city=null, email=null, address=null, phoneNumber=null, zip=null, orderList=null, total=null], orderList=Truffle candy-1 , products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=5,40}]
+2022-03-29 20:18:14,460 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method OrderPage
+2022-03-29 20:18:14,462 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method OrderPage,with result ModelAndView [view="/orderPage"; model={order=Order [id=null, name=null, city=null, email=null, address=null, phoneNumber=null, zip=null, orderList=null, total=null], orderList=Truffle candy-1 , products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=5,40}]
+2022-03-29 20:18:26,403 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method saveOrder
+2022-03-29 20:18:26,404 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method saveOrder,with result redirect:/order
+2022-03-29 20:18:26,423 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method OrderPage
+2022-03-29 20:18:26,426 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method OrderPage,with result ModelAndView [view="/orderPage"; model={order=Order [id=null, name=null, city=null, email=null, address=null, phoneNumber=null, zip=null, orderList=null, total=null], orderList=Truffle candy-1 , products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=5,40}]
+2022-03-29 20:18:59,108 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-29 20:18:59,267 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-29 20:19:01,411 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProductInBasket
+2022-03-29 20:19:01,509 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addProductInBasket,with result redirect:/catalog
+2022-03-29 20:19:01,561 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-29 20:19:01,574 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-29 20:19:02,609 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-29 20:19:02,609 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-29 20:19:07,849 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method basket
+2022-03-29 20:19:07,860 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method basket,with result ModelAndView [view="/basketPage"; model={products={Product [id=2, name=Walnut, description=description, price=12.8, image=stick_choc.jpg]=1}, total=12,80}]
+2022-03-29 20:19:09,594 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method OrderPage
+2022-03-29 20:19:09,602 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method OrderPage,with result ModelAndView [view="/orderPage"; model={order=Order [id=null, name=null, city=null, email=null, address=null, phoneNumber=null, zip=null, orderList=null, total=null], orderList=Walnut-1 , products={Product [id=2, name=Walnut, description=description, price=12.8, image=stick_choc.jpg]=1}, total=12,80}]
+2022-03-29 20:19:18,524 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method saveOrder
+2022-03-29 20:19:18,525 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method saveOrder,with result redirect:/order
+2022-03-29 20:19:18,554 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method OrderPage
+2022-03-29 20:19:18,556 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method OrderPage,with result ModelAndView [view="/orderPage"; model={order=Order [id=null, name=null, city=null, email=null, address=null, phoneNumber=null, zip=null, orderList=null, total=null], orderList=Walnut-1 , products={Product [id=2, name=Walnut, description=description, price=12.8, image=stick_choc.jpg]=1}, total=12,80}]
+2022-03-29 20:22:01,454 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-29 20:22:01,623 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-29 20:22:04,204 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProductInBasket
+2022-03-29 20:22:04,306 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addProductInBasket,with result redirect:/catalog
+2022-03-29 20:22:04,346 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-29 20:22:04,357 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-29 20:22:05,310 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-29 20:22:05,310 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-29 20:22:10,517 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method basket
+2022-03-29 20:22:10,530 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method basket,with result ModelAndView [view="/basketPage"; model={products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=5,40}]
+2022-03-29 20:22:12,265 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method OrderPage
+2022-03-29 20:22:12,270 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method OrderPage,with result ModelAndView [view="/orderPage"; model={order=Order [id=null, name=null, city=null, email=null, address=null, phoneNumber=null, zip=null, orderList=null, total=null], orderList=Truffle candy-1 , products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=5,40}]
+2022-03-29 20:22:12,367 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method handleError
+2022-03-29 20:22:12,373 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method handleError,with result error
+2022-03-29 20:22:53,792 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-29 20:22:53,792 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-29 20:22:56,254 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-29 20:22:56,262 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-29 20:22:58,036 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method basket
+2022-03-29 20:22:58,039 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method basket,with result ModelAndView [view="/basketPage"; model={products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=5,40}]
+2022-03-29 20:22:59,808 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method OrderPage
+2022-03-29 20:22:59,811 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method OrderPage,with result ModelAndView [view="/orderPage"; model={order=Order [id=null, name=null, city=null, email=null, address=null, phoneNumber=null, zip=null, orderList=null, total=null], orderList=Truffle candy-1 , products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=5,40}]
+2022-03-29 20:23:12,389 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method saveOrder
+2022-03-29 20:23:12,390 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method saveOrder,with result redirect:/order
+2022-03-29 20:23:12,417 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method OrderPage
+2022-03-29 20:23:12,421 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method OrderPage,with result ModelAndView [view="/orderPage"; model={order=Order [id=null, name=null, city=null, email=null, address=null, phoneNumber=null, zip=null, orderList=null, total=null], orderList=Truffle candy-1 , products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=5,40}]
+2022-03-29 20:25:28,233 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-29 20:25:28,417 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-29 20:25:30,241 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProductInBasket
+2022-03-29 20:25:30,331 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addProductInBasket,with result redirect:/catalog
+2022-03-29 20:25:30,372 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-29 20:25:30,383 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-29 20:25:31,404 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-29 20:25:31,405 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-29 20:25:35,720 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-29 20:25:35,721 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-29 20:25:44,852 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method basket
+2022-03-29 20:25:44,863 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method basket,with result ModelAndView [view="/basketPage"; model={products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=5,40}]
+2022-03-29 20:25:46,495 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method OrderPage
+2022-03-29 20:25:46,507 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method OrderPage,with result ModelAndView [view="/orderPage"; model={order=Order [id=null, name=null, city=null, email=null, address=null, phoneNumber=null, zip=null, orderList=null, total=null], orderList=Truffle candy-1 , products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=5,40}]
+2022-03-29 20:25:54,520 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method saveOrder
+2022-03-29 20:25:54,521 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method saveOrder,with result redirect:/order
+2022-03-29 20:25:54,556 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method OrderPage
+2022-03-29 20:25:54,559 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method OrderPage,with result ModelAndView [view="/orderPage"; model={order=Order [id=null, name=null, city=null, email=null, address=null, phoneNumber=null, zip=null, orderList=null, total=null], orderList=Truffle candy-1 , products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=5,40}]
+2022-03-29 20:29:06,379 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-29 20:29:06,537 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-29 20:29:09,216 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProductInBasket
+2022-03-29 20:29:09,319 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addProductInBasket,with result redirect:/catalog
+2022-03-29 20:29:09,357 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-29 20:29:09,367 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-29 20:29:10,342 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-29 20:29:10,343 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-29 20:29:14,759 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-29 20:29:14,759 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-29 20:29:23,648 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method basket
+2022-03-29 20:29:23,660 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method basket,with result ModelAndView [view="/basketPage"; model={products={Product [id=2, name=Walnut, description=description, price=12.8, image=stick_choc.jpg]=1}, total=12,80}]
+2022-03-29 20:29:25,426 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method OrderPage
+2022-03-29 20:29:25,431 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method OrderPage,with result ModelAndView [view="/orderPage"; model={order=Order [id=null, name=null, city=null, email=null, address=null, phoneNumber=null, zip=null, orderList=null, total=null], orderList=Walnut-1 , products={Product [id=2, name=Walnut, description=description, price=12.8, image=stick_choc.jpg]=1}, total=12,80}]
+2022-03-29 20:29:25,543 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method handleError
+2022-03-29 20:29:25,552 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method handleError,with result error
+2022-03-29 20:29:47,684 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-29 20:29:47,685 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-29 20:29:50,679 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method basket
+2022-03-29 20:29:50,685 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method basket,with result ModelAndView [view="/basketPage"; model={products={Product [id=2, name=Walnut, description=description, price=12.8, image=stick_choc.jpg]=1}, total=12,80}]
+2022-03-29 20:29:52,334 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method OrderPage
+2022-03-29 20:29:52,339 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method OrderPage,with result ModelAndView [view="/orderPage"; model={order=Order [id=null, name=null, city=null, email=null, address=null, phoneNumber=null, zip=null, orderList=null, total=null], orderList=Walnut-1 , products={Product [id=2, name=Walnut, description=description, price=12.8, image=stick_choc.jpg]=1}, total=12,80}]
+2022-03-29 20:30:00,081 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method saveOrder
+2022-03-29 20:30:00,082 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method saveOrder,with result redirect:/order
+2022-03-29 20:30:00,106 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method OrderPage
+2022-03-29 20:30:00,108 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method OrderPage,with result ModelAndView [view="/orderPage"; model={order=Order [id=null, name=null, city=null, email=null, address=null, phoneNumber=null, zip=null, orderList=null, total=null], orderList=Walnut-1 , products={Product [id=2, name=Walnut, description=description, price=12.8, image=stick_choc.jpg]=1}, total=12,80}]
+2022-03-29 20:35:34,592 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-29 20:35:34,792 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-29 20:35:37,354 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProductInBasket
+2022-03-29 20:35:37,497 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addProductInBasket,with result redirect:/catalog
+2022-03-29 20:35:37,530 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-29 20:35:37,541 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-29 20:35:38,527 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-29 20:35:38,528 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-29 20:35:43,709 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method basket
+2022-03-29 20:35:43,720 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method basket,with result ModelAndView [view="/basketPage"; model={products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=5,40}]
+2022-03-29 20:35:45,041 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method OrderPage
+2022-03-29 20:35:45,045 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method OrderPage,with result ModelAndView [view="/orderPage"; model={order=Order [id=null, name=null, city=null, email=null, address=null, phoneNumber=null, zip=null, orderList=null, total=null], orderList=Truffle candy-1 , products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=5,40}]
+2022-03-29 20:35:53,655 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method saveOrder
+2022-03-29 20:35:53,655 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method saveOrder,with result redirect:/order
+2022-03-29 20:35:53,682 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method OrderPage
+2022-03-29 20:35:53,684 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method OrderPage,with result ModelAndView [view="/orderPage"; model={order=Order [id=null, name=null, city=null, email=null, address=null, phoneNumber=null, zip=null, orderList=null, total=null], orderList=Truffle candy-1 , products={Product [id=1, name=Truffle candy, description=description, price=5.4, image=truf.jpg]=1}, total=5,40}]
+2022-03-29 20:36:29,482 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-29 20:36:29,517 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-29 20:36:30,696 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method addProductInBasket
+2022-03-29 20:36:30,744 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method addProductInBasket,with result redirect:/catalog
+2022-03-29 20:36:30,833 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showCatalog
+2022-03-29 20:36:30,849 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showCatalog,with result catalogPage
+2022-03-29 20:36:31,617 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-29 20:36:31,617 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-29 20:36:37,929 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method basket
+2022-03-29 20:36:37,935 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method basket,with result ModelAndView [view="/basketPage"; model={products={Product [id=2, name=Walnut, description=description, price=12.8, image=stick_choc.jpg]=1}, total=12,80}]
+2022-03-29 20:36:39,522 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method OrderPage
+2022-03-29 20:36:39,525 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method OrderPage,with result ModelAndView [view="/orderPage"; model={order=Order [id=null, name=null, city=null, email=null, address=null, phoneNumber=null, zip=null, orderList=null, total=null], orderList=Walnut-1 , products={Product [id=2, name=Walnut, description=description, price=12.8, image=stick_choc.jpg]=1}, total=12,80}]
+2022-03-29 20:36:49,080 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method saveOrder
+2022-03-29 20:36:49,080 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method saveOrder,with result redirect:/order
+2022-03-29 20:36:49,094 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method OrderPage
+2022-03-29 20:36:49,100 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method OrderPage,with result ModelAndView [view="/orderPage"; model={order=Order [id=null, name=null, city=null, email=null, address=null, phoneNumber=null, zip=null, orderList=null, total=null], orderList=Walnut-1 , products={Product [id=2, name=Walnut, description=description, price=12.8, image=stick_choc.jpg]=1}, total=12,80}]
+2022-03-29 20:37:12,797 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method saveOrder
+2022-03-29 20:37:12,923 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method saveOrder,with result redirect:/basket
+2022-03-29 20:37:12,975 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method basket
+2022-03-29 20:37:12,979 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method basket,with result ModelAndView [view="/basketPage"; model={products={}, addmessage=true, total=0,00}]
+2022-03-29 20:37:18,515 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-29 20:37:18,516 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-29 20:37:19,587 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-29 20:37:19,588 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-29 20:37:21,357 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showLoginForm
+2022-03-29 20:37:21,357 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showLoginForm,with result loginPage
+2022-03-29 20:37:27,795 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-29 20:37:27,796 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1
+2022-03-29 20:37:29,863 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method basket
+2022-03-29 20:37:29,895 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method basket,with result ModelAndView [view="/basketPage"; model={products={}, addmessage=true, total=0,00}]
+2022-03-29 20:37:31,193 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method showOrdersListPage
+2022-03-29 20:37:31,207 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method showOrdersListPage,with result ordersListPage
+2022-03-29 20:37:37,643 [INFO ] LoggableAspect.java:beforeMethodExecuting:31 - Before method welcomePage
+2022-03-29 20:37:37,643 [INFO ] LoggableAspect.java:afterMethodExecuting:37 - After method welcomePage,with result l1

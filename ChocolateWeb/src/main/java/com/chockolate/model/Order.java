@@ -29,10 +29,10 @@ public class Order {
 	private String address;
 	@Column(name = "phone_number")
 	@NotEmpty(message = "Phone number can not be empty")
-	@Pattern(regexp = "^\\\\+\\\\d{12}")
+	@Pattern(regexp = "^\\+\\d{12}")
 	private String phoneNumber;
-	@Min(6)
-	@Max(6)
+	@Min(100000)
+	@Max(999999)
 	private Integer zip;
 	@Column(name = "order_list")
 	private String orderList;
