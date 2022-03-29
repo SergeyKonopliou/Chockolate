@@ -40,8 +40,8 @@ import com.chockolate.model.TypeProduct;
 import com.chockolate.service.impl.ProductServiceImpl;
 
 /**
- * Класс отвечает за обработку основных адресов,
- * использующихся вданном приложении
+ * Класс отвечает за обработку основных адресов, использующихся вданном
+ * приложении
  *
  */
 //@Validated
@@ -55,19 +55,24 @@ public class MainController {
 	private Product product = new Product();
 
 	/**
-	 * Метод реагирует на адреса "/", "/main",возвращает
-	 * стартовую страницу и узнает имя вошедшего пользователя
+	 * Метод реагирует на адреса "/", "/main",возвращает стартовую страницу и узнает
+	 * имя вошедшего пользователя
 	 */
 	@RequestMapping(value = { "/", "/main" })
 	public String welcomePage(Model model) {
-	    //SecurityContextHolder, в нем содержится информация о текущем контексте безопасности приложения.
-		//SecurityContext, содержит объект Authentication и в случае необходимости информацию системы безопасности,
-		//связанную с запросом от пользователя.
+		model.addAttribute("userName", getEntryUser());
+		return "l1";
+	}
+
+	public String getEntryUser() {
+		// SecurityContextHolder, в нем содержится информация о текущем контексте
+		// безопасности приложения.
+		// SecurityContext, содержит объект Authentication и в случае необходимости
+		// информацию системы безопасности,
+		// связанную с запросом от пользователя.
 		SecurityContext context = SecurityContextHolder.getContext();
 		Authentication authentication = context.getAuthentication();
-		String userName = authentication.getName();
-		model.addAttribute("userName", userName);
-		return "l1";
+		return authentication.getName();
 	}
 
 	@RequestMapping("/lang")
@@ -96,8 +101,8 @@ public class MainController {
 	}
 
 	/**
-	 * Метод формирует список продуктов из базы данных,выбранных
-	 * по заданным критериям.Возвращает страницу каталога.
+	 * Метод формирует список продуктов из базы данных,выбранных по заданным
+	 * критериям.Возвращает страницу каталога.
 	 */
 	@GetMapping("/catalog")
 	public String showCatalog(@RequestParam(defaultValue = "") String search_product,
@@ -105,32 +110,32 @@ public class MainController {
 			Model model) {
 		try {
 			if (!select.isEmpty() && !selectPrice.isEmpty() && !search_product.isEmpty()) {
-				if("all".equals(select)) {
+				if ("all".equals(select)) {
 					products = service.loadAllProductByNameContainsIgnoreCaseAndPrice(search_product, selectPrice);
-				}else {
-					products = service.loadAllProductByTypeProductIdAndPriceAndNameContainsIgnoreCase(select, selectPrice,
-							search_product);
+				} else {
+					products = service.loadAllProductByTypeProductIdAndPriceAndNameContainsIgnoreCase(select,
+							selectPrice, search_product);
 				}
 			} else if (!selectPrice.isEmpty() && !search_product.isEmpty()) {
 				products = service.loadAllProductByNameContainsIgnoreCaseAndPrice(search_product, selectPrice);
 			} else if (!select.isEmpty() && !selectPrice.isEmpty()) {
-				if("all".equals(select)) {
+				if ("all".equals(select)) {
 					products = service.loadAllProductByPrice(selectPrice);
-				}else {
+				} else {
 					products = service.loadAllProductByTypeProductIdAndPrice(select, selectPrice);
-				}			
+				}
 			} else if (!select.isEmpty() && !search_product.isEmpty()) {
-				if("all".equals(select)) {
+				if ("all".equals(select)) {
 					products = service.loadProductByName(search_product);
-				}else {
+				} else {
 					products = service.loadAllProductByTypeProductIdAndProductName(select, search_product);
 				}
 			} else if (!selectPrice.isEmpty()) {
 				products = service.loadAllProductByPrice(selectPrice);
 			} else if (!select.isEmpty()) {
-				if("all".equals(select)) {
+				if ("all".equals(select)) {
 					products = service.loadAll();
-				}else {
+				} else {
 					products = service.loadAllProductByTypeProductId(select);
 				}
 			} else if (!search_product.isEmpty()) {
@@ -145,6 +150,7 @@ public class MainController {
 		model.addAttribute("prod", products);
 		boolean findProductFlag = products.isEmpty() ? true : false;
 		model.addAttribute("findProductFlag", findProductFlag);
+		model.addAttribute("userName", getEntryUser());
 		List<TypeProduct> list;
 		try {
 			list = service.loadAllTypeProduct();
@@ -173,17 +179,16 @@ public class MainController {
 	}
 
 	@GetMapping("/addNewProduct")
-	public String showAddNewProductPage(Model model) {
+	public String showAddNewProductPage() {
 		return "addNewProductPage";
 	}
 
 	/**
-	 * Метод принимает данные для добавления в базу данных.Вызывает метод
-	 * сервис слоя для добавления продукта в базу данных
+	 * Метод принимает данные для добавления в базу данных.Вызывает метод сервис
+	 * слоя для добавления продукта в базу данных
 	 */
 	@PostMapping(value = "/add")
-	public String addProduct(@PathParam(value = "name")  String name,
-			@PathParam(value = "price")  Double price,
+	public String addProduct(@PathParam(value = "name") String name, @PathParam(value = "price") Double price,
 			@PathParam(value = "typeProduct") String typeProduct, @PathParam(value = "description") String description,
 			@RequestParam("fileImage") MultipartFile multipartFile, Model model) {
 		try {
@@ -203,7 +208,7 @@ public class MainController {
 		}
 		return "redirect:/catalog";
 	}
-	
+
 //	 @ExceptionHandler(ConstraintViolationException.class)
 //	  @ResponseStatus(HttpStatus.BAD_REQUEST)
 //	  public ResponseEntity<String> handleConstraintViolationException(ConstraintViolationException e) {
@@ -223,8 +228,8 @@ public class MainController {
 	}
 
 	/**
-	 * Метод принимает id продукта,вызывает метод сервис слоя
-	 * для удаления продукта по принятому id
+	 * Метод принимает id продукта,вызывает метод сервис слоя для удаления продукта
+	 * по принятому id
 	 */
 	@GetMapping("/deleteProduct/{id}")
 	public String deleteProductById(@PathVariable String id, Model model) {
@@ -238,9 +243,9 @@ public class MainController {
 	}
 
 	/**
-	 * Метод принимает id выбранного для изменения продукта,
-	 * находит его в базе данных по id,добавляет найденный продукт в модель
-	 * и передает на страницу изменения продукта .
+	 * Метод принимает id выбранного для изменения продукта, находит его в базе
+	 * данных по id,добавляет найденный продукт в модель и передает на страницу
+	 * изменения продукта .
 	 */
 	@GetMapping("/updateProduct/{id}")
 	public String updateProductById(@PathVariable String id, Model model) {
@@ -255,8 +260,8 @@ public class MainController {
 	}
 
 	/**
-	 * Метод принимает из формы изменения продукта введенные данные
-	 * и вызывает метод сервис слоя для изменения данных в базе данных
+	 * Метод принимает из формы изменения продукта введенные данные и вызывает метод
+	 * сервис слоя для изменения данных в базе данных
 	 */
 	@PostMapping(value = "/update")
 	public String updateProduct(@PathParam(value = "id") String id, @PathParam(value = "name") String name,

@@ -54,11 +54,17 @@ public class SecutrityConfig extends WebSecurityConfigurerAdapter {
 	protected void configure(HttpSecurity http) throws Exception {
 		http.authorizeRequests()
 		.antMatchers("/basket").access("hasAnyRole('ROLE_USER','ROLE_ADMIN')")//для входа в корзину нужно войти под своим логином и паролем
+		.antMatchers("/order/**").access("hasAnyRole('ROLE_USER','ROLE_ADMIN')")
+		.antMatchers("/saveOrder").access("hasAnyRole('ROLE_USER','ROLE_ADMIN')")
+		.and()
+        .authorizeRequests().antMatchers("/console/**").permitAll()
 		.antMatchers("/**").permitAll()//разрешено всем независимо от роли заходить на все адреса
 		.anyRequest().authenticated().and().formLogin()
 		.loginPage("/login").defaultSuccessUrl("/").permitAll().and().logout().permitAll().logoutSuccessUrl("/")//здесь задаю адрес для страницы логирования
 		//и в контроллере создал метод реагирующий на /login и перенаправляющий на страницу входа
 		.and().exceptionHandling().accessDeniedHandler(accessDeniedHandler);//ловим ошибки,перенаправляет на адрес 403
+		 http.csrf().disable();
+	        http.headers().frameOptions().disable();
 	}
 
 	/**

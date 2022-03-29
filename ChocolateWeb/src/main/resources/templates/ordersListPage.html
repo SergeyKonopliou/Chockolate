@@ -8,23 +8,21 @@
 <meta name="viewport"
 	content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scale=0">
 <link rel="stylesheet" type="text/css" th:href="@{/css/l1.css}" />
-<link rel="stylesheet" type="text/css" th:href="@{/css/order.css}" />
+<link rel="stylesheet" type="text/css" th:href="@{/css/basket.css}" />
 <link rel="icon" type="image/x-icon" th:href="@{/images/icon.jpg}">
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
 	rel="stylesheet"
 	integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
 	crossorigin="anonymous">
-<title th:utext="#{label.orderPage}"></title>
+<title th:utext="#{label.ordersListPage}"></title>
 </head>
 <body>
 	<div class="wrapper">
 		<header class="header">
 			<div class="container">
 				<div class="header_row">
-					<a href="" class="header_logo"> <img src="#"
-						th:src="@{/images/logo1.jpg}">
-					</a>
+					<img src="/images/logo1.jpg">
 					<div class="menu_burger">
 						<span></span>
 					</div>
@@ -58,75 +56,45 @@
 			style="background-image: url(http://localhost:8080/main/images/fon_personal_page.jpg);">
 			<div class="container">
 
-				<h1 class="main_title">Оформить заказ</h1>
+				<h1 class="main_title">Список заказов</h1>
 				<div class="page">
-					<div class="row">
-						<div class="col-75">
-							<div class="basket">
-								<form action="#" th:action="@{/saveOrder}" method="post"
-									name="orderForm" th:object="${order}">
 
-									<div class="row">
-										<div class="col-50">
-											<h3>Данные для заказа</h3>
-											<label for="name">ФИО</label> <input type="text" id="name"
-												name="name" placeholder="Иванов Иван Иванович" required
-												autofocus="autofocus">
-												<div class="alert alert-warning" th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></div>
-												 <label for="email">Email</label>
-											<input type="text" id="email" name="email"
-												placeholder="email@mail.ru" th:field="*{email}">
-												<div class="alert alert-warning" th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></div>
-												 <label for="city">Город</label>
-											<input type="text" id="city" name="city" placeholder="Минск" th:field="*{city}"
-												required>
-												<div class="alert alert-warning" th:if="${#fields.hasErrors('city')}" th:errors="*{city}"></div>
-												 <label for="address">Адрес</label> <input
-												type="text" id="address" name="address" th:field="*{address}"
-												placeholder="Пушкина 5-55" required>
-												<div class="alert alert-warning" th:if="${#fields.hasErrors('address')}" th:errors="*{address}"></div>
-											<div class="row">
-												<div class="col-50">
-													<label for="phoneNumber">Номер телефона</label> <input
-														type="text" id="phoneNumber" name="phoneNumber" th:field="*{phoneNumber}"
-														placeholder="+375111111111" required min="12" maxlength="13">
-														<div class="alert alert-warning" th:if="${#fields.hasErrors('phoneNumber')}" th:errors="*{phoneNumber}"></div>
-												</div>
-												<div class="col-50">
-													<label for="zip">Индекс</label> <input type="text"
-														id="zip" name="zip" th:field="*{zip}" placeholder="213234" required min="6" maxlength="6">
-														<div class="alert alert-warning" th:if="${#fields.hasErrors('zip')}" th:errors="*{zip}"></div>
-												</div>
-											</div>
-												<input id="orderList" name="orderList"
-												th:value="${orderList}" th:hidden="true">
-												<input id="total" name="total" th:value="${total}"
-												th:hidden="true" /> 
-										</div>
-									</div>
-									<input type="submit" value="Оформить заказ" class="btn">
-								</form>
-							</div>
-						</div>
-						<div class="col-25">
-							<div class="basket">
-								<h4>
-									Корзина <span class="price" style="color: black"> <i
-										class="fa fa-shopping-cart"></i> <b>[[${value}]]</b>
-									</span>
-								</h4>
-								<th:block th:each="product : ${products.entrySet()}">
-									<a href="#" th:text="${product.getKey().name}"></a>
-									<span class="price" th:text="${product.getKey().price}"></span>
-									<br>
+					<div class="table-responsive">
+
+						<div th:if="${not orders.isEmpty()}">
+							<table class="table align-middle">
+								<tr>
+									<th>ФИО</th>
+									<th>Email</th>
+									<th>Город</th>
+									<th>Адрес</th>
+									<th>Номер телефона</th>
+									<th>Индекс</th>
+									<th>Заказ</th>
+									<th>Сумма заказа</th>
+								</tr>
+								<th:block th:each="order : ${orders}">
+									<tr>
+										<td th:text="${order.name}"></td>
+										<td th:text="${order.email}"></td>
+										<td th:text="${order.city}"></td>
+										<td th:text="${order.address}"></td>
+										<td th:text="${order.phoneNumber}"></td>
+										<td th:text="${order.zip}"></td>
+										<td th:text="${order.orderList}"></td>
+										<td th:text="${order.total}"></td>
+										<td><a
+											th:href="@{/deleteOrder/{linkTitle}(linkTitle=${order.id})}"><button
+													type="button" class="btn btn-primary mb-2">Delete</button></a>
+										</td>
+									</tr>
 								</th:block>
-								<hr>
-								<p>
-									Всего <span class="price" style="color: black"><b>[[${total}]]</b></span>
-								</p>
-							</div>
+							</table>
 						</div>
 					</div>
+					<div th:if="${orders.isEmpty()}" class="basket_empty">
+							<p>Заказов нет</p>
+						</div>
 				</div>
 			</div>
 		</main>
@@ -190,5 +158,22 @@
 		crossorigin="anonymous"></script>
 	<script
 		src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script th:src="@{/js/l1.js}"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#formFile').change(function() {
+				showImageThumbnail(this)
+			});
+		});
+
+		function showImageThumbnail(fileInput) {
+			file = fileInput.files[0];
+			reader = new FileReader();
+			reader.onload = function(e) {
+				$('#thumbnail').attr('src', e.target.result);
+			};
+			reader.readAsDataURL(file);
+		}
+	</script>
 </body>
 </html>

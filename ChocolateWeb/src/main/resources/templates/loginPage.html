@@ -37,6 +37,16 @@
 								th:utext="#{label.contactsLink}"></a></li>
 							<li><a th:href="@{/about-me}" class="menu_link"
 								th:utext="#{label.aboutmeLink}"></a></li>
+							<li>
+								<div class="lang_link">
+									<a th:href="@{lang(lang=en)}"><img
+										src="images/united_kingdom.png"></a> <a
+										th:href="@{lang(lang=ru)}"><img src="images/russia.png"></a>
+									<a th:href="@{lang(lang=de)}"><img src="images/germany.png"></a>
+								</div>
+							</li>
+							<li><a th:href="@{/basket}"><img
+									src="images/shoppingcartempty.png"></a></li>
 						</ul>
 					</nav>
 				</div>
@@ -72,6 +82,7 @@
 											<button type="submit" class="btn btn-primary">Войти</button>
 										</div>
 									</div>
+								</div>
 							</form>
 							<a th:href="@{/registration}">Зарегистрироваться</a>
 						</div>
@@ -79,6 +90,7 @@
 							имя пользователя или пароль.</div>
 					</div>
 				</div>
+			</div>
 		</main>
 
 		<footer>
@@ -130,6 +142,7 @@
 				</div>
 			</div>
 		</footer>
+		</div>
 		<script
 			src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 		<script th:src="@{/js/l1.js}"></script>

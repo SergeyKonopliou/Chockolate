@@ -21,8 +21,8 @@
 		<header class="header">
 			<div class="container">
 				<div class="header_row">
-					<a href="" class="header_logo"> <img src="images/logo1.jpg"
-						alt="">
+					<a href="" class="header_logo"> <img src="#"
+						th:src="@{/images/logo1.jpg}">
 					</a>
 					<div class="menu_burger">
 						<span></span>
@@ -37,6 +37,16 @@
 								th:utext="#{label.contactsLink}"></a></li>
 							<li><a th:href="@{/about-me}" class="menu_link"
 								th:utext="#{label.aboutmeLink}"></a></li>
+							<li>
+								<div class="lang_link">
+									<a th:href="@{lang(lang=en)}"><img
+										src="images/united_kingdom.png"></a> <a
+										th:href="@{lang(lang=ru)}"><img src="images/russia.png"></a>
+									<a th:href="@{lang(lang=de)}"><img src="images/germany.png"></a>
+								</div>
+							</li>
+							<li><a th:href="@{/basket}"><img
+									src="images/shoppingcartempty.png"></a></li>
 						</ul>
 					</nav>
 				</div>

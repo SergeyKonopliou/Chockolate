@@ -45,6 +45,10 @@
 								</div>
 							</li>
 							<li>
+								<a th:href="@{/basket}"><img
+										src="images/shoppingcartempty.png"></a>
+							</li>
+							<li>
 								<div sec:authorize="!isAuthenticated()">
 									<a th:href="@{/login}"><img src="images/icons-login.png"></a>
 								</div>
@@ -56,10 +60,6 @@
 											class="login_user_info_logout_button">Log Out</button>
 									</form>
 								</div>
-							</li>
-							<li>
-								<a th:href="@{/basket}"><img
-										src="images/shoppingcartempty.png"></a>
 							</li>
 						</ul>
 					</nav>
