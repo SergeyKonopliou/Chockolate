@@ -1,22 +1,37 @@
-@charset "UTF-8";
 form{
     padding: 5px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 480px;
-    width: 550px;
+    height: 100%;
+    width: 100%;
   
 }
 form div{
-    width: 440px;
+    width: 50%;
     display: flex;
+    flex-direction:row;
     justify-content: space-between;
+    text-align:center;
     padding-left: 25px;
+    padding-bottom: 25px;
 }
+#formFile{
+	width: 46%;
+	height:100%;
+	border: 1px solid gray;
+	border-radius: 10px;
+}
+.rounded-input{
+	margin-left: 50px;
+}
+.shine-button{
+	width: 50%;
+}
+
 .image_preview{
-	padding-top: 10px;
 	padding-bottom: 10px;
+	padding-left: 325px;
 }
 .input_name:invalid,
 .input_price:invalid{

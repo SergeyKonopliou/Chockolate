@@ -19,9 +19,10 @@
 		<header class="header">
 			<div class="container">
 				<div class="header_row">
-					<a href="" class="header_logo"> <img src="images/logo1.jpg"
-						alt="">
-					</a>
+					<textarea id="message" hidden="true">Йо-хо-хо</textarea>
+					<button id="speak" class="header_logo">
+						<img src="images/logo1.jpg" alt="">
+					</button>
 					<div class="menu_burger">
 						<span></span>
 					</div>
@@ -38,27 +39,27 @@
 								th:utext="#{label.aboutmeLink}"></a></li>
 							<li>
 								<div class="lang_link">
-									<a th:href="@{lang(lang=en)}"><img
-										src="images/united_kingdom.png"></a> <a
-										th:href="@{lang(lang=ru)}"><img src="images/russia.png"></a>
-									<a th:href="@{lang(lang=de)}"><img src="images/germany.png"></a>
+									<a th:href="@{lang(lang=en)}"><img src="#"
+										th:src="@{/images/united_kingdom.png}"></a> <a
+										th:href="@{lang(lang=ru)}"><img src="#"
+										th:src="@{/images/russia.png}"></a> <a
+										th:href="@{lang(lang=de)}"><img src="#"
+										th:src="@{/images/germany.png}"></a>
 								</div>
 							</li>
-							<li>
-								<a th:href="@{/basket}"><img
-										src="images/shoppingcartempty.png"></a>
-							</li>
+							<li><a th:href="@{/basket}"><img src="#"
+									th:src="@{/images/shoppingcartempty.png}"></a></li>
 							<li>
 								<div sec:authorize="!isAuthenticated()">
-									<a th:href="@{/login}"><img src="images/icons-login.png"></a>
+									<a th:href="@{/login}"><img src="#"
+										th:src="@{/images/icons-login.png}"></a>
 								</div>
-								<div sec:authorize="isAuthenticated()" class="login_user_info">
-									<span>Welcome </span> <span th:if="${userName != null}"
-										th:text="${userName}"></span>
-									<form th:action="@{/logout}" method="post">
-										<button type="submit" value="Logout"
-											class="login_user_info_logout_button">Log Out</button>
-									</form>
+								<div sec:authorize="isAuthenticated()">
+									<div class="login_user_info">
+										<span>Welcome&nbsp;</span><span th:if="${userName != null}"
+											th:text="${userName}"></span>
+									</div>
+									<a th:href="@{/logout}" class="floating-button">Log Out</a>
 								</div>
 							</li>
 						</ul>
@@ -74,57 +75,27 @@
 				<h1 class="main_title">Gallery</h1>
 				<div class="page">
 					<div class="gallery" id="gallery">
-						<img src="images/images_gallery_1.jpg" alt="picture"
-							class="gallery_images">
-						<div class="sign_gallery_picture" id="sign1">Picture example
-							#1</div>
-						<div class="description_gallery_picture" id="description1">Lorem
-							ipsum dolor sit amet, consectetur adipisicing elit. Laudantium
-							itaque esse sit vitae eum soluta, officia quisquam provident non
-							rerum deleniti enim, atque architecto quasi reiciendis
-							repellendus quaerat doloremque animi possimus odit sapiente,
-							adipisci. Dolorem vitae laboriosam expedita tenetur aperiam modi
-							sint esse, magni doloribus sit laudantium, inventore voluptate
-							magnam repellat unde libero! Possimus fuga neque fugiat. Dolore
-							sed voluptates aliquid fugit, cumque, esse odio debitis quod,
-							vitae modi aperiam non quidem sapiente cupiditate officiis itaque
-							amet? Deleniti voluptates animi porro mollitia impedit debitis
-							nisi ratione qui eos similique dolor facilis ipsum odio, nam
-							deserunt necessitatibus, repellat tempora atque eaque!</div>
-						<img src="images/images_gallery_2.jpg" alt="picture"
-							class="gallery_images">
-						<div class="sign_gallery_picture" id="sign2">Picture example
-							#2</div>
-						<div class="description_gallery_picture" id="description2">Lorem
-							ipsum dolor sit amet, consectetur adipisicing elit. Laudantium
-							itaque esse sit vitae eum soluta, officia quisquam provident non
-							rerum deleniti enim, atque architecto quasi reiciendis
-							repellendus quaerat doloremque animi possimus odit sapiente,
-							adipisci. Dolorem vitae laboriosam expedita tenetur aperiam modi
-							sint esse, magni doloribus sit laudantium, inventore voluptate
-							magnam repellat unde libero! Possimus fuga neque fugiat. Dolore
-							sed voluptates aliquid fugit, cumque, esse odio debitis quod,
-							vitae modi aperiam non quidem sapiente cupiditate officiis itaque
-							amet? Deleniti voluptates animi porro mollitia impedit debitis
-							nisi ratione qui eos similique dolor facilis ipsum odio, nam
-							deserunt necessitatibus, repellat tempora atque eaque!</div>
-						<img src="images/images_gallery_3.jpg" alt="picture"
-							class="gallery_images">
-						<div class="sign_gallery_picture" id="sign3">Picture example
-							#3</div>
-						<div class="description_gallery_picture" id="description">Lorem
-							ipsum dolor sit amet, consectetur adipisicing elit. Laudantium
-							itaque esse sit vitae eum soluta, officia quisquam provident non
-							rerum deleniti enim, atque architecto quasi reiciendis
-							repellendus quaerat doloremque animi possimus odit sapiente,
-							adipisci. Dolorem vitae laboriosam expedita tenetur aperiam modi
-							sint esse, magni doloribus sit laudantium, inventore voluptate
-							magnam repellat unde libero! Possimus fuga neque fugiat. Dolore
-							sed voluptates aliquid fugit, cumque, esse odio debitis quod,
-							vitae modi aperiam non quidem sapiente cupiditate officiis itaque
-							amet? Deleniti voluptates animi porro mollitia impedit debitis
-							nisi ratione qui eos similique dolor facilis ipsum odio, nam
-							deserunt necessitatibus, repellat tempora atque eaque!</div>
+						<img src="images/img1.jpg" alt="picture" class="gallery_images">
+						<div class="sign_gallery_picture" id="sign1">Chocolate</div>
+						<div class="description_gallery_picture" id="description1">Handmade
+							chocolate for you and your loved ones from quality ingredients</div>
+						<img src="images/img2.jpg" alt="picture" class="gallery_images">
+						<div class="sign_gallery_picture" id="sign2">Small box</div>
+						<div class="description_gallery_picture" id="description2">Juicy
+							fruit in chocolate glaze is a favorite dessert for adults and
+							children. Chocolate perfectly emphasizes the natural aroma of
+							fruits, and they, in turn, significantly enrich the taste and
+							aroma of cocoa beans. Such sweets have a moderate sweetness and
+							will appeal even to supporters of a healthy lifestyle. After all,
+							the vitamins in fruits are preserved during the production
+							process, and the glaze layer is very thin - this is an important
+							argument for those who care about their figure and adhere to a
+							healthy diet. The only negative is that such sweets have a short
+							shelf life.</div>
+						<img src="images/img3.png" alt="picture" class="gallery_images">
+						<div class="sign_gallery_picture" id="sign3">Assorted</div>
+						<div class="description_gallery_picture" id="description">A
+							set of sweets with different flavors.</div>
 					</div>
 				</div>
 
@@ -146,7 +117,7 @@
 									+234234234234
 								</div>
 								<img src="images/icons/icons-электронная-почта.png" alt="">
-								Mail sdfgsdfgd@djffkgbkd.dfg
+								Mail mymail@mail.ru
 							</div>
 						</div>
 
@@ -172,8 +143,8 @@
 							<div class="footer_block_spoiler_menu_title"
 								th:utext="#{label.UnitedInfoLink}"></div>
 							<div class="footer_block_spoiler_menu_text"
-								id="current_date_time_block2">Здесь будет находиться
-								какая-то общая информация</div>
+								id="current_date_time_block2">Here will be located some
+								general information</div>
 						</div>
 					</div>
 				</div>

@@ -1,0 +1,25 @@
+div.container-lg {
+	float: left;
+	width: 100%;
+	margin-top: 10px;
+	margin-left:25px;
+}
+
+a {
+	color: burlywood;
+	text-decoration: none;
+	display: block;
+}
+
+ul.social {
+	font-size: 24px;
+    text-decoration: none;
+}
+
+ul.social li {
+	margin-top: 10px;
+}
+
+ul.social:first-child {
+	margin-top: 20px;
+}

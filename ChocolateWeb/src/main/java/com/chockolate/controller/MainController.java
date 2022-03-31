@@ -9,29 +9,21 @@ import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.validation.ConstraintViolationException;
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.Pattern;
 import javax.websocket.server.PathParam;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContext;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.util.StringUtils;
-import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.chockolate.exception.ServiceException;
@@ -77,7 +69,7 @@ public class MainController {
 
 	@RequestMapping("/lang")
 	public String welcomePageLang() {
-		return "l1";
+		return "redirect:/";
 	}
 
 	@RequestMapping(value = "/mainPage")
@@ -188,12 +180,12 @@ public class MainController {
 	 * слоя для добавления продукта в базу данных
 	 */
 	@PostMapping(value = "/add")
-	public String addProduct(@PathParam(value = "name") String name, @PathParam(value = "price") Double price,
+	public String addProduct(@PathParam(value = "name") String name, @PathParam(value = "price") String price,
 			@PathParam(value = "typeProduct") String typeProduct, @PathParam(value = "description") String description,
 			@RequestParam("fileImage") MultipartFile multipartFile, Model model) {
 		try {
 			product.setName(name);
-			product.setPrice(price);
+			product.setPrice(Double.valueOf(price));
 			product.setDescription(description);
 			String fileName = StringUtils.cleanPath(multipartFile.getOriginalFilename());
 			product.setImage(fileName);
@@ -265,13 +257,13 @@ public class MainController {
 	 */
 	@PostMapping(value = "/update")
 	public String updateProduct(@PathParam(value = "id") String id, @PathParam(value = "name") String name,
-			@PathParam(value = "price") Double price, @PathParam(value = "typeProduct") String typeProduct,
+			@PathParam(value = "price") String price, @PathParam(value = "typeProduct") String typeProduct,
 			@PathParam(value = "description") String description,
 			@RequestParam("fileImage") MultipartFile multipartFile, Model model) {
 		try {
 			product.setId(Long.parseLong(id));
 			product.setName(name);
-			product.setPrice(price);
+			product.setPrice(Double.valueOf(price));
 			product.setDescription(description);
 			String fileName = StringUtils.cleanPath(multipartFile.getOriginalFilename());
 			Product prod = service.loadFindProductById(Long.parseLong(id));

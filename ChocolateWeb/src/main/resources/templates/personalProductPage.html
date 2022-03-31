@@ -18,9 +18,10 @@
 		<header class="header">
 			<div class="container">
 				<div class="header_row">
-					<a href="" class="header_logo"> <img src="#"
-						th:src="@{/images/logo1.jpg}">
-					</a>
+					<textarea id="message" hidden="true">Йо-хо-хо</textarea>
+					<button id="speak" class="header_logo">
+						<img src="#" th:src="@{/images/logo1.jpg}">
+					</button>
 					<div class="menu_burger">
 						<span></span>
 					</div>
@@ -34,16 +35,18 @@
 								th:utext="#{label.contactsLink}"></a></li>
 							<li><a th:href="@{/about-me}" class="menu_link"
 								th:utext="#{label.aboutmeLink}"></a></li>
-								<li>
+							<li>
 								<div class="lang_link">
-									<a th:href="@{lang(lang=en)}"><img
-										src="images/united_kingdom.png"></a> <a
-										th:href="@{lang(lang=ru)}"><img src="images/russia.png"></a>
-									<a th:href="@{lang(lang=de)}"><img src="images/germany.png"></a>
+									<a th:href="@{lang(lang=en)}"><img src="#"
+										th:src="@{/images/united_kingdom.png}"></a> <a
+										th:href="@{lang(lang=ru)}"><img src="#"
+										th:src="@{/images/russia.png}"></a> <a
+										th:href="@{lang(lang=de)}"><img src="#"
+										th:src="@{/images/germany.png}"></a>
 								</div>
 							</li>
-							<li><a th:href="@{/basket}"><img
-									src="images/shoppingcartempty.png"></a></li>
+							<li><a th:href="@{/basket}"><img src="#"
+									th:src="@{/images/shoppingcartempty.png}"></a></li>
 						</ul>
 					</nav>
 				</div>
@@ -54,7 +57,7 @@
 			style="background-image: url(http://localhost:8080/main/images/fon_personal_page.jpg);">
 			<div class="container">
 
-				<h1 class="main_title">Информация о продукте</h1>
+				<h1 class="main_title">Product Information</h1>
 				<div class="page">
 
 					<div class="page_catalog">
@@ -101,7 +104,7 @@
 								</div>
 								<img src="#"
 									th:src="@{/images/icons/icons-электронная-почта.png}">
-								Mail sdfgsdfgd@djffkgbkd.dfg
+								Mail mymail@mail.ru
 							</div>
 						</div>
 
@@ -129,8 +132,8 @@
 							<div class="footer_block_spoiler_menu_title"
 								th:utext="#{label.UnitedInfoLink}"></div>
 							<div class="footer_block_spoiler_menu_text"
-								id="current_date_time_block2">Здесь будет находиться
-								какая-то общая информация</div>
+								id="current_date_time_block2">Here will be located some
+								general information</div>
 						</div>
 					</div>
 				</div>

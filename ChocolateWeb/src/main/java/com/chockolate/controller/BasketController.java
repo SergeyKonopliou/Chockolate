@@ -46,9 +46,6 @@ public class BasketController {
         ModelAndView modelAndView = new ModelAndView("/basketPage");
         modelAndView.addObject("products", basketServiceImpl.getProductsInBasket());
         String total = String.format("%.2f",basketServiceImpl.getTotal());
-        if(basketServiceImpl.getProductsInBasket().isEmpty()) {
-        	 modelAndView.addObject("addmessage", true);
-        }
         modelAndView.addObject("total", total);
         return modelAndView;
     }
@@ -135,7 +132,7 @@ public class BasketController {
 			try {
 				orderServiceImpl.addNewOrder(order);
 				basketServiceImpl.clear();
-				model.addAttribute("addmessage",true);
+				redirectAttributes.addFlashAttribute("addmessage", true);
 			} catch (ServiceException e) {
 				model.addAttribute("message", e.getMessage());
 				return "error";
