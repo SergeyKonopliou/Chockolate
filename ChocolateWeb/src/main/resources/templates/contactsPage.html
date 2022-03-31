@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:th="http://www.thymeleaf.org"
 	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport"
 	content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scale=0">
 <link rel="stylesheet" type="text/css" th:href="@{/css/l1.css}" />
+<link rel="stylesheet" type="text/css" th:href="@{/css/contact.css}" />
 <link rel="icon" type="image/x-icon" th:href="@{/images/icon.jpg}">
 <title th:utext="#{label.contactsLink}"></title>
 </head>
@@ -18,9 +18,10 @@
 		<header class="header">
 			<div class="container">
 				<div class="header_row">
-					<a href="" class="header_logo"> <img src="images/logo1.jpg"
-						alt="">
-					</a>
+					<textarea id="message" hidden="true">Йо-хо-хо</textarea>
+					<button id="speak" class="header_logo">
+						<img src="#" th:src="@{/images/logo1.jpg}">
+					</button>
 					<div class="menu_burger">
 						<span></span>
 					</div>
@@ -34,18 +35,18 @@
 								th:utext="#{label.contactsLink}"></a></li>
 							<li><a th:href="@{/about-me}" class="menu_link"
 								th:utext="#{label.aboutmeLink}"></a></li>
-								<li>
+							<li>
 								<div class="lang_link">
-									<a th:href="@{lang(lang=en)}"><img
-										src="images/united_kingdom.png"></a> <a
-										th:href="@{lang(lang=ru)}"><img src="images/russia.png"></a>
-									<a th:href="@{lang(lang=de)}"><img src="images/germany.png"></a>
+									<a th:href="@{lang(lang=en)}"><img src="#"
+										th:src="@{/images/united_kingdom.png}"></a> <a
+										th:href="@{lang(lang=ru)}"><img src="#"
+										th:src="@{/images/russia.png}"></a> <a
+										th:href="@{lang(lang=de)}"><img src="#"
+										th:src="@{/images/germany.png}"></a>
 								</div>
 							</li>
-							<li>
-								<a th:href="@{/basket}"><img
-										src="images/shoppingcartempty.png"></a>
-							</li>
+							<li><a th:href="@{/basket}"><img src="#"
+									th:src="@{/images/shoppingcartempty.png}"></a></li>
 						</ul>
 					</nav>
 				</div>
@@ -55,79 +56,27 @@
 		<main style="background-image: url(images/fon_personal_page.jpg);">
 			<div class="container">
 
-				<h1 class="main_title">Контактная информация</h1>
+				<h1 class="main_title">Contact info</h1>
 				<div class="page">
 
-					<div class="page_text_contacts">Lorem ipsum dolor sit amet,
-						consectetur adipisicing elit. Nam laboriosam consequuntur beatae
-						maxime quas accusamus modi natus commodi possimus minima aut
-						minus, quibusdam inventore maiores deserunt unde, enim non quasi
-						nesciunt vitae voluptate iure consequatur ut. Nesciunt atque
-						facilis quidem ipsa nihil aspernatur, vitae, fuga earum obcaecati
-						vero qui laboriosam porro et ad magni doloremque quisquam optio
-						placeat fugit accusantium? Sit molestias id dolores nam dolor,
-						nobis sunt quod repellat vel neque officiis blanditiis error,
-						ipsam eius accusantium est rerum vero. Porro magni molestiae,
-						tempora, dolorum voluptate quaerat reprehenderit repudiandae rem
-						tempore molestias sequi ex doloribus magnam facere, voluptates,
-						rerum! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-						Veritatis in vel voluptas non ex similique repellendus ea iste
-						ipsum eum deserunt maxime facere labore dicta perferendis, dolorum
-						doloremque fugit nostrum recusandae accusamus modi inventore. Nam
-						alias labore, omnis aut tempora qui. Commodi ad nulla in possimus
-						consequuntur alias dolorem quae natus culpa animi sequi magnam
-						quis quasi ut laborum pariatur corrupti, aperiam error. Officia,
-						rerum. Accusamus unde asperiores ab error aut necessitatibus hic
-						repellendus. Perferendis quas molestias dolorum esse ipsam,
-						aspernatur corporis quidem. Ullam doloremque neque nihil tempore
-						aperiam, corporis vel. Repellat consequuntur modi accusantium,
-						repudiandae voluptatem quis sequi eveniet necessitatibus amet
-						illum quaerat architecto est sit eaque dolorum dolores facilis
-						optio excepturi sapiente quibusdam. Atque, consectetur assumenda
-						ad aspernatur! Sit, sequi tempore cum odit ipsa temporibus
-						officiis, dolorem sapiente deserunt tempora! Amet itaque, rerum
-						atque architecto commodi illum cum. Quaerat vero suscipit aut
-						minima, dicta illum neque incidunt. Quasi alias ut doloremque in
-						veritatis ipsum quos laudantium cumque quisquam quia corporis sunt
-						molestiae architecto voluptate ipsa neque provident id molestias,
-						ex debitis nihil, distinctio natus, quibusdam temporibus! Mollitia
-						nihil eligendi aliquid vitae recusandae id adipisci blanditiis
-						minus doloribus ab tempore repellat commodi, quidem illo assumenda
-						ullam nostrum repudiandae totam magni explicabo perspiciatis
-						tempora et. Ullam hic eius aliquam quo ratione, veniam inventore
-						quidem, dolores eaque officia fugit voluptates cumque quas vero ab
-						eligendi quis minus mollitia voluptatibus autem assumenda. Omnis
-						aliquam vero quia voluptatum alias cupiditate eius at est, magni
-						assumenda iusto dolores. Error fugiat eaque aliquid nam similique
-						vel, sit nemo earum non fugit quia accusantium odit, sapiente
-						reprehenderit molestiae laudantium quos provident, enim beatae
-						optio! Hic sapiente impedit alias perferendis eum tempora fugit.
-						Aperiam commodi architecto ratione enim suscipit atque, officia et
-						minus provident blanditiis dolores at, amet natus delectus nobis,
-						quam deserunt nemo inventore modi eligendi.Lorem ipsum dolor sit
-						amet, consectetur adipisicing elit. Odio modi voluptatem, hic, non
-						beatae provident sequi. Animi neque eius at earum tempora tempore
-						amet doloribus voluptates ipsum illo ab nam odio placeat aut
-						accusamus recusandae assumenda fuga, natus nesciunt, culpa sequi
-						cum explicabo ad eveniet laboriosam! Quam debitis voluptatem
-						necessitatibus ut, saepe delectus explicabo ratione, repellat
-						tempore omnis repellendus molestias facilis, ipsum. Quidem
-						corrupti inventore, magni impedit voluptate assumenda dolor sed
-						blanditiis sit error esse possimus rem nulla, est sequi! Iste,
-						reprehenderit alias neque officia et voluptate architecto corrupti
-						quod consequatur! Nulla repellendus animi magnam assumenda
-						consectetur laudantium nobis dolore. Lorem ipsum dolor sit amet,
-						consectetur adipisicing elit. Earum dolores soluta commodi eos.
-						Dicta mollitia molestias maiores numquam alias officiis culpa
-						tempora ullam sapiente id dolor vitae fuga pariatur expedita
-						impedit rem, fugit, adipisci tenetur amet accusantium saepe illum
-						nisi a! Eligendi id tenetur quia consectetur ducimus hic sit
-						repudiandae quas omnis, maiores autem corporis accusantium odit
-						doloremque, soluta quidem inventore, illo beatae ab. Veniam, nemo
-						repudiandae sit dolorem a nulla maxime, quaerat explicabo vitae
-						deleniti debitis. Dignissimos, quisquam, aperiam autem eligendi
-						distinctio inventore voluptas dolorum voluptatem nam obcaecati
-						magnam impedit, magni a.</div>
+					<div class="page_text_contacts">
+						<div class="container-lg">
+							<ul class="social fa-ul">
+								<li><i class="fa fa-li fa-globe"></i><a
+									href="http://#">Website</a></li>
+								<li><i class="fa fa-li fa-envelope"></i><a
+									href="mymail@mail.ru">mymail@mail.ru</a></li>
+								<li><i class="fa fa-li fa-phone"></i><a
+									href="tel:+15073515278">Velcome +234234234234</a></li>
+								<li><i class="fa fa-li fa-codepen"></i><a
+									href="https://instagram.com">Instagram</a></li>
+								<li><i class="fa fa-li fa-github"></i><a
+									href="https://vk.com">VK</a></li>
+								<li><i class="fa fa-li fa-reddit"></i><a
+									href="http://viber.com"> Viber</a></li>
+							</ul>
+						</div>
+					</div>
 				</div>
 
 
@@ -149,7 +98,7 @@
 								</div>
 								<img src="#"
 									th:src="@{images/icons/icons-электронная-почта.png}">
-								Mail sdfgsdfgd@djffkgbkd.dfg
+								Mail mymail@mail.ru
 							</div>
 						</div>
 
@@ -176,8 +125,8 @@
 							<div class="footer_block_spoiler_menu_title"
 								th:utext="#{label.UnitedInfoLink}"></div>
 							<div class="footer_block_spoiler_menu_text"
-								id="current_date_time_block2">Здесь будет находиться
-								какая-то общая информация</div>
+								id="current_date_time_block2">Here will be located some
+								general information</div>
 						</div>
 					</div>
 				</div>

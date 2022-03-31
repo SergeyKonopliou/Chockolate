@@ -186,9 +186,9 @@ public class ProductServiceImpl implements ProductService {
 		try {
 			TypeProduct type = typeRepository.findTypeProductByName(typeName);
 			if (priceSortType.equals("high")) {
-				products = repository.findProductByTypeProductIdOrderByPriceAsc(type.getId());
-			} else {
 				products = repository.findProductByTypeProductIdOrderByPriceDesc(type.getId());
+			} else {
+				products = repository.findProductByTypeProductIdOrderByPriceAsc(type.getId());
 			}
 		} catch (Exception e) {
 			throw new ServiceException(
@@ -205,9 +205,9 @@ public class ProductServiceImpl implements ProductService {
 		List<Product> products = new ArrayList<Product>();
 		try {
 			if (priceSortType.equals("high")) {
-				products = repository.findProductByNameContainsIgnoreCaseOrderByPriceAsc(name);
-			} else {
 				products = repository.findProductByNameContainsIgnoreCaseOrderByPriceDesc(name);
+			} else {
+				products = repository.findProductByNameContainsIgnoreCaseOrderByPriceAsc(name);
 			}
 		} catch (Exception e) {
 			throw new ServiceException(
@@ -225,10 +225,10 @@ public class ProductServiceImpl implements ProductService {
 		try {
 			TypeProduct type = typeRepository.findTypeProductByName(typeName);
 			if (priceSortType.equals("high")) {
-				products = repository.findProductByTypeProductIdAndNameContainsIgnoreCaseOrderByPriceAsc(type.getId(),
+				products = repository.findProductByTypeProductIdAndNameContainsIgnoreCaseOrderByPriceDesc(type.getId(),
 						name);
 			} else {
-				products = repository.findProductByTypeProductIdAndNameContainsIgnoreCaseOrderByPriceDesc(type.getId(),
+				products = repository.findProductByTypeProductIdAndNameContainsIgnoreCaseOrderByPriceAsc(type.getId(),
 						name);
 			}
 

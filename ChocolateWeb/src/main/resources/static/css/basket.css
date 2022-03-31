@@ -1,4 +1,21 @@
 .basket_empty{
-	font-size: 18px;
+	font-size: 30px;
 	color:#ff8080;
+}
+.info-wrapper{
+	display: flex;
+	flex-direction: column;
+}
+div{
+	display: block;
+}
+.total{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-top: 20px;
+	align-items: center;
+}
+.btnorder{
+	padding-right: 100px;
 }
