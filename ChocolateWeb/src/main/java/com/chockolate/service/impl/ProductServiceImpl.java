@@ -1,11 +1,13 @@
 ﻿package com.chockolate.service.impl;
 
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import com.chockolate.exception.ServiceException;
@@ -24,23 +26,43 @@ public class ProductServiceImpl implements ProductService {
 	@Autowired
 	@Qualifier("typeProductRepository")
 	private TypeProductRepository typeRepository;
-
+	
 	/**
-	 * Метод загрузки всех товаров и базы данных
+	 * Метод для получения объекта Pageable с сортировкой по цене(если сортировка не нужна,то тип сортировки пишем "none")
 	 */
-	public List<Product> loadAll() throws ServiceException {
-		List<Product> products = new ArrayList<>();
-		try {
-			products = repository.findAll();
-		} catch (Exception e) {
-			throw new ServiceException("Problems with loading all products from DB service method " + e.getMessage(),
+	private Pageable getPageable(Pageable pageable, String priceSortType) {
+		int pageSize = pageable.getPageSize();
+		int currentPage = pageable.getPageNumber();
+		Pageable page;
+		if (priceSortType.equals("high")) {
+			page = PageRequest.of(currentPage, pageSize, Sort.by("price").descending());
+		} else if(priceSortType.equals("low")) {
+			page = PageRequest.of(currentPage, pageSize, Sort.by("price").ascending());
+		}else {
+			page = PageRequest.of(currentPage, pageSize);
+		}
+		return page;
+	}
+	
+	/**
+	 * Метод загрузки всех товаров и базы данных с пагинацией
+	 */
+	public Page<Product> loadAllPaginated(Pageable pageable) throws ServiceException {
+        try {
+        Pageable page = getPageable(pageable, "none");
+        Page<Product> allProducts = repository.findAll(page);
+        return allProducts;
+        } catch (Exception e) {
+			throw new ServiceException("Problems with loading all products from DB service method with pagination " + e.getMessage(),
 					e);
 		}
-		return products;
-	}
-
+    }
+	
+	/**
+	 * Метод поиска товара по id
+	 */
 	@Override
-	public Product loadFindProductById(Long id) throws ServiceException {
+	public Product loadProductById(Long id) throws ServiceException {
 		Product product = new Product();
 		try {
 			product = repository.findProductById(id);
@@ -51,18 +73,24 @@ public class ProductServiceImpl implements ProductService {
 		return product;
 	}
 
+	/**
+	 * Метод загрузки всех товаров и базы данных по названию
+	 */
 	@Override
-	public List<Product> loadProductByName(String name) throws ServiceException {
-		List<Product> products = new ArrayList<Product>();
+	public Page<Product> loadAllProductByName(Pageable pageable,String name) throws ServiceException {
 		try {
-			products = repository.findProductByNameContainsIgnoreCase(name);
+			Pageable page = getPageable(pageable, "none");
+	        Page<Product> allProducts = repository.findProductByNameContainsIgnoreCase(name,page);
+	        return allProducts;
 		} catch (Exception e) {
 			throw new ServiceException(
 					"Problems with loading searching product from DB service method " + e.getMessage(), e);
 		}
-		return products;
 	}
 
+	/**
+	 * Метод поиска товара по названию(возвращает один товар из найденых по этому имени)
+	 */
 	@Override
 	public Product loadOneProductByName(String name) throws ServiceException {
 		Product product = new Product();
@@ -75,6 +103,9 @@ public class ProductServiceImpl implements ProductService {
 		return product;
 	}
 
+	/**
+	 * Метод добавления нового товара в базу данных
+	 */
 	@Override
 	public void add(Product object, TypeProduct givenTypeProduct) throws ServiceException {
 		try {
@@ -101,6 +132,9 @@ public class ProductServiceImpl implements ProductService {
 
 	}
 
+	/**
+	 * Метод удаления товара по id из базы данных
+	 */
 	@Override
 	public void delete(Long id) throws ServiceException {
 		try {
@@ -110,6 +144,9 @@ public class ProductServiceImpl implements ProductService {
 		}
 	}
 
+	/**
+	 * Метод изменения данных о выбранном товаре в базе данных
+	 */
 	@Override
 	public void update(Product object, TypeProduct givenTypeProduct) throws ServiceException {
 		try {
@@ -119,126 +156,139 @@ public class ProductServiceImpl implements ProductService {
 			product.setDescription(object.getDescription());
 			product.setPrice(object.getPrice());
 			product.setImage(object.getImage());
-			TypeProduct foundTypeProduct = typeRepository.findTypeProductByName(givenTypeProduct.getName());
-			if (foundTypeProduct == null) {
+			TypeProduct foundTypeProduct = typeRepository.findTypeProductByName(givenTypeProduct.getName());	
+			if (foundTypeProduct != null) {
+				product.setTypeProduct(foundTypeProduct);
+				foundTypeProduct.getProducts().add(product);
+				typeRepository.save(foundTypeProduct);
+			} else {
+				product.setTypeProduct(givenTypeProduct);
+				givenTypeProduct.getProducts().add(product);
 				typeRepository.save(givenTypeProduct);
 			}
-			product.setTypeProduct(givenTypeProduct);
-			givenTypeProduct.getProducts().add(product);
-//			if (foundTypeProduct != null) {
-//				product.setTypeProduct(foundTypeProduct);
-//				foundTypeProduct.getProducts().add(product);
-//				typeRepository.save(foundTypeProduct);
-//			} else {
-//				product.setTypeProduct(givenTypeProduct);
-//				givenTypeProduct.getProducts().add(product);
-//				typeRepository.save(givenTypeProduct);
-//			}
 			repository.save(product);
 		} catch (Exception e) {
+			e.printStackTrace();
 			throw new ServiceException("Problems with updating product to DB service method  " + e.getMessage(), e);
 		}
 
 	}
 
+	/**
+	 * Метод загрузки всех названий типов продукта из базы данных
+	 */
 	@Override
 	public List<TypeProduct> loadAllTypeProduct() throws ServiceException {
 		return typeRepository.findAll();
 	}
 
+	/**
+	 * Метод загрузки всех продуктов по названию типов продукта из базы данных.
+	 * Ищем сначала тип продукта по названию типа,затем у найденного типа получаем его id и 
+	 * затем ещем все продукты по id типа продукта
+	 */
 	@Override
-	public List<Product> loadAllProductByTypeProductId(String typeProduct) throws ServiceException {
-		TypeProduct type = typeRepository.findTypeProductByName(typeProduct);
-		List<Product> products = repository.findProductByTypeProductId(type.getId());
-		return products;
-	}
-
-	@Override
-	public List<Product> loadAllProductByTypeProductIdAndProductName(String typeName, String productName)
-			throws ServiceException {
-		TypeProduct type = typeRepository.findTypeProductByName(typeName);
-		List<Product> products = repository.findProductByTypeProductIdAndNameContainsIgnoreCase(type.getId(),
-				productName);
-		return products;
-	}
-
-	@Override
-	public List<Product> loadAllProductByPrice(String priceSortType) throws ServiceException {
-		List<Product> products = new ArrayList<Product>();
-		products = repository.findAll();
+	public Page<Product> loadAllProductByTypeProductId(Pageable pageable,String typeProduct) throws ServiceException {
 		try {
-			if (priceSortType.equals("high")) {
-				Collections.sort(products);
-			} else {
-				Collections.sort(products, Collections.reverseOrder());
+			TypeProduct type = typeRepository.findTypeProductByName(typeProduct);
+			Pageable page = getPageable(pageable, "none");
+	        Page<Product> products = repository.findProductByTypeProductId(type.getId(),page);
+	        return products;
+	        } catch (Exception e) {
+				throw new ServiceException("Problems with loading all products from DB service method with pagination " + e.getMessage(),
+						e);
 			}
-		} catch (Exception e) {
-			throw new ServiceException(
-					"Problems with loading searching product by price from DB service method " + e.getMessage(), e);
-		}
-		return products;
 	}
 
+	/**
+	 * Метод загрузки всех продуктов из базы данных по названию и типу продукта
+	 */
 	@Override
-	public List<Product> loadAllProductByTypeProductIdAndPrice(String typeName, String priceSortType)
+	public Page<Product> loadAllProductByTypeProductIdAndProductName(Pageable pageable,String typeName, String productName)
 			throws ServiceException {
-		List<Product> products = new ArrayList<Product>();
 		try {
 			TypeProduct type = typeRepository.findTypeProductByName(typeName);
-			if (priceSortType.equals("high")) {
-				products = repository.findProductByTypeProductIdOrderByPriceDesc(type.getId());
-			} else {
-				products = repository.findProductByTypeProductIdOrderByPriceAsc(type.getId());
+			Pageable page = getPageable(pageable, "none");
+	        Page<Product> products = repository.findProductByTypeProductIdAndNameContainsIgnoreCase(type.getId(), productName,page);
+	        return products;
+	        } catch (Exception e) {
+				throw new ServiceException("Problems with loading all products from DB service method with pagination " + e.getMessage(),
+						e);
 			}
-		} catch (Exception e) {
-			throw new ServiceException(
-					"Problems with loading searching product by price and product type from DB service method "
-							+ e.getMessage(),
-					e);
-		}
-		return products;
+		
+	}
+	
+	/**
+	 * Метод загрузки всех продуктов из базы данных с сортировкой по цене
+	 */
+	@Override
+	public Page<Product> loadAllProductByPrice(Pageable pageable,String priceSortType) throws ServiceException {
+		try {
+	        Page<Product> products;
+	        Pageable page = getPageable(pageable, priceSortType);
+			products = repository.findAll(page);
+	        return products;
+	        } catch (Exception e) {
+				throw new ServiceException("Problems with loading all products from DB service method with pagination " + e.getMessage(),
+						e);
+			}
 	}
 
+	/**
+	 * Метод загрузки всех продуктов из базы данных по типу и с сортировкой по цене
+	 */
 	@Override
-	public List<Product> loadAllProductByNameContainsIgnoreCaseAndPrice(String name, String priceSortType)
+	public Page<Product> loadAllProductByTypeProductIdAndPrice(Pageable pageable,String typeName, String priceSortType)
 			throws ServiceException {
-		List<Product> products = new ArrayList<Product>();
 		try {
-			if (priceSortType.equals("high")) {
-				products = repository.findProductByNameContainsIgnoreCaseOrderByPriceDesc(name);
-			} else {
-				products = repository.findProductByNameContainsIgnoreCaseOrderByPriceAsc(name);
+			TypeProduct type = typeRepository.findTypeProductByName(typeName);
+	        Page<Product> products;
+	        Pageable page = getPageable(pageable, priceSortType);
+	        products = repository.findProductByTypeProductId(type.getId(),page);
+	        return products;
+	        } catch (Exception e) {
+				throw new ServiceException("Problems with loading all products from DB service method with pagination " + e.getMessage(),
+						e);
 			}
+	}
+
+	/**
+	 * Метод загрузки всех продуктов из базы данных по названию и с сортировкой по цене
+	 */
+	@Override
+	public Page<Product> loadAllProductByNameContainsIgnoreCaseAndPrice(Pageable pageable,String name, String priceSortType)
+			throws ServiceException {
+		try {
+		    Page<Product> products;
+		    Pageable page = getPageable(pageable, priceSortType);
+			products = repository.findProductByNameContainsIgnoreCase(name,page);
+			return products;
 		} catch (Exception e) {
 			throw new ServiceException(
 					"Problems with loading searching product by price and product name from DB service method "
 							+ e.getMessage(),
 					e);
 		}
-		return products;
 	}
 
+	/**
+	 * Метод загрузки всех продуктов из базы данных по типу,названию и с сортировкой по цене
+	 */
 	@Override
-	public List<Product> loadAllProductByTypeProductIdAndPriceAndNameContainsIgnoreCase(String typeName,
+	public Page<Product> loadAllProductByTypeProductIdAndPriceAndNameContainsIgnoreCase(Pageable pageable,String typeName,
 			String priceSortType, String name) throws ServiceException {
-		List<Product> products = new ArrayList<Product>();
 		try {
+		    Page<Product> products;
 			TypeProduct type = typeRepository.findTypeProductByName(typeName);
-			if (priceSortType.equals("high")) {
-				products = repository.findProductByTypeProductIdAndNameContainsIgnoreCaseOrderByPriceDesc(type.getId(),
-						name);
-			} else {
-				products = repository.findProductByTypeProductIdAndNameContainsIgnoreCaseOrderByPriceAsc(type.getId(),
-						name);
-			}
-
+			Pageable page = getPageable(pageable, priceSortType);
+			products = repository.findProductByTypeProductIdAndNameContainsIgnoreCase(type.getId(),name,page);
+			return products;
 		} catch (Exception e) {
 			throw new ServiceException(
 					"Problems with loading searching product by price and product type and product name from DB service method "
 							+ e.getMessage(),
 					e);
 		}
-		return products;
 	}
 
 }

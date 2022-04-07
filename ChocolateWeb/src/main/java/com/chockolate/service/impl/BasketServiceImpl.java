@@ -52,16 +52,13 @@ public class BasketServiceImpl implements BasketService {
     }
     
     /**
-     * Clear a basket
+     * Clear a shop cart
      */
     @Override
     public void clear() {
       products.clear();
     }
 
-    /**
-     * @return unmodifiable copy of the map
-     */
     @Override
     public Map<Product, Integer> getProductsInBasket() {
         return Collections.unmodifiableMap(products);

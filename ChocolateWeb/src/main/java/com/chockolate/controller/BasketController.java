@@ -23,6 +23,7 @@ import com.chockolate.model.Product;
 import com.chockolate.service.ProductService;
 import com.chockolate.service.impl.BasketServiceImpl;
 import com.chockolate.service.impl.OrderServiceImpl;
+import com.chockolate.service.impl.UserDetailsServiceImpl;
 
 
 /**
@@ -37,7 +38,9 @@ public class BasketController {
 	private BasketServiceImpl basketServiceImpl;
 	@Autowired
 	private OrderServiceImpl orderServiceImpl;
-
+	@Autowired
+	private UserDetailsServiceImpl userDetailsServiceImpl;
+	
 	 /**
 	  * Метод отображения страницы корзины с добавленными в неё продуктами
 	  */
@@ -47,6 +50,8 @@ public class BasketController {
         modelAndView.addObject("products", basketServiceImpl.getProductsInBasket());
         String total = String.format("%.2f",basketServiceImpl.getTotal());
         modelAndView.addObject("total", total);
+        modelAndView.addObject("userName", userDetailsServiceImpl.getEntryUser());
+        modelAndView.addObject("cart", basketServiceImpl.getProductsInBasket());
         return modelAndView;
     }
 	
@@ -57,6 +62,8 @@ public class BasketController {
     public String showOrdersListPage(Model model) {
         try {
         	model.addAttribute("orders", orderServiceImpl.loadAllOrder());
+        	model.addAttribute("userName", userDetailsServiceImpl.getEntryUser());
+        	model.addAttribute("cart", basketServiceImpl.getProductsInBasket());
 		} catch (ServiceException e) {
 			model.addAttribute("message", e.getMessage());
 			return "error";
@@ -83,7 +90,7 @@ public class BasketController {
 	@GetMapping("/addInBasket/{id}")
 	public String addProductInBasket(@PathVariable String id, Model model) {
 		try {
-			basketServiceImpl.addProduct(productService.loadFindProductById(Long.parseLong(id)));
+			basketServiceImpl.addProduct(productService.loadProductById(Long.parseLong(id)));
 		} catch (ServiceException e) {
 			model.addAttribute("message", e.getMessage());
 			return "error";
@@ -97,7 +104,7 @@ public class BasketController {
 	@GetMapping("/delete/{id}")
 	public String deleteProductInBasket(@PathVariable String id, Model model) {
 		try {
-			basketServiceImpl.removeProduct(productService.loadFindProductById(Long.parseLong(id)));
+			basketServiceImpl.removeProduct(productService.loadProductById(Long.parseLong(id)));
 		} catch (ServiceException e) {
 			model.addAttribute("message", e.getMessage());
 			return "error";
@@ -121,13 +128,15 @@ public class BasketController {
         modelAndView.addObject("orderList", str);
         modelAndView.addObject("products", products);
         modelAndView.addObject("total", total);
+        modelAndView.addObject("userName", userDetailsServiceImpl.getEntryUser());
+        modelAndView.addObject("cart", basketServiceImpl.getProductsInBasket());
         return modelAndView;
     }
 	 /**
 	  * Метод сохранения заказа
 	  */
 	@PostMapping("/saveOrder")
-	public String saveOrder(@ModelAttribute @Valid Order order,BindingResult result,Model model,RedirectAttributes redirectAttributes) {
+	public String saveOrder(@ModelAttribute("orderForm") @Valid Order order,BindingResult result,Model model,RedirectAttributes redirectAttributes) {
 		if (!result.hasErrors()) {
 			try {
 				orderServiceImpl.addNewOrder(order);

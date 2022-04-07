@@ -7,7 +7,6 @@
 <meta name="viewport"
 	content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scale=0">
 <link rel="stylesheet" type="text/css" th:href="@{/css/l1.css}" />
-<link rel="icon" type="image/x-icon" th:href="@{/images/icon.jpg}">
 <title th:utext="#{label.errorPage}"></title>
 </head>
 <body>
@@ -17,10 +16,13 @@
 				<div class="header_row">
 					<textarea id="message" hidden="true">Ой,ошибочка</textarea>
 					<button id="speak" class="header_logo"> <img src="#"
-						th:src="@{/images/logo1.jpg}"></button>
+						th:src="@{/images/logotip2.png}"></button>
 					<div class="menu_burger">
 						<span></span>
 					</div>
+<!-- 					<div class="brend">
+						<img src="#" th:src="@{/images/logotip.png}">
+					</di -->v>
 					<nav class="menu_body">
 						<ul class="menu_list">
 							<li><a th:href="@{/}" class="menu_link"
@@ -31,16 +33,40 @@
 								th:utext="#{label.contactsLink}"></a></li>
 							<li><a th:href="@{/about-me}" class="menu_link"
 								th:utext="#{label.aboutmeLink}"></a></li>
-							<li>
+							<!-- 							<li>
 								<div class="lang_link">
 									<a th:href="@{lang(lang=en)}"><img src="#"
-									th:src="@{/images/united_kingdom.png}"></a> 
-									<a th:href="@{lang(lang=ru)}"><img src="#" th:src="@{/images/russia.png}"></a>
-									<a th:href="@{lang(lang=de)}"><img src="#" th:src="@{/images/germany.png}"></a>
+										th:src="@{/images/united_kingdom.png}"></a> <a
+										th:href="@{lang(lang=ru)}"><img src="#"
+										th:src="@{/images/russia.png}"></a> <a
+										th:href="@{lang(lang=de)}"><img src="#"
+										th:src="@{/images/germany.png}"></a>
+								</div>
+							</li> -->
+							<li th:if="${cart.isEmpty()}">
+								<a th:href="@{/basket}"><img src="#"
+									th:src="@{/images/cart_empty1.png}"></a></li>
+							<li th:if="${!cart.isEmpty()}">
+								<a th:href="@{/basket}"><img src="#"
+									th:src="@{/images/cart_full1.png}"></a></li>
+							<li>
+								<div sec:authorize="!isAuthenticated()">
+									<a th:href="@{/login}"><img src="#"
+										th:src="@{/images/icons-login2.png}"></a>
+								</div>
+								<div sec:authorize="isAuthenticated()">
+									<div class="dropdown">
+										<button onclick="myFunction()" class="dropbtn">
+											<img src="#" th:src="@{/images/icons-login_succsess2.png}"> <span
+												th:if="${userName != null}" th:text="${userName}"></span>
+										</button>
+										<div id="myDropdown" class="dropdown-content">
+											<a href="#">Info</a> <a href="#">Orders</a> <a
+												th:href="@{/logout}">Log Out</a>
+										</div>
+									</div>
 								</div>
 							</li>
-							<li><a th:href="@{/basket}"><img
-									src="#" th:src="@{/images/shoppingcartempty.png}"></a></li>
 						</ul>
 					</nav>
 				</div>

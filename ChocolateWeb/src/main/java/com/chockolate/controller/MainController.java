@@ -6,16 +6,18 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
-import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 import javax.websocket.server.PathParam;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.context.SecurityContext;
-import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.util.StringUtils;
@@ -29,7 +31,9 @@ import org.springframework.web.multipart.MultipartFile;
 import com.chockolate.exception.ServiceException;
 import com.chockolate.model.Product;
 import com.chockolate.model.TypeProduct;
+import com.chockolate.service.impl.BasketServiceImpl;
 import com.chockolate.service.impl.ProductServiceImpl;
+import com.chockolate.service.impl.UserDetailsServiceImpl;
 
 /**
  * Класс отвечает за обработку основных адресов, использующихся вданном
@@ -43,8 +47,12 @@ public class MainController {
 	@Autowired
 	@Qualifier("productServiceImpl")
 	private ProductServiceImpl service;
-	private List<Product> products = new ArrayList<>();
+	private Page<Product> products;
 	private Product product = new Product();
+	@Autowired
+	private BasketServiceImpl basketServiceImpl;
+	@Autowired
+	private UserDetailsServiceImpl userDetailsServiceImpl;
 
 	/**
 	 * Метод реагирует на адреса "/", "/main",возвращает стартовую страницу и узнает
@@ -52,19 +60,9 @@ public class MainController {
 	 */
 	@RequestMapping(value = { "/", "/main" })
 	public String welcomePage(Model model) {
-		model.addAttribute("userName", getEntryUser());
+		model.addAttribute("userName", userDetailsServiceImpl.getEntryUser());
+		model.addAttribute("cart", basketServiceImpl.getProductsInBasket());
 		return "l1";
-	}
-
-	public String getEntryUser() {
-		// SecurityContextHolder, в нем содержится информация о текущем контексте
-		// безопасности приложения.
-		// SecurityContext, содержит объект Authentication и в случае необходимости
-		// информацию системы безопасности,
-		// связанную с запросом от пользователя.
-		SecurityContext context = SecurityContextHolder.getContext();
-		Authentication authentication = context.getAuthentication();
-		return authentication.getName();
 	}
 
 	@RequestMapping("/lang")
@@ -78,17 +76,23 @@ public class MainController {
 	}
 
 	@GetMapping("/about-me")
-	public String aboutMe() {
+	public String aboutMe(Model model) {
+		model.addAttribute("userName", userDetailsServiceImpl.getEntryUser());
+		model.addAttribute("cart", basketServiceImpl.getProductsInBasket());
 		return "personalPage";
 	}
 
 	@GetMapping("/contacts")
-	public String showContactInfo() {
+	public String showContactInfo(Model model) {
+		model.addAttribute("userName", userDetailsServiceImpl.getEntryUser());
+		model.addAttribute("cart", basketServiceImpl.getProductsInBasket());
 		return "contactsPage";
 	}
 
 	@GetMapping(value = { "/login", "/403" })
-	public String showLoginForm() {
+	public String showLoginForm(Model model) {
+		model.addAttribute("userName", userDetailsServiceImpl.getEntryUser());
+		model.addAttribute("cart", basketServiceImpl.getProductsInBasket());
 		return "loginPage";
 	}
 
@@ -99,50 +103,62 @@ public class MainController {
 	@GetMapping("/catalog")
 	public String showCatalog(@RequestParam(defaultValue = "") String search_product,
 			@RequestParam(defaultValue = "") String select, @RequestParam(defaultValue = "") String selectPrice,
-			Model model) {
+			Model model, @RequestParam("page") Optional<Integer> page, @RequestParam("size") Optional<Integer> size) {
+		model.addAttribute("userName", userDetailsServiceImpl.getEntryUser());
+		model.addAttribute("cart", basketServiceImpl.getProductsInBasket());
+		model.addAttribute("search_product",search_product);
+		model.addAttribute("select",select);
+		model.addAttribute("selectPrice",selectPrice);
+		int currentPage = page.orElse(1);
+		int pageSize = size.orElse(3);//количество товаров на странице
+		Pageable pageable = PageRequest.of(currentPage - 1, pageSize);
 		try {
 			if (!select.isEmpty() && !selectPrice.isEmpty() && !search_product.isEmpty()) {
 				if ("all".equals(select)) {
-					products = service.loadAllProductByNameContainsIgnoreCaseAndPrice(search_product, selectPrice);
-				} else {
-					products = service.loadAllProductByTypeProductIdAndPriceAndNameContainsIgnoreCase(select,
+					products = service.loadAllProductByNameContainsIgnoreCaseAndPrice(pageable,search_product, selectPrice);
+				}else {
+					products = service.loadAllProductByTypeProductIdAndPriceAndNameContainsIgnoreCase(pageable,select,
 							selectPrice, search_product);
 				}
-			} else if (!selectPrice.isEmpty() && !search_product.isEmpty()) {
-				products = service.loadAllProductByNameContainsIgnoreCaseAndPrice(search_product, selectPrice);
-			} else if (!select.isEmpty() && !selectPrice.isEmpty()) {
+			}else if (!selectPrice.isEmpty() && !search_product.isEmpty()) {
+				products = service.loadAllProductByNameContainsIgnoreCaseAndPrice(pageable,search_product, selectPrice);
+			}else if (!select.isEmpty() && !selectPrice.isEmpty()) {
 				if ("all".equals(select)) {
-					products = service.loadAllProductByPrice(selectPrice);
+					products = service.loadAllProductByPrice(pageable,selectPrice);
 				} else {
-					products = service.loadAllProductByTypeProductIdAndPrice(select, selectPrice);
+					products = service.loadAllProductByTypeProductIdAndPrice(pageable,select, selectPrice);
 				}
-			} else if (!select.isEmpty() && !search_product.isEmpty()) {
+			}else if (!select.isEmpty() && !search_product.isEmpty()) {
 				if ("all".equals(select)) {
-					products = service.loadProductByName(search_product);
+					products = service.loadAllProductByName(pageable,search_product);
 				} else {
-					products = service.loadAllProductByTypeProductIdAndProductName(select, search_product);
+					products = service.loadAllProductByTypeProductIdAndProductName(pageable,select, search_product);
 				}
-			} else if (!selectPrice.isEmpty()) {
-				products = service.loadAllProductByPrice(selectPrice);
-			} else if (!select.isEmpty()) {
+			}else if (!selectPrice.isEmpty()) {
+				products = service.loadAllProductByPrice(pageable,selectPrice);
+			}else if (!select.isEmpty()) {
 				if ("all".equals(select)) {
-					products = service.loadAll();
+					products = service.loadAllPaginated(pageable);
 				} else {
-					products = service.loadAllProductByTypeProductId(select);
+					products = service.loadAllProductByTypeProductId(pageable,select);
 				}
-			} else if (!search_product.isEmpty()) {
-				products = service.loadProductByName(search_product);
-			} else {
-				products = service.loadAll();
+			}else if (!search_product.isEmpty()) {
+				products = service.loadAllProductByName(pageable,search_product);
+			}else {
+				products = service.loadAllPaginated(pageable);
 			}
 		} catch (ServiceException e) {
 			model.addAttribute("message", e.getMessage());
 			return "error";
 		}
-		model.addAttribute("prod", products);
+		int totalPages = products.getTotalPages();
+		if (totalPages > 0) {
+			List<Integer> pageNumbers = IntStream.rangeClosed(1, totalPages).boxed().collect(Collectors.toList());
+			model.addAttribute("pageNumbers", pageNumbers);
+		}
+		model.addAttribute("products", products);
 		boolean findProductFlag = products.isEmpty() ? true : false;
 		model.addAttribute("findProductFlag", findProductFlag);
-		model.addAttribute("userName", getEntryUser());
 		List<TypeProduct> list;
 		try {
 			list = service.loadAllTypeProduct();
@@ -151,7 +167,6 @@ public class MainController {
 			model.addAttribute("message", e.getMessage());
 			return "error";
 		}
-
 		return "catalogPage";
 	}
 
@@ -160,8 +175,10 @@ public class MainController {
 	 */
 	@GetMapping("/info/{id}")
 	public String showPersonalProductPage(@PathVariable String id, Model model) {
+		model.addAttribute("userName", userDetailsServiceImpl.getEntryUser());
+		model.addAttribute("cart", basketServiceImpl.getProductsInBasket());
 		try {
-			product = service.loadFindProductById(Long.parseLong(id));
+			product = service.loadProductById(Long.parseLong(id));
 			model.addAttribute("product", product);
 		} catch (ServiceException e) {
 			model.addAttribute("message", e.getMessage());
@@ -171,7 +188,9 @@ public class MainController {
 	}
 
 	@GetMapping("/addNewProduct")
-	public String showAddNewProductPage() {
+	public String showAddNewProductPage(Model model) {
+		model.addAttribute("userName", userDetailsServiceImpl.getEntryUser());
+		model.addAttribute("cart", basketServiceImpl.getProductsInBasket());
 		return "addNewProductPage";
 	}
 
@@ -241,8 +260,10 @@ public class MainController {
 	 */
 	@GetMapping("/updateProduct/{id}")
 	public String updateProductById(@PathVariable String id, Model model) {
+		model.addAttribute("userName", userDetailsServiceImpl.getEntryUser());
+		model.addAttribute("cart", basketServiceImpl.getProductsInBasket());
 		try {
-			product = service.loadFindProductById(Long.parseLong(id));
+			product = service.loadProductById(Long.parseLong(id));
 			model.addAttribute("product", product);
 		} catch (ServiceException e) {
 			model.addAttribute("message", e.getMessage());
@@ -266,7 +287,7 @@ public class MainController {
 			product.setPrice(Double.valueOf(price));
 			product.setDescription(description);
 			String fileName = StringUtils.cleanPath(multipartFile.getOriginalFilename());
-			Product prod = service.loadFindProductById(Long.parseLong(id));
+			Product prod = service.loadProductById(Long.parseLong(id));
 			if (fileName.isEmpty()) {
 				product.setImage(prod.getImage());
 			} else {

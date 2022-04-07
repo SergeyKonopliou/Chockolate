@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContext;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -82,5 +85,17 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 		}
 		return false;
 	}
+	
+	public String getEntryUser() {
+		// SecurityContextHolder, в нем содержится информация о текущем контексте
+		// безопасности приложения.
+		// SecurityContext, содержит объект Authentication и в случае необходимости
+		// информацию системы безопасности,
+		// связанную с запросом от пользователя.
+		SecurityContext context = SecurityContextHolder.getContext();
+		Authentication authentication = context.getAuthentication();
+		return authentication.getName();
+	}
+
 
 }

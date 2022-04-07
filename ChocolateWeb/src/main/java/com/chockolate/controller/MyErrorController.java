@@ -3,11 +3,15 @@ package com.chockolate.controller;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.http.HttpServletRequest;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.web.servlet.error.ErrorController;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.chockolate.service.impl.BasketServiceImpl;
+import com.chockolate.service.impl.UserDetailsServiceImpl;
 
 /**
  * Контроллер ошибок.Создали класс, реализующий интерфейс ErrorController .
@@ -21,8 +25,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class MyErrorController implements ErrorController {
 
+	@Autowired
+	private BasketServiceImpl basketServiceImpl;
+	@Autowired
+	private UserDetailsServiceImpl userDetailsServiceImpl;
+	
 	@RequestMapping("/error")
 	public String handleError(HttpServletRequest request, Exception e, Model model) {
+		model.addAttribute("userName", userDetailsServiceImpl.getEntryUser());
+		model.addAttribute("cart", basketServiceImpl.getProductsInBasket());
 		Object status = request.getAttribute(RequestDispatcher.ERROR_STATUS_CODE);
 
 		if (status != null) {
